@@ -16,69 +16,69 @@ Dinamik Programlama terimi (Dynamic Programming-DP), bir  Markov Karar Süreci (
 
 DP’nin ve genel olarak Pekiştirmeli Öğrenmenin temel fikri, iyi bir politika arayışını organize etmek ve yapılandırmak için değer fonksiyonların kullanmasıdır. Daha önce bahsedildiği gibi, burada Bellman Uygunluk Denklemleri ile en uygun değer fonksiyonları bulunur.
 
-\begin{align*}
+\begin{align}
     v_*(s) &= \max_{a}\mathbb{E}[R_{t+1}+\gamma v_*(S_{t+1}) | S_t=s,A_t=a] \\ 
     &= \max_{a}\sum_{s',r}p(s',r|s,a)[r+\gamma v_*(s')]
-\end{align*}
+\end{align}
 
-\begin{align*}
+\begin{align}
     q_*(s,a) &= \mathbb{E}[R_{t+1}+\gamma \max_{a'}q_*(S_{t+1},a')|S_t=s, A_t=a] \\
     &= \sum_{s',r}p(s',r|s,a)[r+\gamma\max_{a'}q_*(s',a')]
-\end{align*}
+\end{align}
 
  
 ### 4.1. Politika Değerlendirmesi (Tahmin)
 
-Herhangi bir $\pi$ politikası için durum değer fonksiyonunu bulmaya literatürde politika değerlendirmesi yahut tahminleme denmektedir. 
+Herhangi bir $$\pi$$ politikası için durum değer fonksiyonunu bulmaya literatürde politika değerlendirmesi yahut tahminleme denmektedir. 
 
-\begin{align*}
+\begin{align}
     v_\pi (s) &\doteq \mathbb{E_\pi} [G_t |S_t=s] \\
     &= \mathbb{E_\pi} [R_{t+1} + \gamma {G_{t+1}} |S_t=s] \\
     &= \mathbb{E_\pi} [R_{t+1} + \gamma v_\pi {S_{t+1}} |S_t=s] \\
     &= \sum_a \pi (a|s) \sum_{s',r}p(s',r|s,a)[ r + \gamma v_\pi(s') ] 
-\end{align*}
+\end{align}
 
 Çevre dinamiklerinin tümüyle bilindiği durumlarda değer fonksiyonunu iterasyonlar ile bulmak mümkün olmaktadır. Bellman Güncelleme Kuralı kullanılarak değer fonksiyonu bulunabilir. Bu yönteme İteratif Politika Değerlendirmesi (Iterative Policy Evaluation) denmektedir.
 
-\begin{align*}
+\begin{align}
     v_{k+1}(s) &\doteq \mathbb{E_\pi} [R_{t+1} + \gamma v_k {S_{t+1}} |S_t=s] \\
     &= \sum_a \pi(a|s)\sum_{s',r}p(s',r|s,a)[ r + \gamma v_k(s') ]
-\end{align*}
+\end{align}
 
 ### 4.2. Politika Geliştirme
 
-Değer fonksiyonları, daha iyi politikalar geliştirmeye yardımcı olmak amacıyla geliştirilmektedir. Herhangi bir fonksiyon için rastgele belirlenen bir politikaya göre, $s$ durumunun ne kadar iyi bir durum olduğu bilinmeye çalışılacaktır. Bunu öğrenmenin yolu $s$ durumunda $a$ eylemini uygulayarak mevcut $\pi$ politikasını takip etmektir. Bu şekilde davranarak bulunacak değer şu şekilde belirlenebilir;
+Değer fonksiyonları, daha iyi politikalar geliştirmeye yardımcı olmak amacıyla geliştirilmektedir. Herhangi bir fonksiyon için rastgele belirlenen bir politikaya göre, $$s$$ durumunun ne kadar iyi bir durum olduğu bilinmeye çalışılacaktır. Bunu öğrenmenin yolu $$s$$ durumunda $$a$$ eylemini uygulayarak mevcut $$\pi$$ politikasını takip etmektir. Bu şekilde davranarak bulunacak değer şu şekilde belirlenebilir;
 
-\begin{align*}
+\begin{align}
     q_\pi (s,a) &\doteq \mathbb{E}[R_{t+1}+ \gamma v_\pi(S_{t+1})| S_t=s,A_t=a] \\
     &= q_\pi (s,a) = \sum_{s',r} p(s',r|s,a)[r+\gamma v_\pi (s')]
-\end{align*}
+\end{align}
 
-Anahtar kriter bu yeni değerin $v_{\pi}(s)$’ten büyük olup olmadığıdır. Eğer büyükse, politikanın seçtiği eylem doğrudur denilebilir ve bu eylemi seçmesi teşvik edilebilir. Bu durumda yeni politika genel olarak daha iyi olur. Bu tür gelişimlere Politika Geliştirme teoremi denir. Bu teorem baz alınarak, $\pi$ politikası şu şekilde ele alınabilir;
+Anahtar kriter bu yeni değerin $$v_{\pi}(s)$$’ten büyük olup olmadığıdır. Eğer büyükse, politikanın seçtiği eylem doğrudur denilebilir ve bu eylemi seçmesi teşvik edilebilir. Bu durumda yeni politika genel olarak daha iyi olur. Bu tür gelişimlere Politika Geliştirme teoremi denir. Bu teorem baz alınarak, $$\pi$$ politikası şu şekilde ele alınabilir;
 
-\begin{align*}
+\begin{align}
     \pi'(s) &= argmax_a q_\pi(s, a) \\
     &= argmax_a \mathbb{E}[R_{t+1} + \gamma v_\pi(S_{t+1}) | S_t=s, A_t=a] \\
     &= argmax_a \sum_{s',r} p(s',r|s,a)[r+\gamma v_\pi (s')]
-\end{align*}
+\end{align}
 
-$argmax_a$ bu noktada, politikanın kısa vadede beklentisi en yüksek olan eylemi seçmesini sağlar.
+$$argmax_a$$ bu noktada, politikanın kısa vadede beklentisi en yüksek olan eylemi seçmesini sağlar.
 
 ### 4.3. Politika İterasyonu
-Politikayı geliştirmek için $v_\pi$ değer fonksiyonu kullanıldıktan sonra daha iyi bir $\pi$ ortaya çıkarmak için yeni $v_{\pi'}$ öğrenilir ve iterasyon tekrarlanır. Bu gelişimler şu şekilde gösterilir.
+Politikayı geliştirmek için $$v_\pi$$ değer fonksiyonu kullanıldıktan sonra daha iyi bir $$\pi$$ ortaya çıkarmak için yeni $$v_{\pi'}$$ öğrenilir ve iterasyon tekrarlanır. Bu gelişimler şu şekilde gösterilir.
 
 ![Küçük bir gridworld'de iteratif politika değerlendirmesinin yakınsaması.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-41.png)
 
-\begin{align*}
+\begin{align}
     \pi_0 \xrightarrow{\text{E}} v_{\pi_0} \xrightarrow{\text{I}} \pi_1 \xrightarrow{\text{E}} v_{\pi_1} \xrightarrow{\text{I}} \pi_2 \xrightarrow{\text{E}} \ldots \xrightarrow{\text{I}} \pi_* \xrightarrow{\text{E}} v_*
-\end{align*}
+\end{align}
 
-$\xrightarrow{\text{E}}$ Değerlendirme (Evaluation)
+$$\xrightarrow{\text{E}}$$ Değerlendirme (Evaluation)
 
-$\xrightarrow{\text{I}}$ Gelişim (Improvement)
+$$\xrightarrow{\text{I}}$$ Gelişim (Improvement)
 
 ### 4.4. Değer İterasyonu
-Politika iterasyonunun bir dezavantajı ise iterasyon sırasında her bir durum için politika değerlendirmesi yapmasıdır. Bu değerlendirme fazladan efor sarfedilmesine yol açmaktadır. Eğer politika değerlendirmesi iteratif olarak yapılırsa  $v_\pi$’ye yakınsama sadece sınırda gerçekleşir.
+Politika iterasyonunun bir dezavantajı ise iterasyon sırasında her bir durum için politika değerlendirmesi yapmasıdır. Bu değerlendirme fazladan efor sarfedilmesine yol açmaktadır. Eğer politika değerlendirmesi iteratif olarak yapılırsa  $$v_\pi$$’ye yakınsama sadece sınırda gerçekleşir.
 
 Politika değerlendirmesi, her bir durum güncellemesi yapıldıktan sonra durdurulabilir. Bu algoritmaya Değer İterasyonu denmektedir.
 
@@ -91,7 +91,7 @@ Değer İterasyonu, değer fonksiyonunun değişiminin çok küçük olduğu dur
 
 ### 4.5. Asenkron Dinamik Programlama
 
-Şu ana kadar bahsedilen DP yöntemlerinin önemli bir dezavantajı, MDP’nin tüm durum kümesi üzerinde çalışıyor olması olabilir. Örneğin tavla oyununda $10^{20}$’den fazla durum vardır. Böyle MDP ortamları için tek bir tarama işlemi saniyede bir milyon güncelleme yapılsa dahi bin yıllar sürebilir.
+Şu ana kadar bahsedilen DP yöntemlerinin önemli bir dezavantajı, MDP’nin tüm durum kümesi üzerinde çalışıyor olması olabilir. Örneğin tavla oyununda $$10^{20}$$’den fazla durum vardır. Böyle MDP ortamları için tek bir tarama işlemi saniyede bir milyon güncelleme yapılsa dahi bin yıllar sürebilir.
 
 Asenkron DP algoritmaları, durum kümesinin güncellemelerinin sistematik olmayacak şekilde yapılmasıdır. Bu şekilde paralel çalışabilen algoritmalar hazırda bulunan durum değerlerini kullanarak güncelleme yapabilmektedirler. Bazı değerler birden çok kez güncellenebilse dahi, bu yapı hızlı yakınsama sağlayabilir.
 
