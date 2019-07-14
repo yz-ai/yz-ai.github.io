@@ -36,9 +36,9 @@ En basit eylem seçme yöntemi, oluşturduğumuz eylem değer fonksiyonunda bize
 
 Şekil \ref{fig:sekil21}'de görülen grafikteki gri alanlar, her koldan alınacak ortalama ödüllerdir ve dağılım, normal dağılıma göre hazırlanmıştır. 
 
-![Davranışların gerçek değerleri(siyah çizgiler) ve normal dağılıma göre dağıtılmış test sonuçları.]({{ site.url }}/assets/sekil-21.png)
+![Davranışların gerçek değerleri(siyah çizgiler) ve normal dağılıma göre dağıtılmış test sonuçları.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-21.png)
 
-![Ortalama ödülün zamana göre dağılımı.]({{ site.url }}/assets/sekil-22.png)
+![Ortalama ödülün zamana göre dağılımı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-22.png)
 
 Şekil \ref{fig:sekil22} ise $\epsilon$ değeri 0.01 ve 0.1 olan iki açgözlü olmayan, $\epsilon$ değeri 0 olan ve açgözlü yaklaşım sergileyen 3 ajan bulunmaktadır. Bu ajanların 10-kollu Test ortamındaki ortalama performansları görülmektedir. Grafikte açgözlü yaklaşımın performansının ilk adımlarda arttığı, sonrasında ise keşfetmeyi durdurup ilk seferde eline geçen en verimli ödülü aldığı kolu çekmeye başladığını ve  ödül artışının durduğu görülmektedir. Üstteki şekilde ulaşılan maksimum ortalama ödülün 1.5 civarında olduğunu, bunun sonucunda da açgözlü ajanın en yüksek performansın %65'i kadar verim alabildiği gözlemlenmektedir. Diğer 2 ajan ise açgözlü olmayan yaklaşımla keşfetmeyi devam ettirmişlerdir. Bu grafikte uzun süreçli eğitimlerde açgözlü olmayan yaklaşım, açgözlü yaklaşıma göre daha verimli olmuştur. $\epsilon$'u 0.1 olan yaklaşım, 0.01 olan yaklaşıma göre 1000adımlık süreçte daha iyi bir ödül kazanmış gibi görünse de performans oranında $\epsilon$'u 0.01 olan ajan daha uzun sürecek bir koşuda daha iyi performans gösterecektir. 
 
@@ -89,7 +89,7 @@ Başlangıç eylem değerleri, keşfi teşvik etmenin basit bir yolu olarak kull
 
 Şekil \ref{fig:sekil23}'de, tüm $a$ değerleri için $Q_1(a) = +5$ kullanılarak, açgözlü bir yöntemin 10 kollu haydut test ortamı üzerindeki performansı gösterilmektedir. Karşılaştırma için, ayrıca $Q_1(a) = 0$ ile $\epsilon-$açgözlü bir yöntem gösterilmiştir.
 
-![İyimser başlangıç eylem değeri tahminlerinin 10 kollu test ortamı üzerindeki etkisi. Her iki yöntemde de sabit adım boyutu parametresi kullanılmıştır, $\alpha=0.1$.]({{ site.url }}/assets/sekil-23.png)
+![İyimser başlangıç eylem değeri tahminlerinin 10 kollu test ortamı üzerindeki etkisi. Her iki yöntemde de sabit adım boyutu parametresi kullanılmıştır, $\alpha=0.1$.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-23.png)
 
 Başlangıçta, iyimser yöntemin keşfe ağırlık vermesi sebebiyle kötü bir performans sergilediği gözlemlenebilir. Fakat sonrasında, her eylem'i denemiş olması sebebiyle daha iyi sonuç vermektedir. Bu yöntem, durağan problemler üzerinde oldukça etkili olabilecek basit bir yaklaşım olmaktadır. Aksi durumda, yani durağan olmayan problemler için uygun olmamaktadır, zira bu yöntem yeni doğan bir ihtiyaca cevap olmaktan uzaktır. Genel olarak, başlangıç koşullarına odaklanmakta olan herhangi bir yöntemin durağan olmayan problemlere yardımcı olması olası değildir.
 
@@ -108,7 +108,7 @@ $N_t(a), a$ eylemlerinin $t$ zamanından önce seçilme sayısını gösterirken
 
 10-kollu test setindeki Üst-Güven-Sınırı eylem seçiminin ortalama performansı Şekil \ref{fig:sekil24}'te gösterilmiştir.
 
-![Üst-Güven-Sınırı eylem seçiminin ortalama performansı.]({{ site.url }}/assets/sekil-24.png)
+![Üst-Güven-Sınırı eylem seçiminin ortalama performansı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-24.png)
 
 ### 2.8. Gradyen Haydut Algoritmaları
 
@@ -129,7 +129,7 @@ $\alpha > 0$ adım değeri için, $\overline{R_t}\in\mathbb{R}$  şu ana kadar v
 
 Ödüllerin normal dağılımına ortalama olarak $+4$ eklenmiş hali, *bazlı* (with baseline) ve *bazsız* (without baseline) olarak Şekil \ref{fig:sekil25}'te gösterilmiştir. *Baz* (baseline) olmadan performans zayıflamaktadır.
 
-![Ödüllerin dağılımı.]({{ site.url }}/assets/sekil-25.png)
+![Ödüllerin dağılımı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-25.png)
 
 ### 2.9. İlişkili Arama (Bağlamsal Haydutlar)
 

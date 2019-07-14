@@ -24,7 +24,7 @@ Pekiştirmeli Öğrenme’de veya Markov Karar Süreçleri’nde öğrenen ve ka
 
 Sonlu Markov Karar Süreçleri’nde; durum, eylem ve ödül setlerinin tamamı sonlu sayıda elemana sahiptir. Bu durumda $S_t$ (durum) ve $R_t$ (ödül) sadece bir önceki durum ve eyleme bağlı olan, çevrenin dinamikleri tarafından belirlenen, iyi tanımlanmış ayrık bir olasılık dağılımına sahiptir. Bu etkileşimin geçmiş durumlardan sadece bir önceki duruma bağlı olması, durumların geleceğe etki edebilecek tüm geçmiş ajan-çevre etkileşimlerini kapsaması sebebi ile olmaktadır. Durumların bu özelliğine Markov Niteliği (property) denir. Geçiş olasılıkları (transition probability) ve beklenen ödül (expected reward) gibi gereksinim duyulan bir çok değere, ortam dinamiklerinin bilgisine sahip olan fonksiyon $p(s',r|s,a)$ şeklinde gösterilmektedir.
 
-![Ajan-Çevre Etkileşimi]({{ site.url }}/assets/sekil-31.png)
+![Ajan-Çevre Etkileşimi]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-31.png)
 
 Sonuç olarak, Markov Karar Süreçleri'ne amaca yönelik, etkileşimle öğrenme probleminin kayda değer bir soyutlaştırması denilebilir. Markov karar süreçlerini özetler nitelikteki 3 işaret; ajanın aldığı kararları temsil eden eylemler, bu kararların alınma sebebini işaret eden durumlar ve ajanın hedefini gösteren ödül olmaktadır.
 
@@ -64,7 +64,7 @@ Bölümlü problemler konusunda kesin bir yargıya varmak için ek bir gösterim
 
 Hem bölümlü hem de bölümsüz problemleri kapsayan tek bir gösterim elde etmek için başka bir yönteme ihtiyaç duyulmaktadır. Denklem \ref{eq:31} getiriyi sınırlı sayıda terim üzerinden, Denklem \ref{eq:32} ise sonsuz sayıda terim üzerinden hesaplamaktadır. Bu iki denklem, yalnızca kendisine geçiş yapan ve sıfır ödül üreten özel bir durduran durumun kullanılması ile birleştirilebilir. Bu gösterimin diyagramı Şekil \ref{fig:sekil32}'de görülebilir.
 
-![Genel gösterim]({{ site.url }}/assets/sekil-32.png)
+![Genel gösterim]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-32.png)
 
 Şekildeki son durum (gri renkteki kare) bölümün sonuna karşılık gelen uç (terminal) durumu temsil eder. $S_0$’dan başlayarak ödül dizisi $+1,+1,+1,0,0$ olarak görülür. $T=3$ zamanında yahut sonsuz eylem adımı sonucunda ödülleri topladığımızda aynı getiri elde edilmektedir. Denklem \ref{eq:33}'de indirimli formülasyon görülebilir.
 

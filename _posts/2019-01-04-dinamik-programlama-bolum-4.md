@@ -67,7 +67,7 @@ $argmax_a$ bu noktada, politikanın kısa vadede beklentisi en yüksek olan eyle
 ### 4.3. Politika İterasyonu
 Politikayı geliştirmek için $v_\pi$ değer fonksiyonu kullanıldıktan sonra daha iyi bir $\pi$ ortaya çıkarmak için yeni $v_{\pi'}$ öğrenilir ve iterasyon tekrarlanır. Bu gelişimler şu şekilde gösterilir.
 
-![Küçük bir gridworld'de iteratif politika değerlendirmesinin yakınsaması.]({{ site.url }}/assets/sekil-41.png)
+![Küçük bir gridworld'de iteratif politika değerlendirmesinin yakınsaması.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-41.png)
 
 \begin{align*}
     \pi_0 \xrightarrow{\text{E}} v_{\pi_0} \xrightarrow{\text{I}} \pi_1 \xrightarrow{\text{E}} v_{\pi_1} \xrightarrow{\text{I}} \pi_2 \xrightarrow{\text{E}} \ldots \xrightarrow{\text{I}} \pi_* \xrightarrow{\text{E}} v_*
@@ -103,8 +103,8 @@ Politika değerlendirme ve Politika geliştirme güncellemelerin sonunda en uygu
 
 Zira, değer fonksiyonu güncel politikayı, güncel politika değer fonksiyonunu direkt etkilemektedir. Pekiştirmeli Öğrenme'de kullanılan bütün algoritmalara bu anlamda GPI denilebilir.
 
-![Sekil-42]({{ site.url }}/assets/sekil-42.png)
-![Sekil-43]({{ site.url }}/assets/sekil-43.png)
+![Sekil-42]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-42.png)
+![Sekil-43]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-43.png)
 
 GPI’da değerlendirme ve geliştirme kısımları hem rekabet hem de işbirliği olarak görülebilir. Birbirlerini etkilemeleri anlamında rekabet ederler fakat asıl amaç en uygun değer fonksiyonu ve en uygun politikayı ortaya çıkarmaktır.
 

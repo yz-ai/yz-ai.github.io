@@ -130,14 +130,14 @@ Pratikte, ağırlıklı önem-örneklemesi büyük ölçüde daha düşük varya
 (Blackjack, yirmibir oyunu diye geçer. Kart oyunudur.)
 Tek bir blackjack durumunun değerini (Örnek 5.1), politika dışı verilerden tahmin etmek için hem normal hem de ağırlıklı önem-örnekleme yöntemlerini uyguladık. Monte Carlo yöntemlerinin avantajlarından biri, tek bir durumu değerlendirmek için kullanılabilmesi. Bu örnekte, dağıtıcının bir zar gösterdiği durumu, oyuncunun kartlarının toplamının 13 olduğunu ve oyuncunun kullanılabilir bir ası olduğunu değerlendirdik (yani, oyuncu bir as ve bir zar yada eşdeğerde üç as tutar ). Veriler bu durumdan başlayarak oluşturulduktan sonra vurmayı seçer veya eşit olasılıkla( davranış politikası) rastegele kartı atar. Hedef politika, Örnek 5.1'de olduğu gibi, sadece 20 veya 21'lik bir tutara dayanmakta. Bu politikanın hedef politikaya göre değeri yaklaşık 0.27726'dır.Her iki politika dışı yöntem de, rastgele politika kullanılarak 1000 politika dışı bölümden sonra bu değere yakın bir şekilde yaklaştı. Şekil 5.3 bize iki yöntemin değerlendirilmesi hakkında bilgi verir.
 
-![Şekil 5.3: Ağırlıklandırılmış önem örneklemesi, politika dışı bölümlerden alınan tek bir blackjack durumunun daha düşük hata tahminleri üretir.]({{ site.url }}/assets/sekil-53.png)
+![Şekil 5.3: Ağırlıklandırılmış önem örneklemesi, politika dışı bölümlerden alınan tek bir blackjack durumunun daha düşük hata tahminleri üretir.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-53.png)
 
 
 Örnek 5.5: Sonsuz Varyans
 Sıradan önem-örneklemesine sahip tahminlerin tipik olarak sonsuz varyansa sahip olduğunda bahsetmiştik. Dolayısıyla tatmin edici olmayan yakınsama özelliklerine sahip olacaktır. Ne zaman, yörüngede ölçeklendirilmiş sonsuz varyansa sahip dönüşler bulunduğunda politika dışı öğrenmede kolaylıkla gerçekleşebilir. Şekil 5.4'te basit bir örnek gösterilmiştir.
 
 
-![Şekil 5.4: (Örnek 5.5) için sıradan önem-örneklemesi, tek durumlu MDP ile gösterilen görsel üzerinde şaşırtıcı derecede kararsız tahminler üretmektedir . Buradaki doğru tahmin 1'dir (γ = 1), ve bu örnek bir dönüşün beklenen değeri (önem örneklemeden sonra) olsa bile, örneklerin varyansı sonsuzdur ve tahminler bu değere yaklaşmaz. Bu sonuçlar politika dışı ilk ziyaret Monte Carlo İçindir.]({{ site.url }}/assets/sekil-54.png)
+![Şekil 5.4: (Örnek 5.5) için sıradan önem-örneklemesi, tek durumlu MDP ile gösterilen görsel üzerinde şaşırtıcı derecede kararsız tahminler üretmektedir . Buradaki doğru tahmin 1'dir (γ = 1), ve bu örnek bir dönüşün beklenen değeri (önem örneklemeden sonra) olsa bile, örneklerin varyansı sonsuzdur ve tahminler bu değere yaklaşmaz. Bu sonuçlar politika dışı ilk ziyaret Monte Carlo İçindir.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-54.png)
 
 Milyonlarca bölümden sonra bile, tahminler 1'in doğru değerine yakınsamamaktadır. Aksine, ağırlıklı önem-örnekleme algoritması, sol hareketle sona eren ilk bölümden sonra sonsuza kadar tam olarak bir tahmin verecektir. 1'e (yani, doğru eylemle biten) eşit olmayan tüm dönüşler, hedef politika ile tutarsız olur ve bu nedenle sıfırdan bir $p_{t:T(t)-1}$’e sahip olur ve ne paydada ne de payda (5.6)’ya katkıda bulunmaz. Ağırlıklandırılmış önem-örnekleme algoritması, yalnızca hedef politika ile tutarlı dönüşlerin ağırlıklı bir ortalamasını üretir ve bunların tümü tam olarak 1 olur.
 

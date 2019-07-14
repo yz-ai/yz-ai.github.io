@@ -8,7 +8,7 @@ baseurl:
 color_theme: # Available themes: blue (default), green, purple, red and yellow
 header:
     logo:
-        text: Yapay Zeka Araştırma İnisiyatifi
+        text: YZAI
         image:
     nav:
         - item_name: KAYNAKLAR

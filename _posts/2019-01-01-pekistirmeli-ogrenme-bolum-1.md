@@ -58,7 +58,7 @@ Pekiştirmeli Öğrenme, yoğun bir şekilde durum(state) kavramına dayanmaktad
 
 Tic-Tac-Toe, iki kişinin sırayla 3'e 3'lük bir masada, yatayda, dikeyde ve çaprazda aynı işareti tamamlaması ile kazanılır. Bir oyuncu X işaretlerken, diğeri O işaretler. Eğer üç işaret oyun sonunda tamamlanamamışsa oyun berabere biter. Bu oyunda iyi bir oyuncu hiç bir zaman kaybetmez. Bu çalışma için beraberliği de kaybetmeyi de eşit ölçüde kötü olarak düşünelim. Kazanma şansımızı nasıl artırabiliriz?
 
-![Örnek Tic-Tac-Toe Oyunu]({{ site.url }}/assets/RL-sutton-ozet/sekil-11.png)
+![Örnek Tic-Tac-Toe Oyunu]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-11.png)
 
 En iyi hamleyi yapma(minimaks) şansımız yok, çünkü karşımızdaki oyuncunun neyi seçeceği, stratejisi tam olarak bilinemez. Oyunun durumuna göre kaybedecek yolu da seçebilir. Minimaks iki tarafın da davranışının belli olduğu durumlarda kullanılabilir.
 

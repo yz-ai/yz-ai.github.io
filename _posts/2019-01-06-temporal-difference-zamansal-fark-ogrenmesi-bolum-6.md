@@ -43,7 +43,7 @@ Zamansal fark öğrenmesi yöntemlerinin, herhangi bir sabit politika için yete
 
 Örnek 6.2 için yakınsama karşılaştırması sonuçları:
 
-![SEKİL-62]({{ site.url }}/assets/sekil-62.png)
+![SEKİL-62]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-62.png)
 
 ### 6.3. Zamansal Fark Öğrenmesinin En Uygunluğu (Optimality)
 
