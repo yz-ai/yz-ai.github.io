@@ -23,11 +23,11 @@ Monte Carlo yöntemlerinde olduğu gibi zamansal fark öğrenmesinde de öngör�
 
 Monte Carlo tahmin güncelleme kuralı:
 
-  $V(S_t) \leftarrow V(S_t) + \alpha\big[G_t - V(S_t)\big]$
+  $$V(S_t) \leftarrow V(S_t) + \alpha\big[G_t - V(S_t)\big]$$
 
 Zamansal Fark Öğrenmesi tahmin güncelleme kuralı:
 
-  $V(S_t) \leftarrow V(S_t) + \alpha\big[R_{t+1} + \gamma V(S_{t+1}) - V(S_t)\big]$
+  $$V(S_t) \leftarrow V(S_t) + \alpha\big[R_{t+1} + \gamma V(S_{t+1}) - V(S_t)\big]$$
 
 Bu iki formül arasındaki fark yakınsama (convergence) için $V(S_t)$’nin ulaşması gereken hedeflerdir. $V(S_t)$ ile ulaşması gereken hedef arasındaki farka da hata denir. Zamansal fark öğrenmesinde sadece bir sonraki adımın ödülü ve değer tahmini kullanılırken, Monte Carlo yöntemlerinde, her bir adım için hesaplanan bu değerlerin azaltılmış toplamı kullanılır.  Bu yüzden Monte Carlo kuralındaki hata, zamansal fark öğrenmesindeki hata kullanılarak formülize edilebilir ve şu formül elde edilir:
 
