@@ -1,10 +1,11 @@
 ---
 layout: post
+author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 7: n-Adım Paketleme"
 description: "N-adım yöntemi, ara algoritmaların iyi performans gösterdiği şekilde, Monte Carlo yöntemleri ile tek-adım zamansal fark yöntemlerini birleştirdiği için pekiştirmeli öğrenmede önemli bir yaklaşımdır."
 date:   2019-01-07
 categories: pekistirmeli-ogrenme
-tags: ["pekistirmeli-ogrenme", ""]
+tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 prev-page-url: /blog/pekistirmeli-ogrenme/temporal-difference-zamansal-fark-ogrenmesi-bolum-6
 ---

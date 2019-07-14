@@ -1,10 +1,11 @@
 ---
 layout: post
+author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 3: Sonlu Markov Karar Süreçleri"
 description: "Markov Karar Süreçleri (Markov Decision Processes), eylemlerin sadece bir sonraki ödülü değil gelecek durumları da etkilediği sıralı karar verme sürecinin klasik bir formülasyonudur."
 date:   2019-01-03
 categories: pekistirmeli-ogrenme
-tags: ["pekistirmeli-ogrenme", ""]
+tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 prev-page-url: /blog/pekistirmeli-ogrenme/cok-kollu-haydutlar-bolum-2
 next-page-url: /blog/pekistirmeli-ogrenme/dinamik-programlama-bolum-4

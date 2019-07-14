@@ -1,10 +1,11 @@
 ---
 layout: post
+author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 4: Dinamik Programlama"
 description: "Dinamik Programlama terimi (Dynamic Programming-DP), bir  Markov Karar Süreci (Markov Decision Process) ortamının mükemmel bir modelinde en uygun politikayı (optimal policy) hesaplama amacı ile kullanılacak algoritmaların bütününü ifade eder. "
 date:   2019-01-04
 categories: pekistirmeli-ogrenme
-tags: ["pekistirmeli-ogrenme", ""]
+tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 prev-page-url: /blog/pekistirmeli-ogrenme/sonlu-markov-karar-surecleri-bolum-3
 next-page-url: /blog/pekistirmeli-ogrenme/monte-carlo-yontemleri-bolum-5

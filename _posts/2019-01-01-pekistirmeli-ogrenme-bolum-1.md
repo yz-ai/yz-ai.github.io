@@ -1,10 +1,11 @@
 ---
 layout: post
+author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 1: Giriş"
 description: "Pekiştirmeli öğrenme, amaca yönelik ne yapılması gerektiğini öğrenen bir makine öğrenmesi yaklaşımıdır."
 date:   2019-01-01
 categories: pekistirmeli-ogrenme
-tags: ["pekistirmeli-ogrenme", ""]
+tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 next-page-url: /blog/pekistirmeli-ogrenme/cok-kollu-haydutlar-bolum-2
 ---

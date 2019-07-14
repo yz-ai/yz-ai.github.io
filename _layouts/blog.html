@@ -14,19 +14,19 @@ layout: wrapper
                 <div class="blog_list_item mb_50">
                     <img class="img-fluid" src="{{post.image}}" alt="">
                     <div class="blog_content">
-                        <div class="post_date">
-                            <h2>{{ post.date | date: '%d' }} <span>{{ post.date | date: '%B' }} </span></h2>
+                        <div class="post_title">
+                            <a href="{{post.url}}"><h2>{{post.title}}</span></h2></a>
                         </div>
                         <div class="entry_post_info">
-                            By: <a href="#">{{ post.author }}</a>
-                            <a href="#">{{ post.categories[0] }}</a>
-                            <a href="#">{{ post.date | date_to_long_string }}</a>
+                            Yazar: <a href="#">{{ post.author }}</a> /
+                            <a href="#">{{ post.categories[0] }}</a> /
+                            <a href="#">{{ post.date | date: "%d-%m-%Y" }}</a>
                         </div>
                         <a href="{{post.url}}">
-                            <h5 class="f_p f_size_20 f_500 t_color mb_20">{{post.title}}</h5>
+                            <h5 class="f_p f_size_20 f_500 t_color mb_20">{{post.description}}</h5>
                         </a>
                         <p class="f_300 mb_20">{{post.summary}}</p>
-                        <a href="{{post.url}}" class="learn_btn_two">Devamını Oku <i class="ti-arrow-right"></i></a>
+                        <a href="{{post.url}}" class="learn_btn_two">Devamını Oku <i class="icon icon--arrow-right"></i></a>
                     </div>
                 </div>
                 {% endfor %}
@@ -37,25 +37,27 @@ layout: wrapper
 
                     <div class="widget sidebar_widget widget_recent_post">
                         <div class="widget_title">
-                            <h3 class="f_p f_size_20 t_color3">Son yazılar</h3>
-                            <div class="border_bottom"></div>
+                            <h2 class="f_p f_size_20 t_color3">Son yazılar</h3>
+                                <div class="border_bottom"></div>
                         </div>
                         {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
                         {% for post in sorted_posts limit: 4 %}
                         <div class="media post_item">
-                            <img src="{{post.image}}" alt="{{post.title}}" width="90px">
                             <div class="media-body">
                                 <a href="{{post.url}}">
-                                    <h3 class="f_size_16 f_p f_400">{{post.title}}</h3>
+                                    <h5 class="f_size_16 f_p f_400">{{post.title}}</h4>
                                 </a>
                                 <div class="entry_post_info">
-                                    By: <a href="#">{{ post.author }}</a>
-                                    <a href="#">{{ post.date | date_to_string }}</a>
-                                </div>
+                                        Yazar: <a href="#">{{ post.author }}</a> /
+                                        <a href="#">{{ post.categories[0] }}</a> /
+                                        <a href="#">{{ post.date | date: "%d-%m-%Y" }}</a>
+                                    </div>
                             </div>
                         </div>
                         {% endfor %}
                     </div>
+
+
                     <div class="widget sidebar_widget widget_categorie mt_60">
                         <div class="widget_title">
                             <h3 class="f_p f_size_20 t_color3">Kategoriler</h3>
@@ -65,25 +67,30 @@ layout: wrapper
                             {% assign categories_grouped = site.categories | sort   %}
                             {% for category in categories_grouped %}
                             <li>
-                                <a href="/category/{{ category | first | slugify }}/">
+                                <a href="/kategoriler/#{{ category | first | slugify }}">
                                     <span>{{ category[0] | replace:'-', ' ' }}</span><em>({{ category | last | size }})</em>
                                 </a>
                             </li>
                             {% endfor %}
                         </ul>
                     </div>
+
                     <div class="widget sidebar_widget widget_tag_cloud mt_60">
                         <div class="widget_title">
                             <h3 class="f_p f_size_20 t_color3">Etiketler</h3>
                             <div class="border_bottom"></div>
                         </div>
                         <div class="post-tags">
+                        <ul class="list-unstyled">
                             {% assign tags = site.tags | sort  %}
                             {% for tag in tags %}
-                            <a href="/tag/{{ tag | first | slugify }}/">
-                                {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-                            </a>
+                            <li>
+                                <a href="/etiketler/#{{ tag | first | cgi_escape | slugify }}">
+                                    {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+                                </a>
+                            </li>
                             {% endfor %}
+                        </ul>
                         </div>
                     </div>
                 </div>

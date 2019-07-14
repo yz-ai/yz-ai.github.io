@@ -1,10 +1,11 @@
 ---
 layout: post
+author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 5: Monte Carlo Yöntemleri"
 description: "Bir durumun değerinin, o durumdan başlayarak gelecekten beklenen indirgenmiş toplam ödül olduğunu hatırlarsak, söz konusu durumun değerini tahmin etmek için o durumdan sonra gözlemlenen ziyaretlerin dönüş değerlerinin ortalaması alınabilir. Daha fazla sayıda gözlem yapıldıkça ortalama değer beklenen değere yaklaşır. Bu görüş Monte Carlo metodunun temelidir."
 date:   2019-01-05
 categories: pekistirmeli-ogrenme
-tags: ["pekistirmeli-ogrenme", ""]
+tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 prev-page-url: /blog/pekistirmeli-ogrenme/dinamik-programlama-bolum-4
 next-page-url: /blog/pekistirmeli-ogrenme/temporal-difference-zamansal-fark-ogrenmesi-bolum-6

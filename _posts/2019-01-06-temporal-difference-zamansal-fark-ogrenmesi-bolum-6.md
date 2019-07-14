@@ -1,10 +1,11 @@
 ---
 layout: post
+author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 6: Temporal-Difference (Zamansal Fark) Öğrenmesi"
 description: "Pekiştirmeli öğrenmenin en temel yöntemlerinden biri olan zamansal fark öğrenmesi, daha önceki bölümlerde gördüğümüz dinamik programlama ve Monte Carlo yöntemlerinin bir çeşit kombinasyonudur."
 date:   2019-01-06
 categories: pekistirmeli-ogrenme
-tags: ["pekistirmeli-ogrenme", ""]
+tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 prev-page-url: /blog/pekistirmeli-ogrenme/monte-carlo-yontemleri-bolum-5
 next-page-url: /blog/pekistirmeli-ogrenme/n-adim-paketleme-bolum-7
