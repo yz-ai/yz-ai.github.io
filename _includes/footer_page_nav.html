@@ -1,0 +1,23 @@
+{% if page.next-page-url or page.prev-page-url  %}
+<nav class="page-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                {% if page.prev-page-url  %}
+                <a href="{{page.prev-page-url}}" class="page-nav__item page-nav__item--prev">
+                    <i class="icon icon--arrow-left"></i>
+                    Önceki Bölüm
+                </a><!-- /.page-nav__item -->
+                {% endif %}
+
+                {% if page.next-page-url %}
+                <a href="{{page.next-page-url}}" class="page-nav__item page-nav__item--next">
+                    Sonraki Bölüm
+                    <i class="icon icon--arrow-right"></i>
+                </a><!-- /.page-nav__item -->
+                {% endif %}
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</nav><!-- /.page-nav -->
+{% endif %}

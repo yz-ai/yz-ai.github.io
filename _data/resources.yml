@@ -1,0 +1,36 @@
+- id: 1
+  title: CS 229 - Makine Öğrenmesi (TR)
+  description: Stanford CS 229 Makine Öğrenmesi ders notlarından oluşturulmuş gözetimli öğrenme, gözetimsiz öğrenme, derin öğrenme ve makine öğrenmesi ipuçları/püf noktalarını göreceğiniz kapsamlı el kitapçığı 
+  url: https://stanford.edu/~shervine/l/tr/teaching/cs-229/cheatsheet-supervised-learning
+  order-no: 10
+  
+- id: 2
+  title: CS 230 - Derin Öğrenme (TR)
+  description: Stanford CS 230 Derin Öğrenme ders notlarından oluşturulmuş evrişimli yapay sinir ağları, tekrarlayan yapay sinir ağları ve derin öğrenme ipuçları/püf noktalarını göreceğiniz kapsamlı el kitapçığı 
+  url: https://stanford.edu/~shervine/l/tr/teaching/cs-230/cheatsheet-convolutional-neural-networks
+  order-no: 20
+  
+- id: 3
+  title: Derin Öğrenme Kavramları
+  description: Özellikle derin öğrenme terimleriyle karşılaştığınızda ne anlama geldiğini bilmeniz cümle içinde ne anlatıldığını doğru şekilde anlamanız için kritik önem arz etmektedir. Bu yüzden bu not defteri bir sözlük gibi de kullanabileceğiniz bir kaynak olma niteliğinde
+  url: https://github.com/ayyucekizrak/Kapsamli_Derin_Ogrenme_Rehberi/blob/master/Kapsaml%C4%B1_Derin_%C3%96%C4%9Frenme_Rehberi.ipynb
+  order-no: 30
+  
+- id: 4
+  title: Keras ile TPU Üzerinde Yapay Sinir Ağları Eğitimi
+  description: Yapay Sinir Ağlarını Google Colab üzerinde ücretsiz sunulan TPU'larda en hızlı şekilde nasıl eğitileceği ile ilgili Google Code Labs Türkçe dökümanları
+  url: https://github.com/yapay-ogrenme/googlecodelabs/wiki
+  order-no: 40
+  
+
+- id: 5
+  title: 1. Türk Yapay Zeka ve Yapay Sinir Ağları Sempozyumu Bildirileri (1992)
+  description: Yapay Zeka konusunda ülkemizin duayen araştırmacılarının yer aldığı ve düzenlediği Türkiye'nin ilk ilgili alandaki sempozyumunun bildiri kitabını çevrimiçi kitabı.
+  url: https://yapay-zeka.gitbook.io/ilkturkyapayzekaveyapaysiniraglarisempozyumu/
+  order-no: 50
+  
+- id: 6
+  title: Pekiştirmeli Öğrenme Kitabı
+  description: Pekiştirmeli Öğrenme Kitabı
+  url: /blog/pekistirmeli-ogrenme/pekistirmeli-ogrenme-bolum-1
+  order-no: 5

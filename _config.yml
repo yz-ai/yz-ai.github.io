@@ -1,0 +1,56 @@
+name: Yapay Zeka Araştırma İnisiyatifi
+title: Yapay Zeka Araştırma İnisiyatifi
+description: >- # this means to ignore newlines until "baseurl:"
+  Yapay Zeka Araştırma İnisiyatifi
+about: Yapay Zeka Araştırma İnisiyatifi
+
+baseurl: 
+color_theme: # Available themes: blue (default), green, purple, red and yellow
+header:
+    logo:
+        text: Yapay Zeka Araştırma İnisiyatifi
+        image:
+    nav:
+        - item_name: KAYNAKLAR
+          item_url: '/kaynaklar'
+        - item_name: PROJELER
+          item_url: '/projeler'
+        - item_name: YAYINLAR
+          item_url: '/yayinlar'  
+        - item_name: BLOG
+          item_url: '/blog'          
+        - item_name: İLETİŞİM
+          item_url: '/iletisim'  
+footer:
+    content:
+        logo:
+            text: Yapay Zeka Araştırma İnisiyatifi
+            image:
+        copyright:  © 2019. All right reserved.
+    social_list:
+        - network_name: github
+          profile_url: 'https://github.com/yz-ai'
+        - network_name: twitter
+          profile_url: '#'
+google_analytics:
+    tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
+comments:
+    disqus_forum_shortname: # Add your disqus forum shortname to activate comments
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

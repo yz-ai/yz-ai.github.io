@@ -1,0 +1,58 @@
+---
+layout: wrapper
+---
+
+
+<!--PAGE CONTENT-->
+<div class="hero-subheader">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="align-container" data-mh>
+                    <div class="align-inner">
+                        <h1 class="hero-subheader__title">{{page.title}}</h1>
+                        <p class="hero-subheader__desc">{{page.description}}</p>
+                        {% if page.prev-page-url %}
+                        <a href="{{page.prev-page-url}}" class="btn btn--dark btn--rounded btn--w-icon btn--w-icon-left">
+                            <i class="icon icon--arrow-left"></i>
+                            Önceki Bölüm
+                        </a>
+                        {% endif %}
+                        {% if page.next-page-url %}
+                        <a href="{{page.next-page-url}}" class="btn btn--dark btn--rounded btn--w-icon">
+                            <i class="icon icon--arrow-right"></i>
+                            Sonraki Bölüm
+                        </a>
+                        {% endif %}
+                    </div><!-- /.align-inner -->
+                </div><!-- /.align-container -->
+            </div><!-- /.col -->
+
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.hero-subheader -->
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="content">
+                    <div class="entry_post_info">
+                        By: <a href="#">{{ page.author }}</a>
+                        <a href="#">{{ page.categories[0] }}</a>
+                        <a href="#">{{ page.date | date_to_long_string }}</a>
+                    </div>
+                    <h2 id="what-is-doks">{{page.title}}</h2>
+                    <p>{{content}}</p>
+                </div>
+            </div><!-- /.col -->
+
+            <div class="col-md-4 col-md-offset-1">
+                <div class="sections-list-wrapper">
+                    <div class="sections-list js-sections js-affix js-scrollspy hidden-xs hidden-sm affix-top"></div>
+                    <!-- /.sections-list -->
+                </div>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.section -->

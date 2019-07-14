@@ -1,0 +1,48 @@
+{% if site.footer.content.logo.image or site.footer.content.logo.text or site.footer.content.copyright or site.footer.social_list %}
+<div class="js-footer-area">
+
+	{% include footer_page_nav.html %}
+
+	{% include footer_micro_nav.html %}
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					{% if site.footer.content.logo.text %}
+						<a href="{% if jekyll.environment == 'production' %}{{ site.baseurl }}{% endif %}/" class="site-footer__logo">{{ site.footer.content.logo.text }}</a>
+					{% elsif site.footer.content.logo.image %}
+						<a href="{% if jekyll.environment == 'production' %}{{ site.baseurl }}{% endif %}/" class="site-footer__logo">
+							<img src="{% if jekyll.environment == 'production' %}{{ site.baseurl }}{% endif %}/doks-theme/assets/images/layout/logo-footer.png">
+						</a><!-- /.site-footer__logo -->
+					{% endif %}
+					{% if site.footer.content.copyright %}
+						<hr>
+						<p class="site-footer__copyright">{{ site.footer.content.copyright }}</p>
+					{% endif %}
+				</div><!-- /.col -->
+				{% if site.footer.social_list %}
+					<div class="col-sm-6 align-right">
+						<ul class="social-list">
+							{% for item in site.footer.social_list %}
+								<li>
+									<a href="{{ item.profile_url }}" target="_blank" class="social-list__item social-list__item--{{ item.network_name }}">
+										<i class="icon icon--{{ item.network_name }}"></i>
+									</a>
+								</li>
+							{% endfor %}
+						</ul><!-- /.social-list -->
+					</div><!-- /.col -->
+				{% endif %}
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</footer><!-- /.site-footer -->
+
+</div>	
+{% endif %}
+
+<script src="/assets/theme/blue/js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/theme/blue/js/vendor/bootstrap/affix.min.js"></script>
+<script type="text/javascript" src="/assets/theme/blue/js/vendor/bootstrap/scrollspy.min.js"></script>
+<script type="text/javascript" src="/assets/theme/blue/js/vendor/matchHeight.min.js"></script>
+<script type="text/javascript" src="/assets/theme/blue/js/scripts.min.js"></script>

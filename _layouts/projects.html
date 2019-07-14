@@ -1,0 +1,36 @@
+---
+layout: wrapper
+---
+
+
+<!--PAGE CONTENT-->
+{% include header_sub.html %}
+
+		
+<div class="section section--darker-theme-color-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nav-grid nav-grid--out">
+                    <div class="row">
+                        {% assign projects = site.data.projects | sort: 'order-no' %}
+                        {% for project in projects %}
+                        <div class="col-sm-6 col-lg-4">
+                            <a href="{{ project.url }}" target="_blank" class="nav-grid__item">
+                                <div class="nav-grid__content" data-mh>
+                                    <h2 class="nav-grid__title">{{ project.title }}</h2>
+                                    <p>{{ project.description }}</p>
+                                </div>
+                                <p class="nav-grid__btn">
+                                    Projeye Git
+                                    <i class="icon icon--arrow-right"></i>
+                                </p>
+                            </a>
+                        </div>
+                        {% endfor %}   
+                    </div><!-- /.row -->
+                </div><!-- /.nav-grid -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.section -->
