@@ -17,7 +17,7 @@ $N$-adım yöntemi, ara algoritmaların iyi performans gösterdiği şekilde, Mo
 
 Monte Carlo yöntemleri, her durum için, bölümün sonuna kadar gözlemlenen ödüllerin sırasına göre bir güncelleme gerçekleştirir. Diğer yandan, tek adım zamansal fark metodunun güncellemesi, geri kalan ödüller için bir vekil olarak bir sonraki aşamada durumun değerinden paketleme yapılmasına dayanmaktadır. Bir çeşit ara metot, daha sonra, bir ara meblağa dayanan bir güncelleme gerçekleştirecektir: adım adım artar. Örneğin, iki aşamalı bir güncelleme ilk iki ödül ve iki adım sonra durumun tahmini değerine dayanacaktır. Aşağıdaki şekilde soldaki tek adım zamansal fark güncellemesi ve sağdaki sonlandırmaya kadar Monte Carlo güncellemesi ile $v_{\pi}$ için $n-$adım güncellemelerinin spektrumunun yedek diyagramlarını göstermektedir.
 
-![n-adım yöntemlerinin yedek diyagramları. Bu yöntemler bir adım TD yöntemlerinden Monte Carlo yöntemlerine kadar değişen bir spektrum oluşturur.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil71.png)
+![n-adım yöntemlerinin yedek diyagramları. Bu yöntemler bir adım TD yöntemlerinden Monte Carlo yöntemlerine kadar değişen bir spektrum oluşturur.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-71.png)
 
 $N-$adım güncellemelerini kullanan metotlar hala TD metotlarıdır, çünkü daha sonraki bir tahminin nasıl farklı olduğuna bağlı olarak daha önceki bir tahmininin değişmesine neden olurlar. Şimdi bir sonraki tahmin bir adım değil, $n-$adım sonra. TD’nin $n-$adımlı işlemlerine $n-$adım TD metodu denir. 
 
