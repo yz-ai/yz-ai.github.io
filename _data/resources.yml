@@ -6,7 +6,7 @@
   
 - id: 2
   title: CS 230 - Derin Öğrenme (TR)
-  description: Stanford CS 230 Derin Öğrenme ders notlarından oluşturulmuş evrişimli yapay sinir ağları, tekrarlayan yapay sinir ağları ve derin öğrenme ipuçları/püf noktalarını göreceğiniz kapsamlı el kitapçığı <a href='https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/tr' target='_blank'>[PDF formatı]</a> 
+  description: Stanford CS 230 Derin Öğrenme ders notlarından oluşturulmuş evrişimli yapay sinir ağları, tekrarlayan yapay sinir ağları ve derin öğrenme ipuçları/püf noktalarını göreceğiniz kapsamlı el kitapçığı 
   url: https://stanford.edu/~shervine/l/tr/teaching/cs-230/cheatsheet-convolutional-neural-networks
   order-no: 20
   
