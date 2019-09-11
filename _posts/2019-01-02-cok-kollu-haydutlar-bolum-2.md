@@ -35,13 +35,13 @@ En basit eylem seçme yöntemi, oluşturduğumuz eylem değer fonksiyonunda bize
 
 Şu ana kadar anlatılanların grafik üzerinde incelenmesi için öncelikle 10-kollu test ortamının tanımını yapmak gerekir. 10-kollu Test Ortamı, $$k$$ değişkeninin 10 olduğu bir haydut probleminin 2000 kez test edilmesinden oluşan bir test ortamıdır. Eylem seçimleri 1'den 10'a kadar ilerleyen kol numaralarıdır.
 
-Şekil \ref{fig:sekil21}'de görülen grafikteki gri alanlar, her koldan alınacak ortalama ödüllerdir ve dağılım, normal dağılıma göre hazırlanmıştır. 
+Şekil 2.1'de görülen grafikteki gri alanlar, her koldan alınacak ortalama ödüllerdir ve dağılım, normal dağılıma göre hazırlanmıştır. 
 
 ![Davranışların gerçek değerleri(siyah çizgiler) ve normal dağılıma göre dağıtılmış test sonuçları.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-21.png)
 
 ![Ortalama ödülün zamana göre dağılımı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-22.png)
 
-Şekil \ref{fig:sekil22} ise $$\epsilon$$ değeri 0.01 ve 0.1 olan iki açgözlü olmayan, $$\epsilon$$ değeri 0 olan ve açgözlü yaklaşım sergileyen 3 ajan bulunmaktadır. Bu ajanların 10-kollu Test ortamındaki ortalama performansları görülmektedir. Grafikte açgözlü yaklaşımın performansının ilk adımlarda arttığı, sonrasında ise keşfetmeyi durdurup ilk seferde eline geçen en verimli ödülü aldığı kolu çekmeye başladığını ve  ödül artışının durduğu görülmektedir. Üstteki şekilde ulaşılan maksimum ortalama ödülün 1.5 civarında olduğunu, bunun sonucunda da açgözlü ajanın en yüksek performansın %65'i kadar verim alabildiği gözlemlenmektedir. Diğer 2 ajan ise açgözlü olmayan yaklaşımla keşfetmeyi devam ettirmişlerdir. Bu grafikte uzun süreçli eğitimlerde açgözlü olmayan yaklaşım, açgözlü yaklaşıma göre daha verimli olmuştur. $$\epsilon$$'u 0.1 olan yaklaşım, 0.01 olan yaklaşıma göre 1000adımlık süreçte daha iyi bir ödül kazanmış gibi görünse de performans oranında $$\epsilon$$'u 0.01 olan ajan daha uzun sürecek bir koşuda daha iyi performans gösterecektir. 
+Şekil 2.2'de ise $$\epsilon$$ değeri 0.01 ve 0.1 olan iki açgözlü olmayan, $$\epsilon$$ değeri 0 olan ve açgözlü yaklaşım sergileyen 3 ajan bulunmaktadır. Bu ajanların 10-kollu Test ortamındaki ortalama performansları görülmektedir. Grafikte açgözlü yaklaşımın performansının ilk adımlarda arttığı, sonrasında ise keşfetmeyi durdurup ilk seferde eline geçen en verimli ödülü aldığı kolu çekmeye başladığını ve  ödül artışının durduğu görülmektedir. Üstteki şekilde ulaşılan maksimum ortalama ödülün 1.5 civarında olduğunu, bunun sonucunda da açgözlü ajanın en yüksek performansın %65'i kadar verim alabildiği gözlemlenmektedir. Diğer 2 ajan ise açgözlü olmayan yaklaşımla keşfetmeyi devam ettirmişlerdir. Bu grafikte uzun süreçli eğitimlerde açgözlü olmayan yaklaşım, açgözlü yaklaşıma göre daha verimli olmuştur. $$\epsilon$$'u 0.1 olan yaklaşım, 0.01 olan yaklaşıma göre 1000adımlık süreçte daha iyi bir ödül kazanmış gibi görünse de performans oranında $$\epsilon$$'u 0.01 olan ajan daha uzun sürecek bir koşuda daha iyi performans gösterecektir. 
 
 Eğer 1 olan varyans değeri daha da düşürülerek 0.1 yapılırsa, açgözlü olan davranışın en uygun ödülü bulup sonrasında keşfetmeyi durdurması sebebiyle, epsilonlu yaklaşıma göre daha verimli olacağı söylenebilir. Fakat varyans arttırılırsa, örneğin 10 yapılırsa, ödül dağılımı genişleyeceğinden her zaman keşfetmek diğer yaklaşıma göre daha verimli olacaktır. Bu sebeple bir çok problemde olduğu gibi Pekiştirmeli Öğrenme’nin en önemli meselelerinden biri olan keşfetme ve sömürü arasındaki dengeyi iyi sağlamak her zaman çok önemlidir.
 
@@ -88,7 +88,7 @@ Bu eşitliği inceleyecek olursak, $$1-\alpha$$ değeri, 0 ile 1 arasında bir d
 
 Başlangıç eylem değerleri, keşfi teşvik etmenin basit bir yolu olarak kullanılabilmektedir. Eylem değerlerini başlatırken sıfırlamak yerine, 10 kollu test ortamında yapıldığı gibi, ilk değerlerin 5 olarak ayarlanması, $$q_*(a)$$ *eylem-değer* ortalamalarının 0 olduğu bir problem için çok iyimser bir yaklaşım olmaktadır. Ancak bu iyimserlik, yeni eylemleri keşfetmeye teşvik etmektedir. Başlangıçta hangi eylemler seçilirse seçilsin; ödül, başlangıç tahminlerinden daha az olacaktır; ajan eylemler sonucu alınan ödüller ile “hayal kırıklığı”na uğrayınca, diğer eylemleri deneyecektir. Bu sayede, tüm eylem çeşitleri değer tahminlerine yakınsamadan önce birkaç kez denenir. Her zaman açgözlü eylemler seçilmiş olsa dahi sistem neredeyse adil bir keşif yapacaktır.
 
-Şekil \ref{fig:sekil23}'de, tüm $$a$$ değerleri için $$Q_1(a) = +5$$ kullanılarak, açgözlü bir yöntemin 10 kollu haydut test ortamı üzerindeki performansı gösterilmektedir. Karşılaştırma için, ayrıca $$Q_1(a) = 0$$ ile $$\epsilon-$$açgözlü bir yöntem gösterilmiştir.
+Şekil 2.3'te, tüm $$a$$ değerleri için $$Q_1(a) = +5$$ kullanılarak, açgözlü bir yöntemin 10 kollu haydut test ortamı üzerindeki performansı gösterilmektedir. Karşılaştırma için, ayrıca $$Q_1(a) = 0$$ ile $$\epsilon-$$açgözlü bir yöntem gösterilmiştir.
 
 ![İyimser başlangıç eylem değeri tahminlerinin 10 kollu test ortamı üzerindeki etkisi. Her iki yöntemde de sabit adım boyutu parametresi kullanılmıştır, $$\alpha=0.1$$.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-23.png)
 
@@ -107,7 +107,7 @@ Eylem-değerleri için her zaman bir belirsizlik olabileceği için keşif zorun
 
 $$N_t(a), a$$ eylemlerinin $$t$$ zamanından önce seçilme sayısını gösterirken $$c$$, arama derecesini kontrol eder. Eğer $$N_t(a) = 0$$ olursa, $$a$$ bir maksimizasyon eylemi olarak kabul edilir ve a eylemi bir sonraki eylem olarak seçilir. Üst-Güven-Sınırı eylem seçim fikri, karekökün, eylemin değer tahminindeki belirsizlik veya varyansının bir ölçütüdür. En üst sınıra çıkarılan $$a$$’nın olası gerçek değeri, c'nin güven düzeyini belirlemesiyle kontrol edilir. $$a$$ eylemi her seçildiğinde belirsizlik büyük ihtimalle azaltılır; paydada görünen $$N_t(a)$$ artışı belirsizliği azaltır. Diğer taraftan, her seferinde bir eylem seçildiğinde $$t$$ artar, ancak $$N_t(a)$$ paydada göründüğü için, belirsizlik tahmini artar. Doğal logaritmanın kullanılması, artışların zaman içinde küçüldüğü, ancak sınırsız olduğu anlamına gelir; Tüm eylemler sonunda seçilecektir, ancak daha düşük değer tahminlerine sahip veya daha önce seçilmiş olan eylemler zamanla azalan sıklıklarla seçilecektir.
 
-10-kollu test setindeki Üst-Güven-Sınırı eylem seçiminin ortalama performansı Şekil \ref{fig:sekil24}'te gösterilmiştir.
+10-kollu test setindeki Üst-Güven-Sınırı eylem seçiminin ortalama performansı Şekil 2.4'te gösterilmiştir.
 
 ![Üst-Güven-Sınırı eylem seçiminin ortalama performansı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-24.png)
 
@@ -128,7 +128,7 @@ $$\pi_t(a)$$ değeri, $$a$$ eylemi için $$t$$ zamanındaki seçim olasılığı
 
 $$\alpha > 0$$ adım değeri için, $$\overline{R_t}\in\mathbb{R}$$  şu ana kadar ve şu an dahil olmak üzere tüm ödüllerin ortalaması olacak şekilde hesaplanmaktadır. Eğer şu anki ödül, ortalamadan yüksekse; $$A_t$$ eyleminin gelecekte seçilme olasılığı artmış olacak; düşük ise tam tersi olacaktır.
 
-Ödüllerin normal dağılımına ortalama olarak $$+4$$ eklenmiş hali, *bazlı* (with baseline) ve *bazsız* (without baseline) olarak Şekil \ref{fig:sekil25}'te gösterilmiştir. *Baz* (baseline) olmadan performans zayıflamaktadır.
+Ödüllerin normal dağılımına ortalama olarak $$+4$$ eklenmiş hali, *bazlı* (with baseline) ve *bazsız* (without baseline) olarak Şekil 2.5'te gösterilmiştir. *Baz* (baseline) olmadan performans zayıflamaktadır.
 
 ![Ödüllerin dağılımı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-25.png)
 
