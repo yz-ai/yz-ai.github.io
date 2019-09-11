@@ -17,7 +17,7 @@ Pekiştirmeli öğrenmeyi diğer öğrenme modellerinden ayıran en önemli öze
 
 *Çok kollu haydutlar* (multi armed bandits), pekiştirmeli öğrenmenin ayırt edici özelliğidir. Olasılık teorisindeki bir problemi ifade eden düşünce deneyi olarak tanımlanırlar. Diğer bir ifade ile bir karşılaştırma ya da sıralamada en yüksek kazancın nasıl elde edilebileceğine dair soru işaretlerine cevap olabilen bir yöntemdir.
 
-### 2.1. $$k$$-kollu Haydut Problemi
+## $$k$$-kollu Haydut Problemi
 
 Bu problem, pekiştirmeli öğrenmede en basit problem olarak bilinmektedir. Yapılan her seçimden, belli bir ortalamaya sahip rastgele bir dağılımdan seçilen eyleme (çekilen kol) bağlı olarak ödül alınmaktadır. Hedef ise toplam ödülü maksimum seviyeye ulaştırarak makineden en iyi kazancı sağlamaktır. Bu durum $$k$$-kollu haydut probleminin temelidir. Farklı eylemlerin farklı ödüller vermesiyle ödüller en yüksek seviyeye ulaştırılır.
 
@@ -25,13 +25,13 @@ Bu problem, pekiştirmeli öğrenmede en basit problem olarak bilinmektedir. Yap
 
 $$k$$-kollu haydut probleminde, her eylemin ortalama bir ödülü bulunmaktadır. Eylem kararı verilmeye devam edildikçe alınan ödül yükseltilmeye çalışılır. Bu da ancak keşif ve sömürü yöntemlerini dengeleyerek elde edilebilir. Bu yazının devamında birkaç basit $$k$$-kollu haydut dengeleme yönteminden bahsedilecektir.
 
-### 2.2. Eylem-Değer Yöntemleri
+## Eylem-Değer Yöntemleri
 
 En basit eylem seçme yöntemi, oluşturduğumuz eylem değer fonksiyonunda bize en yüksek ödülü sağlayacak olan eylemi her defasında seçmektir. Seçilen değer, giriş yazımızda bahsedilen *açgözlü* (greedy) eylemlerden biridir. Eğer birden fazla *açgözlü* eylem varsa aralarında rastgele seçim yapılacaktır. 
 
 *Açgözlü politika* (greedy policy), var olan bilgiyi günceller ve iyileştirir ancak ortam hakkında daha fazla bilgi almamızı ve ortamı keşfetmemizi engeller. Ortamı keşfetmek ve daha iyi bir ödül mekanizmasını açığa çıkarmak için açgözlü politikaya olasılıksal bir değer (epsilon) ekleyip, o olasılık gerçekleştiğinde rastgele hareket etmek hedeflenmektedir. Bu politikaya $$\epsilon$$-açgözlü *politika* (epsilon greedy policy) denilmektedir. Eğer teorik olarak oyun bu şekilde sonsuz kere oynanırsa, bu algoritma oyunun her dinamiğini keşfetmeyi sağlayacak ve en uygun eylem değer fonksiyonuna ulaşılabilecektir.
 
-### 2.3. 10-kollu Test Ortamı
+## 10-kollu Test Ortamı
 
 Şu ana kadar anlatılanların grafik üzerinde incelenmesi için öncelikle 10-kollu test ortamının tanımını yapmak gerekir. 10-kollu Test Ortamı, $$k$$ değişkeninin 10 olduğu bir haydut probleminin 2000 kez test edilmesinden oluşan bir test ortamıdır. Eylem seçimleri 1'den 10'a kadar ilerleyen kol numaralarıdır.
 
@@ -45,7 +45,7 @@ En basit eylem seçme yöntemi, oluşturduğumuz eylem değer fonksiyonunda bize
 
 Eğer 1 olan varyans değeri daha da düşürülerek 0.1 yapılırsa, açgözlü olan davranışın en uygun ödülü bulup sonrasında keşfetmeyi durdurması sebebiyle, epsilonlu yaklaşıma göre daha verimli olacağı söylenebilir. Fakat varyans arttırılırsa, örneğin 10 yapılırsa, ödül dağılımı genişleyeceğinden her zaman keşfetmek diğer yaklaşıma göre daha verimli olacaktır. Bu sebeple bir çok problemde olduğu gibi Pekiştirmeli Öğrenme’nin en önemli meselelerinden biri olan keşfetme ve sömürü arasındaki dengeyi iyi sağlamak her zaman çok önemlidir.
 
-### 2.4. Kademeli Uygulama
+## Kademeli Uygulama
 
 Şimdiye kadar anlatılan *eylem-değer* yöntemleri, tüm gözlemlenen ödülleri hafızada tutarak ve her adımda ortalamalarını alarak tahminde bulunmaktadır. Bu bölümde ortalamaların özellikle; bellek, zaman ve işlem yükü açısından verimli bir şekilde nasıl hesaplanabileceği aranmaktadır. Herhangi bir eylemin seçilmesinden sonra alınan ödülü $$R_i$$ ve $$n-1$$’nci eylem için eylem değer tahminini $$Q_n$$ göstermektedir.
 
@@ -55,20 +55,20 @@ Eğer 1 olan varyans değeri daha da düşürülerek 0.1 yapılırsa, açgözlü
 
 Tüm ödüllerin kaydını tutmak bellek ve hesaplama gereksinimlerinin zamanla çok büyümesine sebebiyet verecektir. Her ek ödül, saklamak için ek bellek ve pay içindeki toplamı hesaplamak için ek hesaplamaya ihtiyaç duymaktadır. Tahmin edilebileceği gibi bu büyük işlem yüküne yol açmaktadır. Kademeli bir hesaplama yaparak bu problemin üstesinden gelmek mümkündür.
 
-\begin{align}
+\begin{equation}
     Q_{n + 1} &= \displaystyle\frac{1}{n}\sum\limits_{i=1}^n R_i \\
     &= \dfrac{1}{n}\bigg(R_n + \sum_{i=1}^{n-1}R_i\bigg) \\
     &= \dfrac{1}{n}\bigg(R_n + (n-1)\frac{1}{n-1}\sum_{i=1}^{n-1}R_i\bigg) \\
     &= \dfrac{1}{n}\bigg(R_n + (n-1)Q_n\bigg) \\
     &= \dfrac{1}{n}\bigg(R_n + nQ_n - Q_n\bigg) \\
     &= Q_n + \dfrac{1}{n}\bigg[R_n - Q_n\bigg] \\
-\end{align}
+\end{equation}
 
 Bu şekilde bellek ve hesaplama yükünü azaltmış oluruz. Bu güncelleştirilmiş formül sıklıkla kullanılan bir formüldür. $$[R_n - Q_n]$$ değeri $$Q_{n+1}$$ tahmininde hataya tekabül eder. Bu formülasyon kullanılarak, hedefe doğru bir adım atılır ve hata azaltılır.
 
 Kademeli yöntemde kullanılan *adım-boyu* (step size) parametresinin her adımda değiştiğini unutmamak gerekir. Genellikle adım boyu parametresi bu yöntem için $$1/n$$ olarak kullanır. Bu bölüm ve diğer bölümlerde, *adım-boyu* parametresi $$\alpha = 1/n$$ veya daha genel olarak $$\alpha_t(a)=1/n$$ şeklinde gösterilecektir.
 
-### 2.5. Durağan Olmayan Problem Takibi
+## Durağan Olmayan Problem Takibi
 
 Bu noktaya kadar *durağan haydut* (stationary bandit) problemlerinin ortalama hesabına dayanan yöntemlerden bahsedildi. Bu yöntemler, ödül (reward) olasılıklarının zamanla değişmediği durağan problemler için uygundur. Ancak pekiştirmeli öğrenme problem uzayında *durağan olmayan* (non-stationary) problemlerle oldukça sık karşılaşılır. Bu tip problemlere yaklaşırken, yakın zaman eylemleri ile elde edilen ödül değerlerinin, daha geçmişteki eylemler ile elde edilen ödül değerlerine göre daha fazla ağırlıklandırılması, izlenilen başlıca yöntemler arasındadır. Mevzubahis problemin çözümü için, bir önceki bölümden farklı olarak $$\alpha$$ değeri sabitlenebilir.
 
@@ -84,7 +84,7 @@ Buna istinaden; $$Q_{n + 1}$$ tahmininde, geçmişteki tüm eylemlerin ödüller
 
 Bu eşitliği inceleyecek olursak, $$1-\alpha$$ değeri, 0 ile 1 arasında bir değer olacağından geçmişe gittikçe eşitliğe katılan geçmiş eylem ödüllerinin ağırlığı üstel bir şekilde azalmaktadır. Buna *üstel yakın zaman ağırlıklı ortalama* (exponential recency-weighted average) denilmektedir.
 
-### 2.6. İyimser Başlangıç Değerleri
+## İyimser Başlangıç Değerleri
 
 Başlangıç eylem değerleri, keşfi teşvik etmenin basit bir yolu olarak kullanılabilmektedir. Eylem değerlerini başlatırken sıfırlamak yerine, 10 kollu test ortamında yapıldığı gibi, ilk değerlerin 5 olarak ayarlanması, $$q_*(a)$$ *eylem-değer* ortalamalarının 0 olduğu bir problem için çok iyimser bir yaklaşım olmaktadır. Ancak bu iyimserlik, yeni eylemleri keşfetmeye teşvik etmektedir. Başlangıçta hangi eylemler seçilirse seçilsin; ödül, başlangıç tahminlerinden daha az olacaktır; ajan eylemler sonucu alınan ödüller ile “hayal kırıklığı”na uğrayınca, diğer eylemleri deneyecektir. Bu sayede, tüm eylem çeşitleri değer tahminlerine yakınsamadan önce birkaç kez denenir. Her zaman açgözlü eylemler seçilmiş olsa dahi sistem neredeyse adil bir keşif yapacaktır.
 
@@ -94,7 +94,7 @@ Başlangıç eylem değerleri, keşfi teşvik etmenin basit bir yolu olarak kull
 
 Başlangıçta, iyimser yöntemin keşfe ağırlık vermesi sebebiyle kötü bir performans sergilediği gözlemlenebilir. Fakat sonrasında, her eylem'i denemiş olması sebebiyle daha iyi sonuç vermektedir. Bu yöntem, durağan problemler üzerinde oldukça etkili olabilecek basit bir yaklaşım olmaktadır. Aksi durumda, yani durağan olmayan problemler için uygun olmamaktadır, zira bu yöntem yeni doğan bir ihtiyaca cevap olmaktan uzaktır. Genel olarak, başlangıç koşullarına odaklanmakta olan herhangi bir yöntemin durağan olmayan problemlere yardımcı olması olası değildir.
 
-### 2.7. Üst-Güven-Sınırı Eylem Seçimi
+## Üst-Güven-Sınırı Eylem Seçimi
 
 Eylem-değerleri için her zaman bir belirsizlik olabileceği için keşif zorunlu olmaktadır. Açgözlü eylemler ilk bakışta avantajlı gibi görünse de, yapılacak bir keşifle daha iyi sonuçlar elde etmek mümkün olmaktadır. Bunu sağlamanın başka bir yolu da bu bölümde ele alınacaktır.
 
@@ -111,7 +111,7 @@ $$N_t(a), a$$ eylemlerinin $$t$$ zamanından önce seçilme sayısını gösteri
 
 ![Üst-Güven-Sınırı eylem seçiminin ortalama performansı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-24.png)
 
-### 2.8. Gradyen Haydut Algoritmaları
+## Gradyen Haydut Algoritmaları
 
 Bölümde şu ana kadar, eylem değerleri hesaplandı ve eylemleri seçmek için hesaplanan bu değerler kullanıldı. Bu bölüm ise eylemlerin seçimi için $$H_t(a)$$ ile gösterilen sayısal bir tercih değeri kullanmaktadır. Bu tercih ne kadar yüksekse, o eylemin seçilme olasılığı o denli artmaktadır. Bu değerin hesabı ise, soft-max dağılımı ile yapılmaktadır.
 
@@ -132,7 +132,7 @@ $$\alpha > 0$$ adım değeri için, $$\overline{R_t}\in\mathbb{R}$$  şu ana kad
 
 ![Ödüllerin dağılımı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-25.png)
 
-### 2.9. İlişkili Arama (Bağlamsal Haydutlar)
+## İlişkili Arama (Bağlamsal Haydutlar)
 
 Şimdiye kadar hep ilişkisiz (non-associative) görevlerden bahsedildi. Yani seçimlerin bir bağlama göre yapılmadığı problemlerdi. Problem durağan ise tek bir en iyi eylem vardı ve o eylem bulunmaya çalışılıyordu veya durağan değilse en iyi eylemin zamanla değişimini takip etmek gerekiyordu. Lâkin, gerçek Pekiştirmeli Öğrenme problemlerinde, o anki durumu gözlemleyip kararlar ona göre verilmektedir. Bu yüzden, gerçeğine daha yakın bir problem olarak kararların o anki duruma göre verildiği ilişkili arama veya bağlamsal haydutlar görülecektir.
 
