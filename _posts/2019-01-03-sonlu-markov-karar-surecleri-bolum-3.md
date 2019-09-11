@@ -15,7 +15,7 @@ next-page-url: /blog/pekistirmeli-ogrenme/dinamik-programlama-bolum-4
 
 Markov Karar Süreçleri (Markov Decision Processes), eylemlerin sadece bir sonraki ödülü değil gelecek durumları da etkilediği sıralı karar verme sürecinin klasik bir formülasyonudur. Aynı zamanda Pekiştirmeli Öğrenme probleminin matematiksel olarak idealleştirilmiş biçimleridir. Bu bölümde, dönüş değerleri, değer fonksiyonları ve Bellman denklemlerinden bahsedilecektir.
 
-### 3.1. Ajan-Çevre Arayüzü (The Agent-Environment Interface)
+## Ajan-Çevre Arayüzü (The Agent-Environment Interface)
 
 Pekiştirmeli Öğrenme’de veya Markov Karar Süreçleri’nde öğrenen ve karar veren elemana ajan denir. Bu ajanın etrafını kapsayan ve onun etkileşimde bulunabileceği her şeyi içinde barındıran alana ise çevre denir. Çevre, ajanın eylemlerine karşılık gelen ödülü verir ve ajan için eylem alması gereken yeni bir durum oluşturur. Bu şekilde, çevre ve ajan ikisi sürekli etkileşim halinde kalır. Bu etkileşime aşağıdaki izlek örnek verilebilir;
 
@@ -29,15 +29,14 @@ Sonlu Markov Karar Süreçleri’nde; durum, eylem ve ödül setlerinin tamamı 
 
 Sonuç olarak, Markov Karar Süreçleri'ne amaca yönelik, etkileşimle öğrenme probleminin kayda değer bir soyutlaştırması denilebilir. Markov karar süreçlerini özetler nitelikteki 3 işaret; ajanın aldığı kararları temsil eden eylemler, bu kararların alınma sebebini işaret eden durumlar ve ajanın hedefini gösteren ödül olmaktadır.
 
-% Buraya örnek gelebilir.
 
-### 3.2. Hedefler ve Ödüller (Goals and Rewards)
+## Hedefler ve Ödüller (Goals and Rewards)
 
 Pekiştirmeli Öğrenme’de amaç, çevreden ajana daha fazla ödül aktarımının sağlanmasıdır. Ajanın, seçtiği eylemler sonucunda elde ettiği ödül, genellikle sayısal bir değer olmaktadır. Ajanın nihai hedefi ise uzun vadede toplam ödül miktarını en yüksek seviyeye ulaştırmaktır. Bu sistem ödül hipotezi (reward hypothesis) olarak isimlendirilmektedir.
 
 Bir hedefi formüle etmek için ödül sinyalinin kullanılması, Pekiştirmeli Öğrenme''nin ayırt edici özelliklerinden biridir. Ödül vesilesiyle, ajana yaptırılmak istenenin nasıl elde edilebileceğine dair önceden bilgi verilmesine gerek yoktur. Örneğin satranç oynayan bir oyuncu, kazanmak için ödüllendirilmelidir fakat rakibin taşlarını alarak yahut yönetim merkezinin kontrolünü ele geçirerek ödülü kazanmamalıdır. Eğer bu türden alt alanlara ulaşımı ödüllendirilirse, ajan gerçek hedefe ulaşmadan bunları başarmanın yolunu arayacaktır. Bu durum, rakibin taşlarını oyunu kaybetme pahasına almayı tercih etmeye yol açabilecektir. Ödül, nihai hedefe ulaştıracak sinyali temsil etmektedir.
 
-### 3.3. Getiriler ve Bölümler (Returns and Episodes)
+## Getiriler ve Bölümler (Returns and Episodes)
 
 Ajanın eylemlerinden aldığı ödüller, $${R_t, R_{t+1}, R_{t+2},}\cdots,$$ olarak belirtilirse, aşağıdaki formülasyon ajanın kümülatif ödül değerini göstermektedir. Dolayısıyla ajanın hedefi $${G_t}$$ değerini en yüksek seviyeye getirmeye çalışmaktır. Bu değere beklenen getiri (expected return) denilmektedir.
 
@@ -57,7 +56,7 @@ Ajan-Çevre etkileşimi, bölüm (episode) olarak isimlendirilen bir çok durum 
 
 İndirim oranı, gelecekteki ödüllerin karar anındaki önemini belirlemektedir. 0 olması durumunda ajan o andaki en yüksek ödülü alabilecek eylemi seçme eğilimindedir, parametre $$1'$$e yaklaştığı ölçüde ise gelecekteki ödülleri çok daha güçlü bir şekilde hesaba katarak eylemlerini seçmektedir. Bu oranın belirlenmesi ajanın öğrenimini doğrudan etkilemektedir.
 
-### 3.4. Bölümlü ve Bölümsüz Problemler için Birleşik Notasyon (Unified Notation for Episodic and Continuing Tasks)
+## Bölümlü ve Bölümsüz Problemler için Birleşik Notasyon (Unified Notation for Episodic and Continuing Tasks)
 
 Önceki kısımlarda, ajan-çevre etkileşimin bölümlü ve bölümsüz olmak üzere iki türe ayrılmıştır. Bölümlü problemler matematiksel olarak daha kolay olmaktadır zira her bir eylem sadece bölüm sırasında alınan sınırlı sayıda ödülü etkilemektedir. Problemleri çözerken iki tür problem yapısı da düşünülmeli ve her iki durum eş zamanlı olarak sembolize edilebilecek bir gösterim tanımlanmalıdır.
 
@@ -74,7 +73,7 @@ Hem bölümlü hem de bölümsüz problemleri kapsayan tek bir gösterim elde et
   G_t \doteq \sum_{k = t + 1}^T \gamma^{k - t - 1} R_k
 \end{equation}
   
-### 3.5. Politikalar ve Değer Fonksiyonları (Policies and Value Functions)
+## Politikalar ve Değer Fonksiyonları (Policies and Value Functions)
 Hemen hemen tüm Pekiştirmeli Öğrenme algoritmaları, durumların ajan için ne kadar önemli olduğu gösteren değer fonksiyonlarının tahminlemesini kullanmaktadır. Bu değer fonksiyonları ise politika denilen, hangi eylemlerin seçileceğini olasılıksal olarak belirleyen sistemler vasıtası ile hesaplanmaktadır. Politika $$\pi$$ kullanılarak gösterilirse, $$s$$ durumlarına karşılık gelen, $$a$$ eylem dağılımlarının gösterimi $$\pi(a|s)$$ olmaktadır.
 
 Politikaya bağlı olarak atılan adımlar ile elde edilen durumlar ve ödüllerden durum değer ve eylem değer fonksiyonları tahminlenmektedir. Durum değer fonksiyonu Denklem \ref{eq:33}'de eylem değer fonksiyonu ise Denklem \ref{eq:34}'de gösterilmiştir.
@@ -82,9 +81,13 @@ Politikaya bağlı olarak atılan adımlar ile elde edilen durumlar ve ödüller
 \begin{equation}
     v_\pi(s) \dot{=} \mathbb{E}_\pi[G_t|S_t=s] = \mathbb{E}_\pi\bigg[\sum_{k=0}^\infty \gamma^k R_{t+k+1} \bigg| S_t=s\bigg]
 \end{equation}
+
 \begin{equation}
-    q_\pi(s|a) \dot{=} \mathbb{E}_\pi[G_t|S_t=s,A_t=a] = \mathbb{E}_\pi\bigg[\sum_{k=0}^\infty \gamma^k R_{t+k+1} \bigg| S_t=s,A_t=a\bigg]
+q_\pi(s|a)\dot{=}\mathbb{E}_\pi[G_t|S_t=s,A_t=a] = \mathbb{E}_\pi\bigg[\sum_{k=0}^\infty \gamma^k R_{t+k+1} \bigg| S_t=s,A_t=a\bigg]
 \end{equation}
+
+
+
 
 Durum-değer fonksiyonu $$s$$ durumunda iken $$\pi$$ politikası takip edildiğinde $$s$$ durumunun beklenen değerini verir. Eylem-değer fonksiyonu ise $$s$$ durumunda iken $$a$$ eylemini $$\pi$$ politikasını kullanarak seçtiğinde, durum-eylem ikilisinin beklenen değerini verir. İdealde, $$\pi$$ politikasına bağlı olarak erişilen herhangi bir durumdaki getiri, durum değer fonksiyonunun tahminine, seçilen eylem sonrasında hesaplanan getiri de, eylem değer fonksiyonunun tahminlemesine eşit olmalıdır.
 
@@ -95,22 +98,22 @@ Herhangi bir politika $$\pi$$ ve durum $$s$$ için, denklem \ref{eq:34} $$s$$ du
     \displaystyle\sum_a \pi(a|s)\displaystyle\sum_{s',r}p(s',r|s,a)\bigg[r+\gamma v_\pi(s')\bigg]
 \end{equation}
 
-### 3.7. En Uygun Politikalar ve En Uygun Değer Fonksiyonları (Optimal Policies and Optimal Value Functions)
+## En Uygun Politikalar ve En Uygun Değer Fonksiyonları (Optimal Policies and Optimal Value Functions)
 
 Her zaman diğer politikalardan üstün (kümülatif getirisi yüksek) veya eşit bir politika vardır ve bu politika, optimal yani en uygun politika olarak isimlendirilir. En uygun politika, en uygun durum-değer ve eylem-değer fonksiyonlarına sahip olmaktadır. En uygun politika $$\pi_*$$ ile, en uygun durum-değer fonksiyonu $$v_*$$ ile, en uygun eylem-değer fonksiyonu ise $$q_*$$ ile gösterilmektedir. $$v_*$$ durum-değer fonksiyonu için beklenen getiri hesabı Denklem \ref{eq:35}'te verilmiştir. Bu denklem Bellman uygunluk eşitliğidir. Aynı eşitlik $$q_*$$ eylem-değer fonksiyonu için de geçerlidir ve Denklem \ref{eq:36}'da verilmiştir.
 
 \begin{equation}
     \label{eq:35}
-    v_*(s) = \max_a\displaystyle\sum_{s',r}p(s',r|s,a)[r+\gamma v_*(s')]
+     v_*(s) = \max_a\displaystyle\sum_{s',r}p(s',r|s,a)[r+\gamma v_*(s')]
 \end{equation}
 
 \begin{equation}
     \label{eq:36}
-    q_*(s,a) = \max_a\displaystyle\sum_{s',r}p(s',r|s,a)[r+\gamma\max_a' q_*(s',a')]
+     $$q_*(s,a)$$  = \max_a\displaystyle \sum_{s',r}p(s',r|s,a)[r+\gamma\max_a' q_*(s',a')]
 \end{equation}
 
 
-### 3.7. En Uygunluk Ölçütü ve Yaklaşım (Optimality and Approximation)
+## En Uygunluk Ölçütü ve Yaklaşım (Optimality and Approximation)
 
 Pekiştirmeli Öğrenme'de ilgilenilen problemlerde en uygun politika ve değer fonksiyonlarına ulaşmak çok büyük hesaplama maliyetleri oluşturabilir. Ortam dinamiklerinin doğru ve tam bir modeline sahip olunsa dahi, Bellman uygunluk eşitliği en uygun politikayı hesaplamak genellikle mümkün olmaz. Hesaplama maliyeti ile beraber, hafıza da önemli bir kısıtlama olmaktadır. Değer fonksiyonlarının, politikaların ve modellerin yaklaşımlarını oluşturmak çok büyük miktarlarda bellek gerektirebilmektedir.
 
