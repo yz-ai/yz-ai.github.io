@@ -14,7 +14,7 @@ prev-page-url: /blog/pekistirmeli-ogrenme/temporal-difference-zamansal-fark-ogre
 
 $$N$$-adım yöntemi, ara algoritmaların iyi performans gösterdiği şekilde, Monte Carlo yöntemleri ile tek-adım zamansal fark yöntemlerini birleştirdiği için pekiştirmeli öğrenmede önemli bir yaklaşımdır. $$N$$-adımlı yöntemler, bir ucunda Monte Carlo metotları ve diğerinde tek$$-$$adım zamansal fark yöntemleri olan bir spektruma sahiptir. $$N$$-adım yöntemleri, öğrenimi zaman adımı (time step) zorunluluğundan kurtardığı için avantajlı olmaktadır. 
 
-### 7.1. $$\mathbf{n}$$-Adım TD Tahmini
+## n-Adım TD Tahmini
 
 Monte Carlo yöntemleri, her durum için, bölümün sonuna kadar gözlemlenen ödüllerin sırasına göre bir güncelleme gerçekleştirir. Diğer yandan, tek adım zamansal fark metodunun güncellemesi, geri kalan ödüller için bir vekil olarak bir sonraki aşamada durumun değerinden paketleme yapılmasına dayanmaktadır. Bir çeşit ara metot, daha sonra, bir ara meblağa dayanan bir güncelleme gerçekleştirecektir: adım adım artar. Örneğin, iki aşamalı bir güncelleme ilk iki ödül ve iki adım sonra durumun tahmini değerine dayanacaktır. Aşağıdaki şekilde soldaki tek adım zamansal fark güncellemesi ve sağdaki sonlandırmaya kadar Monte Carlo güncellemesi ile $$v_{\pi}$$ için $$n-$$adım güncellemelerinin spektrumunun yedek diyagramlarını göstermektedir.
 
@@ -56,19 +56,19 @@ Diğer tüm durumların değerleri değişmeden kalır: $$V_{t+n}(s)=V_{t+n-1}(s
 
 $$n-$$adımlı dönüşünün önemli bir özelliği, beklentilerinin, $$V_{t+n-1}$$'nin daha kötü bir anlamda, daha iyi bir $$v_{\pi}$$ tahmini olması garantilidir. Yani, beklenen $$n-$$adımlı dönüşün en kötü hatası, $$V_{t+n-1}$$ altındaki en kötü hatanın $$\gamma^{n}$$ değerinden küçük veya ona eşit olacak şekilde garanti edilir:
 
-\begin{align}
+$$
     \max_{s}\mid E_{\pi} \left[G_{t:t+n} \mid S_{t} =s \right] -v _{t}(s) \mid \leq \gamma ^{n} \max_{s} \mid V_{t+n-1}(s)-v_{\pi}(s)\mid , 
-\end{align}
+$$
 
 tüm $$n\geq 1$$ için. Buna $$n$$ adımlı geri dönüşlerin hata azaltma özelliği diyoruz. Hata indirgeme özelliğinden ötürü, tüm $$n-$$adım zamansal fark metotlarının uygun teknik koşullar altında doğru tahminlere yakınlaştığı resmen gösterilebilir. $$n-$$adım zamansal fark metotları, tek adım zamansal fark metotları ve kesin üyeler olarak MC metodu ile bir sağlam/güvenilir metotlar ailesi oluşturur.
 
-### 7.2. $$n-$$step Sarsa
+## $$n-$$step Sarsa
 
 $$n-$$adım metodu, sadece tahmin problemleri için değil kontrol işlemleri içinde kullanılmaktadır. Bu kısımda, $$n-$$adım metotlarının, doğru bir şekilde TD yöntemine yönelik bir kontrol yöntemi üretme yolunda Sarsa ile nasıl birleştirilebileceğini anlatılmakta. Sarsa’nın $$n-$$adım versiyonunu  “$$n-$$step Sarsa” olarak adlandırıp bir önceki bölümde sunduğumuz orijinal versiyonuna bundan sonra “tek adım Sarsa” veya “Sarsa(0)” olarak adlandırırız.
 
 ![Durum-eylem değerleri için n-adım yöntemlerinin spektrum yedek diyagramları. Bunlar, Sarsa(0)’ın bir adım güncellemesinden Monte Carlo yönteminin sonlandırma güncellemesine kadar uzanmaktadır. Bunlar arasında, n-adım güncellemeleri, gerçek ödüllerin n-adımlarına ve sonraki tüm durum-eylem çiftinin tahmini değerine bağlı olarak güncellenir. En sağdaki  Beklenen n-adım Sarsa için diyagram.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-72.png)
 
-Ana fikir, yalnızca durumları, eylemler (durum-eylem çiftleri) için değiştirmek ve daha sonra bir $$\epsilon -$$açgözlü  davranış politikası kullanmaktır. $$n-$$adım Sarsa için yedek diyagram (Şekil \ref{fig:sekil72}'de gösterilen) $$n-$$adımlı TD metodunda (Şekil \ref{fig:sekil71}) olduğu gibi Sarsa hepsinin bir durum yerine bir eylemle başlayıp bitmesi dışında, alternatif durumlar ve eylemler dizileridir.
+Ana fikir, yalnızca durumları, eylemler (durum-eylem çiftleri) için değiştirmek ve daha sonra bir $$\epsilon -$$açgözlü  davranış politikası kullanmaktır. $$n-$$adım Sarsa için yedek diyagram (Şekil 7.2)'de gösterilen) $$n-$$adımlı TD metodunda (Şekil 7.1) olduğu gibi Sarsa hepsinin bir durum yerine bir eylemle başlayıp bitmesi dışında, alternatif durumlar ve eylemler dizileridir.
 
 Tahmini işlem değerleri açısından $$n-$$adım dönüşleri (güncelleme hedefleri) yeniden tanımlarız:
 
@@ -95,21 +95,22 @@ Sarsa'nın $$n-$$adımlı dönüşünün, yeni bir zamansal fark hatası ile tam
 
 Beklenen Sarsa'nın (Expected Sarsa) $$n-$$adım için yedek diyagramı, Şekil 7.3'te en sağda gösterilmiştir. $$N-$$adım Sarsa'da olduğu gibi, lineer bir dizi örnek eylem ve durumdan oluşur, ancak son unsuru, her zaman olduğu gibi, $$\pi$$ altındaki olasılıklar ile ağırlıklandırılmış tüm eylem olasılıkları üzerinde bir daldır. Bu algoritma, $$n-$$step Sarsa (yukarıda) ile aynı denklemle tanımlanabilir.
 
-\begin{equation}
+$$
     \label{eq:77}
     G_{t:t+n}\doteq R_{t+1} +...+\gamma^{n-1}R_{t+n}+ \gamma^{n}\overline{V}_{t+n-1}(S_{t+n}),             t+n<T
-\end{equation}
+$$
 
 $$\overline{V}_{t}(s)$$ 'nin, hedef davranış politikasının altında, $$t$$ zamanında tahmin edilen eylem değerlerini kullanarak, durumun beklenen yaklaşık değeri olduğu durumlar:
   
-\begin{equation}
-    %\label{eq:78} 
-\overline{V}_{t}(s)\doteq \sum_{a}\pi (a|s) Q_{t}(s,a), tüm s \in S için
-\end{equation}
+$$
+\label{eq:78} 
+\overline{V}_{t}(s)\doteq \sum_{a}\pi (a|s) Q_{t}(s,a), 
+$$ tüm  $$s$$ $$\in S$$ için
+
 
 Beklenen yaklaşık değerler, bu kitabın geri kalanında birçok işlem değeri yönteminin geliştirilmesinde kullanılır. $$s$$ uç ise, beklenen tahmini değer $$0$$ olarak tanımlanır.
 
-### 7.3. $$n-$$step Politika dışı (Off-Policy) Öğrenme
+## $$n-$$step Politika dışı (Off-Policy) Öğrenme
 
 Hatırlayacak olursak politika dışı öğrenme, bir davranış politikası için değer fonksiyonu $$\pi$$’yi, başka bir politika takip ederken $$b$$’yi öğrenmekte. Genellikle $$\pi,$$ mevcut eylem-değer-fonksiyon tahmini için aç gözlü yaklaşım ve $$b$$ ise $$\epsilon$$-açgözlü daha açıklayıcı bir keşif politikasıdır. Verileri $$b$$'den kullanabilmek için, iki politika arasındaki farkı dikkate alarak, alınan eylemleri alma olasılığını kullanmak zorundayız (bkz. Bölüm 5.5). $$n-$$adım metotlarda, geri dönüşler $$n$$ adımın üzerine inşa edilir, bu yüzden sadece $$n$$ eylemlerinin nispi olasılığı ile ilgileniyoruz.
 
@@ -137,7 +138,7 @@ Buradaki örnekleme oranının öneminin, n-adım zamansal farkdan (7.9) bir ad�
 
 Beklenen $$n-$$adım Sarsa’nın davranış politikasız versiyonu, $$n-$$adım Sarsa ile aynı güncellemeyi kullanacaktır, fakat formül (7.11) ‘de görüldüğü gibi denklem $$\rho_{t+1:t+n-1}$$ yerine $$\rho_{t+1:t+n}$$  kullanır. Beklenen Sarsa'da mümkün olan tüm eylemler son durumda dikkate alınır.
 
-### 7.4. Kontrol Değişkenine göre Karar Verme Metodu (*Per-decision Methods with Control Variates)
+## Kontrol Değişkenine göre Karar Verme Metodu (*Per-decision Methods with Control Variates)
 
 Önceki bölümde sunulan çok adımlı politika dışı yöntemler, basit ve kavramsal olarak açıktır, ancak muhtemelen en verimli olan değildir. Daha sofistike bir yaklaşım, Bölüm 5.9'da verildiği gibi, karar başına verilen önem örneklemesi fikirlerini kullanacaktır. Bu yaklaşımı anlamak için, öncelikle, tüm dönüşler gibi sıradan $$n-$$adım dönüşün (7.1) öz yinelemeli olarak yazılabilir. $$h$$ horizonunda $$n$$ adımda biten, $$n-$$adım dönüşü şöyle yazılabilir,
 
@@ -159,17 +160,18 @@ Kontrol varyasyonunun beklenen güncellemeyi değiştirmediğine dikkat edin; Ö
 Eylem değerleri için, $$n$$ adım dönüşün davranış politikasız tanımı biraz farklıdır çünkü ilk eylem, örneklemenin öneminde bir rol oynamaz. İlk eylem, öğrenilen şeydir; Hedef politika kapsamında olası veya imkansız olup olmadığı önemli değil, onu takip eden ödül ve duruma tam birim ağırlık verilmesi gerekiyor. Önem örneklemesi sadece onu takip eden eylemler için geçerli olacaktır.
 
 Öncelikle, eylem değerleri için $$h$$ horizonda şeklinde biten $$n-$$adım dönüş beklentisi, beklenti formunun (7, 7), (7.12) 'de olduğu gibi özyinelemeli olarak yazılabilir. Kontrol değişkenleri ile bir politika dışı biçimi,
-\begin{equation}
+
+$$
 \label{eq:7.14}
-    G_{t:h} \dot{=} R_{t+1} + \gamma\bigg(\rho_{t+1}G_{t+1:h} + \overline{V_{h-1}}(S_{t+1}) - \rho_{t+1}Q_{h-1}(S_{t+1}, A_{t+1})\bigg) \\
-    =R_{t+1} + \gamma\rho{t+1}\bigg(G_{t+1:h} - Q_{h-1}(S_{t+1},A_{t+1})+\gamma\overline{V_{h-1}}(S_{t+1})\bigg),t < h \leq T
-\end{equation}
+G_{t:h} \dot{=} R_{t+1} + \gamma\bigg(\rho_{t+1}G_{t+1:h} + \overline{V_{h-1}}(S_{t+1}) - \rho_{t+1}Q_{h-1}(S_{t+1}, A_{t+1})\bigg) \\
+=R_{t+1} + \gamma\rho{t+1}\bigg(G_{t+1:h} - Q_{h-1}(S_{t+1},A_{t+1})+\gamma\overline{V_{h-1}}(S_{t+1})\bigg),t < h \leq T
+$$
 
 Eğer $$h < T$$ ise, o zaman $$G_{h:h}\doteq Q_{h-1}(S_{h},A_{h})$$ ile  özyineleme biter, buna karşılık eğer $$h \ge T$$ ise, $$G_{T-1:h}\doteq R_{T}$$ ile öz yineleme biter. Ortaya çıkan tahmin algoritması (sonrasında formül 7.5, ile birleştirilirse)  Beklenen Sarsa'ya benzer.
 
 Politika dışı eğitimin davranış politikalı eğitimden daha yavaş olması muhtemelen kaçınılmazdır; sonuçta, veriler öğrenilen şeyle daha az ilgilidir. Ancak, muhtemelen bu yöntemlerin geliştirilebileceği de doğrudur. Kontrol değişkenleri, varyansı azaltmanın bir yoludur.
 
-### 7.5. Önem Örneklemesiz Politika Dışı Öğrenme: n-adım Ağaç Yedekleme Algoritması (Off-policy Learning Without Importance Sampling: The n-step Tree Backup Algorithm)
+## Önem Örneklemesiz Politika Dışı Öğrenme: n-adım Ağaç Yedekleme Algoritması (Off-policy Learning Without Importance Sampling: The n-step Tree Backup Algorithm)
 
 Bu bölümde, Önem örneklemesi olmadan politika dışı öğrenme için ağaç yedekleme algoritması (tree-backup algorithm) olarak adlandırılan $$n-$$adım yöntemi üzerine durulmuştur.
 
@@ -192,7 +194,7 @@ Ağaç yedekleme $$n$$-adımlı dönüş ise aşağıdaki gibidir.
    G_{t:t+n} \dot{=} R_{t+1} + \gamma \displaystyle \sum_{a \neq A_{t+1}} \pi(a \mid S_{t+1})Q_{t+n-1}(S_{t+1},a) + \gamma \pi (A_{t+1} \mid S_{t+1}) G_{t+1:t+n}  
 \end{equation}
 
-### 7.6. *Birleştirici Algoritma: $$n$$-adım $$Q$$ ($$\sigma$$) Unifying Algorithm: $$n$$-step $$Q$$($$\sigma$$)
+## *Birleştirici Algoritma: $$n$$-adım $$Q$$ ($$\sigma$$) Unifying Algorithm: $$n$$-step $$Q$$($$\sigma$$)
 
 Bu bölüme kadar  $$n$$-adım Sarsa, $$n$$-adım Ağaç Yedeklemesi( Tree backup) ve $$n$$-adım Beklenen Sarsa algoritmalarını gördük.
 
@@ -211,7 +213,7 @@ Olanakları daha da artırmak için örnekleme ve beklenti arasında sürekli bi
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_9982B0D94EB468EEF47C3C689B77F46144E9A1DD65B594637BB385A12D6BFFDF_1538139573962_image.png)
 
-### 7.7. Özet
+## Özet
 
 Bu bölümde, bir önceki bölümün bir adım TD yöntemleri ile daha önceki bölümün Monte Carlo yöntemleri arasında yer alan bir dizi zamansal fark öğrenme yöntemi geliştirdik. Orta miktarda bir paketleme gerektiren yöntemler önemlidir, çünkü bunlar genellikle aşırıdan daha iyi performans gösterecektir.
 
