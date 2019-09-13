@@ -63,7 +63,11 @@ Ajan-Çevre etkileşimi, bölüm (episode) olarak isimlendirilen bir çok durum 
 
 Bölümlü problemler konusunda kesin bir yargıya varmak için ek bir gösterim gerekmektedir. Bu gösterim uzun tek bir zaman adımları (time steps) dizisinden ziyade her biri sonlu zaman adımı dizilerinden oluşan bir bölüm dizisi olarak düşünülmektedir. Sıfırdan başlayarak her bir bölümün zaman adımları numaralandırılmaktadır. $$S_t$$, $$t$$ zamandaki durumu temsil etmektedir. Fakat $$S_{t,i}$$,  $$i$$'ci bölümün $$t$$ zamanındaki durumu göstermektedir. Bölümlü problemlere bakıldığında, farklı bölümler arasında ayrım yapılmamaktadır. Bazen, özel bir bölüm ya da tüm bölümler için gösterimin doğru olduğu düşünülmekte olup $$S_{t,i}$$ kullanılması gerekirken $$S_t$$ kullanılmaktadır.
 
+
 Hem bölümlü hem de bölümsüz problemleri kapsayan tek bir gösterim elde etmek için başka bir yönteme ihtiyaç duyulmaktadır. Denklem 3.1 getiriyi sınırlı sayıda terim üzerinden, Denklem 3.2 ise sonsuz sayıda terim üzerinden hesaplamaktadır. Bu iki denklem, yalnızca kendisine geçiş yapan ve sıfır ödül üreten özel bir durduran durumun kullanılması ile birleştirilebilir. Bu gösterimin diyagramı Şekil 3.2'de görülebilir.
+=======
+Hem bölümlü hem de bölümsüz problemleri kapsayan tek bir gösterim elde etmek için başka bir yönteme ihtiyaç duyulmaktadır. Denklem \ref{eq:31} getiriyi sınırlı sayıda terim üzerinden, Denklem \ref{eq:32} ise sonsuz sayıda terim üzerinden hesaplamaktadır. Bu iki denklem, yalnızca kendisine geçiş yapan ve sıfır ödül üreten özel bir durduran durumun kullanılması ile birleştirilebilir. Bu gösterimin diyagramı Şekil 3.2'de görülebilir.
+
 
 ![Genel gösterim]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-32.png)
 
