@@ -8,6 +8,7 @@ categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 prev-page-url: /blog/pekistirmeli-ogrenme/n-adim-paketleme-bolum-7
+next-page-url: /blog/pekistirmeli-ogrenme/on-policy-prediction-bolum-9
 ---
 
 ## Planlama ve Tabular Metotlar ile Öğrenme
