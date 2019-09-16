@@ -2,7 +2,7 @@
 layout: post
 author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 10: On-policy Control With Approximation"
-description: "N-adım yöntemi, ara algoritmaların iyi performans gösterdiği şekilde, Monte Carlo yöntemleri ile tek-adım zamansal fark yöntemlerini birleştirdiği için pekiştirmeli öğrenmede önemli bir yaklaşımdır."
+description: " "
 date:   2019-01-10
 categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]
