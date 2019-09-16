@@ -18,9 +18,7 @@ Bu bölümde ortam modeli gerektiren ve model olmadan kullanılabilen pekiştirm
 ## Modeller ve Planlama
 
 Model, bir durum ve eylem verildiğinde, bir sonraki durum ve ödülün tahminini yapar. Eğer model stokastik ise durum ve ödül tahmini, birden çok sayıda ve olasılıklarıyla beraber hesaplanır. Dağıtım modeli (distribution model), bir probleme ait tüm olasılıkları ve açıklamaları üretir. Örnek olarak, $$p(s',r|s,a)$$ bir dağıtım modelidir. Örnek model (sample model) ise, olasılıklara göre örneklenmiş yalnızca bir ihtimal için üretilir. Dağıtım modeli, örnek modele göre daha güçlü fakat her olasılığı ziyaret etme gereksinimi olduğu için hesaplaması çok daha zor ve zaman açısından dezavantajlıdır.Modelleri, deneyimi taklit etmek veya simülasyon etmek için kullanabiliriz. Bir başlangıç durumu ve eylemi aldığımızda örnek bir model, olası bir geçişi üretirken, bir dağıtım modeli, ortaya çıkma olasılıklarıyla birlikte tüm olası geçişleri de üretir. 
-
 $$Model \rightarrow Taklit deneyimi \rightarrow Değerler \rightarrow Politika $$
-
 Hem öğrenme hem de planlama yöntemlerinde en önemli durum, güncelleme işlemlerini yedekleyerek değer fonksiyonlarının tahmin edilmesidir. Planlamalı bir model, öğrenme yöntemi olarak çevre tarafından yaratılan gerçek deneyimi kullanmaktadır. Öğrenme yöntemleri deneyim gerektirir ve çoğu durumda gerçek deneyimin yanı sıra yapay olarak üretilmiş deneyimle de uygulanabilir.Aşağıdaki örneğimiz, $$Q$$-öğrenmeye ve rastgele örneklere dayanan bir planlama yöntemidir. Tabular $$Q$$-öğrenme de gerçek ortama en uygun politika, her durum ve aksiyon çiftinde sonsuz sayıda seçilebilir ve $$\alpha$$ ise uygun olarak azalmalıdır.
 
 
