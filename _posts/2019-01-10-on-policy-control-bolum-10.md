@@ -8,7 +8,7 @@ categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 
-prev-page-url: /blog/pekistirmeli-ogrenme/on_policy_prediction-bolum-9
+prev-page-url: /blog/pekistirmeli-ogrenme/on-policy-prediction-bolum-9
 next-page-url: /blog/pekistirmeli-ogrenme/off-policy-methods-with-bolum-11
 ---
 
