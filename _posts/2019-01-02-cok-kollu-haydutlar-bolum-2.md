@@ -55,14 +55,18 @@ Eğer 1 olan varyans değeri daha da düşürülerek 0.1 yapılırsa, açgözlü
 
 Tüm ödüllerin kaydını tutmak bellek ve hesaplama gereksinimlerinin zamanla çok büyümesine sebebiyet verecektir. Her ek ödül, saklamak için ek bellek ve pay içindeki toplamı hesaplamak için ek hesaplamaya ihtiyaç duymaktadır. Tahmin edilebileceği gibi bu büyük işlem yüküne yol açmaktadır. Kademeli bir hesaplama yaparak bu problemin üstesinden gelmek mümkündür.
 
-\begin{equation}
-    Q_{n + 1} &= \displaystyle\frac{1}{n}\sum\limits_{i=1}^n R_i \\
-    &= \dfrac{1}{n}\bigg(R_n + \sum_{i=1}^{n-1}R_i\bigg) \\
-    &= \dfrac{1}{n}\bigg(R_n + (n-1)\frac{1}{n-1}\sum_{i=1}^{n-1}R_i\bigg) \\
-    &= \dfrac{1}{n}\bigg(R_n + (n-1)Q_n\bigg) \\
-    &= \dfrac{1}{n}\bigg(R_n + nQ_n - Q_n\bigg) \\
-    &= Q_n + \dfrac{1}{n}\bigg[R_n - Q_n\bigg] \\
-\end{equation}
+$$Q_{n + 1}= \displaystyle\frac{1}{n}\sum\limits_{i=1}^n R_i$$
+
+$$= \dfrac{1}{n}\bigg(R_n + \sum_{i=1}^{n-1}R_i\bigg)$$
+
+$$= \dfrac{1}{n}\bigg(R_n + (n-1)\frac{1}{n-1}\sum_{i=1}^{n-1}R_i\bigg)$$
+
+$$= \dfrac{1}{n}\bigg(R_n + (n-1)Q_n\bigg)$$
+
+$$= \dfrac{1}{n}\bigg(R_n + nQ_n - Q_n\bigg)$$
+
+$$= Q_n + \dfrac{1}{n}\bigg[R_n - Q_n\bigg]$$
+
 
 Bu şekilde bellek ve hesaplama yükünü azaltmış oluruz. Bu güncelleştirilmiş formül sıklıkla kullanılan bir formüldür. $$[R_n - Q_n]$$ değeri $$Q_{n+1}$$ tahmininde hataya tekabül eder. Bu formülasyon kullanılarak, hedefe doğru bir adım atılır ve hata azaltılır.
 
@@ -98,18 +102,15 @@ Başlangıçta, iyimser yöntemin keşfe ağırlık vermesi sebebiyle kötü bir
 
 Eylem-değerleri için her zaman bir belirsizlik olabileceği için keşif zorunlu olmaktadır. Açgözlü eylemler ilk bakışta avantajlı gibi görünse de, yapılacak bir keşifle daha iyi sonuçlar elde etmek mümkün olmaktadır. Bunu sağlamanın başka bir yolu da bu bölümde ele alınacaktır.
 
-Üst-Güven-Sınırı (upper confidence bound) eylem seçimleri aşağıdaki formül \ref{eq:for1}'e göre yapılır.
+Üst-Güven-Sınırı (upper confidence bound) eylem seçimleri aşağıdaki formül $$2.1$$'e göre yapılır.
 
-\begin{equation}
-    A_t \dot{=} argmax\bigg[Q_t(a) + c\sqrt{\frac{\displaystyle lnt}{ N_t(a)}}\bigg]
-    \label{eq:for1}
-\end{equation}
+$$A_t\dot{=}argmax\bigg[Q_t(a) + c\sqrt{\frac{\displaystyle lnt}{ N_t(a)}}\bigg]\quad$$ $$(2.1)$$
 
 $$N_t(a), a$$ eylemlerinin $$t$$ zamanından önce seçilme sayısını gösterirken $$c$$, arama derecesini kontrol eder. Eğer $$N_t(a) = 0$$ olursa, $$a$$ bir maksimizasyon eylemi olarak kabul edilir ve a eylemi bir sonraki eylem olarak seçilir. Üst-Güven-Sınırı eylem seçim fikri, karekökün, eylemin değer tahminindeki belirsizlik veya varyansının bir ölçütüdür. En üst sınıra çıkarılan $$a$$’nın olası gerçek değeri, c'nin güven düzeyini belirlemesiyle kontrol edilir. $$a$$ eylemi her seçildiğinde belirsizlik büyük ihtimalle azaltılır; paydada görünen $$N_t(a)$$ artışı belirsizliği azaltır. Diğer taraftan, her seferinde bir eylem seçildiğinde $$t$$ artar, ancak $$N_t(a)$$ paydada göründüğü için, belirsizlik tahmini artar. Doğal logaritmanın kullanılması, artışların zaman içinde küçüldüğü, ancak sınırsız olduğu anlamına gelir; Tüm eylemler sonunda seçilecektir, ancak daha düşük değer tahminlerine sahip veya daha önce seçilmiş olan eylemler zamanla azalan sıklıklarla seçilecektir.
 
 10-kollu test setindeki Üst-Güven-Sınırı eylem seçiminin ortalama performansı Şekil 2.4'te gösterilmiştir.
 
-![Üst-Güven-Sınırı eylem seçiminin ortalama performansı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-24.png)
+![Üst-Güven-Sınırı eylem seçiminin ortalama performansı.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-24.png) $$\quad2.4$$
 
 ## Gradyen Haydut Algoritmaları
 
@@ -121,10 +122,12 @@ Bölümde şu ana kadar, eylem değerleri hesaplandı ve eylemleri seçmek için
 
 $$\pi_t(a)$$ değeri, $$a$$ eylemi için $$t$$ zamanındaki seçim olasılığını vermektedir. $$A_t$$ eylemi ve $$R_t$$ ödülü için;
 
-\begin{align}
-  H_{t+1}(A_t) = H_t(A_t) + \alpha(R_t - \overline{R_t})(1 - \pi_t(A_t)), \quad a = A_t \\
-  H_{t+1}(a) = H_t(a) + \alpha(R_t - \overline{R_t})\pi_t(a), \qquad \qquad \quad a \neq A_t
-\end{align}
+$$
+ H_{t+1}(A_t) = H_t(A_t) + \alpha(R_t - \overline{R_t})(1 - \pi_t(A_t)),a = A_t$$
+
+$$  
+ H_{t+1}(a) = H_t(a) + \alpha(R_t - \overline{R_t})\pi_t(a), \qquad \qquad \quad a \neq A_t
+$$
 
 $$\alpha > 0$$ adım değeri için, $$\overline{R_t}\in\mathbb{R}$$  şu ana kadar ve şu an dahil olmak üzere tüm ödüllerin ortalaması olacak şekilde hesaplanmaktadır. Eğer şu anki ödül, ortalamadan yüksekse; $$A_t$$ eyleminin gelecekte seçilme olasılığı artmış olacak; düşük ise tam tersi olacaktır.
 
@@ -136,6 +139,6 @@ $$\alpha > 0$$ adım değeri için, $$\overline{R_t}\in\mathbb{R}$$  şu ana kad
 
 Şimdiye kadar hep ilişkisiz (non-associative) görevlerden bahsedildi. Yani seçimlerin bir bağlama göre yapılmadığı problemlerdi. Problem durağan ise tek bir en iyi eylem vardı ve o eylem bulunmaya çalışılıyordu veya durağan değilse en iyi eylemin zamanla değişimini takip etmek gerekiyordu. Lâkin, gerçek Pekiştirmeli Öğrenme problemlerinde, o anki durumu gözlemleyip kararlar ona göre verilmektedir. Bu yüzden, gerçeğine daha yakın bir problem olarak kararların o anki duruma göre verildiği ilişkili arama veya bağlamsal haydutlar görülecektir.
 
-Bağlamsal haydutları örneklemek için yine slot makinelerini verilebilir fakat bu sefer çok kollu tek bir makine yerine yine renk yahut isim gibi bağlamı verebilecek ayırt edici özelliklere sahip çok kollu birden fazla makine düşünülmelidir. Birden fazla makine olması sebebiyle her bir makinede en iyi ödül veren kol farklı olacaktır ve eylem kararı verilirken hangi makine için seçim yapıldığı bilinirse çok daha başarılı bir sonuç elde edilecektir. Bu örnekte durum (state) veya bağlam, seçim yapılacak makinede kullanılmaktadır.
+Bağlamsal haydutları örneklemek için yine slot makinelerini verilebilir fakat bu sefer çok kollu tek bir makine yerine yine renk yahut isim gibi bağlamı verebilecek ayırt edici özelliklere sahip çok kollu birden fazla makine düşünülmelidir. Birden fazla makine olması sebebiyle her bir makinede en iyi ödül veren kol farklı olacaktır ve eylem kararı verilirken hangi makine için seçim yapıldığı bilinirse çok daha başarılı bir sonuç elde edilecektir. Bu örnekte durum (*state*) veya bağlam, seçim yapılacak makinede kullanılmaktadır.
 
 Genel olarak haydut probleminin gerçek pekiştirmeli öğrenme problemlerinden eksik olan kısmı ise seçilen eylemin bir sonraki durumu etkilememesidir. Gerçek pekiştirmeli öğrenme probleminde ajan o anki durumu gözleyip buna göre bir eylem almaktadır. Bu eylemlerin sonucunda bu eyleme karşılık gelen ödülü alıp yeni bir duruma geçmektedir. Mevzubahis haydutlarda ise bir sonraki durum, alınan eylemlerden bağımsızdır. Yukarıdaki örnekte, seçilen kol aynı zamanda bundan sonra hangi makinenin geleceğini etkileseydi bu gerçeğe çok daha yakın bir problem olurdu. Aşağıdaki tabloya bakılırsa üç problemin farkları daha anlaşılır olacaktır.
