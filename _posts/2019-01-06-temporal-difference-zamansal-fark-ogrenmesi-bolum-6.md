@@ -18,7 +18,7 @@ Pekiştirmeli öğrenmenin en temel yöntemlerinden biri olan zamansal fark öğ
 
 Her zaman olduğu gibi önce bu yöntemin tahmin kısmını (verilen politika için değer fonksiyonunu tahmin etmek), daha sonra ise kontrol (en iyi politikayı bulmak) kısmını inceleyeceğiz. Yukarıda ismi geçen üç yöntemin tahmin kısımları temel olarak benzerdir ve asıl farklılık bunların tahmin kısmına yaklaşımlarındadır. 
 
-### 6.1. Zamansal Fark Öğrenmesinde Öngörü Problemi
+## Zamansal Fark Öğrenmesinde Öngörü Problemi
 
 Monte Carlo yöntemlerinde olduğu gibi zamansal fark öğrenmesinde de öngörü probleminin çözümünde deneyimlerden yararlanılır. Basitçe anlatmak gerekirse ikisinde de politika takip edilir ve alınan sonuca göre tahminler güncellenir. Aralarındaki fark ise Monte Carlo yöntemlerinde tahmini güncellemek için bölüm sonunda elde edilen toplam ödülü $$(G)$$ beklemeniz gerekirken, zamansal fark öğrenmesinde sadece bir sonraki ödülü kullanarak tahmin güncellenir. Bu farkı daha iyi anlamak için bu yöntemlerin tahmin güncelleme kurallarına bakabilirsiniz.
 
@@ -34,7 +34,7 @@ Bu iki formül arasındaki fark yakınsama (convergence) için $$V(S_t)$$’nin 
 
   $$\displaystyle\sum\limits_{k=t}^{T-1}{\gamma^{k-t} \delta_k}$$
   
-### 6.2. Tahmin probleminde Zamansal Fark Öğrenmesinin Avantajları
+## Tahmin probleminde Zamansal Fark Öğrenmesinin Avantajları
 
 Zamansal fark öğrenmesi, Dinamik Programlama ve Monte Carlo yöntemlerinin bir çeşit kombinasyonudur demiştik bu yüzden avantajlarını yazarken onlarla karşılaştırabiliriz. Dinamik programlamaya karşı en büyük artısı açıkça görülebileceği gibi zamansal fark öğrenmesi yöntemlerinin ortamın modeline ihtiyaç duymamasıdır. 
 
@@ -46,7 +46,7 @@ Zamansal fark öğrenmesi yöntemlerinin, herhangi bir sabit politika için yete
 
 ![SEKİL-62]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-62.png)
 
-### 6.3. Zamansal Fark Öğrenmesinin En Uygunluğu (Optimality)
+## Zamansal Fark Öğrenmesinin En Uygunluğu (Optimality)
 
 Eldeki  deneyimin yani verinin kısıtlı olduğu durumlarda, en yaygın kullanılan yöntem bu verinin tekrar tekrar kullanıldığı artımlı öğrenmedir (incremental learning). Bu yöntemde tahmin güncellemeleri her adımda hesaplansa da, güncelleme bu güncellemelerin toplamı olarak tek seferde yapılır. Buna toptan güncelleme (batch updating) denir çünkü güncelleme bir deneyim yığınının (batch) tamamını deneyimledikten sonra yapır. 
 
@@ -63,7 +63,7 @@ Bu deneyimleri incelediğimizde, ilk bölümde A’dan başlanıp B’de sona ul
 
 Bu örnekten anlaşılacağı gibi Monte Carlo yöntemleri her zaman eldeki veri için hatayı en aza indirmeye çalışırken, zamansal fark öğrenmesinde ise en olası markov süreci için gerçek değer tahmin edilir. Zamansal fark öğrenmesinde tahmin edilen markov süreci doğruysa tahmin edilen değer kesin olarak doğrudur bu yüzden ona kesinlik denkliği (certainty equivalence) tahmini denir. Bu aynı zamanda, zamansal fark öğrenmesi yönteminin daha hızlı yakınsamasını sağlar. 
 
-### 6.4. Zamansal Fark Öğrenmesiyle Politikalı (On-policy) Kontrol
+## Zamansal Fark Öğrenmesiyle Politikalı (On-policy) Kontrol
 
 Şimdiye kadar zamansal fark öğrenmesinin tahmin problemini görmüştük. Şimdiyse kontrol problemine geçiyoruz. Normalde olduğu gibi genelleştirilmiş politika iterasyonunu(GPI) uyguluyoruz ama bu sefer değerlendirme veya tahmin için zamansal fark öğrenmesi yöntemlerini kullanıyoruz. 
 
@@ -76,7 +76,7 @@ Sarsa için tahmin güncelleme kuralı:
 
 Bu güncelleme her bir eylemden sonra yapılır ve eğer $$S_{t+1}$$ bir uç(terminal) durum ise $$Q(S_{t+1},A_{t+1})$$ sıfır alınır. Sarsa tahmin metoduna dayanan kontrol algoritmasında $$q_{\pi}$$ sürekli olarak tahmin edilir ve aynı zamanda politika $$\pi$$ daha açgözlü(greedy) olacak şekilde güncellenir.
 
-### 6.5. Q-Öğrenmesi: Zamansal Fark Öğrenmesiyle POlitikasız (Off-policy) Kontrol
+## Q-Öğrenmesi: Zamansal Fark Öğrenmesiyle POlitikasız (Off-policy) Kontrol
 
 Bu yöntemde Sarsa’dan farklı olarak öğrenilen eylem-değer fonksiyonu bir politikadan bağımsız olarak en iyi eylem-değer fonksiyonuna yakınsar. Politika hala etkindir ama onun tek amacı tüm durum-eylem çiftlerinin güncellenmeye devam ettiğinden olmaktır. 
 Q-Öğrenmesi için tahmin güncelleme kuralı:
@@ -87,7 +87,7 @@ Q-Öğrenmesi için tahmin güncelleme kuralı:
 
 Bu formülde görebileceğiniz gibi Sarsa metodunda politika tarafından seçilen $$A_{t+1}$$, Q-Öğrenmesi metodunda tabloya bakılarak en yüksek değeri veren eylem olarak seçilir. 
 
-### 6.6. Beklentili (Expected) Sarsa
+## Beklentili (Expected) Sarsa
 
 Beklentili Sarsa metodu Q-Öğrenmesine çok benzer ama bu yöntemde $$A_{t+1}$$ olarak en yüksek değeri veren eylemi almak yerine olası eylemlerin beklenen değeri(expected value) kullanılır. Beklenen değer, olası eylemlerin politikaya göre seçilme ihtimali ile onların Q tablosundaki değerlerinin çarpımının toplamı şeklinde hesaplanır. Bu değişikliği yaptığımızda tahmin güncelleme kuralı şu hale gelir:
 
@@ -105,7 +105,7 @@ Bu yöntem aynı zamanda Sarsa’ya da çok benzer çünkü ikisinde de $$A_{t+1
 
 Beklentili Sarsa metodu Sarsa’ya göre hesaplama açısından daha karmaşıktır ama $$A_{t+1}$$’in rastgele seçilmesinden kaynaklanan değişintiyi ortadan kaldırdığı için genelde daha iyi performans gösterir.
 
-### 6.7. En Büyütme (Maximization) Sorunu ve İkili Öğrenme (Double Learning)
+## En Büyütme (Maximization) Sorunu ve İkili Öğrenme (Double Learning)
 
 Şimdiye kadar bahsettiğimiz tüm yöntemler algoritmalarında ençoklama işlemine sahiptir. Örneğin, Q öğrenmesinde tahmin güncellemesinde $$A_{t+1}$$ olarak en yüksek değere sahip eylemi seçiyoruz. Sarsa ve diğer yöntemlerde de genelde $$\epsilon$$-açgözlü politikalar kullanıldığı için onlarda da ençoklama yapılır. Bu ençoklama işlemi, algoritmalarda en büyütme sorununa yol açar yani algoritmada iyimser bir yaklaşıma, pozitif önyargıya sebep olur. 
 
@@ -120,7 +120,7 @@ ikili öğrenme tekniği kullanılır. İkili öğrenme tekniğini yukarıdaki t
 
 Bölümlerin yarısında yukarıdaki $$Q_1$$ güncellenirken diğer yarısında formüldeki $$Q1$$ ve $$Q_2$$’ler yer değiştirir ve $$Q_2$$ güncellenir.
 
-### 6.8. Oyunlar, Durum Sonrası(?) (Afterstates) ve Diğer Özel Durumlar
+## Oyunlar, Durum Sonrası(?) (Afterstates) ve Diğer Özel Durumlar
 
 Kitaptaki algoritmaların genel yaklaşımı eylem değer fonksiyonu öğrenmek üzerine olsa da bazı durumlarda istisnalar olabiliyor. Örneğin birinci bölümdeki XOX oyununda durum değer fonksiyonuna daha çok benzeyen bir fonksiyon öğrenilmeye çalışılmıştı. Ama bu oyunda normalden farklı olarak hamle yapıldıktan sonraki pozisyonların değeri tahmin ediliyordu. Bu hamle sonrası pozisyonlara durum sonrası diyebiliriz. 
 
@@ -128,7 +128,7 @@ Durum sonrası değer fonksiyonu öğrenmek satranç, tic-tac-toe gibi ortamın 
 
 Tüm özel durumları tek tek anlatmak imkansız ama bu kitapta anlatılan temel prensipler çoğu problem için uygulanabilir. Örneğin durum sonrası değer fonksiyonu öğrenmek özel bir durum olsa da yine yukarıda anlatılan yöntemlerle benzer bir algoritmaya sahiptir.
 
-### 6.9. Özet
+## Özet
 
 Bu bölümde zamansal fark öğrenmesi yöntemlerini ve onların pekiştirmeli öğrenme problemlerinde nasıl kullanıldığını gördük. Zamansal fark öğrenmesinin Monte Carlo ve dinamik programlama yöntemleriyle ilişkisini ve onlara göre avantajlarını inceledik. 
 

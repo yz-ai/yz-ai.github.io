@@ -13,14 +13,14 @@ next-page-url: /blog/pekistirmeli-ogrenme/temporal-difference-zamansal-fark-ogre
 
 ## Monte Carlo Yöntemleri
 
-### 5.1. Monte Carlo Tahminlemesi
+## Monte Carlo Tahminlemesi
 
 Bir durumun değerinin, o durumdan başlayarak gelecekten beklenen indirgenmiş toplam ödül olduğunu hatırlarsak, söz konusu durumun değerini tahmin etmek için o durumdan sonra gözlemlenen ziyaretlerin dönüş değerlerinin ortalaması alınabilir. Daha fazla sayıda gözlem yapıldıkça ortalama değer beklenen değere yaklaşır. Bu görüş Monte Carlo metodunun temelidir.
 Bir $$s$$ durumunu baz alarak, s’nin her bir döngüdeki ziyaret edilme durumuna göre iki Monte Carlo metodu vardır: ilk ziyaret (first-visit) ve her ziyaret (every-visit) . İlk Ziyaret’de $$s$$’nin döngüdeki ilk ziyaretinden sonraki dönüşlerin ortalaması alınır. Her Ziyaret metodunda ise $$s$$’nin her ziyaretlerinden sonraki dönüşlerin ortalaması alınır.
 
 Dinamik Programlama(DP) metodu sonraki olayların olasılık dağılımlarına ihtiyacı olduğu için uygulaması kolay değildir. DP için öncelikle tüm ihtimallerin hesaplanması gerekmektedir. DP her bir bölümdeki tüm ihtimalleri hesaplıyorken Monte Carlo’da sadece ilgili durum ve durumlar için sonuç üretebilir. Monte Carlo’da her bir durumdaki tahminler birbirinden bağımsızdır, DP’de olduğu gibi diğer durumları baz almaz. Bu sayede herhangi bir durumun veya seçilen alt durumların tahminlemesi için tüm durumların hesaplanması gerekmez.
 
-### 5.2. Eylem Değerlerinin Monte Carlo Tahmini
+## Eylem Değerlerinin Monte Carlo Tahmini
 
 Herhangi bir model bulunmadığı zaman eylem değerlerini tahmin etmek, durum değerlerini tahmin etmekten daha işlevseldir. Çünkü ortada bir model olmadığında, durum değerleri hangi eylemin gerçekleştirileceği bilgisini tek başına sağlayamaz. Bu yüzden eylem değerleri için politika değerlendirmesi yapılması, politika önerisi yapılırken çok önemlidir.
 
@@ -32,7 +32,7 @@ Politika değerlendirmesinin birden fazla eylem değeri için çalışması içi
 
 Exploring starts kullanışlı olsa da özellikle öğrenmenin çevreyle direkt olarak etkileşime girilerek yapıldığı problemlerde güvenilir değildir. Bu tür problemlerde alternatif olarak, tüm durumlara ait eylemlerin herhangi birinin seçilme ihtimali sıfır olmayan stokastik politikalar seçilebilir.
 
-### 5.3. Monte Carlo Kontrolü
+## Monte Carlo Kontrolü
 
 Bu bölümde en uygun politikaya yaklaşım yapabilmek için Monte Carlo tahminlerinin kullanılabileceğini göreceğiz. Genelleştirilmiş Politika İterasyonu’nda (GPI) hem politika hem de değer fonksiyonu bulunur ve iyileştirilmeye çalışılır. Sonsuz bölüm deneyimleyeceğimizi ve keşif başlangıçlarının olabileceğini varsayarsak, Politika Değerlendirme ve İyileştirme yöntemleri kullanılarak, $$\pi_k$$ için doğru bir $$q_{\pi_k}$$ hesaplanabilecektir.
 
@@ -42,7 +42,7 @@ Keşif başlangıçları ve sonsuz bölüm varsayımlarını sırayla bir kenara
 
 Monte Carlo politika değerlendirmesinde bölüm bölüm ilerlemek olağandır. Rastgele bir durum ve eylemden başlayarak bir bölüm sonunda getiriler ile değer fonksiyonu güncellenir, değer fonksiyonu da kullanılarak politika iyileştirilir. Değer fonksiyonu ilgili politika için ideal değer fonksiyonuna yaklaşacağı için politikayı değiştirecek ve nihayetinde en uygun politika ve değer fonksiyonu bulunacaktır.
 
-### 5.4. Keşfi Başlatmadan Monte Carlo Kontrolü
+## Keşfi Başlatmadan Monte Carlo Kontrolü
 
 Bu bölümde yöntem olarak, açgözlü (ε-greedy) kullanılacaktır çünkü, genellikle tahmini maksimum eylem değerine sahip olanı seçtikleri içindir. Yani, tüm aç gözlü olmayan (non-greedy) eylemlere minimum seçim olasılığı verilir, $$\frac{\epsilon}{\mid A(s)\mid}$$, ve olasılığın $$(1-\epsilon)+\frac{\epsilon}{\mid A(s)\mid}$$ büyüklüğü, açgözlü (greedy) eyleme verilir. $$\epsilon$$-açgözlü politikalar, tüm durumlar ve eylemler için bazı $$\epsilon > 0$$ olan politikalar olarak tanımlanan  $$\pi(a\mid s) \geq \frac{\epsilon}{\mid A(s)\mid}$$, $$\epsilon-soft$$ politikaların örnekleridir. $$\epsilon-soft$$ politikaların içinden, $$\epsilon-greedy$$ politikalar açgözlülüğe en yakın olanlarıdır.
 
@@ -50,23 +50,23 @@ Monte Carlo kontrolünün genel fikri genelleştirilmiş politika iterasyonu (GP
 
 Aynı eylem ve durumun orijinali olarak ayarlanmış olan bir çevre düşünürsek eğer, durumlardan da aksiyon alınıyorsa, yeni çevre o zaman olasılığı $$1 - \epsilon$$ ile eski ortamdaki gibi davranır. Bu olasılıkta eylem, rastgele eşit olasılıklarla tekrar eder ve daha sonra yeni, rastgele eylemle eski ortamdaki gibi davranır. Bu yeni ortamda genel politikalarla yapabilecek en iyi durumdur, yani orijinal ortamda $$\epsilon-soft$$ politikalar ile yapılabilecek en iyi olanın aynısıdır. $$V$$ ve $$q$$ yeni ortam için en uygun değer fonksiyonlarını gösterir. Daha sonra bir politika $$\pi, \epsilon-soft$$ politikaları arasında ve sadece $$\tilde{v_*}(s)$$ = $${v_\pi}(s)$$ ise en uygun olandır. $$\tilde{v_*}(s)$$' in tanımından,
 
-\begin{align}
-    \tilde{v_*}(s) &= (1-\epsilon)\max_a \tilde{q_*}(s,a) + \dfrac{\epsilon}{|A(s)|} + \displaystyle\sum_a \tilde{q_*}(s,a) \\ 
-    &= (1-\epsilon)\max_a \displaystyle\sum_s p(s',r|s,a)[r+ \gamma\ \tilde{v_*}(s')] \\
-    &+ \dfrac{\epsilon}{|A(s)|} \displaystyle\sum_a \displaystyle\sum_{s',r} p(s',r|s,a)[r+ \gamma\ \tilde{v_*}(s')]
-\end{align}
+$$
+    \tilde{v_{*}}(s) = (1-\epsilon)\max_a \tilde{q_{*}}(s,a) + \dfrac{\epsilon}{|A(s)|} + \displaystyle\sum_a \tilde{q_{*}}(s,a) \\ 
+    = (1-\epsilon)\max_a \displaystyle\sum_s p(s',r|s,a)[r+ \gamma\ \tilde{v_{*}}(s')] \\
+    + \dfrac{\epsilon}{|A(s)|} \displaystyle\sum_a \displaystyle\sum_{s',r} p(s',r|s,a)[r+ \gamma\ \tilde{v_{*}}(s')]
+$$
 
 Yukarıdaki eşitlikten ve $$\epsilon-soft$$ politika $$\pi$$ artık geliştirildiğinde ise,
 
-\begin{align}
-    v_\pi(s) &= (1-\epsilon)\max\limits_a q_\pi(s,a)+ \dfrac{\epsilon}{|A(s)|} \sum_a q_\pi(s,a) \\
-    &= (1-\epsilon)\max_a \sum_{s',r} p(s',r|s,a)\big[r+ \gamma v_\pi(s')\big] + \dfrac{\epsilon}{|A(s)|} \\ 
-    &+ \sum_a \sum_{s',r} p(s',r|s,a)\big[r+ \gamma v_\pi(s')\big]
-\end{align}
+$$
+    v_\pi(s) = (1-\epsilon)\max\limits_a q_\pi(s,a)+ \dfrac{\epsilon}{|A(s)|} \sum_a q_\pi(s,a) \\
+    = (1-\epsilon)\max_a \sum_{s',r} p(s',r|s,a)\big[r+ \gamma v_\pi(s')\big] + \dfrac{\epsilon}{|A(s)|} \\ 
+    + \sum_a \sum_{s',r} p(s',r|s,a)\big[r+ \gamma v_\pi(s')\big]
+$$
 
 Bununla birlikte, bu denklem, $$v_\pi$$’ nin $$v_*$$ la yer değiştirmesi haricinde, bir öncekiyle aynıdır. Özet olarak, politika iterasyonunun $$\epsilon-soft$$ politikalar için çalıştığını gösterdik. $$\epsilon-soft$$ politikalar için açgözlü (greedy) politikanın doğal düşüncesini kullanarak, $$\epsilon-soft$$ politikalar arasında en iyi politikanın bulunmadığı durumlar dışında her adımda iyi olduğunu gördük. En önemlisi de başlangıçları keşfetme varsayımını ortadan kaldırmış olduk.
 
-### 5.5. Önem Örneklemesi ile Politika Dışı Tahmin (Off-Policy Prediction via Importance Sampling)
+## Önem Örneklemesi ile Politika Dışı Tahmin (Off-Policy Prediction via Importance Sampling)
 
 Tüm öğrenme kontrol yöntemleri bir ikilemle yüzleşir: Daha sonraki optimal davranışa göre eylem-değerlerini öğrenmeye çalışırlar, ancak optimal eylemleri bulmak için optimal olmayan davranışlarda bulunması gerekir. Keşif politikası bir uzlaşmadır ve hala araştırılan en uygun politika için eylem değerlerini öğrenir. Daha basit bir yaklaşım ise iki politika kullanmaktır; bunlar, öğrenilen ve en uygun politika haline gelen hedef politika ile keşif yapan ve davranış üretmek için kullanılan davranış politikasıdır. Bu durumda öğrenme, hedef politikada “kapalı” veriden (data “off”) olduğunu ve genel sürecin “politika-dışı öğrenme” (off-policy) olarak adlandırıldığını söyleyebiriz.
 
@@ -78,11 +78,11 @@ Hedef politika $$\pi$$ için değerleri tahmin etmek amacıyla davranış politi
  
 Politika-dışı yöntemler, bir örneklemden diğerine örnek verilen dağıtım altında, beklenen değerlerin tahmin edilmesi için genel bir teknik olan önem örneklemini (Importance Sampling) kullanmaktadır. Önem-örnekleme oranı (importance-sampling ratio), hedefin altında gerçekleşen yörüngelerin nispi olasılığına ve önem örnekleme oranı olarak adlandırılan davranış politikalarına göre, verimsiz geri kazanma yoluyla önem örneklemesi uygularız. Bir $$S_{t}$$ başlangıç durumu verildiğinde, sonraki durum-eylem yörüngesinin olasılığı, $$A_{t},S_{t+1},A_{t+1},...S_{T}$$, herhangi bir politika altında gerçekleşiyor $$\pi$$,
 
-\begin{align}
-   Pr\{& {A_t, S_{t+1},A_{t+1},...,S_T | S_t,A_{t:T-1}\sim \pi}\} \\
-    &= \pi (A_t|S_t)p(S_{t+1}|S_t,A_t)\pi(A_{t+1}|S_{t+1})...p(S_T|S_{T-1},A_{T-1}) \\
-    &= \prod_{k=t}^{T-1} \pi (A_k|S_k)p(S_{k+1}|S_k,A_k)
-\end{align}
+$$
+   Pr\{ {A_t, S_{t+1},A_{t+1},...,S_T | S_t,A_{t:T-1}\sim \pi}\} \\
+    = \pi (A_t|S_t)p(S_{t+1}|S_t,A_t)\pi(A_{t+1}|S_{t+1})...p(S_T|S_{T-1},A_{T-1}) \\
+    = \prod_{k=t}^{T-1} \pi (A_k|S_k)p(S_{k+1}|S_k,A_k)
+$$
 
 Burada $$p$$’nin durum-geçiş olasılığı fonksiyonu (state-transition probability function) olduğunu hatırlayalım . Bu nedenle, yörüngenin hedef ve davranış politikaları altındaki göreceli olasılığı (önem-örnekleme oranı),
 
@@ -159,11 +159,11 @@ Bu beklentiyi hesaplamak için, bölüm uzunluğuna ve bitiş durumuna göre alt
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_E28435D31BC4E448459179F454934BB542380B9967F8AA081209201BA02BA60A_1536668238277_file.png)
 
 
-### 5.6. Kademeli Uygulama (Incremental Implementation)
+## Kademeli Uygulama (Incremental Implementation)
 
 Monte Carlo tahmin yöntemleri, Bölüm 2’de (Bölüm 2.4) anlatılan tekniklerin uzantıları kullanılarak, bölümler bazında, aşamalı olarak kullanılabilir. Bölüm 2’de ortalama ödülleri alırken Monte Carlo  yöntemlerinde ise ortalama getiriyi elde ettik. Aynı metotları Monte Carlo yöntemleri içinde kullanabiliriz.
 
-Sıradan önem örneklemede sonuçlar, örnekleme oranı $$\rho_{t=T(t)-1}$$(\ref{eq:51}) ile ölçeklendirilir, daha sonra (5.5) 'de olduğu gibi basitçe ortalaması alınır.
+Sıradan önem örneklemede sonuçlar, örnekleme oranı $$\rho_{t=T(t)-1}$$ Denklem 5.1 ile ölçeklendirilir, daha sonra (5.5) 'de olduğu gibi basitçe ortalaması alınır.
 
 $$G_1, G_2, ..., G_{n-1}$$ halinde bir dizi  olduğunu varsayalım.  Hepsi aynı durumda ve her biri karşılık gelen rastgele bir ağırlık $$W_i,(W_i = \rho_{t=T(t)-1})$$  ile başlar. Tahmini hesaplamak ister,
 
@@ -178,7 +178,7 @@ $$C_{n+1} \dot{=} C_n + W_{n+1}$$
 $$C_0 \dot{=} 0$$
 
 
-### 5.7. Politika Dışı Monte Carlo Kontrol (Off-policy Monte Carlo Control)
+## Politika Dışı Monte Carlo Kontrol (Off-policy Monte Carlo Control)
 
 Monte Carlo Kontrol Yöntemleri, daha önce bahsedilen tekniklerden birisini kullanır. Hedef politikayı öğrenirken ve geliştirirken davranış politikasını takip ederler. Bu teknikler, davranış politikasının, hedef politika (kapsam) tarafından seçilebilecek tüm eylemleri seçme olasılığının sıfır olması olasılığını gerektirir. Tüm olasılıkları keşfetmek için davranış politikasının yumuşak olmasını (yani, tüm durumlarda sıfır olmayan olasılıkla tüm eylemleri seçmesini) isteriz. Aşağıdaki şemada MC Kontrol’ün tahmin için politika dışı öğrenimi gösterilmektedir.
 
