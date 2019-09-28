@@ -95,7 +95,6 @@ Bu eşitliği inceleyecek olursak, $$1-\alpha$$ değeri, 0 ile 1 arasında bir d
 ## İyimser Başlangıç Değerleri
 
 Başlangıç eylem değerleri, keşfi teşvik etmenin basit bir yolu olarak kullanılabilmektedir. Eylem değerlerini başlatırken sıfırlamak yerine, 10 kollu test ortamında yapıldığı gibi, ilk değerlerin 5 olarak ayarlanması, $$q_*(a)$$ *eylem-değer* ortalamalarının 0 olduğu bir problem için çok iyimser bir yaklaşım olmaktadır. Ancak bu iyimserlik, yeni eylemleri keşfetmeye teşvik etmektedir. Başlangıçta hangi eylemler seçilirse seçilsin; ödül, başlangıç tahminlerinden daha az olacaktır; ajan eylemler sonucu alınan ödüller ile “hayal kırıklığı”na uğrayınca, diğer eylemleri deneyecektir. Bu sayede, tüm eylem çeşitleri değer tahminlerine yakınsamadan önce birkaç kez denenir. Her zaman açgözlü eylemler seçilmiş olsa dahi sistem neredeyse adil bir keşif yapacaktır.
-
 Şekil $$2.3$$'te, tüm $$a$$ değerleri için $$Q_1(a) = +5$$ kullanılarak, açgözlü bir yöntemin 10 kollu haydut test ortamı üzerindeki performansı gösterilmektedir. Karşılaştırma için, ayrıca $$Q_1(a) = 0$$ ile $$\epsilon-$$açgözlü bir yöntem gösterilmiştir.
 
 
