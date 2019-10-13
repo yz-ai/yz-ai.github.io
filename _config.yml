@@ -11,6 +11,8 @@ header:
         text: YZAI
         image:
     nav:
+        - item_name: SÖZLÜK
+          item_url: '/yapay-ogrenme-sozlugu'      
         - item_name: KAYNAKLAR
           item_url: '/kaynaklar'
         - item_name: PROJELER
