@@ -12,7 +12,7 @@ header:
         image:
     nav:
         - item_name: SÖZLÜK
-          item_url: '/yapay-ogrenme-sozlugu'      
+          item_url: '/sozluk'      
         - item_name: KAYNAKLAR
           item_url: '/kaynaklar'
         - item_name: PROJELER
