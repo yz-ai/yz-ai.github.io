@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     $("#ddl-languages").change(function() {
         $('#result').html('');
-        $('#txt-search').html('');
+        $('#txt-search').val('');
 
     });
 });
