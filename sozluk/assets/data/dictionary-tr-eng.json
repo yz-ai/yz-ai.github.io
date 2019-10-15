@@ -26,8 +26,13 @@
     },
   
     {
-      "word"    : "classification",
-      "translation" : "sınıflandırma"
+      "word"    : "ikili sınıflandırma",
+      "translation" : "binary classification"
+    },
+  
+    {
+      "word"    : "sınıflandırma",
+      "translation" : "classification"
     },
   
     {
