@@ -48,6 +48,2836 @@
     {
       "word"    : "gradyan inişi (bayır inişi)",
       "translation" : "gradient descent"
+    },
+  
+    {
+      "word"    : "mutlak değer doğrulaması",
+      "translation" : "absolute value verification"
+    },
+  
+    {
+      "word"    : "doğruluk",
+      "translation" : "accuracy"
+    },
+  
+    {
+      "word"    : "aktifleştirme fonksiyonu",
+      "translation" : "activation function"
+    },
+  
+    {
+      "word"    : "aktif kısıt",
+      "translation" : "active constraint"
+    },
+  
+    {
+      "word"    : "uyarlanır doğrusal eleman",
+      "translation" : "adaptive linear element"
+    },
+  
+    {
+      "word"    : "çekişmeli eğitme",
+      "translation" : "adversarial training"
+    },
+  
+    {
+      "word"    : "ilgin",
+      "translation" : "affine"
+    },
+  
+    {
+      "word"    : "hemen hemen her yerde",
+      "translation" : "almost everywhere"
+    },
+  
+    {
+      "word"    : "hemen hemen kesin yakınsama",
+      "translation" : "almost sure convergence"
+    },
+  
+    {
+      "word"    : "gecmiş örnekleme",
+      "translation" : "ancestral sampling"
+    },
+  
+    {
+      "word"    : "tavlı önem örnekleme",
+      "translation" : "annealed importance sampling"
+    },
+  
+    {
+      "word"    : "yaklaşıklık",
+      "translation" : "approximation"
+    },
+  
+    {
+      "word"    : "yaklaşık Bayes hesaplama",
+      "translation" : "approximate bayesian compuation"
+    },
+  
+    {
+      "word"    : "yaklaşık çıkarım",
+      "translation" : "approximate inference"
+    },
+  
+    {
+      "word"    : "dizi",
+      "translation" : "array"
+    },
+  
+    {
+      "word"    : "yapay zeka",
+      "translation" : "artificial intelligence"
+    },
+  
+    {
+      "word"    : "yapay sinir ağı",
+      "translation" : "artificial neural network"
+    },
+  
+    {
+      "word"    : "asimptotik önyargısız",
+      "translation" : "asymptotically unbiased"
+    },
+  
+    {
+      "word"    : "asenkron",
+      "translation" : "asynchronize"
+    },
+  
+    {
+      "word"    : "nitelik",
+      "translation" : "attribute"
+    },
+  
+    {
+      "word"    : "ses",
+      "translation" : "audio"
+    },
+  
+    {
+      "word"    : "otokodlayıcı",
+      "translation" : "autoencoder"
+    },
+  
+    {
+      "word"    : "konuşma tanıma",
+      "translation" : "automatic speech recognition"
+    },
+  
+    {
+      "word"    : "otobağlayıcı ağlar",
+      "translation" : "autoregressive networks"
+    },
+  
+    {
+      "word"    : "zamanla geri yayılım",
+      "translation" : "back-propagation through time"
+    },
+  
+    {
+      "word"    : "sözcük çuvalı",
+      "translation" : "bag of words"
+    },
+  
+    {
+      "word"    : "istifleme",
+      "translation" : "bagging"
+    },
+  
+    {
+      "word"    : "yığın",
+      "translation" : "batch"
+    },
+  
+    {
+      "word"    : "yığın normalleştirme",
+      "translation" : "batch normalization"
+    },
+  
+    {
+      "word"    : "Bayes hatası",
+      "translation" : "Bayes error"
+    },
+  
+    {
+      "word"    : "Bayes kuralı",
+      "translation" : "Bayes rule"
+    },
+  
+    {
+      "word"    : "Bayesçi hiperparametre eniyileme",
+      "translation" : "Bayesian hyperparameter optimization"
+    },
+  
+    {
+      "word"    : "Bayes ağı",
+      "translation" : "Bayesian network"
+    },
+  
+    {
+      "word"    : "Bayes olasılığı",
+      "translation" : "Bayesian probability"
+    },
+  
+    {
+      "word"    : "Bayes istatistiği",
+      "translation" : "Bayesian statistics"
+    },
+  
+    {
+      "word"    : "inanç ağı",
+      "translation" : "belief network"
+    },
+  
+    {
+      "word"    : "denek taşı",
+      "translation" : "benchmark"
+    },
+  
+    {
+      "word"    : "Bernoulli dağılımı",
+      "translation" : "Bernoulli distribution"
+    },
+  
+    {
+      "word"    : "önyargı",
+      "translation" : "bias"
+    },
+  
+    {
+      "word"    : "önyargı parametresi",
+      "translation" : "bias parameter"
+    },
+  
+    {
+      "word"    : "önyargılı önem örnekleme",
+      "translation" : "biased importance sampling"
+    },
+  
+    {
+      "word"    : "ikili bağıntı",
+      "translation" : "binary relation"
+    },
+  
+    {
+      "word"    : "blok Gibbs örnekleme",
+      "translation" : "block gibbs sampling"
+    },
+  
+    {
+      "word"    : "Boltzmann dağılımı",
+      "translation" : "boltzmann distribution"
+    },
+  
+    {
+      "word"    : "Boltzmann makinesi",
+      "translation" : "boltzmann machine"
+    },
+  
+    {
+      "word"    : "yayımlama",
+      "translation" : "broadcasting"
+    },
+  
+    {
+      "word"    : "kaba kuvvet",
+      "translation" : "brute force"
+    },
+  
+    {
+      "word"    : "alıştırma",
+      "translation" : "burn in"
+    },
+  
+    {
+      "word"    : "analiz",
+      "translation" : "calculus"
+    },
+  
+    {
+      "word"    : "değişim analizi",
+      "translation" : "calculus of variations"
+    },
+  
+    {
+      "word"    : "aşamalı",
+      "translation" : "cascade"
+    },
+  
+    {
+      "word"    : "kategorik dağılım",
+      "translation" : "categorical distribution"
+    },
+  
+    {
+      "word"    : "ortalama hilesi",
+      "translation" : "centering trick"
+    },
+  
+    {
+      "word"    : "merkezi limit teoremi",
+      "translation" : "central limit theorem"
+    },
+  
+    {
+      "word"    : "zincir kuralı",
+      "translation" : "chain rule"
+    },
+  
+    {
+      "word"    : "olasılığın zincir kuralı",
+      "translation" : "chain rule of productivity"
+    },
+  
+    {
+      "word"    : "satranç",
+      "translation" : "chess"
+    },
+  
+    {
+      "word"    : "kiriş",
+      "translation" : "chord"
+    },
+  
+    {
+      "word"    : "kirişli çizge",
+      "translation" : "chordal graph"
+    },
+  
+    {
+      "word"    : "sınıf tabanlı dil modelleri",
+      "translation" : "class-based language models"
+    },
+  
+    {
+      "word"    : "klasik dinamik sistem",
+      "translation" : "classical dynamic system"
+    },
+  
+    {
+      "word"    : "klik",
+      "translation" : "clique"
+    },
+  
+    {
+      "word"    : "klik potansiyeli",
+      "translation" : "clique potential"
+    },
+  
+    {
+      "word"    : "dayanışmalı filtreleme",
+      "translation" : "collaborative filtering"
+    },
+  
+    {
+      "word"    : "çarpıştırıcı",
+      "translation" : "collider"
+    },
+  
+    {
+      "word"    : "renkli görüntüler",
+      "translation" : "color images"
+    },
+  
+    {
+      "word"    : "karmaşık hücre",
+      "translation" : "complex cell"
+    },
+  
+    {
+      "word"    : "hesaplamalı çizge",
+      "translation" : "computational graph"
+    },
+  
+    {
+      "word"    : "bilgisayarlı görü",
+      "translation" : "computer vision"
+    },
+  
+    {
+      "word"    : "kavram sapması",
+      "translation" : "concept drift"
+    },
+  
+    {
+      "word"    : "matrisin sağlamlık sayısı",
+      "translation" : "condition number"
+    },
+  
+    {
+      "word"    : "koşullu hesaplama",
+      "translation" : "conditional computation"
+    },
+  
+    {
+      "word"    : "koşullu bağımsızlık",
+      "translation" : "conditional independence"
+    },
+  
+    {
+      "word"    : "koşullu olasılık",
+      "translation" : "conditional probability"
+    },
+  
+    {
+      "word"    : "koşullu RBM",
+      "translation" : "conditional RBM"
+    },
+  
+    {
+      "word"    : "bağlantıcılık",
+      "translation" : "connectionism"
+    },
+  
+    {
+      "word"    : "bağlantıcı zamansal sınıflandırma",
+      "translation" : "connectionist temporal classification"
+    },
+  
+    {
+      "word"    : "tutarlılık",
+      "translation" : "consistency"
+    },
+  
+    {
+      "word"    : "sabitlik",
+      "translation" : "constancy"
+    },
+  
+    {
+      "word"    : "kısıtlı eniyileme",
+      "translation" : "constrained optimization"
+    },
+  
+    {
+      "word"    : "içerik-tabanlı adresleme",
+      "translation" : "content-based addressing"
+    },
+  
+    {
+      "word"    : "içerik-tabanlı öneri sistemleri",
+      "translation" : "content-based recommender systems"
+    },
+  
+    {
+      "word"    : "bağlam",
+      "translation" : "context"
+    },
+  
+    {
+      "word"    : "bağlama özgü bağımsızlık",
+      "translation" : "context specific independence"
+    },
+  
+    {
+      "word"    : "bağlamsal yol kesmeler",
+      "translation" : "contextual bandits"
+    },
+  
+    {
+      "word"    : "sürdürme yöntemleri",
+      "translation" : "continuation methods"
+    },
+  
+    {
+      "word"    : "sürekli",
+      "translation" : "continuous"
+    },
+  
+    {
+      "word"    : "daraltan otokodlayıcı",
+      "translation" : "contractive autoencoder"
+    },
+  
+    {
+      "word"    : "karşıtlık",
+      "translation" : "contrast"
+    },
+  
+    {
+      "word"    : "karşıtsal ıraksama",
+      "translation" : "contrastive divergence"
+    },
+  
+    {
+      "word"    : "dışbükey eniyileme",
+      "translation" : "convex optimization"
+    },
+  
+    {
+      "word"    : "evrişim",
+      "translation" : "convolution"
+    },
+  
+    {
+      "word"    : "evrişimsel ağ",
+      "translation" : "convolutional network"
+    },
+  
+    {
+      "word"    : "koordinat inişi",
+      "translation" : "coordinate descent"
+    },
+  
+    {
+      "word"    : "koordinat çıkışı",
+      "translation" : "coordinate ascent"
+    },
+  
+    {
+      "word"    : "korelasyon",
+      "translation" : "correlation"
+    },
+  
+    {
+      "word"    : "maliyet fonksiyonu",
+      "translation" : "cost function"
+    },
+  
+    {
+      "word"    : "eşdeğişirlik",
+      "translation" : "covariance"
+    },
+  
+    {
+      "word"    : "eşdeğişirlik matrisi",
+      "translation" : "covariance matrix"
+    },
+  
+    {
+      "word"    : "kapsama",
+      "translation" : "coverage"
+    },
+  
+    {
+      "word"    : "kritik sıcaklık",
+      "translation" : "critical temperature"
+    },
+  
+    {
+      "word"    : "çapraz korelasyon",
+      "translation" : "cross-correlation"
+    },
+  
+    {
+      "word"    : "çapraz entropi",
+      "translation" : "cross-entropy"
+    },
+  
+    {
+      "word"    : "çapraz sağlama",
+      "translation" : "cross-validation"
+    },
+  
+    {
+      "word"    : "müfredat öğrenme",
+      "translation" : "curriculum learning"
+    },
+  
+    {
+      "word"    : "boyut laneti",
+      "translation" : "curse of dimensionality"
+    },
+  
+    {
+      "word"    : "d-ayırma",
+      "translation" : "d-seperation"
+    },
+  
+    {
+      "word"    : "söndürme",
+      "translation" : "damping"
+    },
+  
+    {
+      "word"    : "veri üretim dağılımı",
+      "translation" : "data generating distribution"
+    },
+  
+    {
+      "word"    : "veri üretim işlemi",
+      "translation" : "data generating process"
+    },
+  
+    {
+      "word"    : "veri paralelleştirme",
+      "translation" : "data parallelism"
+    },
+  
+    {
+      "word"    : "veri kümesi",
+      "translation" : "dataset"
+    },
+  
+    {
+      "word"    : "veri kümesi çeşitleme",
+      "translation" : "dataset augmentation"
+    },
+  
+    {
+      "word"    : "hata ayıklama",
+      "translation" : "debugging"
+    },
+  
+    {
+      "word"    : "karar ağacı",
+      "translation" : "decision tree"
+    },
+  
+    {
+      "word"    : "kodçözücü",
+      "translation" : "decoder"
+    },
+  
+    {
+      "word"    : "derin inanç ağı",
+      "translation" : "deep belief network"
+    },
+  
+    {
+      "word"    : "derin Boltzmann makinesi",
+      "translation" : "deep Boltzmann machine"
+    },
+  
+    {
+      "word"    : "derin ileri besleme ağı",
+      "translation" : "deep feedforward network"
+    },
+  
+    {
+      "word"    : "derin öğrenme",
+      "translation" : "deep learning"
+    },
+  
+    {
+      "word"    : "yozlaşmış",
+      "translation" : "degenerate"
+    },
+  
+    {
+      "word"    : "arıtan otokodlayıcı",
+      "translation" : "denoising autoencoder"
+    },
+  
+    {
+      "word"    : "arıtan skor eşleştirme",
+      "translation" : "denoising score matchining"
+    },
+  
+    {
+      "word"    : "yoğunluk kestirimi",
+      "translation" : "density estimation"
+    },
+  
+    {
+      "word"    : "türev",
+      "translation" : "derivative"
+    },
+  
+    {
+      "word"    : "açıklayıcı değişkenler matrisi",
+      "translation" : "design matrix"
+    },
+  
+    {
+      "word"    : "dedektör katman",
+      "translation" : "detector layer"
+    },
+  
+    {
+      "word"    : "köşegen matris",
+      "translation" : "diagonal matrix"
+    },
+  
+    {
+      "word"    : "diferansiyel entropi",
+      "translation" : "differemtial entropy"
+    },
+  
+    {
+      "word"    : "Dirac delta fonksiyonu",
+      "translation" : "Dirac delta function"
+    },
+  
+    {
+      "word"    : "yönlü çevrimsiz çizgesel",
+      "translation" : "directed acyclic graph"
+    },
+  
+    {
+      "word"    : "yönlü çizgesel model",
+      "translation" : "directed graph model"
+    },
+  
+    {
+      "word"    : "yönlü türev",
+      "translation" : "directional derivative"
+    },
+  
+    {
+      "word"    : "ayrımcı hassas ayar",
+      "translation" : "discriminative fine-tuning"
+    },
+  
+    {
+      "word"    : "ayrımcı RBM",
+      "translation" : "discriminative RBM"
+    },
+  
+    {
+      "word"    : "dağınık gösterim",
+      "translation" : "distributed representation"
+    },
+  
+    {
+      "word"    : "alan uyarlama",
+      "translation" : "domain adaptation"
+    },
+  
+    {
+      "word"    : "iç çarpım",
+      "translation" : "dot product"
+    },
+  
+    {
+      "word"    : "çift geri yayılım",
+      "translation" : "double backprop"
+    },
+  
+    {
+      "word"    : "çif bloklu dairesel matris",
+      "translation" : "doubly block circulant matrix"
+    },
+  
+    {
+      "word"    : "rüya uykusu",
+      "translation" : "dream sleep"
+    },
+  
+    {
+      "word"    : "bağ sönümü",
+      "translation" : "dropconnect"
+    },
+  
+    {
+      "word"    : "iletim sönümü",
+      "translation" : "dropout"
+    },
+  
+    {
+      "word"    : "dinamik yapı",
+      "translation" : "dynamic structure"
+    },
+  
+    {
+      "word"    : "e-adım",
+      "translation" : "e-step"
+    },
+  
+    {
+      "word"    : "erken durdurma",
+      "translation" : "early stopping"
+    },
+  
+    {
+      "word"    : "yankı durum ağı",
+      "translation" : "echo state network"
+    },
+  
+    {
+      "word"    : "etkin kapasite",
+      "translation" : "effective capacity"
+    },
+  
+    {
+      "word"    : "özayrışma",
+      "translation" : "eigendecomposition"
+    },
+  
+    {
+      "word"    : "özdeğer",
+      "translation" : "eigenvalue"
+    },
+  
+    {
+      "word"    : "özvektör",
+      "translation" : "eigenvector"
+    },
+  
+    {
+      "word"    : "eleman çarpımı",
+      "translation" : "elementwise product"
+    },
+  
+    {
+      "word"    : "gömülme",
+      "translation" : "embedding"
+    },
+  
+    {
+      "word"    : "deneysel dağılım",
+      "translation" : "empirical distribution"
+    },
+  
+    {
+      "word"    : "deneysel risk",
+      "translation" : "emprical risk"
+    },
+  
+    {
+      "word"    : "deneysel risk enküçültmesi",
+      "translation" : "emprical risk minimization"
+    },
+  
+    {
+      "word"    : "kodlayıcı",
+      "translation" : "encoder"
+    },
+  
+    {
+      "word"    : "enerji fonksiyonu",
+      "translation" : "energy function"
+    },
+  
+    {
+      "word"    : "enerji tabanlı model",
+      "translation" : "energy-based model"
+    },
+  
+    {
+      "word"    : "gelişmiş gradyan",
+      "translation" : "enhanced gradient"
+    },
+  
+    {
+      "word"    : "topluluk yöntemleri",
+      "translation" : "ensemble methods"
+    },
+  
+    {
+      "word"    : "epok",
+      "translation" : "epoch"
+    },
+  
+    {
+      "word"    : "eşitlik kısıtı",
+      "translation" : "aquality constraint"
+    },
+  
+    {
+      "word"    : "eşit dağişirlik",
+      "translation" : "equivariance"
+    },
+  
+    {
+      "word"    : "hata fonksiyonu",
+      "translation" : "error function"
+    },
+  
+    {
+      "word"    : "kestirim",
+      "translation" : "estimation"
+    },
+  
+    {
+      "word"    : "Euclid normu",
+      "translation" : "Euclidean norm"
+    },
+  
+    {
+      "word"    : "Euclid uzayı",
+      "translation" : "Euclidean space"
+    },
+  
+    {
+      "word"    : "Euler-Lagrange eşitliği",
+      "translation" : "Euler-Lagrange equation"
+    },
+  
+    {
+      "word"    : "kanıt alt sınırı",
+      "translation" : "evidence lower bound"
+    },
+  
+    {
+      "word"    : "örnek",
+      "translation" : "example"
+    },
+  
+    {
+      "word"    : "beklenti",
+      "translation" : "expectation"
+    },
+  
+    {
+      "word"    : "beklenti enbüyütme",
+      "translation" : "expectation maximization"
+    },
+  
+    {
+      "word"    : "beklenti değeri",
+      "translation" : "expected value"
+    },
+  
+    {
+      "word"    : "savuşturma",
+      "translation" : "explaining away"
+    },
+  
+    {
+      "word"    : "faydalanma",
+      "translation" : "exploitation"
+    },
+  
+    {
+      "word"    : "keşif",
+      "translation" : "exploration"
+    },
+  
+    {
+      "word"    : "üstel",
+      "translation" : "exponential"
+    },
+  
+    {
+      "word"    : "üstel dağılım",
+      "translation" : "exponential distribution"
+    },
+  
+    {
+      "word"    : "f-skor",
+      "translation" : "f-score"
+    },
+  
+    {
+      "word"    : "çarpınım",
+      "translation" : "factorial"
+    },
+  
+    {
+      "word"    : "faktör analizi",
+      "translation" : "factor analysis"
+    },
+  
+    {
+      "word"    : "faktörler çizgesi",
+      "translation" : "factor graph"
+    },
+  
+    {
+      "word"    : "değişirlik faktörleri",
+      "translation" : "factors of variation"
+    },
+  
+    {
+      "word"    : "öznitelik seçme",
+      "translation" : "feature selection"
+    },
+  
+    {
+      "word"    : "ileri beslemeli sinir ağı",
+      "translation" : "feedforward neural network"
+    },
+  
+    {
+      "word"    : "hassas ayar",
+      "translation" : "fine-tuning"
+    },
+  
+    {
+      "word"    : "sonlu farklar",
+      "translation" : "finite differences"
+    },
+  
+    {
+      "word"    : "unutma kapısı",
+      "translation" : "forget gate"
+    },
+  
+    {
+      "word"    : "ileri yayılım",
+      "translation" : "forward propagation"
+    },
+  
+    {
+      "word"    : "Fourier dönüşümü",
+      "translation" : "Fourier transform"
+    },
+  
+    {
+      "word"    : "foveasyon",
+      "translation" : "foveation"
+    },
+  
+    {
+      "word"    : "serbest enerji",
+      "translation" : "free energy"
+    },
+  
+    {
+      "word"    : "frekans",
+      "translation" : "frequency"
+    },
+  
+    {
+      "word"    : "deneysel olasılık",
+      "translation" : "frequentist probability"
+    },
+  
+    {
+      "word"    : "deneysel istatistik",
+      "translation" : "frequentist statistics"
+    },
+  
+    {
+      "word"    : "Frobenius normu",
+      "translation" : "Frobenius norm"
+    },
+  
+    {
+      "word"    : "tamamen görünür Bayes ağı",
+      "translation" : "fully visible Bayes network"
+    },
+  
+    {
+      "word"    : "fonksiyon",
+      "translation" : "function"
+    },
+  
+    {
+      "word"    : "fonksiyonel türevler",
+      "translation" : "functional derivatives"
+    },
+  
+    {
+      "word"    : "Gabor fonksiyonu",
+      "translation" : "Gabor function"
+    },
+  
+    {
+      "word"    : "kapılı yinelemeli ünite",
+      "translation" : "gated recurrent unit"
+    },
+  
+    {
+      "word"    : "Gauss dağılımı",
+      "translation" : "Gaussian distribution"
+    },
+  
+    {
+      "word"    : "Gauss kerneli",
+      "translation" : "Gaussian kernel"
+    },
+  
+    {
+      "word"    : "Gauss karışımı",
+      "translation" : "Gaussian mixture"
+    },
+  
+    {
+      "word"    : "genelleştirme",
+      "translation" : "generalization"
+    },
+  
+    {
+      "word"    : "genelleştirilmiş Lagrange fonksiyonu",
+      "translation" : "generalized Lagrange function"
+    },
+  
+    {
+      "word"    : "genelleştirilmiş Lagrange",
+      "translation" : "generalized lagrange"
+    },
+  
+    {
+      "word"    : "üretken çekişmeli ağlar",
+      "translation" : "generative adversarial networks"
+    },
+  
+    {
+      "word"    : "üretken moment eşleyen ağlar",
+      "translation" : "generative moment matching networks"
+    },
+  
+    {
+      "word"    : "üretici ağ",
+      "translation" : "generator network"
+    },
+  
+    {
+      "word"    : "Gibbs dağılımı",
+      "translation" : "Gibbs distribution"
+    },
+  
+    {
+      "word"    : "Gibbs örneklemesi",
+      "translation" : "Gibbs sampling"
+    },
+  
+    {
+      "word"    : "global karşıt normalleştirme",
+      "translation" : "global contrast normalization"
+    },
+  
+    {
+      "word"    : "grafik işlem birimi",
+      "translation" : "GPU"
+    },
+  
+    {
+      "word"    : "gradyan kırpma",
+      "translation" : "gradient clipping"
+    },
+  
+    {
+      "word"    : "gradyan çıkışı",
+      "translation" : "gradient ascent"
+    },
+  
+    {
+      "word"    : "çizge",
+      "translation" : "graph"
+    },
+  
+    {
+      "word"    : "çizge gömülmesi",
+      "translation" : "graph embedding"
+    },
+  
+    {
+      "word"    : "çizgesel model",
+      "translation" : "graphical model"
+    },
+  
+    {
+      "word"    : "grafik işleme birimi",
+      "translation" : "graphics processing unit"
+    },
+  
+    {
+      "word"    : "çizge kuramı",
+      "translation" : "graph theory"
+    },
+  
+    {
+      "word"    : "hırslı algoritma",
+      "translation" : "greedy algorithm"
+    },
+  
+    {
+      "word"    : "katmanların denetimsiz hırslı öneğitilmesi",
+      "translation" : "greedy layer-wise unsupervised pretraining"
+    },
+  
+    {
+      "word"    : "hırslı denetimli öneğitme",
+      "translation" : "greedy supervised pretraining"
+    },
+  
+    {
+      "word"    : "ızgara arama",
+      "translation" : "grid search"
+    },
+  
+    {
+      "word"    : "Hadamard çarpımı",
+      "translation" : "Hadamard product"
+    },
+  
+    {
+      "word"    : "harmonyum",
+      "translation" : "harmonium"
+    },
+  
+    {
+      "word"    : "harmoni kuramı",
+      "translation" : "harmony theory"
+    },
+  
+    {
+      "word"    : "Helmholtz serbest enerji",
+      "translation" : "Helmholtz free energy"
+    },
+  
+    {
+      "word"    : "Hesse matrisi",
+      "translation" : "Hessian matrix"
+    },
+  
+    {
+      "word"    : "ayrı değişirlikli",
+      "translation" : "heteroscedastic"
+    },
+  
+    {
+      "word"    : "gizli katman",
+      "translation" : "hidden layer"
+    },
+  
+    {
+      "word"    : "gizli birim",
+      "translation" : "hidden unit"
+    },
+  
+    {
+      "word"    : "tepe tırmanışı",
+      "translation" : "hill climbing"
+    },
+  
+    {
+      "word"    : "hiperparametre eniyilemesi",
+      "translation" : "hyperparameter optimization"
+    },
+  
+    {
+      "word"    : "hiperparametreler",
+      "translation" : "hyperparameters"
+    },
+  
+    {
+      "word"    : "hipotez uzayı",
+      "translation" : "hypothesis space"
+    },
+  
+    {
+      "word"    : "i.i.d. varsayımları",
+      "translation" : "i.i.d. assumptions"
+    },
+  
+    {
+      "word"    : "birim matris",
+      "translation" : "identity matrix"
+    },
+  
+    {
+      "word"    : "görüntü",
+      "translation" : "image"
+    },
+  
+    {
+      "word"    : "Imagenet Geniş Ölçekli Tanıma Yarışması",
+      "translation" : "ImageNet Large Scale Visual Recognition Challange"
+    },
+  
+    {
+      "word"    : "aykırılık",
+      "translation" : "immorality"
+    },
+  
+    {
+      "word"    : "gerçekleştirme",
+      "translation" : "implementation"
+    },
+  
+    {
+      "word"    : "önem örnekleme",
+      "translation" : "importance sampling"
+    },
+  
+    {
+      "word"    : "önem ağırlıklı otokodlayıcı",
+      "translation" : "importance waighted autoencoder"
+    },
+  
+    {
+      "word"    : "bağımsızlık",
+      "translation" : "independence"
+    },
+  
+    {
+      "word"    : "bağımsız özdeşçe dağılmış",
+      "translation" : "independent and identically distributed"
+    },
+  
+    {
+      "word"    : "bağımsız bileşenler analizi",
+      "translation" : "independent component analysis"
+    },
+  
+    {
+      "word"    : "bağımsız altuzaylar analizi",
+      "translation" : "independent subspace analysis"
+    },
+  
+    {
+      "word"    : "eşitsizlik kısıtı",
+      "translation" : "inequality constraint"
+    },
+  
+    {
+      "word"    : "çıkarım, çıkarsama",
+      "translation" : "inference"
+    },
+  
+    {
+      "word"    : "kesim noktası",
+      "translation" : "intercept"
+    },
+  
+    {
+      "word"    : "şakak altı korteksi",
+      "translation" : "inferotemporal cortex"
+    },
+  
+    {
+      "word"    : "bilgi getirimi",
+      "translation" : "information retrieval"
+    },
+  
+    {
+      "word"    : "ilk değer atama",
+      "translation" : "initialization"
+    },
+  
+    {
+      "word"    : "aradeğeri bulmak",
+      "translation" : "interpolate"
+    },
+  
+    {
+      "word"    : "kolay çözümlenemez",
+      "translation" : "intractable"
+    },
+  
+    {
+      "word"    : "değişmezlik",
+      "translation" : "invariance"
+    },
+  
+    {
+      "word"    : "izotrop",
+      "translation" : "isotropic"
+    },
+  
+    {
+      "word"    : "Jacob matrisi",
+      "translation" : "Jacobian matrix"
+    },
+  
+    {
+      "word"    : "ortak olasılık",
+      "translation" : "joint probability"
+    },
+  
+    {
+      "word"    : "k-ortalama",
+      "translation" : "k-means"
+    },
+  
+    {
+      "word"    : "k-en yakın konşu",
+      "translation" : "k-nearest neighbor"
+    },
+  
+    {
+      "word"    : "Karush-Kuhn-Tucker koşulları",
+      "translation" : "Karush-Kuhn-Tucker conditions"
+    },
+  
+    {
+      "word"    : "kernel makinesi",
+      "translation" : "kernel machine"
+    },
+  
+    {
+      "word"    : "kernel hilesi",
+      "translation" : "kernel trick"
+    },
+  
+    {
+      "word"    : "KKT koşulları",
+      "translation" : "KKT conditions"
+    },
+  
+    {
+      "word"    : "KL ıraksaması",
+      "translation" : "KL divergence"
+    },
+  
+    {
+      "word"    : "işlenmiş bilgi tabanı",
+      "translation" : "knowledge base"
+    },
+  
+    {
+      "word"    : "Krylov yöntemleri",
+      "translation" : "Krylov merhods"
+    },
+  
+    {
+      "word"    : "Kullback-Leibler ıraksaması",
+      "translation" : "Kullback-Leibler divergence"
+    },
+  
+    {
+      "word"    : "etiket düzleştirme",
+      "translation" : "label smoothing"
+    },
+  
+    {
+      "word"    : "basamaklı ağ",
+      "translation" : "ladder network"
+    },
+  
+    {
+      "word"    : "Lagrange çarpanları",
+      "translation" : "Lagrange multipliers"
+    },
+  
+    {
+      "word"    : "Lagrange fonksiyonu",
+      "translation" : "Lagrangian"
+    },
+  
+    {
+      "word"    : "Laplace dağılımı",
+      "translation" : "laplace distribution"
+    },
+  
+    {
+      "word"    : "saklı",
+      "translation" : "latent"
+    },
+  
+    {
+      "word"    : "saklı değişken",
+      "translation" : "latent variable"
+    },
+  
+    {
+      "word"    : "katman",
+      "translation" : "layer"
+    },
+  
+    {
+      "word"    : "sızıntılı ReLU",
+      "translation" : "leaky ReLU"
+    },
+  
+    {
+      "word"    : "sızıntılı birimler",
+      "translation" : "leaky units"
+    },
+  
+    {
+      "word"    : "öğrenme oranı",
+      "translation" : "learnin grate"
+    },
+  
+    {
+      "word"    : "olablilirlik",
+      "translation" : "likelihood"
+    },
+  
+    {
+      "word"    : "doğru üzerinde arama",
+      "translation" : "line search"
+    },
+  
+    {
+      "word"    : "doğrusal bileşim",
+      "translation" : "linear combination"
+    },
+  
+    {
+      "word"    : "doğrusal bağımlılık",
+      "translation" : "linear dependence"
+    },
+  
+    {
+      "word"    : "doğrusal faktör modeli",
+      "translation" : "linear factor model"
+    },
+  
+    {
+      "word"    : "doğrusal bağlanım",
+      "translation" : "linear regression"
+    },
+  
+    {
+      "word"    : "bağlantı öngörüsü",
+      "translation" : "link prediction"
+    },
+  
+    {
+      "word"    : "Lipschitz sabiti",
+      "translation" : "Lipschitz constant"
+    },
+  
+    {
+      "word"    : "Lipschitz süreklisi",
+      "translation" : "Lipschitz continuous"
+    },
+  
+    {
+      "word"    : "Likit durum makinesi",
+      "translation" : "liquid state machine"
+    },
+  
+    {
+      "word"    : "yerel koşullu olasılık dağılımı",
+      "translation" : "local conditional probability distribution"
+    },
+  
+    {
+      "word"    : "yerel karşıtlık normalleştirmesi",
+      "translation" : "local contrast normalization"
+    },
+  
+    {
+      "word"    : "lojistik bağlanım",
+      "translation" : "logistic regression"
+    },
+  
+    {
+      "word"    : "lojistik sigmoid",
+      "translation" : "logistic sigmoid"
+    },
+  
+    {
+      "word"    : "uzun ömürlü kısa-dönem belleği",
+      "translation" : "long short-term memory"
+    },
+  
+    {
+      "word"    : "başvuru çizelgesi",
+      "translation" : "look-up table"
+    },
+  
+    {
+      "word"    : "döngü",
+      "translation" : "loop"
+    },
+  
+    {
+      "word"    : "döngüsel inanç yayılımı",
+      "translation" : "loopy belief propagation"
+    },
+  
+    {
+      "word"    : "kayıp fonksiyonu",
+      "translation" : "loss function"
+    },
+  
+    {
+      "word"    : "m-adım",
+      "translation" : "m-step"
+    },
+  
+    {
+      "word"    : "makine öğrenmesi",
+      "translation" : "machine learning"
+    },
+  
+    {
+      "word"    : "makine tercümesi",
+      "translation" : "machine translation"
+    },
+  
+    {
+      "word"    : "ana köşegen",
+      "translation" : "main diagonal"
+    },
+  
+    {
+      "word"    : "manifold hipotezi",
+      "translation" : "manifold hypothesis"
+    },
+  
+    {
+      "word"    : "manifold öğrenme",
+      "translation" : "manifold learning"
+    },
+  
+    {
+      "word"    : "manifold tanjant sınıflandırıcısı",
+      "translation" : "manifold tangent classifier"
+    },
+  
+    {
+      "word"    : "MAP yaklaştırması",
+      "translation" : "MAP approximation"
+    },
+  
+    {
+      "word"    : "marjinal olasılık",
+      "translation" : "marginal probability"
+    },
+  
+    {
+      "word"    : "Markov zinciri",
+      "translation" : "Markov chain"
+    },
+  
+    {
+      "word"    : "Markov zincirli Monte Carlo",
+      "translation" : "Markov chain Monte Carlo"
+    },
+  
+    {
+      "word"    : "Markov ağı",
+      "translation" : "Markov network"
+    },
+  
+    {
+      "word"    : "Markov rastgele alanı",
+      "translation" : "Markov random field"
+    },
+  
+    {
+      "word"    : "matris",
+      "translation" : "matrix"
+    },
+  
+    {
+      "word"    : "matris tersi",
+      "translation" : "matrix inverse"
+    },
+  
+    {
+      "word"    : "matris çarpımı",
+      "translation" : "matrix product"
+    },
+  
+    {
+      "word"    : "en büyük norm",
+      "translation" : "max norm"
+    },
+  
+    {
+      "word"    : "en büyük biriktirme",
+      "translation" : "max pooling"
+    },
+  
+    {
+      "word"    : "enbüyütme",
+      "translation" : "maximize"
+    },
+  
+    {
+      "word"    : "en büyük ardıl",
+      "translation" : "maximum aposteriori"
+    },
+  
+    {
+      "word"    : "en büyük olabilirlik",
+      "translation" : "maximum likelihood"
+    },
+  
+    {
+      "word"    : "büyük-çıktı",
+      "translation" : "maxout"
+    },
+  
+    {
+      "word"    : "orta alan",
+      "translation" : "mean field"
+    },
+  
+    {
+      "word"    : "ortalama karesel hata",
+      "translation" : "mean squared error"
+    },
+  
+    {
+      "word"    : "ölçme kuramı",
+      "translation" : "measure theory"
+    },
+  
+    {
+      "word"    : "sıfır ölçüm",
+      "translation" : "measure zero"
+    },
+  
+    {
+      "word"    : "orta şakak lobu",
+      "translation" : "medial temporal lobe"
+    },
+  
+    {
+      "word"    : "bellek ağı",
+      "translation" : "memory network"
+    },
+  
+    {
+      "word"    : "en dik iniş yöntemi",
+      "translation" : "method of steepst descent"
+    },
+  
+    {
+      "word"    : "miniyığın",
+      "translation" : "minibatch"
+    },
+  
+    {
+      "word"    : "enküçültme",
+      "translation" : "minimize"
+    },
+  
+    {
+      "word"    : "eksik girdiler",
+      "translation" : "missing inputs"
+    },
+  
+    {
+      "word"    : "karıştırma",
+      "translation" : "mixing"
+    },
+  
+    {
+      "word"    : "karma yoğunluk ağları",
+      "translation" : "mixture density networks"
+    },
+  
+    {
+      "word"    : "karma dağılımı",
+      "translation" : "mixture distribution"
+    },
+  
+    {
+      "word"    : "karma model",
+      "translation" : "mixture model"
+    },
+  
+    {
+      "word"    : "uzman karması",
+      "translation" : "mixture of experts"
+    },
+  
+    {
+      "word"    : "model ortalama",
+      "translation" : "model averaging"
+    },
+  
+    {
+      "word"    : "model sıkıştırması",
+      "translation" : "model compression"
+    },
+  
+    {
+      "word"    : "model tanımlanabilirliği",
+      "translation" : "model identifiability"
+    },
+  
+    {
+      "word"    : "model benzeşmesi",
+      "translation" : "model parallelism"
+    },
+  
+    {
+      "word"    : "momen eşleştirme",
+      "translation" : "moment matchining"
+    },
+  
+    {
+      "word"    : "Moore-Penrose tersimsisi",
+      "translation" : "Moore-Penrose pseudoinverse"
+    },
+  
+    {
+      "word"    : "düzeltilmiş çizge",
+      "translation" : "moralized graph"
+    },
+  
+    {
+      "word"    : "çok-doruklu öğrenme",
+      "translation" : "multi-model learning"
+    },
+  
+    {
+      "word"    : "çok-öngörülü DBM",
+      "translation" : "multi-prediction DBM"
+    },
+  
+    {
+      "word"    : "çoklu görev öğrenme",
+      "translation" : "multi-task learning"
+    },
+  
+    {
+      "word"    : "çok katmanlı algılama",
+      "translation" : "multilayer perception"
+    },
+  
+    {
+      "word"    : "çok katmanlı perseptron",
+      "translation" : "multilayer perceptron"
+    },
+  
+    {
+      "word"    : "çok terimli dağılım",
+      "translation" : "multinomial distribution"
+    },
+  
+    {
+      "word"    : "çoklu Bernoulli dağılımı",
+      "translation" : "multinoulli distribution"
+    },
+  
+    {
+      "word"    : "naif Bayes",
+      "translation" : "naive Bayes"
+    },
+  
+    {
+      "word"    : "doğal görüntü",
+      "translation" : "naturel image"
+    },
+  
+    {
+      "word"    : "doğal dil işleme",
+      "translation" : "naturel language processing"
+    },
+  
+    {
+      "word"    : "en yakın komşu bağlanımı",
+      "translation" : "nearest neightbor regression"
+    },
+  
+    {
+      "word"    : "negatif tanımlı",
+      "translation" : "negative definite"
+    },
+  
+    {
+      "word"    : "negatif faz",
+      "translation" : "negative phase"
+    },
+  
+    {
+      "word"    : "Nesterov momentum",
+      "translation" : "Nesterov momentum"
+    },
+  
+    {
+      "word"    : "Netflix Büyük Ödülü",
+      "translation" : "Netflix Grand Prize"
+    },
+  
+    {
+      "word"    : "sinirsel dil modeli",
+      "translation" : "neural language model"
+    },
+  
+    {
+      "word"    : "sinir ağı",
+      "translation" : "neural network"
+    },
+  
+    {
+      "word"    : "sinirsel Turing Makinesi",
+      "translation" : "neural turing machine"
+    },
+  
+    {
+      "word"    : "sinirsel makine çevirisi",
+      "translation" : "neural machine translation"
+    },
+  
+    {
+      "word"    : "sinirbilimi",
+      "translation" : "neuroscience"
+    },
+  
+    {
+      "word"    : "Newton yöntemi",
+      "translation" : "Newton's method"
+    },
+  
+    {
+      "word"    : "bedavaya yemek yok teoremi",
+      "translation" : "no free lunch theorem"
+    },
+  
+    {
+      "word"    : "gürültüye karşıt kestirim",
+      "translation" : "noise-contrastive estimation"
+    },
+  
+    {
+      "word"    : "eğrisel",
+      "translation" : "nonlinear"
+    },
+  
+    {
+      "word"    : "eğrisellik",
+      "translation" : "nonlinearity"
+    },
+  
+    {
+      "word"    : "parametrik olmayan model",
+      "translation" : "nonparametric model"
+    },
+  
+    {
+      "word"    : "normal denklemler",
+      "translation" : "normal equations"
+    },
+  
+    {
+      "word"    : "normalleştirilmiş ilk değer atama",
+      "translation" : "normalized initialization"
+    },
+  
+    {
+      "word"    : "sayısal farklar",
+      "translation" : "numerical differentiation"
+    },
+  
+    {
+      "word"    : "nesne saptama",
+      "translation" : "object detection"
+    },
+  
+    {
+      "word"    : "nesne tanıma",
+      "translation" : "object recognition"
+    },
+  
+    {
+      "word"    : "amaç fonksiyonu",
+      "translation" : "objective fuction"
+    },
+  
+    {
+      "word"    : "bir-elemanlı-bir olan vektör",
+      "translation" : "one-hot represantation"
+    },
+  
+    {
+      "word"    : "tek seferde öğrenme",
+      "translation" : "one-shot learning"
+    },
+  
+    {
+      "word"    : "işlem",
+      "translation" : "operation"
+    },
+  
+    {
+      "word"    : "eniyileme",
+      "translation" : "optimization"
+    },
+  
+    {
+      "word"    : "Ortodoks istatistiği",
+      "translation" : "orthodox statistics"
+    },
+  
+    {
+      "word"    : "ortogonal eşleştirme takibi",
+      "translation" : "orthogonal matching pursuit"
+    },
+  
+    {
+      "word"    : "ortogonal matris",
+      "translation" : "orthogonal matrix"
+    },
+  
+    {
+      "word"    : "ortogonallik",
+      "translation" : "orthogonality"
+    },
+  
+    {
+      "word"    : "çıktı katmanı",
+      "translation" : "output layer"
+    },
+  
+    {
+      "word"    : "doldurma",
+      "translation" : "padding"
+    },
+  
+    {
+      "word"    : "paralel dağıtık işleme",
+      "translation" : "parallel distributed processing"
+    },
+  
+    {
+      "word"    : "parametrelere ilk değer ataması",
+      "translation" : "parameter initialization"
+    },
+  
+    {
+      "word"    : "parametre paylaşımı",
+      "translation" : "parameter sharing"
+    },
+  
+    {
+      "word"    : "parametre eşleme",
+      "translation" : "parameter tying"
+    },
+  
+    {
+      "word"    : "parametrik model",
+      "translation" : "parametric model"
+    },
+  
+    {
+      "word"    : "parametrik ReLU",
+      "translation" : "parametric ReLU"
+    },
+  
+    {
+      "word"    : "üst",
+      "translation" : "parent"
+    },
+  
+    {
+      "word"    : "Sözdizimsel ayrıştırma",
+      "translation" : "parsing"
+    },
+  
+    {
+      "word"    : "kısmi türev",
+      "translation" : "partial derivative"
+    },
+  
+    {
+      "word"    : "bölüntü fonksiyonu",
+      "translation" : "partition function"
+    },
+  
+    {
+      "word"    : "perseptron",
+      "translation" : "perceptron"
+    },
+  
+    {
+      "word"    : "kalıcı karşıtsal ıraksama",
+      "translation" : "persistent contrastive divergence"
+    },
+  
+    {
+      "word"    : "pertürbasyon analizi",
+      "translation" : "perturbation analysis"
+    },
+  
+    {
+      "word"    : "nokta kestiricisi",
+      "translation" : "point estimator"
+    },
+  
+    {
+      "word"    : "politika",
+      "translation" : "policy"
+    },
+  
+    {
+      "word"    : "biriktirme",
+      "translation" : "pooling"
+    },
+  
+    {
+      "word"    : "pozitif tanımlı",
+      "translation" : "positive definite"
+    },
+  
+    {
+      "word"    : "pozitif faz",
+      "translation" : "pozitive phase"
+    },
+  
+    {
+      "word"    : "ardıl",
+      "translation" : "posterior"
+    },
+  
+    {
+      "word"    : "ardıl olasılık",
+      "translation" : "posterior probability"
+    },
+  
+    {
+      "word"    : "ardıl dağılım",
+      "translation" : "posterior distribution"
+    },
+  
+    {
+      "word"    : "kesinlik",
+      "translation" : "precision"
+    },
+  
+    {
+      "word"    : "öngörüsel seyrek ayrışım",
+      "translation" : "predictive sparse decomposition"
+    },
+  
+    {
+      "word"    : "önişleme",
+      "translation" : "preprocessing"
+    },
+  
+    {
+      "word"    : "sunum",
+      "translation" : "presentation"
+    },
+  
+    {
+      "word"    : "öneğitme",
+      "translation" : "pretraining"
+    },
+  
+    {
+      "word"    : "birincil görsel korteks",
+      "translation" : "primary visual cortex"
+    },
+  
+    {
+      "word"    : "ana bileşenler analizi",
+      "translation" : "principal compenent analysis"
+    },
+  
+    {
+      "word"    : "öncül",
+      "translation" : "prior"
+    },
+  
+    {
+      "word"    : "öncül olasılık",
+      "translation" : "prior probability"
+    },
+  
+    {
+      "word"    : "öncül olasılık dağılımı",
+      "translation" : "prior probability distribution"
+    },
+  
+    {
+      "word"    : "olasılıksal PCA",
+      "translation" : "probabilistic PCA"
+    },
+  
+    {
+      "word"    : "olasılıksal model",
+      "translation" : "probabilistic model"
+    },
+  
+    {
+      "word"    : "olasılık yoğunluk fonksiyonu",
+      "translation" : "probability density function"
+    },
+  
+    {
+      "word"    : "olasılık dağılımı",
+      "translation" : "probability distribution"
+    },
+  
+    {
+      "word"    : "olasılık kütle fonksiyonu",
+      "translation" : "probability mass function"
+    },
+  
+    {
+      "word"    : "olasılık kütle fonksiyonu kestirimi",
+      "translation" : "probability mass function estimation"
+    },
+  
+    {
+      "word"    : "uzman çarpımı",
+      "translation" : "product of experts"
+    },
+  
+    {
+      "word"    : "olasılığın çarpım kuralı",
+      "translation" : "product rule of probability"
+    },
+  
+    {
+      "word"    : "yarı benzerlik",
+      "translation" : "pseudolikelihood"
+    },
+  
+    {
+      "word"    : "dört evreli çift",
+      "translation" : "quadrature pair"
+    },
+  
+    {
+      "word"    : "Newton-vari yöntemler",
+      "translation" : "quasi-Newton methods"
+    },
+  
+    {
+      "word"    : "dairesel baz fonksiyonu",
+      "translation" : "radial basis function"
+    },
+  
+    {
+      "word"    : "rastgele arama",
+      "translation" : "random search"
+    },
+  
+    {
+      "word"    : "rastgele değişken",
+      "translation" : "random variable"
+    },
+  
+    {
+      "word"    : "oran eşleştirme",
+      "translation" : "ratio matching"
+    },
+  
+    {
+      "word"    : "duyarlılık",
+      "translation" : "recall"
+    },
+  
+    {
+      "word"    : "alım alanı",
+      "translation" : "receptive field"
+    },
+  
+    {
+      "word"    : "önerici sistemler",
+      "translation" : "recommender systems"
+    },
+  
+    {
+      "word"    : "düzeltilmiş doğrusal birim",
+      "translation" : "rectified linear unit"
+    },
+  
+    {
+      "word"    : "yinelemeli ağ",
+      "translation" : "recurrent network"
+    },
+  
+    {
+      "word"    : "yinelemeli sinir ağı",
+      "translation" : "recurrent neural network"
+    },
+  
+    {
+      "word"    : "bağlanım",
+      "translation" : "regression"
+    },
+  
+    {
+      "word"    : "düzenlileştirme",
+      "translation" : "regularization"
+    },
+  
+    {
+      "word"    : "düzenlileştirici",
+      "translation" : "regularizer"
+    },
+  
+    {
+      "word"    : "pekiştirmeli öğrenme",
+      "translation" : "reinforcement learning"
+    },
+  
+    {
+      "word"    : "ilişkisel veri tabanı",
+      "translation" : "relational database"
+    },
+  
+    {
+      "word"    : "bağıntılar",
+      "translation" : "relations"
+    },
+  
+    {
+      "word"    : "yeniden parametreleştirme hilesi",
+      "translation" : "reparametrization trick"
+    },
+  
+    {
+      "word"    : "gösterim",
+      "translation" : "representation"
+    },
+  
+    {
+      "word"    : "gösterim öğrenme",
+      "translation" : "representation learning"
+    },
+  
+    {
+      "word"    : "gösterimsel kapasite",
+      "translation" : "representational capacity"
+    },
+  
+    {
+      "word"    : "kısıtlandırılmış Boltzmann makinesi",
+      "translation" : "restricted Boltzmann machine"
+    },
+  
+    {
+      "word"    : "Ridge bağlanımı",
+      "translation" : "Ridge regression"
+    },
+  
+    {
+      "word"    : "eyer noktaları",
+      "translation" : "saddle points"
+    },
+  
+    {
+      "word"    : "örnekleme ortalaması",
+      "translation" : "sample mean"
+    },
+  
+    {
+      "word"    : "skaler",
+      "translation" : "scalar"
+    },
+  
+    {
+      "word"    : "skor eşleştirme",
+      "translation" : "score matchining"
+    },
+  
+    {
+      "word"    : "ikinci türev",
+      "translation" : "second derivative"
+    },
+  
+    {
+      "word"    : "ikinci türev testi",
+      "translation" : "second derivative test"
+    },
+  
+    {
+      "word"    : "özbilgi",
+      "translation" : "self-information"
+    },
+  
+    {
+      "word"    : "anlamsal adresleme",
+      "translation" : "semantic hashing"
+    },
+  
+    {
+      "word"    : "yarı denetimli öğrenme",
+      "translation" : "semi-supervised learning"
+    },
+  
+    {
+      "word"    : "ayrılabilir evrişim",
+      "translation" : "separable convolution"
+    },
+  
+    {
+      "word"    : "ayırma",
+      "translation" : "separation"
+    },
+  
+    {
+      "word"    : "sıra (sıralı dizi)",
+      "translation" : "sequence"
+    },
+  
+    {
+      "word"    : "küme",
+      "translation" : "set"
+    },
+  
+    {
+      "word"    : "Shannon entropisi",
+      "translation" : "Shannon entropy"
+    },
+  
+    {
+      "word"    : "sigmoid inanç ağı",
+      "translation" : "sigmoid belief network"
+    },
+  
+    {
+      "word"    : "yalın hücre",
+      "translation" : "simple cell"
+    },
+  
+    {
+      "word"    : "eşzamanlı",
+      "translation" : "simultaneous"
+    },
+  
+    {
+      "word"    : "tekil değer",
+      "translation" : "singular value"
+    },
+  
+    {
+      "word"    : "tekil değer ayrışımı",
+      "translation" : "singular value decomposition"
+    },
+  
+    {
+      "word"    : "tekil vektör",
+      "translation" : "singular vector"
+    },
+  
+    {
+      "word"    : "yavaş öznitelik analizi",
+      "translation" : "slow feature analysis"
+    },
+  
+    {
+      "word"    : "prüzsüzlük",
+      "translation" : "smoothness"
+    },
+  
+    {
+      "word"    : "spam saptama",
+      "translation" : "spam detection"
+    },
+  
+    {
+      "word"    : "seyrek kodlama",
+      "translation" : "sparse coding"
+    },
+  
+    {
+      "word"    : "sivri ve kalın seyrek kodlama",
+      "translation" : "spike and slab sparse coding"
+    },
+  
+    {
+      "word"    : "seyrek ilk değer atama",
+      "translation" : "sparse initialization"
+    },
+  
+    {
+      "word"    : "seyrek gösterim",
+      "translation" : "sparse represantation"
+    },
+  
+    {
+      "word"    : "spektral yarıçap",
+      "translation" : "spectral radius"
+    },
+  
+    {
+      "word"    : "konuşma tanıma",
+      "translation" : "speech recognition"
+    },
+  
+    {
+      "word"    : "küre şeklini verme",
+      "translation" : "sphering"
+    },
+  
+    {
+      "word"    : "kare matris",
+      "translation" : "square matrix"
+    },
+  
+    {
+      "word"    : "standart sapma",
+      "translation" : "standard deviation"
+    },
+  
+    {
+      "word"    : "standart hata",
+      "translation" : "standard error"
+    },
+  
+    {
+      "word"    : "ortalamanın standart hatası",
+      "translation" : "standard error of the mean"
+    },
+  
+    {
+      "word"    : "istatistik",
+      "translation" : "statistic"
+    },
+  
+    {
+      "word"    : "istatiksel öğrenme kuralı",
+      "translation" : "statistical learning theory"
+    },
+  
+    {
+      "word"    : "en dik iniş yöntemi",
+      "translation" : "steepest descent"
+    },
+  
+    {
+      "word"    : "stokastik geri yayılım",
+      "translation" : "stochastic back-propagation"
+    },
+  
+    {
+      "word"    : "stokastik gradyan çıkışı",
+      "translation" : "stochastic gradient ascent"
+    },
+  
+    {
+      "word"    : "stokastik gradyan inişi",
+      "translation" : "stochastic gradient descent"
+    },
+  
+    {
+      "word"    : "stokastik en büyük olabilirlik",
+      "translation" : "stochastic maximum likelihood"
+    },
+  
+    {
+      "word"    : "stokastik biriktirme",
+      "translation" : "stochastic pooling"
+    },
+  
+    {
+      "word"    : "yapısal öğrenme",
+      "translation" : "structure learning"
+    },
+  
+    {
+      "word"    : "yapılandırılmış çıktı",
+      "translation" : "structured output"
+    },
+  
+    {
+      "word"    : "yapılandırılmış olasılık modeli",
+      "translation" : "structured probabilistic model"
+    },
+  
+    {
+      "word"    : "olasılığın toplam kuralı",
+      "translation" : "sum rule of probability"
+    },
+  
+    {
+      "word"    : "toplam-çarpım ağı",
+      "translation" : "sum product network"
+    },
+  
+    {
+      "word"    : "denetimli",
+      "translation" : "supervised"
+    },
+  
+    {
+      "word"    : "denetimli hassas ayar",
+      "translation" : "supervised fine-tuning"
+    },
+  
+    {
+      "word"    : "denetimli öğrenme",
+      "translation" : "supervised learning"
+    },
+  
+    {
+      "word"    : "destek vektör makinesi",
+      "translation" : "support vector machine"
+    },
+  
+    {
+      "word"    : "simetrik matris",
+      "translation" : "symmetric matrix"
+    },
+  
+    {
+      "word"    : "senkron",
+      "translation" : "synchronize"
+    },
+  
+    {
+      "word"    : "tanjant mesafesi",
+      "translation" : "tangent distance"
+    },
+  
+    {
+      "word"    : "tanjant düzlemi",
+      "translation" : "tangent plane"
+    },
+  
+    {
+      "word"    : "tanjant yayılımı",
+      "translation" : "tangent prop"
+    },
+  
+    {
+      "word"    : "öğretmen zoru",
+      "translation" : "teacher forcing"
+    },
+  
+    {
+      "word"    : "kızdırma",
+      "translation" : "tempering"
+    },
+  
+    {
+      "word"    : "şablon eşleştirme",
+      "translation" : "template matching"
+    },
+  
+    {
+      "word"    : "tensör",
+      "translation" : "tensor"
+    },
+  
+    {
+      "word"    : "test kümesi",
+      "translation" : "test set"
+    },
+  
+    {
+      "word"    : "Tikhnov düzenlileştirmesi",
+      "translation" : "Tikhonov regularization"
+    },
+  
+    {
+      "word"    : "döşeli evrişim",
+      "translation" : "tiled convolution"
+    },
+  
+    {
+      "word"    : "zaman-gecikmeli sinir ağı",
+      "translation" : "time-delay neural network"
+    },
+  
+    {
+      "word"    : "Teoplitz matrisi",
+      "translation" : "Toeplitz matrix"
+    },
+  
+    {
+      "word"    : "topografik ICA",
+      "translation" : "topographic ICA"
+    },
+  
+    {
+      "word"    : "iz operatörü",
+      "translation" : "trace operator"
+    },
+  
+    {
+      "word"    : "kolay çözümlenebilir",
+      "translation" : "tractable"
+    },
+  
+    {
+      "word"    : "eğitme",
+      "translation" : "training"
+    },
+  
+    {
+      "word"    : "eğitim hatası",
+      "translation" : "training error"
+    },
+  
+    {
+      "word"    : "transkripsiyon",
+      "translation" : "transcription"
+    },
+  
+    {
+      "word"    : "aktarım öğrenme",
+      "translation" : "transer learning"
+    },
+  
+    {
+      "word"    : "transpoz",
+      "translation" : "transpose"
+    },
+  
+    {
+      "word"    : "üçgen eşitsizliği",
+      "translation" : "triangle inequality"
+    },
+  
+    {
+      "word"    : "üçgenlemeli çizge",
+      "translation" : "triangulated graph"
+    },
+  
+    {
+      "word"    : "çokuzlu",
+      "translation" : "tuple"
+    },
+  
+    {
+      "word"    : "önyargısız",
+      "translation" : "ubiased"
+    },
+  
+    {
+      "word"    : "eksik belirtilmiş",
+      "translation" : "underdetermined"
+    },
+  
+    {
+      "word"    : "küçümenlik",
+      "translation" : "underflow"
+    },
+  
+    {
+      "word"    : "yönsüz çizgesel model",
+      "translation" : "undirected graphical model"
+    },
+  
+    {
+      "word"    : "yönsüz model",
+      "translation" : "undirected model"
+    },
+  
+    {
+      "word"    : "düzgün dağılım",
+      "translation" : "uniform distribution"
+    },
+  
+    {
+      "word"    : "tek tepeli dağılım",
+      "translation" : "unimodal distribution"
+    },
+  
+    {
+      "word"    : "birim norm",
+      "translation" : "unit norm"
+    },
+  
+    {
+      "word"    : "birim vektör",
+      "translation" : "unit vector"
+    },
+  
+    {
+      "word"    : "evrensel yaklaşıklık teoremi",
+      "translation" : "universal approximation theorem"
+    },
+  
+    {
+      "word"    : "evrensel yakınlaştırıcı",
+      "translation" : "universal approximator"
+    },
+  
+    {
+      "word"    : "normalleştirilmemiş olasılık dağılımı",
+      "translation" : "unnormalized probability distribution"
+    },
+  
+    {
+      "word"    : "dağıtım",
+      "translation" : "unpooling"
+    },
+  
+    {
+      "word"    : "denetimsiz öğrenme",
+      "translation" : "unsurpervised learning"
+    },
+  
+    {
+      "word"    : "denetimsiz öneğitme",
+      "translation" : "unsurpervised pretraining"
+    },
+  
+    {
+      "word"    : "v-yapısı",
+      "translation" : "v-structure"
+    },
+  
+    {
+      "word"    : "Vapnik-Chervonenkis boyutu",
+      "translation" : "Vapnik-Chervonenkis dimension"
+    },
+  
+    {
+      "word"    : "değişken",
+      "translation" : "variable"
+    },
+  
+    {
+      "word"    : "değişirlik",
+      "translation" : "variance"
+    },
+  
+    {
+      "word"    : "değişimsel",
+      "translation" : "variational"
+    },
+  
+    {
+      "word"    : "değişimsel otokodlayıcı",
+      "translation" : "variational autoencoder"
+    },
+  
+    {
+      "word"    : "değişken türevler",
+      "translation" : "variational derivatives"
+    },
+  
+    {
+      "word"    : "değişken serbest enerji",
+      "translation" : "variational free energy"
+    },
+  
+    {
+      "word"    : "değişimsel çıkarım",
+      "translation" : "variational inference"
+    },
+  
+    {
+      "word"    : "VC boyutu",
+      "translation" : "VC dimension"
+    },
+  
+    {
+      "word"    : "vektör",
+      "translation" : "vector"
+    },
+  
+    {
+      "word"    : "sanal çekişmeli örnekler",
+      "translation" : "virtual adversarial examples"
+    },
+  
+    {
+      "word"    : "görünür katman",
+      "translation" : "visible layer"
+    },
+  
+    {
+      "word"    : "görünür değişken",
+      "translation" : "visible variable"
+    },
+  
+    {
+      "word"    : "hacimsel veri",
+      "translation" : "volumetric data"
+    },
+  
+    {
+      "word"    : "Uyandırma-Uyutma",
+      "translation" : "Wake-Sleep"
+    },
+  
+    {
+      "word"    : "ağırlık azalımı",
+      "translation" : "weight decay"
+    },
+  
+    {
+      "word"    : "ağırlık uzayı simetrisi",
+      "translation" : "weight space symmetry"
+    },
+  
+    {
+      "word"    : "beyazlaştırma",
+      "translation" : "whitening"
+    },
+  
+    {
+      "word"    : "kelime gömülmesi",
+      "translation" : "word embedding"
+    },
+  
+    {
+      "word"    : "verisiz öğrenme",
+      "translation" : "zero-data learning"
+    },
+  
+    {
+      "word"    : "eksik etiketli öğrenme",
+      "translation" : "zero-shot learning"
+    },
+  
+    {
+      "word"    : "0-1 kayıp",
+      "translation" : "0-1 loss"
     }
   
 ]

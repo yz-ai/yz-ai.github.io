@@ -23,7 +23,7 @@ $(document).ready(function() {
 
         var expression = new RegExp(search_text, "i");
 
-        if (search_text.length > 1) {
+        if (search_text.length > 2) {
             $.getJSON("assets/data/" + dict_file, function(data) {
                 $.each(data, function(key, value) {
                     if (expression.test(value.word)) {
