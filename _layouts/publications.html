@@ -2,17 +2,39 @@
 layout: wrapper
 ---
 
-
 <!--PAGE CONTENT-->
 {% include header_sub.html %}
 
-		
+
 <div class="section section--darker-theme-color-bg">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-7">
+                <div class="content">
+                    {% for publication in site.data.publications %} {% capture currentyear %}{{publication.year}}{% endcapture %} {% if currentyear != year %}
+                    <h2 id='{{ currentyear }}'>{{ currentyear }}</h2>
+                    {% capture year %}{{currentyear}}{% endcapture %} {% endif %}
+                    <ul class="posts-in-year">
+                        <li>
+{{ publication.authors }}
+<br/><b><a href="{{ publication.url }}" target="_blank">{{ publication.title }} </a></b>
+<br/>{{ publication.published_in }}
+                        </li>
+                    </ul>
+                    {% endfor %}
 
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-</div><!-- /.section -->
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <div class="sections-list-wrapper">
+                    <div class="sections-list js-sections js-affix js-scrollspy hidden-xs hidden-sm affix-top"></div>
+                    <!-- /.sections-list -->
+                </div>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.section -->
