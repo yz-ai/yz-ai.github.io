@@ -2878,6 +2878,2896 @@
     {
       "word"    : "0-1 kayıp",
       "translation" : "0-1 loss"
+    },
+  
+    {
+      "word"    : "eylem",
+      "translation" : "action"
+    },
+  
+    {
+      "word"    : "etkilenim",
+      "translation" : "activation"
+    },
+  
+    {
+      "word"    : "etkin",
+      "translation" : "active"
+    },
+  
+    {
+      "word"    : "çevrimsiz",
+      "translation" : "acyclic"
+    },
+  
+    {
+      "word"    : "uyarlama",
+      "translation" : "adaptation"
+    },
+  
+    {
+      "word"    : "eklemeli",
+      "translation" : "additive"
+    },
+  
+    {
+      "word"    : "hava devinim bilimi",
+      "translation" : "aerodynamics"
+    },
+  
+    {
+      "word"    : "etmen",
+      "translation" : "agent"
+    },
+  
+    {
+      "word"    : "birleştirmeli",
+      "translation" : "agglomerative"
+    },
+  
+    {
+      "word"    : "algoritma",
+      "translation" : "algorithm"
+    },
+  
+    {
+      "word"    : "hizalama",
+      "translation" : "alignment"
+    },
+  
+    {
+      "word"    : "eş gen",
+      "translation" : "allele"
+    },
+  
+    {
+      "word"    : "çözümleme",
+      "translation" : "analysis"
+    },
+  
+    {
+      "word"    : "çözümsel",
+      "translation" : "analytical"
+    },
+  
+    {
+      "word"    : "çözümleyici",
+      "translation" : "analyzer"
+    },
+  
+    {
+      "word"    : "ata",
+      "translation" : "ancestor"
+    },
+  
+    {
+      "word"    : "çapa",
+      "translation" : "anchor"
+    },
+  
+    {
+      "word"    : "ve",
+      "translation" : "and"
+    },
+  
+    {
+      "word"    : "tavlamak",
+      "translation" : "anneal"
+    },
+  
+    {
+      "word"    : "yaklaşık",
+      "translation" : "approximate"
+    },
+  
+    {
+      "word"    : "yaklaşıklama",
+      "translation" : "approximation"
+    },
+  
+    {
+      "word"    : "ayrıt",
+      "translation" : "arc"
+    },
+  
+    {
+      "word"    : "eklemleyici",
+      "translation" : "articulator"
+    },
+  
+    {
+      "word"    : "ilişkilendirme",
+      "translation" : "association"
+    },
+  
+    {
+      "word"    : "öznitelik",
+      "translation" : "attribute"
+    },
+  
+    {
+      "word"    : "genişletilmiş",
+      "translation" : "augmented"
+    },
+  
+    {
+      "word"    : "kimlik doğrulama",
+      "translation" : "authentication"
+    },
+  
+    {
+      "word"    : "özilişkilendirici",
+      "translation" : "autoassociator"
+    },
+  
+    {
+      "word"    : "özdevinir",
+      "translation" : "automaton"
+    },
+  
+    {
+      "word"    : "belit",
+      "translation" : "axiom"
+    },
+  
+    {
+      "word"    : "geriye taşıma",
+      "translation" : "backup"
+    },
+  
+    {
+      "word"    : "geriye doğru",
+      "translation" : "backward"
+    },
+  
+    {
+      "word"    : "sözcük torbası",
+      "translation" : "bag of words"
+    },
+  
+    {
+      "word"    : "kollu kumar makinesi",
+      "translation" : "bandit"
+    },
+  
+    {
+      "word"    : "taban",
+      "translation" : "base"
+    },
+  
+    {
+      "word"    : "taban",
+      "translation" : "basis"
+    },
+  
+    {
+      "word"    : "sepet",
+      "translation" : "basket"
+    },
+  
+    {
+      "word"    : "toptan",
+      "translation" : "batch"
+    },
+  
+    {
+      "word"    : "bayesçi",
+      "translation" : "bayesian"
+    },
+  
+    {
+      "word"    : "inanç",
+      "translation" : "belief"
+    },
+  
+    {
+      "word"    : "denek",
+      "translation" : "benchmark"
+    },
+  
+    {
+      "word"    : "yanlılık",
+      "translation" : "bias"
+    },
+  
+    {
+      "word"    : "ek girdi",
+      "translation" : "bias unit"
+    },
+  
+    {
+      "word"    : "kutucuk",
+      "translation" : "bin"
+    },
+  
+    {
+      "word"    : "ikili",
+      "translation" : "binary"
+    },
+  
+    {
+      "word"    : "değer atama",
+      "translation" : "binding"
+    },
+  
+    {
+      "word"    : "binom",
+      "translation" : "binomial"
+    },
+  
+    {
+      "word"    : "biyometri",
+      "translation" : "biometrics"
+    },
+  
+    {
+      "word"    : "bölükleme",
+      "translation" : "blocking"
+    },
+  
+    {
+      "word"    : "mantıksal",
+      "translation" : "boolean"
+    },
+  
+    {
+      "word"    : "rastgele örnekleme",
+      "translation" : "bootstrap"
+    },
+  
+    {
+      "word"    : "dallan ve sınırla",
+      "translation" : "branch and bound"
+    },
+  
+    {
+      "word"    : "genişlik öncelikli",
+      "translation" : "breadth-first"
+    },
+  
+    {
+      "word"    : "tümsek",
+      "translation" : "bump"
+    },
+  
+    {
+      "word"    : "asal",
+      "translation" : "canonical"
+    },
+  
+    {
+      "word"    : "sığım",
+      "translation" : "capacity"
+    },
+  
+    {
+      "word"    : "ardışık",
+      "translation" : "cascade"
+    },
+  
+    {
+      "word"    : "örnek tabanlı",
+      "translation" : "case-based"
+    },
+  
+    {
+      "word"    : "nedensel",
+      "translation" : "causal"
+    },
+  
+    {
+      "word"    : "neden",
+      "translation" : "cause"
+    },
+  
+    {
+      "word"    : "limit theorem merkezi limit kuramı",
+      "translation" : "central"
+    },
+  
+    {
+      "word"    : "zincir",
+      "translation" : "chain"
+    },
+  
+    {
+      "word"    : "bölüm",
+      "translation" : "chapter"
+    },
+  
+    {
+      "word"    : "betimlemek",
+      "translation" : "characterize"
+    },
+  
+    {
+      "word"    : "ki kare",
+      "translation" : "chi-square"
+    },
+  
+    {
+      "word"    : "şehir içi uzaklık",
+      "translation" : "city-block distance"
+    },
+  
+    {
+      "word"    : "sınıf",
+      "translation" : "class"
+    },
+  
+    {
+      "word"    : "sınıflandırıcı",
+      "translation" : "classifier"
+    },
+  
+    {
+      "word"    : "hizip",
+      "translation" : "clique"
+    },
+  
+    {
+      "word"    : "öbek",
+      "translation" : "cluster"
+    },
+  
+    {
+      "word"    : "gizyazı",
+      "translation" : "code"
+    },
+  
+    {
+      "word"    : "vector gizyazı yöneyi",
+      "translation" : "codebook"
+    },
+  
+    {
+      "word"    : "sütun",
+      "translation" : "column"
+    },
+  
+    {
+      "word"    : "birleşim",
+      "translation" : "combination"
+    },
+  
+    {
+      "word"    : "yarışmacı",
+      "translation" : "competitive"
+    },
+  
+    {
+      "word"    : "tümleyen",
+      "translation" : "complement"
+    },
+  
+    {
+      "word"    : "karmaşıklık",
+      "translation" : "complexity"
+    },
+  
+    {
+      "word"    : "bileşen",
+      "translation" : "component"
+    },
+  
+    {
+      "word"    : "sıkıştırma",
+      "translation" : "compression"
+    },
+  
+    {
+      "word"    : "hesaplama",
+      "translation" : "computation"
+    },
+  
+    {
+      "word"    : "içbükey",
+      "translation" : "concave"
+    },
+  
+    {
+      "word"    : "seyrek",
+      "translation" : "condensed"
+    },
+  
+    {
+      "word"    : "independence koşullu bağımsızlık",
+      "translation" : "conditional"
+    },
+  
+    {
+      "word"    : "güven+",
+      "translation" : "confidence"
+    },
+  
+    {
+      "word"    : "hata dizeyi",
+      "translation" : "confusion matrix"
+    },
+  
+    {
+      "word"    : "eşlenik",
+      "translation" : "conjugate"
+    },
+  
+    {
+      "word"    : "bağlı çizge",
+      "translation" : "connected graph"
+    },
+  
+    {
+      "word"    : "bağlantı",
+      "translation" : "connection"
+    },
+  
+    {
+      "word"    : "bağlantısallık",
+      "translation" : "connectivity"
+    },
+  
+    {
+      "word"    : "sabit",
+      "translation" : "constant"
+    },
+  
+    {
+      "word"    : "olumsallık çizelgesi",
+      "translation" : "contingency table"
+    },
+  
+    {
+      "word"    : "çevrit",
+      "translation" : "contour"
+    },
+  
+    {
+      "word"    : "zıtlık",
+      "translation" : "contrast"
+    },
+  
+    {
+      "word"    : "dışbükey",
+      "translation" : "convex"
+    },
+  
+    {
+      "word"    : "evrişim",
+      "translation" : "convolution"
+    },
+  
+    {
+      "word"    : "işbirlikçi",
+      "translation" : "cooperative"
+    },
+  
+    {
+      "word"    : "eksen değerleri",
+      "translation" : "coordinates"
+    },
+  
+    {
+      "word"    : "düzeltme",
+      "translation" : "correction"
+    },
+  
+    {
+      "word"    : "ilinti",
+      "translation" : "correlation"
+    },
+  
+    {
+      "word"    : "bedel",
+      "translation" : "cost"
+    },
+  
+    {
+      "word"    : "sayım",
+      "translation" : "count"
+    },
+  
+    {
+      "word"    : "bağlı",
+      "translation" : "coupled"
+    },
+  
+    {
+      "word"    : "eşdeğişinti",
+      "translation" : "covariance"
+    },
+  
+    {
+      "word"    : "kapsamak",
+      "translation" : "cover"
+    },
+  
+    {
+      "word"    : "assignment sorumluluk atama",
+      "translation" : "credit"
+    },
+  
+    {
+      "word"    : "ölçüt",
+      "translation" : "criterion"
+    },
+  
+    {
+      "word"    : "kıstas",
+      "translation" : "criterion"
+    },
+  
+    {
+      "word"    : "eleştirmen",
+      "translation" : "critic"
+    },
+  
+    {
+      "word"    : "çapraz düzensizlik",
+      "translation" : "cross-entropy"
+    },
+  
+    {
+      "word"    : "çapraz geçerleme",
+      "translation" : "cross-validation"
+    },
+  
+    {
+      "word"    : "birikimli dağılım",
+      "translation" : "cumulative distribution"
+    },
+  
+    {
+      "word"    : "çok boyutluluğun laneti",
+      "translation" : "curse of dimensionality"
+    },
+  
+    {
+      "word"    : "eğrilik",
+      "translation" : "curvature"
+    },
+  
+    {
+      "word"    : "eğri",
+      "translation" : "curve"
+    },
+  
+    {
+      "word"    : "çevrim",
+      "translation" : "cycle"
+    },
+  
+    {
+      "word"    : "veri kümesi",
+      "translation" : "dataset"
+    },
+  
+    {
+      "word"    : "sönüm",
+      "translation" : "decay"
+    },
+  
+    {
+      "word"    : "karar",
+      "translation" : "decision"
+    },
+  
+    {
+      "word"    : "gizçözmek",
+      "translation" : "decode"
+    },
+  
+    {
+      "word"    : "gizçözer",
+      "translation" : "decoder"
+    },
+  
+    {
+      "word"    : "ayrışım",
+      "translation" : "decomposition"
+    },
+  
+    {
+      "word"    : "azalımlı",
+      "translation" : "decremental"
+    },
+  
+    {
+      "word"    : "ağaç çizit",
+      "translation" : "dendrogram"
+    },
+  
+    {
+      "word"    : "yoğunluk",
+      "translation" : "density"
+    },
+  
+    {
+      "word"    : "derinlik öncelikli",
+      "translation" : "depth-first"
+    },
+  
+    {
+      "word"    : "soyundan gelen",
+      "translation" : "descendant"
+    },
+  
+    {
+      "word"    : "betimleme",
+      "translation" : "description"
+    },
+  
+    {
+      "word"    : "tasarım",
+      "translation" : "design"
+    },
+  
+    {
+      "word"    : "ayrıntı",
+      "translation" : "detail"
+    },
+  
+    {
+      "word"    : "sezim",
+      "translation" : "detection"
+    },
+  
+    {
+      "word"    : "gerekirci",
+      "translation" : "deterministic"
+    },
+  
+    {
+      "word"    : "sapma",
+      "translation" : "deviation"
+    },
+  
+    {
+      "word"    : "tanı",
+      "translation" : "diagnosis"
+    },
+  
+    {
+      "word"    : "tanısal",
+      "translation" : "diagnostic"
+    },
+  
+    {
+      "word"    : "köşegen",
+      "translation" : "diagonal"
+    },
+  
+    {
+      "word"    : "çizem",
+      "translation" : "diagram"
+    },
+  
+    {
+      "word"    : "ikili ayırıcı",
+      "translation" : "dichotomizer"
+    },
+  
+    {
+      "word"    : "yayınım",
+      "translation" : "diffusion"
+    },
+  
+    {
+      "word"    : "ikilem",
+      "translation" : "dilemma"
+    },
+  
+    {
+      "word"    : "boyut",
+      "translation" : "dimension"
+    },
+  
+    {
+      "word"    : "yönlü",
+      "translation" : "directed"
+    },
+  
+    {
+      "word"    : "süreksizlik",
+      "translation" : "discontinuity"
+    },
+  
+    {
+      "word"    : "indirim",
+      "translation" : "discount"
+    },
+  
+    {
+      "word"    : "kesikli",
+      "translation" : "discrete"
+    },
+  
+    {
+      "word"    : "kesiklileştirme",
+      "translation" : "discretization"
+    },
+  
+    {
+      "word"    : "ayırtaç",
+      "translation" : "discriminant"
+    },
+  
+    {
+      "word"    : "uzaklık",
+      "translation" : "distance"
+    },
+  
+    {
+      "word"    : "dağıtık",
+      "translation" : "distributed"
+    },
+  
+    {
+      "word"    : "dağılım",
+      "translation" : "distribution"
+    },
+  
+    {
+      "word"    : "ıraksama",
+      "translation" : "divergence"
+    },
+  
+    {
+      "word"    : "çeşitlilik",
+      "translation" : "diversity"
+    },
+  
+    {
+      "word"    : "bölmeli",
+      "translation" : "divisive"
+    },
+  
+    {
+      "word"    : "belge",
+      "translation" : "document"
+    },
+  
+    {
+      "word"    : "iç çarpım",
+      "translation" : "dot product"
+    },
+  
+    {
+      "word"    : "kuşku",
+      "translation" : "doubt"
+    },
+  
+    {
+      "word"    : "eşlek",
+      "translation" : "dual"
+    },
+  
+    {
+      "word"    : "yapay değişken",
+      "translation" : "dummy variable"
+    },
+  
+    {
+      "word"    : "devingen",
+      "translation" : "dynamic"
+    },
+  
+    {
+      "word"    : "ayrıt",
+      "translation" : "edge"
+    },
+  
+    {
+      "word"    : "distance düzeltme uzaklığı",
+      "translation" : "edit"
+    },
+  
+    {
+      "word"    : "etkili",
+      "translation" : "efficient"
+    },
+  
+    {
+      "word"    : "özyöney",
+      "translation" : "eigenvector"
+    },
+  
+    {
+      "word"    : "öğe",
+      "translation" : "element"
+    },
+  
+    {
+      "word"    : "uygunluk",
+      "translation" : "eligibility"
+    },
+  
+    {
+      "word"    : "elemek",
+      "translation" : "eliminate"
+    },
+  
+    {
+      "word"    : "gömme",
+      "translation" : "embedding"
+    },
+  
+    {
+      "word"    : "yayım",
+      "translation" : "emission"
+    },
+  
+    {
+      "word"    : "gözlemsel",
+      "translation" : "empirical"
+    },
+  
+    {
+      "word"    : "gizyazmak",
+      "translation" : "encode"
+    },
+  
+    {
+      "word"    : "gizyazar",
+      "translation" : "encoder"
+    },
+  
+    {
+      "word"    : "küme yada topluluk",
+      "translation" : "ensemble"
+    },
+  
+    {
+      "word"    : "düzensizlik",
+      "translation" : "entropy"
+    },
+  
+    {
+      "word"    : "ortam",
+      "translation" : "environment"
+    },
+  
+    {
+      "word"    : "serüven",
+      "translation" : "episode"
+    },
+  
+    {
+      "word"    : "dönem",
+      "translation" : "epoch"
+    },
+  
+    {
+      "word"    : "denklem",
+      "translation" : "equation"
+    },
+  
+    {
+      "word"    : "hata",
+      "translation" : "error"
+    },
+  
+    {
+      "word"    : "hata çubuğu",
+      "translation" : "error bar"
+    },
+  
+    {
+      "word"    : "ve ötekiler",
+      "translation" : "et al"
+    },
+  
+    {
+      "word"    : "öklid uzaklığı",
+      "translation" : "euclidean distance"
+    },
+  
+    {
+      "word"    : "değerlendirme",
+      "translation" : "evaluation"
+    },
+  
+    {
+      "word"    : "kanıt",
+      "translation" : "evidence"
+    },
+  
+    {
+      "word"    : "kesin",
+      "translation" : "exact"
+    },
+  
+    {
+      "word"    : "örnek",
+      "translation" : "example"
+    },
+  
+    {
+      "word"    : "alıştırma",
+      "translation" : "exercise"
+    },
+  
+    {
+      "word"    : "kapsayan",
+      "translation" : "exhaustive"
+    },
+  
+    {
+      "word"    : "açılım",
+      "translation" : "expansion"
+    },
+  
+    {
+      "word"    : "beklenti büyütme",
+      "translation" : "expectation-maximization"
+    },
+  
+    {
+      "word"    : "deney",
+      "translation" : "experiment"
+    },
+  
+    {
+      "word"    : "uzman",
+      "translation" : "expert"
+    },
+  
+    {
+      "word"    : "örtbas etmek",
+      "translation" : "explaining away"
+    },
+  
+    {
+      "word"    : "bildirim",
+      "translation" : "expression"
+    },
+  
+    {
+      "word"    : "çıkarım",
+      "translation" : "extraction"
+    },
+  
+    {
+      "word"    : "dışdeğerleme",
+      "translation" : "extrapolation"
+    },
+  
+    {
+      "word"    : "çarpan veya etken",
+      "translation" : "factor"
+    },
+  
+    {
+      "word"    : "etkensel",
+      "translation" : "factorial"
+    },
+  
+    {
+      "word"    : "öznitelik",
+      "translation" : "feature"
+    },
+  
+    {
+      "word"    : "ileriye doğru",
+      "translation" : "feedforward"
+    },
+  
+    {
+      "word"    : "şekil",
+      "translation" : "figure"
+    },
+  
+    {
+      "word"    : "süzgeç",
+      "translation" : "filter"
+    },
+  
+    {
+      "word"    : "sonlu serüven",
+      "translation" : "finite horizon"
+    },
+  
+    {
+      "word"    : "oturtma yada uydurma",
+      "translation" : "fit"
+    },
+  
+    {
+      "word"    : "esnek",
+      "translation" : "flexible"
+    },
+  
+    {
+      "word"    : "kayan",
+      "translation" : "floating"
+    },
+  
+    {
+      "word"    : "kat",
+      "translation" : "fold"
+    },
+  
+    {
+      "word"    : "ileriye doğru",
+      "translation" : "forward"
+    },
+  
+    {
+      "word"    : "cepheden",
+      "translation" : "frontal"
+    },
+  
+    {
+      "word"    : "işlev",
+      "translation" : "function"
+    },
+  
+    {
+      "word"    : "kaynaştırma",
+      "translation" : "fusion"
+    },
+  
+    {
+      "word"    : "bulanık",
+      "translation" : "fuzzy"
+    },
+  
+    {
+      "word"    : "genelleme",
+      "translation" : "generalization"
+    },
+  
+    {
+      "word"    : "üretici",
+      "translation" : "generative"
+    },
+  
+    {
+      "word"    : "çekişmeli üretici",
+      "translation" : "Generative adversarial"
+    },
+  
+    {
+      "word"    : "genel",
+      "translation" : "generic"
+    },
+  
+    {
+      "word"    : "yerölçümsel",
+      "translation" : "geodesic"
+    },
+  
+    {
+      "word"    : "eğim",
+      "translation" : "gradient"
+    },
+  
+    {
+      "word"    : "çizge",
+      "translation" : "graph"
+    },
+  
+    {
+      "word"    : "çizgesel",
+      "translation" : "graphical"
+    },
+  
+    {
+      "word"    : "açgözlü",
+      "translation" : "greedy"
+    },
+  
+    {
+      "word"    : "öbek",
+      "translation" : "group"
+    },
+  
+    {
+      "word"    : "keskin",
+      "translation" : "hard"
+    },
+  
+    {
+      "word"    : "anahtarlı çizelge",
+      "translation" : "hash table"
+    },
+  
+    {
+      "word"    : "sezgi",
+      "translation" : "heuristics"
+    },
+  
+    {
+      "word"    : "saklı",
+      "translation" : "hidden"
+    },
+  
+    {
+      "word"    : "ağaç yapılı",
+      "translation" : "hierarchical"
+    },
+  
+    {
+      "word"    : "üst düzey",
+      "translation" : "higher-order"
+    },
+  
+    {
+      "word"    : "menteşe yitimi",
+      "translation" : "hinge loss"
+    },
+  
+    {
+      "word"    : "ipucu",
+      "translation" : "hint"
+    },
+  
+    {
+      "word"    : "çubuk,çizit",
+      "translation" : "histogram"
+    },
+  
+    {
+      "word"    : "karma",
+      "translation" : "hybrid"
+    },
+  
+    {
+      "word"    : "üstün",
+      "translation" : "hyper"
+    },
+  
+    {
+      "word"    : "denence",
+      "translation" : "hypothesis"
+    },
+  
+    {
+      "word"    : "özdeş",
+      "translation" : "identical"
+    },
+  
+    {
+      "word"    : "eğer-ise",
+      "translation" : "if-then"
+    },
+  
+    {
+      "word"    : "bağımsız ve özdeşçe dağılmış",
+      "translation" : "iid"
+    },
+  
+    {
+      "word"    : "kötü konumlanmış",
+      "translation" : "ill-posed"
+    },
+  
+    {
+      "word"    : "katışıklık",
+      "translation" : "impurity"
+    },
+  
+    {
+      "word"    : "yükleme",
+      "translation" : "imputation"
+    },
+  
+    {
+      "word"    : "artımlı",
+      "translation" : "incremental"
+    },
+  
+    {
+      "word"    : "bağımsızlık",
+      "translation" : "independence"
+    },
+  
+    {
+      "word"    : "dizin",
+      "translation" : "index"
+    },
+  
+    {
+      "word"    : "gösterge",
+      "translation" : "indicator"
+    },
+  
+    {
+      "word"    : "kural oluşturma",
+      "translation" : "induction"
+    },
+  
+    {
+      "word"    : "model varsayımı",
+      "translation" : "inductive bias"
+    },
+  
+    {
+      "word"    : "çıkarsama",
+      "translation" : "inference"
+    },
+  
+    {
+      "word"    : "sonsuz serüven",
+      "translation" : "infinite horizon"
+    },
+  
+    {
+      "word"    : "etki",
+      "translation" : "influence"
+    },
+  
+    {
+      "word"    : "bilgi",
+      "translation" : "information"
+    },
+  
+    {
+      "word"    : "ketleme",
+      "translation" : "inhibition"
+    },
+  
+    {
+      "word"    : "ilk",
+      "translation" : "initial"
+    },
+  
+    {
+      "word"    : "iç çarpım",
+      "translation" : "inner product"
+    },
+  
+    {
+      "word"    : "girdi",
+      "translation" : "input"
+    },
+  
+    {
+      "word"    : "örnek",
+      "translation" : "instance"
+    },
+  
+    {
+      "word"    : "somutlaşmak",
+      "translation" : "instantiate"
+    },
+  
+    {
+      "word"    : "etkileşim",
+      "translation" : "interaction"
+    },
+  
+    {
+      "word"    : "iç",
+      "translation" : "internal"
+    },
+  
+    {
+      "word"    : "ara değerlemek",
+      "translation" : "interpolate"
+    },
+  
+    {
+      "word"    : "yorumlanabilirlik",
+      "translation" : "interpretability"
+    },
+  
+    {
+      "word"    : "aralık",
+      "translation" : "interval"
+    },
+  
+    {
+      "word"    : "değişmezlik",
+      "translation" : "invariance"
+    },
+  
+    {
+      "word"    : "eşölçümsel",
+      "translation" : "isometric"
+    },
+  
+    {
+      "word"    : "eşolasılık",
+      "translation" : "isoprobability"
+    },
+  
+    {
+      "word"    : "öğe",
+      "translation" : "item"
+    },
+  
+    {
+      "word"    : "yineleme",
+      "translation" : "iteration"
+    },
+  
+    {
+      "word"    : "sipariş",
+      "translation" : "jobshop"
+    },
+  
+    {
+      "word"    : "birleşik",
+      "translation" : "joint"
+    },
+  
+    {
+      "word"    : "sıçrama",
+      "translation" : "jump"
+    },
+  
+    {
+      "word"    : "kavşak",
+      "translation" : "junction"
+    },
+  
+    {
+      "word"    : "k kat",
+      "translation" : "k fold"
+    },
+  
+    {
+      "word"    : "çekirdek",
+      "translation" : "kernel"
+    },
+  
+    {
+      "word"    : "çekirdekleme",
+      "translation" : "kernelization"
+    },
+  
+    {
+      "word"    : "k merkezli",
+      "translation" : "k-means"
+    },
+  
+    {
+      "word"    : "en yakın k komşu",
+      "translation" : "k-nearest neighbor"
+    },
+  
+    {
+      "word"    : "bilgi",
+      "translation" : "knowledge"
+    },
+  
+    {
+      "word"    : "saklı",
+      "translation" : "latent"
+    },
+  
+    {
+      "word"    : "yanal",
+      "translation" : "lateral"
+    },
+  
+    {
+      "word"    : "kafes",
+      "translation" : "lattice"
+    },
+  
+    {
+      "word"    : "katman",
+      "translation" : "layer"
+    },
+  
+    {
+      "word"    : "önder öbekleme",
+      "translation" : "leader cluster"
+    },
+  
+    {
+      "word"    : "yaprak",
+      "translation" : "leaf"
+    },
+  
+    {
+      "word"    : "birini dışarıda bırak",
+      "translation" : "leave-one-out"
+    },
+  
+    {
+      "word"    : "düzey",
+      "translation" : "level"
+    },
+  
+    {
+      "word"    : "etki ilişkilendirme kuralı",
+      "translation" : "lift of an association rule"
+    },
+  
+    {
+      "word"    : "olabilirlik",
+      "translation" : "likelihood"
+    },
+  
+    {
+      "word"    : "doğrusal",
+      "translation" : "linear"
+    },
+  
+    {
+      "word"    : "bağ",
+      "translation" : "link"
+    },
+  
+    {
+      "word"    : "yükleme",
+      "translation" : "loading"
+    },
+  
+    {
+      "word"    : "yerel",
+      "translation" : "local"
+    },
+  
+    {
+      "word"    : "s biçimli",
+      "translation" : "logistic"
+    },
+  
+    {
+      "word"    : "ters s",
+      "translation" : "logit"
+    },
+  
+    {
+      "word"    : "döngü",
+      "translation" : "loop"
+    },
+  
+    {
+      "word"    : "yitim",
+      "translation" : "loss"
+    },
+  
+    {
+      "word"    : "çoğunluk",
+      "translation" : "majority"
+    },
+  
+    {
+      "word"    : "harita",
+      "translation" : "map"
+    },
+  
+    {
+      "word"    : "eşleme",
+      "translation" : "mapping"
+    },
+  
+    {
+      "word"    : "kenar payı",
+      "translation" : "margin"
+    },
+  
+    {
+      "word"    : "tümleştirme",
+      "translation" : "marginalize"
+    },
+  
+    {
+      "word"    : "eşleştirme",
+      "translation" : "matching"
+    },
+  
+    {
+      "word"    : "dizey",
+      "translation" : "matrix"
+    },
+  
+    {
+      "word"    : "büyütme",
+      "translation" : "maximization"
+    },
+  
+    {
+      "word"    : "en büyük sonsal ebs",
+      "translation" : "maximum a posteriori map"
+    },
+  
+    {
+      "word"    : "en büyük olabilirlik ebo",
+      "translation" : "maximum likelihood ml"
+    },
+  
+    {
+      "word"    : "büyütme çarpma",
+      "translation" : "max-product"
+    },
+  
+    {
+      "word"    : "ortalama",
+      "translation" : "mean"
+    },
+  
+    {
+      "word"    : "ölçüt",
+      "translation" : "measure"
+    },
+  
+    {
+      "word"    : "düzenek",
+      "translation" : "mechanism"
+    },
+  
+    {
+      "word"    : "eşeyli bölünme",
+      "translation" : "meiosis"
+    },
+  
+    {
+      "word"    : "üyelik",
+      "translation" : "membership"
+    },
+  
+    {
+      "word"    : "bellek",
+      "translation" : "memory"
+    },
+  
+    {
+      "word"    : "ileti",
+      "translation" : "message"
+    },
+  
+    {
+      "word"    : "yöntembilim",
+      "translation" : "methodology"
+    },
+  
+    {
+      "word"    : "ölçev",
+      "translation" : "metric"
+    },
+  
+    {
+      "word"    : "küçültme",
+      "translation" : "minimization"
+    },
+  
+    {
+      "word"    : "eksik",
+      "translation" : "missing"
+    },
+  
+    {
+      "word"    : "karışım",
+      "translation" : "mixture"
+    },
+  
+    {
+      "word"    : "kip",
+      "translation" : "modality"
+    },
+  
+    {
+      "word"    : "tepe dağılımı",
+      "translation" : "mode of a density"
+    },
+  
+    {
+      "word"    : "model",
+      "translation" : "model"
+    },
+  
+    {
+      "word"    : "ahlaklılastırma",
+      "translation" : "moralization"
+    },
+  
+    {
+      "word"    : "katlıterimli dağılım",
+      "translation" : "multinomial distribution"
+    },
+  
+    {
+      "word"    : "çoklu",
+      "translation" : "multiple"
+    },
+  
+    {
+      "word"    : "çok aşamalı",
+      "translation" : "multistage"
+    },
+  
+    {
+      "word"    : "çok değişkenli",
+      "translation" : "multivariate"
+    },
+  
+    {
+      "word"    : "exclusive ayrık",
+      "translation" : "mutually"
+    },
+  
+    {
+      "word"    : "saf",
+      "translation" : "naive"
+    },
+  
+    {
+      "word"    : "eksi",
+      "translation" : "negative"
+    },
+  
+    {
+      "word"    : "ağ",
+      "translation" : "network"
+    },
+  
+    {
+      "word"    : "sinir hücresi",
+      "translation" : "neuron"
+    },
+  
+    {
+      "word"    : "düğüm",
+      "translation" : "node"
+    },
+  
+    {
+      "word"    : "gürültü",
+      "translation" : "noise"
+    },
+  
+    {
+      "word"    : "doğrusal olmayan",
+      "translation" : "nonlinear"
+    },
+  
+    {
+      "word"    : "eksi olmayan",
+      "translation" : "nonnegative"
+    },
+  
+    {
+      "word"    : "dağılımdan bağımsız",
+      "translation" : "nonparametric"
+    },
+  
+    {
+      "word"    : "büyüklük",
+      "translation" : "norm"
+    },
+  
+    {
+      "word"    : "normal",
+      "translation" : "normal"
+    },
+  
+    {
+      "word"    : "normalleştirme",
+      "translation" : "normalization"
+    },
+  
+    {
+      "word"    : "çokterimli zamanda bulunamaz",
+      "translation" : "np-complete"
+    },
+  
+    {
+      "word"    : "zararlı etken",
+      "translation" : "nuisance factor"
+    },
+  
+    {
+      "word"    : "sıfır denencesi",
+      "translation" : "null hypothesis"
+    },
+  
+    {
+      "word"    : "sayısal",
+      "translation" : "numeric"
+    },
+  
+    {
+      "word"    : "yatık",
+      "translation" : "oblique"
+    },
+  
+    {
+      "word"    : "gözlenebilir",
+      "translation" : "observable"
+    },
+  
+    {
+      "word"    : "gözlem",
+      "translation" : "observation"
+    },
+  
+    {
+      "word"    : "occam’ın usturası",
+      "translation" : "occam’s razor"
+    },
+  
+    {
+      "word"    : "örtülü",
+      "translation" : "occluded"
+    },
+  
+    {
+      "word"    : "çevrimdışı",
+      "translation" : "offline"
+    },
+  
+    {
+      "word"    : "politikasız",
+      "translation" : "off-policy"
+    },
+  
+    {
+      "word"    : "tüm değişkenli",
+      "translation" : "omnivariate"
+    },
+  
+    {
+      "word"    : "tek yanlı",
+      "translation" : "one-sided"
+    },
+  
+    {
+      "word"    : "çevrimiçi",
+      "translation" : "online"
+    },
+  
+    {
+      "word"    : "politikalı",
+      "translation" : "on-policy"
+    },
+  
+    {
+      "word"    : "en iyi",
+      "translation" : "optimal"
+    },
+  
+    {
+      "word"    : "iyileme",
+      "translation" : "optimization"
+    },
+  
+    {
+      "word"    : "veya",
+      "translation" : "or"
+    },
+  
+    {
+      "word"    : "çokterimlinin derecesi",
+      "translation" : "order of a polynomial"
+    },
+  
+    {
+      "word"    : "sıra istatistikleri",
+      "translation" : "order statistics"
+    },
+  
+    {
+      "word"    : "eksenlerin sıfır noktası",
+      "translation" : "origin of axes"
+    },
+  
+    {
+      "word"    : "salınım",
+      "translation" : "oscillate"
+    },
+  
+    {
+      "word"    : "sonuç",
+      "translation" : "outcome"
+    },
+  
+    {
+      "word"    : "aykırı",
+      "translation" : "outlier"
+    },
+  
+    {
+      "word"    : "aşırı öğrenme",
+      "translation" : "overfitting"
+    },
+  
+    {
+      "word"    : "aşırı eğitme",
+      "translation" : "overtraining"
+    },
+  
+    {
+      "word"    : "eşli",
+      "translation" : "paired"
+    },
+  
+    {
+      "word"    : "eşleme",
+      "translation" : "pairing"
+    },
+  
+    {
+      "word"    : "ikili",
+      "translation" : "pairwise"
+    },
+  
+    {
+      "word"    : "koşut",
+      "translation" : "parallel"
+    },
+  
+    {
+      "word"    : "dağılıma bağlı",
+      "translation" : "parametric"
+    },
+  
+    {
+      "word"    : "ebeveyn düğüm",
+      "translation" : "parent node"
+    },
+  
+    {
+      "word"    : "eşlik",
+      "translation" : "parity"
+    },
+  
+    {
+      "word"    : "kısmi, kısmen",
+      "translation" : "partial"
+    },
+  
+    {
+      "word"    : "edilgen",
+      "translation" : "passive"
+    },
+  
+    {
+      "word"    : "yol",
+      "translation" : "path"
+    },
+  
+    {
+      "word"    : "örüntü",
+      "translation" : "pattern"
+    },
+  
+    {
+      "word"    : "soy",
+      "translation" : "pedigree"
+    },
+  
+    {
+      "word"    : "algılayıcı",
+      "translation" : "perceptron"
+    },
+  
+    {
+      "word"    : "başarım",
+      "translation" : "performance"
+    },
+  
+    {
+      "word"    : "sesbirimcik",
+      "translation" : "phone"
+    },
+  
+    {
+      "word"    : "sesbirim",
+      "translation" : "phoneme"
+    },
+  
+    {
+      "word"    : "soy ağacı",
+      "translation" : "phylogenetic tree"
+    },
+  
+    {
+      "word"    : "parçalı",
+      "translation" : "piecewise"
+    },
+  
+    {
+      "word"    : "imge noktası",
+      "translation" : "pixel"
+    },
+  
+    {
+      "word"    : "yoğrukluk",
+      "translation" : "plasticity"
+    },
+  
+    {
+      "word"    : "tabaka",
+      "translation" : "plate"
+    },
+  
+    {
+      "word"    : "çizim",
+      "translation" : "plot"
+    },
+  
+    {
+      "word"    : "çoğulluk",
+      "translation" : "plurality"
+    },
+  
+    {
+      "word"    : "politika",
+      "translation" : "policy"
+    },
+  
+    {
+      "word"    : "çoklu ayırıcı",
+      "translation" : "polychotomizer"
+    },
+  
+    {
+      "word"    : "çokyüzlü",
+      "translation" : "polyhedron"
+    },
+  
+    {
+      "word"    : "çokterimli",
+      "translation" : "polynomial"
+    },
+  
+    {
+      "word"    : "çoklu ağaç",
+      "translation" : "polytree"
+    },
+  
+    {
+      "word"    : "artı",
+      "translation" : "positive"
+    },
+  
+    {
+      "word"    : "kesin artı",
+      "translation" : "positive definite"
+    },
+  
+    {
+      "word"    : "yarı kesin artı",
+      "translation" : "positive semidefinite"
+    },
+  
+    {
+      "word"    : "sonsal olasılık",
+      "translation" : "posterior"
+    },
+  
+    {
+      "word"    : "artçı",
+      "translation" : "posthoc"
+    },
+  
+    {
+      "word"    : "geç budama",
+      "translation" : "postpruning"
+    },
+  
+    {
+      "word"    : "gerilim işlevi",
+      "translation" : "potential function"
+    },
+  
+    {
+      "word"    : "üst",
+      "translation" : "power"
+    },
+  
+    {
+      "word"    : "güç işlevi",
+      "translation" : "power function"
+    },
+  
+    {
+      "word"    : "kesinlik",
+      "translation" : "precision"
+    },
+  
+    {
+      "word"    : "belirtim",
+      "translation" : "predicate"
+    },
+  
+    {
+      "word"    : "öngörü",
+      "translation" : "prediction"
+    },
+  
+    {
+      "word"    : "öngörücü",
+      "translation" : "predictive"
+    },
+  
+    {
+      "word"    : "erken budama",
+      "translation" : "prepruning"
+    },
+  
+    {
+      "word"    : "asal",
+      "translation" : "primal"
+    },
+  
+    {
+      "word"    : "temel",
+      "translation" : "principal"
+    },
+  
+    {
+      "word"    : "ilke",
+      "translation" : "principle"
+    },
+  
+    {
+      "word"    : "önsel",
+      "translation" : "prior"
+    },
+  
+    {
+      "word"    : "olasılıksal",
+      "translation" : "probabilistic"
+    },
+  
+    {
+      "word"    : "olasılık",
+      "translation" : "probability"
+    },
+  
+    {
+      "word"    : "olası",
+      "translation" : "probably"
+    },
+  
+    {
+      "word"    : "yordam",
+      "translation" : "procedure"
+    },
+  
+    {
+      "word"    : "izdüşüm",
+      "translation" : "projection"
+    },
+  
+    {
+      "word"    : "yayılım",
+      "translation" : "propagation"
+    },
+  
+    {
+      "word"    : "önermeli kural",
+      "translation" : "propositional rule"
+    },
+  
+    {
+      "word"    : "asıl örnek",
+      "translation" : "prototype"
+    },
+  
+    {
+      "word"    : "budama",
+      "translation" : "pruning"
+    },
+  
+    {
+      "word"    : "örnek program",
+      "translation" : "pseudocode"
+    },
+  
+    {
+      "word"    : "saflık",
+      "translation" : "purity"
+    },
+  
+    {
+      "word"    : "izleme",
+      "translation" : "pursuit"
+    },
+  
+    {
+      "word"    : "karesel, ikinci dereceden",
+      "translation" : "quadratic"
+    },
+  
+    {
+      "word"    : "nicemleme",
+      "translation" : "quantization"
+    },
+  
+    {
+      "word"    : "sorgu",
+      "translation" : "query"
+    },
+  
+    {
+      "word"    : "dairesel",
+      "translation" : "radial"
+    },
+  
+    {
+      "word"    : "rastgele",
+      "translation" : "random"
+    },
+  
+    {
+      "word"    : "rastsal",
+      "translation" : "random"
+    },
+  
+    {
+      "word"    : "rastsallastırma",
+      "translation" : "randomization"
+    },
+  
+    {
+      "word"    : "açıklık",
+      "translation" : "range"
+    },
+  
+    {
+      "word"    : "dizeyin kertesi",
+      "translation" : "rank of a matrix"
+    },
+  
+    {
+      "word"    : "sıra sınaması",
+      "translation" : "rank test"
+    },
+  
+    {
+      "word"    : "gerçek zamanlı",
+      "translation" : "real-time"
+    },
+  
+    {
+      "word"    : "akıl yürütme",
+      "translation" : "reasoning"
+    },
+  
+    {
+      "word"    : "duyarlılık",
+      "translation" : "recall"
+    },
+  
+    {
+      "word"    : "alıcı",
+      "translation" : "receiver"
+    },
+  
+    {
+      "word"    : "algı alanı",
+      "translation" : "receptive field"
+    },
+  
+    {
+      "word"    : "ters",
+      "translation" : "reciprocal"
+    },
+  
+    {
+      "word"    : "tanıma",
+      "translation" : "recognition"
+    },
+  
+    {
+      "word"    : "geri çatma",
+      "translation" : "reconstruction"
+    },
+  
+    {
+      "word"    : "özyineli",
+      "translation" : "recurrent"
+    },
+  
+    {
+      "word"    : "özçağrılı",
+      "translation" : "recursive"
+    },
+  
+    {
+      "word"    : "fazlalık",
+      "translation" : "redundancy"
+    },
+  
+    {
+      "word"    : "dayanak",
+      "translation" : "reference"
+    },
+  
+    {
+      "word"    : "kaynaklar",
+      "translation" : "references"
+    },
+  
+    {
+      "word"    : "alan",
+      "translation" : "region"
+    },
+  
+    {
+      "word"    : "bağlanım",
+      "translation" : "regression"
+    },
+  
+    {
+      "word"    : "bağlanım çiziti",
+      "translation" : "regressogram"
+    },
+  
+    {
+      "word"    : "düzenlileştirme",
+      "translation" : "regularization"
+    },
+  
+    {
+      "word"    : "pekiştirme",
+      "translation" : "reinforcement"
+    },
+  
+    {
+      "word"    : "ret",
+      "translation" : "reject"
+    },
+  
+    {
+      "word"    : "görece",
+      "translation" : "relative"
+    },
+  
+    {
+      "word"    : "ilgililik",
+      "translation" : "relevance"
+    },
+  
+    {
+      "word"    : "çoğaltma",
+      "translation" : "replication"
+    },
+  
+    {
+      "word"    : "veri tabanı",
+      "translation" : "repository"
+    },
+  
+    {
+      "word"    : "gösterim",
+      "translation" : "representation"
+    },
+  
+    {
+      "word"    : "artık",
+      "translation" : "residual"
+    },
+  
+    {
+      "word"    : "tepki",
+      "translation" : "response"
+    },
+  
+    {
+      "word"    : "erişim",
+      "translation" : "retrieval"
+    },
+  
+    {
+      "word"    : "tersine mühendislik",
+      "translation" : "reverse engineering"
+    },
+  
+    {
+      "word"    : "ödül",
+      "translation" : "reward"
+    },
+  
+    {
+      "word"    : "sırt",
+      "translation" : "ridge"
+    },
+  
+    {
+      "word"    : "risk",
+      "translation" : "risk"
+    },
+  
+    {
+      "word"    : "gürbüz",
+      "translation" : "robust"
+    },
+  
+    {
+      "word"    : "satır",
+      "translation" : "row"
+    },
+  
+    {
+      "word"    : "kural",
+      "translation" : "rule"
+    },
+  
+    {
+      "word"    : "akan",
+      "translation" : "running"
+    },
+  
+    {
+      "word"    : "örneklemek veya örneklem",
+      "translation" : "sample"
+    },
+  
+    {
+      "word"    : "sayıl",
+      "translation" : "scalar"
+    },
+  
+    {
+      "word"    : "ölçek",
+      "translation" : "scale"
+    },
+  
+    {
+      "word"    : "saçılım",
+      "translation" : "scatter"
+    },
+  
+    {
+      "word"    : "görüntü",
+      "translation" : "scene"
+    },
+  
+    {
+      "word"    : "zaman çizelgesi",
+      "translation" : "schedule"
+    },
+  
+    {
+      "word"    : "kayşat",
+      "translation" : "scree"
+    },
+  
+    {
+      "word"    : "arama",
+      "translation" : "search"
+    },
+  
+    {
+      "word"    : "bölüm",
+      "translation" : "section"
+    },
+  
+    {
+      "word"    : "bölütleme",
+      "translation" : "segmentation"
+    },
+  
+    {
+      "word"    : "seçim",
+      "translation" : "selection"
+    },
+  
+    {
+      "word"    : "özörgütlemeli",
+      "translation" : "self-organizing"
+    },
+  
+    {
+      "word"    : "dağılıma yarı bağlı",
+      "translation" : "semiparametric"
+    },
+  
+    {
+      "word"    : "duyarlılık",
+      "translation" : "sensitivity"
+    },
+  
+    {
+      "word"    : "alıcı",
+      "translation" : "sensor"
+    },
+  
+    {
+      "word"    : "dizi",
+      "translation" : "sequence"
+    },
+  
+    {
+      "word"    : "sırayla",
+      "translation" : "sequential"
+    },
+  
+    {
+      "word"    : "küme",
+      "translation" : "set"
+    },
+  
+    {
+      "word"    : "gölgeli",
+      "translation" : "shaded"
+    },
+  
+    {
+      "word"    : "paylaşmak",
+      "translation" : "share"
+    },
+  
+    {
+      "word"    : "tuz buz etmek",
+      "translation" : "shatter"
+    },
+  
+    {
+      "word"    : "kısa soluklu",
+      "translation" : "short term"
+    },
+  
+    {
+      "word"    : "işlevi",
+      "translation" : "sigmoid"
+    },
+  
+    {
+      "word"    : "işaret",
+      "translation" : "sign"
+    },
+  
+    {
+      "word"    : "anlamlılık",
+      "translation" : "significance"
+    },
+  
+    {
+      "word"    : "benzetim",
+      "translation" : "simulation"
+    },
+  
+    {
+      "word"    : "eş zamanlı",
+      "translation" : "simultaneous"
+    },
+  
+    {
+      "word"    : "tekli bağlı",
+      "translation" : "singly connected"
+    },
+  
+    {
+      "word"    : "tekil",
+      "translation" : "singular"
+    },
+  
+    {
+      "word"    : "artık değişken",
+      "translation" : "slack variable"
+    },
+  
+    {
+      "word"    : "düzleştirme",
+      "translation" : "smooth"
+    },
+  
+    {
+      "word"    : "düzleştirici",
+      "translation" : "smoother"
+    },
+  
+    {
+      "word"    : "eşiksiz",
+      "translation" : "soft"
+    },
+  
+    {
+      "word"    : "eşiksiz en büyük işlevi",
+      "translation" : "softmax function"
+    },
+  
+    {
+      "word"    : "sıralamak",
+      "translation" : "sort"
+    },
+  
+    {
+      "word"    : "istenmeyen elektronik posta",
+      "translation" : "spam"
+    },
+  
+    {
+      "word"    : "kapsamak",
+      "translation" : "span"
+    },
+  
+    {
+      "word"    : "seyrek",
+      "translation" : "sparse"
+    },
+  
+    {
+      "word"    : "uzamsal",
+      "translation" : "spatial"
+    },
+  
+    {
+      "word"    : "özgül",
+      "translation" : "specific"
+    },
+  
+    {
+      "word"    : "özgüllük",
+      "translation" : "specificity"
+    },
+  
+    {
+      "word"    : "izgesel",
+      "translation" : "spectral"
+    },
+  
+    {
+      "word"    : "izge",
+      "translation" : "spectrum"
+    },
+  
+    {
+      "word"    : "eğri",
+      "translation" : "spline"
+    },
+  
+    {
+      "word"    : "bölme",
+      "translation" : "split"
+    },
+  
+    {
+      "word"    : "yayılım",
+      "translation" : "spread"
+    },
+  
+    {
+      "word"    : "kararlı",
+      "translation" : "stable"
+    },
+  
+    {
+      "word"    : "yığma",
+      "translation" : "stacking"
+    },
+  
+    {
+      "word"    : "adım büyüklüğü",
+      "translation" : "stepsize"
+    },
+  
+    {
+      "word"    : "dürtü",
+      "translation" : "stimulation"
+    },
+  
+    {
+      "word"    : "rastgele",
+      "translation" : "stochastic"
+    },
+  
+    {
+      "word"    : "yordam",
+      "translation" : "strategy"
+    },
+  
+    {
+      "word"    : "katmanlastırma",
+      "translation" : "stratification"
+    },
+  
+    {
+      "word"    : "gerilim",
+      "translation" : "stress"
+    },
+  
+    {
+      "word"    : "dizi",
+      "translation" : "string"
+    },
+  
+    {
+      "word"    : "yapı",
+      "translation" : "structure"
+    },
+  
+    {
+      "word"    : "ağaççık",
+      "translation" : "stump"
+    },
+  
+    {
+      "word"    : "alt çizge",
+      "translation" : "subgraph"
+    },
+  
+    {
+      "word"    : "altküme",
+      "translation" : "subset"
+    },
+  
+    {
+      "word"    : "altuzay",
+      "translation" : "subspace"
+    },
+  
+    {
+      "word"    : "toplam çarpım",
+      "translation" : "sum-product"
+    },
+  
+    {
+      "word"    : "gözetimli",
+      "translation" : "supervised"
+    },
+  
+    {
+      "word"    : "destek",
+      "translation" : "support"
+    },
+  
+    {
+      "word"    : "yüzey",
+      "translation" : "surface"
+    },
+  
+    {
+      "word"    : "geçişli",
+      "translation" : "switching"
+    },
+  
+    {
+      "word"    : "simge",
+      "translation" : "symbol"
+    },
+  
+    {
+      "word"    : "bakısımlı",
+      "translation" : "symmetric"
+    },
+  
+    {
+      "word"    : "belirti",
+      "translation" : "symptom"
+    },
+  
+    {
+      "word"    : "eşzamanlama",
+      "translation" : "synchronization"
+    },
+  
+    {
+      "word"    : "dizge",
+      "translation" : "system"
+    },
+  
+    {
+      "word"    : "çizelge",
+      "translation" : "table"
+    },
+  
+    {
+      "word"    : "teğet",
+      "translation" : "tangent"
+    },
+  
+    {
+      "word"    : "şablon",
+      "translation" : "template"
+    },
+  
+    {
+      "word"    : "zamansal",
+      "translation" : "temporal"
+    },
+  
+    {
+      "word"    : "terim",
+      "translation" : "term"
+    },
+  
+    {
+      "word"    : "uç",
+      "translation" : "terminal"
+    },
+  
+    {
+      "word"    : "sınama",
+      "translation" : "test"
+    },
+  
+    {
+      "word"    : "kuram",
+      "translation" : "theory"
+    },
+  
+    {
+      "word"    : "eşik",
+      "translation" : "threshold"
+    },
+  
+    {
+      "word"    : "zaman gecikmeli",
+      "translation" : "time delay"
+    },
+  
+    {
+      "word"    : "zaman dizisi",
+      "translation" : "time series"
+    },
+  
+    {
+      "word"    : "yerbetimsel",
+      "translation" : "topographic"
+    },
+  
+    {
+      "word"    : "ilingesel",
+      "translation" : "topological"
+    },
+  
+    {
+      "word"    : "iz",
+      "translation" : "trace"
+    },
+  
+    {
+      "word"    : "ödünleşim",
+      "translation" : "trade-off"
+    },
+  
+    {
+      "word"    : "gezinge",
+      "translation" : "trajectory"
+    },
+  
+    {
+      "word"    : "çevriyazmak",
+      "translation" : "transcribe"
+    },
+  
+    {
+      "word"    : "geçiş",
+      "translation" : "transition"
+    },
+  
+    {
+      "word"    : "devrik",
+      "translation" : "transpose"
+    },
+  
+    {
+      "word"    : "gezgin satıcı",
+      "translation" : "traveling salesman"
+    },
+  
+    {
+      "word"    : "kafes",
+      "translation" : "trellis"
+    },
+  
+    {
+      "word"    : "iki yanlı",
+      "translation" : "two-sided"
+    },
+  
+    {
+      "word"    : "yansız",
+      "translation" : "unbiased"
+    },
+  
+    {
+      "word"    : "kısıtlanmamış",
+      "translation" : "unconstrained"
+    },
+  
+    {
+      "word"    : "eksik öğrenme",
+      "translation" : "underfitting"
+    },
+  
+    {
+      "word"    : "açılmış",
+      "translation" : "unfold"
+    },
+  
+    {
+      "word"    : "tekdüze dağılım",
+      "translation" : "uniform distribution"
+    },
+  
+    {
+      "word"    : "tek değişkenli",
+      "translation" : "univariate"
+    },
+  
+    {
+      "word"    : "gözlenemeyen",
+      "translation" : "unobservable"
+    },
+  
+    {
+      "word"    : "gözetimsiz",
+      "translation" : "unsupervised"
+    },
+  
+    {
+      "word"    : "fayda",
+      "translation" : "utility"
+    },
+  
+    {
+      "word"    : "geçerleme",
+      "translation" : "validation"
+    },
+  
+    {
+      "word"    : "değişinti",
+      "translation" : "variance"
+    },
+  
+    {
+      "word"    : "değişimsel",
+      "translation" : "variational"
+    },
+  
+    {
+      "word"    : "yöney",
+      "translation" : "vector"
+    },
+  
+    {
+      "word"    : "sürüm",
+      "translation" : "version"
+    },
+  
+    {
+      "word"    : "tetiklik",
+      "translation" : "vigilance"
+    },
+  
+    {
+      "word"    : "sanal",
+      "translation" : "virtual"
+    },
+  
+    {
+      "word"    : "oylama",
+      "translation" : "voting"
+    },
+  
+    {
+      "word"    : "ağırlık",
+      "translation" : "weight"
+    },
+  
+    {
+      "word"    : "kazanan hepsini alır",
+      "translation" : "winner-take-all"
+    },
+  
+    {
+      "word"    : "dürümcü",
+      "translation" : "wrapper"
+    },
+  
+    {
+      "word"    : "dışlamalı veya",
+      "translation" : "xor"
     }
   
 ]
