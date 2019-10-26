@@ -1,0 +1,53 @@
+[
+  
+    {
+      "word"    : "train",
+      "translation" : "train"
+    },
+  
+    {
+      "word"    : "label",
+      "translation" : "étiquette"
+    },
+  
+    {
+      "word"    : "adversarial",
+      "translation" : "contradictoire"
+    },
+  
+    {
+      "word"    : "feature",
+      "translation" : "fonctionnalité"
+    },
+  
+    {
+      "word"    : "retour en arrière",
+      "translation" : "geri yayılım"
+    },
+  
+    {
+      "word"    : "binary classification",
+      "translation" : "classification binaire"
+    },
+  
+    {
+      "word"    : "classification",
+      "translation" : "classification"
+    },
+  
+    {
+      "word"    : "convolutional neural networks (CNN)",
+      "translation" : "réseaux de neurones convolutifs (CNN)"
+    },
+  
+    {
+      "word"    : "gradient",
+      "translation" : "dégradé"
+    },
+  
+    {
+      "word"    : "gradient descent",
+      "translation" : "descente de gradient"
+    }
+  
+]
