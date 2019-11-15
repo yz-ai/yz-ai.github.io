@@ -11,7 +11,6 @@ prev-page-url: /blog/pekistirmeli-ogrenme/dinamik-programlama-bolum-4
 next-page-url: /blog/pekistirmeli-ogrenme/temporal-difference-zamansal-fark-ogrenmesi-bolum-6
 ---
 
-## Monte Carlo Yöntemleri
 
 ## Monte Carlo Tahminlemesi
 
@@ -28,7 +27,7 @@ Eylem değerleri için politika değerlendirmesinde amaç $$q_\pi(s, a)$$’yi y
 
 MC metodlarının tek problemi ise birçok durum-eylem çiftinin gezilmemesidir. Bu nedenle  eğer $$\pi$$ deterministik ise herhangi bir durum için sadece bir tane eylemin değeri elde edilir. Ortalama bir değer elde edilemediği için de diğer eylemlerin MC tahminleri tecrübeyle gelişmez.
 
-Politika değerlendirmesinin birden fazla eylem değeri için çalışması için devamlı olarak keşif yapıldığından emin olunması gerekmektedir. Bunun yollarından birisi tüm durum-eylem çiftlerinin başlangıç olasılıklarının sıfırdan farklı olarak başlatılmasıdır. Buna exploring starts denir.
+Politika değerlendirmesinin birden fazla eylem değeri için çalışması için devamlı olarak keşif yapıldığından emin olunması gerekmektedir. Bunun yollarından birisi tüm durum-eylem çiftlerinin başlangıç olasılıklarının sıfırdan farklı olarak başlatılmasıdır. Buna *exploring starts* denir.
 
 Exploring starts kullanışlı olsa da özellikle öğrenmenin çevreyle direkt olarak etkileşime girilerek yapıldığı problemlerde güvenilir değildir. Bu tür problemlerde alternatif olarak, tüm durumlara ait eylemlerin herhangi birinin seçilme ihtimali sıfır olmayan stokastik politikalar seçilebilir.
 
@@ -50,18 +49,18 @@ Monte Carlo kontrolünün genel fikri genelleştirilmiş politika iterasyonu (GP
 
 Aynı eylem ve durumun orijinali olarak ayarlanmış olan bir çevre düşünürsek eğer, durumlardan da aksiyon alınıyorsa, yeni çevre o zaman olasılığı $$1 - \epsilon$$ ile eski ortamdaki gibi davranır. Bu olasılıkta eylem, rastgele eşit olasılıklarla tekrar eder ve daha sonra yeni, rastgele eylemle eski ortamdaki gibi davranır. Bu yeni ortamda genel politikalarla yapabilecek en iyi durumdur, yani orijinal ortamda $$\epsilon-soft$$ politikalar ile yapılabilecek en iyi olanın aynısıdır. $$V$$ ve $$q$$ yeni ortam için en uygun değer fonksiyonlarını gösterir. Daha sonra bir politika $$\pi, \epsilon-soft$$ politikaları arasında ve sadece $$\tilde{v_*}(s)$$ = $${v_\pi}(s)$$ ise en uygun olandır. $$\tilde{v_*}(s)$$' in tanımından,
 
-$$
-    \tilde{v_{*}}(s) = (1-\epsilon)\max_a \tilde{q_{*}}(s,a) + \dfrac{\epsilon}{|A(s)|} + \displaystyle\sum_a \tilde{q_{*}}(s,a) \\ 
-    = (1-\epsilon)\max_a \displaystyle\sum_s p(s',r|s,a)[r+ \gamma\ \tilde{v_{*}}(s')] \\
-    + \dfrac{\epsilon}{|A(s)|} \displaystyle\sum_a \displaystyle\sum_{s',r} p(s',r|s,a)[r+ \gamma\ \tilde{v_{*}}(s')]
+$$\begin{align*}
+\tilde{v_{*}}(s) &= (1-\epsilon)\max_a \tilde{q_{*}}(s,a) + \dfrac{\epsilon}{|A(s)|} + \displaystyle\sum_a \tilde{q_{*}}(s,a) \\ 
+&= (1-\epsilon)\max_a \displaystyle\sum_s p(s',r|s,a)[r+ \gamma\ \tilde{v_{*}}(s')]+ \dfrac{\epsilon}{|A(s)|} \displaystyle\sum_a \displaystyle\sum_{s',r} p(s',r|s,a)[r+ \gamma\ \tilde{v_{*}}(s')]
+\end{align*}
 $$
 
 Yukarıdaki eşitlikten ve $$\epsilon-soft$$ politika $$\pi$$ artık geliştirildiğinde ise,
 
-$$
-    v_\pi(s) = (1-\epsilon)\max\limits_a q_\pi(s,a)+ \dfrac{\epsilon}{|A(s)|} \sum_a q_\pi(s,a) \\
-    = (1-\epsilon)\max_a \sum_{s',r} p(s',r|s,a)\big[r+ \gamma v_\pi(s')\big] + \dfrac{\epsilon}{|A(s)|} \\ 
-    + \sum_a \sum_{s',r} p(s',r|s,a)\big[r+ \gamma v_\pi(s')\big]
+$$\begin{align*}
+v_\pi(s)&= (1-\epsilon)\max\limits_a q_\pi(s,a)+ \dfrac{\epsilon}{|A(s)|} \sum_a q_\pi(s,a) \\
+&= (1-\epsilon)\max_a \sum_{s',r} p(s',r|s,a)\big[r+ \gamma v_\pi(s')\big] + \dfrac{\epsilon}{|A(s)|}+ \sum_a \sum_{s',r} p(s',r|s,a)\big[r+ \gamma v_\pi(s')\big]
+\end{align*}
 $$
 
 Bununla birlikte, bu denklem, $$v_\pi$$’ nin $$v_*$$ la yer değiştirmesi haricinde, bir öncekiyle aynıdır. Özet olarak, politika iterasyonunun $$\epsilon-soft$$ politikalar için çalıştığını gösterdik. $$\epsilon-soft$$ politikalar için açgözlü (greedy) politikanın doğal düşüncesini kullanarak, $$\epsilon-soft$$ politikalar arasında en iyi politikanın bulunmadığı durumlar dışında her adımda iyi olduğunu gördük. En önemlisi de başlangıçları keşfetme varsayımını ortadan kaldırmış olduk.
@@ -78,10 +77,11 @@ Hedef politika $$\pi$$ için değerleri tahmin etmek amacıyla davranış politi
  
 Politika-dışı yöntemler, bir örneklemden diğerine örnek verilen dağıtım altında, beklenen değerlerin tahmin edilmesi için genel bir teknik olan önem örneklemini (Importance Sampling) kullanmaktadır. Önem-örnekleme oranı (importance-sampling ratio), hedefin altında gerçekleşen yörüngelerin nispi olasılığına ve önem örnekleme oranı olarak adlandırılan davranış politikalarına göre, verimsiz geri kazanma yoluyla önem örneklemesi uygularız. Bir $$S_{t}$$ başlangıç durumu verildiğinde, sonraki durum-eylem yörüngesinin olasılığı, $$A_{t},S_{t+1},A_{t+1},...S_{T}$$, herhangi bir politika altında gerçekleşiyor $$\pi$$,
 
-$$
-   Pr\{ {A_t, S_{t+1},A_{t+1},...,S_T | S_t,A_{t:T-1}\sim \pi}\} \\
-    = \pi (A_t|S_t)p(S_{t+1}|S_t,A_t)\pi(A_{t+1}|S_{t+1})...p(S_T|S_{T-1},A_{T-1}) \\
-    = \prod_{k=t}^{T-1} \pi (A_k|S_k)p(S_{k+1}|S_k,A_k)
+$$\begin{align*}
+&Pr\{ {A_t, S_{t+1},A_{t+1},...,S_T | S_t,A_{t:T-1}\sim \pi}\} \\
+&= \pi (A_t|S_t)p(S_{t+1}|S_t,A_t)\pi(A_{t+1}|S_{t+1})...p(S_T|S_{T-1},A_{T-1}) \\
+&= \prod_{k=t}^{T-1} \pi (A_k|S_k)p(S_{k+1}|S_k,A_k)
+\end{align*}
 $$
 
 Burada $$p$$’nin durum-geçiş olasılığı fonksiyonu (state-transition probability function) olduğunu hatırlayalım . Bu nedenle, yörüngenin hedef ve davranış politikaları altındaki göreceli olasılığı (önem-örnekleme oranı),
@@ -133,12 +133,17 @@ Tek bir blackjack durumunun değerini (Örnek 5.1), politika dışı verilerden 
 
 ![Şekil 5.3: Ağırlıklandırılmış önem örneklemesi, politika dışı bölümlerden alınan tek bir blackjack durumunun daha düşük hata tahminleri üretir.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-53.png)
 
+*Şekil 5.3* $$ : $$ *Ağırlıklandırılmış önem örneklemesi, politika dışı bölümlerden alınan tek bir blackjack durumunun daha düşük hata tahminleri üretir.*
 
 Örnek 5.5: Sonsuz Varyans
 Sıradan önem-örneklemesine sahip tahminlerin tipik olarak sonsuz varyansa sahip olduğunda bahsetmiştik. Dolayısıyla tatmin edici olmayan yakınsama özelliklerine sahip olacaktır. Ne zaman, yörüngede ölçeklendirilmiş sonsuz varyansa sahip dönüşler bulunduğunda politika dışı öğrenmede kolaylıkla gerçekleşebilir. Şekil 5.4'te basit bir örnek gösterilmiştir.
 
 
 ![Şekil 5.4: (Örnek 5.5) için sıradan önem-örneklemesi, tek durumlu MDP ile gösterilen görsel üzerinde şaşırtıcı derecede kararsız tahminler üretmektedir . Buradaki doğru tahmin 1'dir (γ = 1), ve bu örnek bir dönüşün beklenen değeri (önem örneklemeden sonra) olsa bile, örneklerin varyansı sonsuzdur ve tahminler bu değere yaklaşmaz. Bu sonuçlar politika dışı ilk ziyaret Monte Carlo İçindir.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-54.png)
+
+*Şekil 5.4* $$ : $$ *(Örnek 5.5) için sıradan önem-örneklemesi, tek durumlu MDP ile gösterilen görsel üzerinde şaşırtıcı derecede kararsız tahminler üretmektedir . Buradaki doğru tahmin 1'dir (γ = 1), ve bu örnek bir dönüşün beklenen değeri (önem örneklemeden sonra) olsa bile, örneklerin varyansı sonsuzdur ve tahminler bu değere yaklaşmaz. Bu sonuçlar politika dışı ilk ziyaret Monte Carlo İçindir.*
+
+
 
 Milyonlarca bölümden sonra bile, tahminler 1'in doğru değerine yakınsamamaktadır. Aksine, ağırlıklı önem-örnekleme algoritması, sol hareketle sona eren ilk bölümden sonra sonsuza kadar tam olarak bir tahmin verecektir. 1'e (yani, doğru eylemle biten) eşit olmayan tüm dönüşler, hedef politika ile tutarsız olur ve bu nedenle sıfırdan bir $$p_{t:T(t)-1}$$’e sahip olur ve ne paydada ne de payda (5.6)’ya katkıda bulunmaz. Ağırlıklandırılmış önem-örnekleme algoritması, yalnızca hedef politika ile tutarlı dönüşlerin ağırlıklı bir ortalamasını üretir ve bunların tümü tam olarak 1 olur.
 
@@ -156,8 +161,15 @@ Dolayısıyla, eğer ortalama, sonlu ise, bizim durumumuzda olduğu gibi, varyan
 
 Bu beklentiyi hesaplamak için, bölüm uzunluğuna ve bitiş durumuna göre alt durumlara ayırıyoruz. İlk olarak, doğru eylemle biten herhangi bir bölüm için, önem-örnekleme oranı sıfır olur, çünkü hedef politikanın bu eylemi asla gerçekleştirmez: Bu bölümler böylece beklentiye hiçbir şey katmaz (parantez içindeki miktar sıfır olacaktır) ve göz ardı edilebilir. Yalnızca uç dışı (non-terminal) duruma geri dönen sol eylemlerin bir kaç sayısını (muhtemelen sıfıra) içeren bölümleri ve sonlandırmaya geçen bir sol eylemi izlememiz gerekiyor. Tüm bu bölümlerin 1'i geri döndürür, bu yüzden $$G_{0}$$ faktörü göz ardı edilebilir. Beklenen kareyi elde etmek için, sadece bölümün her bir uzunluğunu dikkate almalı, bölümün oluşumunun olasılığını önem-örnekleme oranının karesiyle çarpmalı ve bunları ekleyelim:
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_E28435D31BC4E448459179F454934BB542380B9967F8AA081209201BA02BA60A_1536668238277_file.png)
+$$\begin{align*}
 
+&=\displaystyle \frac{1}{2} *0.1 \bigg( \frac{1}{0.5} \bigg)^2 \\
+&+\frac{1}{2}*0.9 * \frac{1}{2}* 0.1 \bigg( \frac{1}{0.5} \frac{1}{0.5}\bigg)^{2} \\
+&+\frac{1}{2}*0.9 * \frac{1}{2}*0.9 * \frac{1}{2} * 0.1 \bigg( \frac{1}{0.5} \frac{1}{0.5} \frac{1}{0.5}\bigg)^2 \\
+&+\ldots \\
+&= 0.1 \sum_{k=0}^{\infty} 0.9^{k} * 2^{k} * 2 = 0.2 \sum_{k=0}^{\infty} 1.8^{k} = \infty .
+
+\end{align*}$$
 
 ## Kademeli Uygulama (Incremental Implementation)
 
@@ -171,11 +183,11 @@ $$G_1, G_2, ..., G_{n-1}$$ halinde bir dizi  olduğunu varsayalım.  Hepsi aynı
 $$V_n \dot{=} \dfrac{\sum\limits_{k=1}^{n-1} W_k G_k}{\sum\limits_{k=1}^{n-1} W_k}, \qquad n \ge 2$$ ve $$G_n$$’yi elde edene kadar tahmini güncel tutmamız gerekir. $$V_n$$’i güncellemenin yanı sıra n değerlerini kümülatif olarak topladığımız bir $$C_n$$ değeri de olmalı. $$V_n$$’in güncelleme formülü ;
 
 
-$$V_{n+1} \dot{=} V_n + \dfrac{W_n}{C_n} \big[G_n - Vn\big], \qquad n \ge 1$$
-
-$$C_{n+1} \dot{=} C_n + W_{n+1}$$
-
-$$C_0 \dot{=} 0$$
+$$\begin{align*}
+V_{n+1} &\dot{=} V_n + \dfrac{W_n}{C_n} \big[G_n - Vn\big], n \ge 1 \\
+C_{n+1} &\dot{=} C_n + W_{n+1} \\
+C_0 &\dot{=} 0
+\end{align*}$$
 
 
 ## Politika Dışı Monte Carlo Kontrol (Off-policy Monte Carlo Control)
@@ -201,7 +213,7 @@ Bölümün her adımı için döngü, $$t=T-1,T-2,..,0:$$
 $$G \gets \gamma G+R_{t+1}$$
 $$C(S_t,A_t)\gets C(S_t,A_t) + W$$
 $$Q(St,A_t) \gets Q(S_t,A_t) + \frac{W}{C(S_t,A_t)}[G-Q(S_t,A_t)]$$
-$$\pi(S_t)\gets argmax_a Q(S_t,a)$$  (** Bağlar kırık??)
+$$\pi(S_t)\gets argmax_a Q(S_t,a)$$  
 Eğer, $$A_t \neq \pi(S_t)$$ ise döngüden çık.
 $$W \gets W \frac{1}{b(A_t | S_t)}$$
 
