@@ -107,18 +107,18 @@ Beklentili Sarsa metodu Sarsa’ya göre hesaplama açısından daha karmaşıkt
 
 ## En Büyütme (Maximization) Sorunu ve İkili Öğrenme (Double Learning)
 
-Şimdiye kadar bahsettiğimiz tüm yöntemler algoritmalarında ençoklama işlemine sahiptir. Örneğin, Q öğrenmesinde tahmin güncellemesinde $$A_{t+1}$$ olarak en yüksek değere sahip eylemi seçiyoruz. Sarsa ve diğer yöntemlerde de genelde $$\epsilon$$-açgözlü politikalar kullanıldığı için onlarda da ençoklama yapılır. Bu ençoklama işlemi, algoritmalarda en büyütme sorununa yol açar yani algoritmada iyimser bir yaklaşıma, pozitif önyargıya sebep olur. 
+Şimdiye kadar bahsettiğimiz tüm yöntemler algoritmalarında ençoklama işlemine sahiptir. Örneğin, $$Q$$ öğrenmesinde tahmin güncellemesinde $$A_{t+1}$$ olarak en yüksek değere sahip eylemi seçiyoruz. Sarsa ve diğer yöntemlerde de genelde $$\epsilon$$-açgözlü politikalar kullanıldığı için onlarda da ençoklama yapılır. Bu ençoklama işlemi, algoritmalarda en büyütme sorununa yol açar yani algoritmada iyimser bir yaklaşıma, pozitif önyargıya sebep olur. 
 
 Ençoklama işleminin neden sorun olduğunu anlamak için bir örnek verelim. Örneğin bütün olası eylemlerin sıfır değere sahip olduğu bir durumdayız. Ama algoritma bu değerlerden emin olmadığı için ortalaması yaklaşık sıfır olan tahminler yapar yani bazı tahminler pozitiftir. Bu durumda algoritma yanılır ve orada artı değerli bir eylem varmış gibi davranır. 
 
 En büyütme sorununun en önemli sebeplerinden biri hem en büyük değeri bulurken hem de onun değerini tahmin ederken aynı ajanın kullanılmasıdır. Bunu çözmek için iki farklı ajanın kullanıldığı
-ikili öğrenme tekniği kullanılır. İkili öğrenme tekniğini yukarıdaki tüm zamansal fark öğrenmesi yöntemlerine uygulayabiliriz. Örneğin Q öğrenmesine uyguladığımızda tahmin güncelleme kuralı şu hale gelir:
+ikili öğrenme tekniği kullanılır. İkili öğrenme tekniğini yukarıdaki tüm zamansal fark öğrenmesi yöntemlerine uygulayabiliriz. Örneğin $$Q$$ öğrenmesine uyguladığımızda tahmin güncelleme kuralı şu hale gelir:
 
 \begin{align}
    Q_1(S_t,A_t) \leftarrow Q_1(S_t,A_t) + \alpha\big[R_{t+1} + \gamma Q_2(S_{t+1},arg_a maxQ_1(S_{t+1},a)) - Q_1(S_t,A_t)\big]  
 \end{align}
 
-Bölümlerin yarısında yukarıdaki $$Q_1$$ güncellenirken diğer yarısında formüldeki $$Q1$$ ve $$Q_2$$’ler yer değiştirir ve $$Q_2$$ güncellenir.
+Bölümlerin yarısında yukarıdaki $$Q_1$$ güncellenirken diğer yarısında formüldeki $$Q_1$$ ve $$Q_2$$’ler yer değiştirir ve $$Q_2$$ güncellenir.
 
 ## Oyunlar, Durum Sonrası(?) (Afterstates) ve Diğer Özel Durumlar
 

@@ -142,10 +142,9 @@ Beklenen $$n-$$adım Sarsa’nın davranış politikasız versiyonu, $$n-$$adım
 
 Önceki bölümde sunulan çok adımlı politika dışı yöntemler, basit ve kavramsal olarak açıktır, ancak muhtemelen en verimli olan değildir. Daha sofistike bir yaklaşım, Bölüm 5.9'da verildiği gibi, karar başına verilen önem örneklemesi fikirlerini kullanacaktır. Bu yaklaşımı anlamak için, öncelikle, tüm dönüşler gibi sıradan $$n-$$adım dönüşün (7.1) öz yinelemeli olarak yazılabilir. $$h$$ horizonunda $$n$$ adımda biten, $$n-$$adım dönüşü şöyle yazılabilir,
 
-\begin{equation}
-\label{eq:7.12}
-     G_{t:h}=R_{t+1}+ \gamma G_{t+1:h}
-\end{equation}
+$$\begin{align*}
+G_{t:h}=R_{t+1}+ \gamma G_{t+1:h} 
+\end{align*}$$ $$(7.12)$$
 
 Şimdi,  hedef politika $$\pi$$ ile aynı olmayan bir davranış politikasını takip etmenin etkisini düşünün. Birinci ödül $$R_{t+1}$$ ve bir sonraki durum $$S_{t+1}$$ dahil olmak üzere ortaya çıkan deneyimin tümü, $$t$$ zaman için, $$\rho_t=\dfrac{\pi(A_t\mid S_t)}{b(A_t\mid S_t)}$$ için örnekleme oranının önemine göre ağırlıklandırılmalıdır. Yukarıdaki denklemin sağ tarafına ağırlık vermek için cazip gelebilir, ancak daha iyisini yapabilir. Eylemin $$t$$ zamanında asla $$\pi$$ ile seçilmeyeceğini, böylece $$p_{t}= 0$$ olduğunu düşünelim. Daha sonra basit bir ağırlık, $$n-$$adım dönüşün sıfır olmasıyla sonuçlanacak, bu da hedef olarak kullanıldığında yüksek bir varyansa neden olabilir. Bunun yerine, bu daha sofistike yaklaşımda, $$h$$ horizonda $$n-$$adım dönüş alternatif, politika dışı tanımını kullanır,
 
@@ -210,6 +209,19 @@ Daha sonra, eğer her zaman örneklemeyi seçtiyse, kişi Sarsa'yı elde edecekt
 Olanakları daha da artırmak için örnekleme ve beklenti arasında sürekli bir varyasyonu düşünebiliriz.  Rastgele değişken $$\sigma_{t}$$, $$t$$ zamanında durum, eylem veya durum eylem çiftinin bir fonksiyonu olarak ayarlanabilir. Bu önerilen yeni algoritma $$n-$$adım $$Q(\sigma)$$ diyoruz.
 
 Önce ağaç-yedekleme $$n$$-adım geri dönüşünü (7.16)  $$h = t + n$$ cinsinden ve sonra beklenen yaklaşık değer $$\bar{V}$$ (7.8) cinsinden yazıyoruz.
+
+$$\begin{align*}
+
+G_{t:h} &= R_{t+1}+\gamma\displaystyle \sum_{a\neq A_{t+1}}\pi(a|S_{t+1})Q_{h-1}(S_{t+1},a) +\gamma\pi(A_{t+1}|S_{t+1})G_{t+1:h} \\
+&=R_{t+1}+ \gamma \bar{V}_{h-1}(S_{t+1})-\gamma \pi(A_{t+1}|S_{t+1})Q_{h-1}(S_{t+1},A_{t+1})+ \gamma\pi (A_{t+1}|S_{t+1})G_{t+1:h} \\
+&=R_{t+1}+\gamma \pi(A_{t+1}|S_{t+1}) \bigg(G_{t+1:h} - Q_{h-1} (S_{t+1},A_{t+1}) \bigg)+ \gamma\bar{V}_{h-1}(S_{t+1}),
+\end{align*} $$
+
+
+
+$$\begin{align*}
+G_{t:h} \dot= R_{t+1} &+\gamma \bigg(\sigma_{t+1} \rho_{t+1}+(1- \sigma_{t+1} \pi (A_{t+1}|S_{t+1}) \bigg) \bigg(G_{t+1:h}- Q_{h-1}(S_{t+1},A_{t+1}) \bigg) \\
+&+\gamma \bar{V}_{h-1}(S_{t+1}), \qquad \qquad(7.17)\end{align*}$$
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_9982B0D94EB468EEF47C3C689B77F46144E9A1DD65B594637BB385A12D6BFFDF_1538139573962_image.png)
 
