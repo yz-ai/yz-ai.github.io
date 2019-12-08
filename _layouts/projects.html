@@ -16,16 +16,24 @@ layout: wrapper
                         {% assign projects = site.data.projects | sort: 'order-no' %}
                         {% for project in projects %}
                         <div class="col-sm-6 col-lg-4">
-                            <a href="{{ project.url }}" target="_blank" class="nav-grid__item">
+                            <div class="nav-grid__item">
                                 <div class="nav-grid__content" data-mh>
                                     <h2 class="nav-grid__title">{{ project.title }}</h2>
+                                    <img src="{{ project.image }}">
                                     <p>{{ project.description }}</p>
                                 </div>
-                                <p class="nav-grid__btn">
-                                    Projeye Git
-                                    <i class="icon icon--arrow-right"></i>
-                                </p>
-                            </a>
+                                    <ul class="project-links">
+                                        {% for item in project.links %}
+                                        {% if item[1] != "" %}
+                                            <li>
+                                                <a href="{{ item[1] }}" target="_blank" class="project-links__item project-links__item--{{ item[0] }}">
+                                                    <i class="fa icon--{{ item[0] }}"></i>
+                                                </a>
+                                            </li>
+                                        {% endif %}
+                                        {% endfor %}
+                                    </ul><!-- /.social-list -->
+                            </div>
                         </div>
                         {% endfor %}   
                     </div><!-- /.row -->

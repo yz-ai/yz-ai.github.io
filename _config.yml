@@ -3,6 +3,7 @@ title: Yapay Zeka Araştırma İnisiyatifi
 description: >- # this means to ignore newlines until "baseurl:"
   Yapay Zeka Araştırma İnisiyatifi
 about: Yapay Zeka Araştırma İnisiyatifi
+email: help.yzai@gmail.com
 
 baseurl: 
 color_theme: # Available themes: blue (default), green, purple, red and yellow
@@ -33,7 +34,7 @@ footer:
         - network_name: github
           profile_url: 'https://github.com/yz-ai'
         - network_name: twitter
-          profile_url: '#'
+          profile_url: 'https://twitter.com/yapayzeka_ai'
 google_analytics:
     tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
 comments:

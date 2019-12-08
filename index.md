@@ -6,3 +6,6 @@ layout: home
 title: Yapay Zeka Araştırma İnisiyatifi
 description: Derin Öğrenme, Bilgisayarlı Görü, Doğal Dil İşleme ve Pekiştirmeli Öğrenme alanlarındaki uygulama, akademik yayınlar, eğitici kaynaklar ve blog yazılarını bulacağınız yapay öğrenme platformu.
 ---
+
+
+Yapay Öğrenme, Derin Öğrenme, Bilgisayarlı Görü, Doğal Dil İşleme ve Pekiştirmeli Öğrenme alanlarındaki **[projeler](/projeler)**, **[akademik yayınlar](/yayinlar)**, **[eğitici kaynaklar](/kaynaklar)** ve **[blog](/blog)** yazılarını bulacağınız yapay öğrenme platformu.

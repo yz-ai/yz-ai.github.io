@@ -2,7 +2,7 @@
 layout: post
 author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 10: On-policy Control With Approximation"
-description: " "
+description: "Bu bölümde eylem-değer fonksiyonunun parametrik yaklaşımıyla kontrol problemine geri dönülmektedir."
 date:   2019-01-10
 categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]

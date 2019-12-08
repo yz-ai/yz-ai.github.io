@@ -2,7 +2,7 @@
 layout: post
 author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 8: Tabular Metotlar"
-description: "N-adım yöntemi, ara algoritmaların iyi performans gösterdiği şekilde, Monte Carlo yöntemleri ile tek-adım zamansal fark yöntemlerini birleştirdiği için pekiştirmeli öğrenmede önemli bir yaklaşımdır."
+description: "Bu bölümde ortam modeli gerektiren ve model olmadan kullanılabilen pekiştirmeli öğrenme yöntemlerini göreceğiz. Modele dayalı yöntemler, temel bileşen olarak planlama yapmaya dayanırken, model içermeyen yöntemler temel olarak öğrenmeye dayanır. Bu iki yöntem arasında farklılıklar ve benzerlikler vardır. Özellikle, her iki yöntemin temelin de , değer fonksiyonlarının hesaplanması vardır. Bu bölümdeki amacımız, model tabanlı ve modelsiz yöntemlerin birleştirilmesidir (integration)."
 date:   2019-01-08
 categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]

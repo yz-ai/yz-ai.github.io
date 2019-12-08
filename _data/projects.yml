@@ -1,17 +1,43 @@
 - id: 1
-  title: Proje - 1 
-  description: Proje açıklaması - 1
-  url: /
+  title: Teknofest’19 Yapay Zeka Yarışması — Nesne Tespiti — RetinaNet
+  description: TEKNOFEST 2019 kapsamında gerçekleştirilem Yapay Zekâ Yarışması’nda insansız hava aracı ile önceden kaydedilmiş videolar üzerinde nesne tanıma görevi için bir araya gelen HÜMA Takımı finale kalan takımlar arasında 7. sırada tamamlamıştır. Yarışma kapsamında kullanılan derin öğrenme modelinin tüm detayları
+  image: /assets/images/projects/1/teknofest19_retinanet.gif
+  links:
+    github-url: https://github.com/huma-teknofest/Keras-RetinaNet-for-Teknofest-2019
+    blog-url: https://medium.com/yavuzkomecoglu/teknofest19-yapayzeka-yarismasi-nesne-tespiti-retinanet-2e9ab25e7589
+    paper-url: ""
+    demo-url: ""
   order-no: 10
   
 - id: 2
-  title: Proje - 1 
-  description: Proje açıklaması - 1
-  url: /
+  title: Görsel Soru Cevaplama / Visual Question Answering
+  description: Görsel Soru Cevaplama sahip olduğumuz bir resim ile ilgili sorulan sorulara, resim içerisindeki bilgilerin analiz edilmesi ile cevaplar üretilmeye çalışılması problemi olarak tanımlanabilir. Bu problemde metinler şeklinde ifade edilen soruların işlenmesi bir Doğal Dil İşleme problemi iken; resimler içerisinden cevapların üretiminde her bir soru ayrı bir Bilgisayarla Görü problemine işaret eder.
+  image: /assets/images/projects/2/VQA.gif
+  links:
+    github-url: https://github.com/basakbuluz/Visual-Question-Answering
+    blog-url: https://medium.com/@basakbuluz/%C3%A7ok-g%C3%B6ren-mi-bilir-%C3%A7ok-soran-m%C4%B1-4bed5efdba41?
+    paper-url: ""
+    demo-url: https://colab.research.google.com/github/basakbuluz/Visual-Question-Answering/blob/master/VisualQuestionAnsweringDemo.ipynb
   order-no: 20
 
 - id: 3
-  title: Proje - 2
-  description: Proje açıklaması - 3
-  url: /
+  title: Predictive Maintenance of Aircraft Motor Health with LSTM
+  description: Otomotiv, uçak ve fabrika otomasyonu gibi özellikle maliyetli motor bakımı gerektiren uygulamalarda öngörücü bakım önemli bir yer almaktadır.  Çalışmada Uzun-Kısa Süreli Bellek (LSTM) yapısı kullanılarak, uçak motorlarının kalan yaşam ömürlerinin tahmin edilmesi amaçlanmıştır. Yapılan uygulamaların sonucunda en yüksek sınıflandırma başarımı %98,876; en düşük ortalama mutlak hata ise 1,343 olarak LSTM ile elde edilmiştir.
+  image: /assets/images/projects/3/Predictive_Maintenance_w_LSTM.png
+  links:
+    github-url: https://github.com/ayyucekizrak/Predictive_Maintenance_w_LSTM
+    blog-url: https://medium.com/yavuzkomecoglu/teknofest19-yapayzeka-yarismasi-nesne-tespiti-retinanet-2e9ab25e7589
+    paper-url: https://dergipark.org.tr/tr/pub/gazibtd/issue/44915/495730
+    demo-url: https://nbviewer.jupyter.org/github/ayyucekizrak/Predictive_Maintenance_w_LSTM/blob/master/Predictive_Maintenance_of_AircraftMotorHealth_with_LSTM_Method.ipynb
   order-no: 30
+
+- id: 4
+  title: Rock-Paper-Scissors Game - TensorflowJS
+  description: TensorFlow.js, web geliştiricilerin tarayıcı tabanlı Yapay Zeka uygulamalarını yalnızca JavaScript kullanarak kolayca oluşturmasını ve çalıştırmasını sağlar. TensorflowJS ile geliştirilmiş Taş-Kağıt-Makas oyununu deneyimleyebilirsiniz.
+  image: /assets/images/projects/4/rock-paper-scissors-tfjs.png
+  links:
+    github-url: https://github.com/yavuzKomecoglu/yavuzKomecoglu.github.io/tree/master/apps/rock-paper-scissors-tfjs
+    blog-url: https://medium.com/yavuzkomecoglu/derin-ogrenme-uygulamanizi-tarayicida-calistirmak-ister-misiniz-a6b75ba2a57
+    paper-url: ""
+    demo-url: https://yavuzkomecoglu.github.io/apps/rock-paper-scissors-tfjs/index.html
+  order-no: 40

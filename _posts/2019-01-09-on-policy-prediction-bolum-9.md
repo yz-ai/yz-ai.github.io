@@ -2,7 +2,7 @@
 layout: post
 author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 9: Yaklaşıklama İle Politikalı Öngörü"
-description: ""
+description: "Bu bölümde değer fonksiyonu daha önce anlatılan kısımlardan farklı olarak, tablo olarak değil, yaklaşıklık olarak tanımlanacaktır. Bu fonksiyon kimi zaman doğrusal kimi zaman çok boyutlu bir fonksiyon olabilir. Genellikle bu yaklaşıklık, çok katmanlı bir sinir ağıyla tanımlanmaktadır. Bu noktada pekiştirmeli öğrenmeye, derin ön takısını eklememiz mümkün olmaktadır. Keza, problemimizin yapısı ve durum uzayının karmaşıklığına göre ilgili sinir ağının derinliği evrişimli sinir ağlarıyla kuvvetlendirilebilir."
 date:   2019-01-09
 categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]
