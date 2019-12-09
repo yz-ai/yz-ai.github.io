@@ -41,3 +41,14 @@
     paper-url: ""
     demo-url: https://yavuzkomecoglu.github.io/apps/rock-paper-scissors-tfjs/index.html
   order-no: 40
+
+- id: 5
+  title: Autonomous Car Racing in Simulation Environment Using Deep Reinforcement Learning
+  description: Rainbow DQN ve Soft-Actor-Critic gibi Derin Pekiştirmeli Öğrenme yöntemleri kullanılarak TORCS ortamında araba yarışında başarı elde edilmesi amaçlanmaktadır. İTÜ'de açılan Derin Pekiştirmeli Öğrenme dersinin projesi olarak başlanan çalışmada SAC ile başarı elde edilmiştir. Proje sonunda yer alan yarışmada PESLA takımımız büyük farkla birincilik elde etmiştir.
+  image: /assets/images/projects/5/torcs.png
+  links:
+    github-url: https://github.com/kivancguckiran/torcs-rl-agent
+    blog-url: ""
+    paper-url: ""
+    demo-url: https://youtu.be/f82EBvPKyDI
+  order-no: 50
