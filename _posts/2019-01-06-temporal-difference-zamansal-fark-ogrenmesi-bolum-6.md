@@ -14,7 +14,7 @@ next-page-url: /blog/pekistirmeli-ogrenme/n-adim-paketleme-bolum-7
 
 ## Temporal-Difference (Zamansal Fark) Öğrenmesi
 
-Pekiştirmeli öğrenmenin en temel yöntemlerinden biri olan zamansal fark öğrenmesi, daha önceki bölümlerde gördüğümüz dinamik programlama ve Monte Carlo yöntemlerinin bir çeşit kombinasyonudur. Monte Carlo yöntemlerindeki gibi bu yöntemde de ortamın modelini öğrenmeye ihtiyaç duyulmaz. Aynı zamanda dinamik programlamada olduğu gibi en son sonucu beklemeden diğer tahminlerden yardım alarak tahminlerini günceller. 
+Pekiştirmeli öğrenmenin temel yöntemlerinden biri olan zamansal fark öğrenmesi, daha önceki bölümlerde gördüğümüz dinamik programlama ve Monte Carlo yöntemlerinin bir çeşit kombinasyonudur. Monte Carlo yöntemlerindeki gibi bu yöntemde de ortamın modelini öğrenmeye ihtiyaç duyulmaz. Aynı zamanda dinamik programlamada olduğu gibi en son sonucu beklemeden diğer tahminlerden yardım alarak tahminlerini günceller. 
 
 Her zaman olduğu gibi önce bu yöntemin tahmin kısmını (verilen politika için değer fonksiyonunu tahmin etmek), daha sonra ise kontrol (en iyi politikayı bulmak) kısmını inceleyeceğiz. Yukarıda ismi geçen üç yöntemin tahmin kısımları temel olarak benzerdir ve asıl farklılık bunların tahmin kısmına yaklaşımlarındadır. 
 
@@ -36,7 +36,7 @@ Bu iki formül arasındaki fark yakınsama (convergence) için $$V(S_t)$$’nin 
   
 ## Tahmin probleminde Zamansal Fark Öğrenmesinin Avantajları
 
-Zamansal fark öğrenmesi, Dinamik Programlama ve Monte Carlo yöntemlerinin bir çeşit kombinasyonudur demiştik bu yüzden avantajlarını yazarken onlarla karşılaştırabiliriz. Dinamik programlamaya karşı en büyük artısı açıkça görülebileceği gibi zamansal fark öğrenmesi yöntemlerinin ortamın modeline ihtiyaç duymamasıdır. 
+Zamansal fark öğrenmesi, Dinamik Programlama ve Monte Carlo yöntemlerinin bir çeşit kombinasyonudur demiştik bu yüzden avantajlarını yazarken onlarla karşılaştırabiliriz. Zamansal fark öğrenme açıkça görülebileceği gibi ortamın modeline ihtiyaç duymamaktadır. Bu özelliği dinamik programlamaya göre en önemli avantajıdır.
 
 Monte Carlo yöntemlerine karşı en önemli avantajı ise bölüm sonunu beklemeden tahminlerini güncelleyebilmesidir. Bazı pekiştirmeli öğrenme problemlerinde bölümler çok uzun olabilir ve tahmin güncellemesini yapmak için bölüm sonunu beklemek algoritmayı verimsiz hale getirir. Örneğin gerçek hayatta, bir işin ne zaman biteceğini tahmin etmeye çalışıyorken, tahmininizin gerçekçi olmadığını farkedip hemen yeni bir  tahmin yapmanız size büyük avantaj sağlar.Bunun dışında, Monte Carlo yöntemlerinde deney amaçlı eylemlerin alındığı bazı bölümler göz ardı edilmek ya da azaltımlı olarak dikkate alınmak zorundadır ve bu da öğrenmeyi yavaşlatır. Zamansal fark öğrenmesi yöntemlerinde her bir eylem öğrenme için kullanıldığı için böyle bir sorun yaşanmaz.
 
@@ -103,13 +103,15 @@ veya beklenen değer formülünü açarak şu şekilde gösterilebilir:
 
 Bu yöntem aynı zamanda Sarsa’ya da çok benzer çünkü ikisinde de $$A_{t+1}$$ politika tarafından seçiliyor. Sarsa metodunda  güncelleme yapılırken de seçilen $$A_{t+1}$$ kullanılırken, Beklentili Sarsa’da o durumun beklenen değeri kullanıldığı için bu yöntem böyle adlandırılmıştır. Beklentili Sarsa aynı zamanda politikasız olarak da kullanılabilir. Örneğin $$A_{t+1}$$ seçiminde açgözlü bir politikalı kullanılıp hedef politika olarak ($$A_t$$ seçiminde) $$\epsilon$$-açgözlü bir politika kullanırsa Beklentili Sarsa metodu Q-Öğrenmesine dönüşür.
 
+Şekil E
+
 Beklentili Sarsa metodu Sarsa’ya göre hesaplama açısından daha karmaşıktır ama $$A_{t+1}$$’in rastgele seçilmesinden kaynaklanan değişintiyi ortadan kaldırdığı için genelde daha iyi performans gösterir.
 
 ## En Büyütme (Maximization) Sorunu ve İkili Öğrenme (Double Learning)
 
-Şimdiye kadar bahsettiğimiz tüm yöntemler algoritmalarında ençoklama işlemine sahiptir. Örneğin, $$Q$$ öğrenmesinde tahmin güncellemesinde $$A_{t+1}$$ olarak en yüksek değere sahip eylemi seçiyoruz. Sarsa ve diğer yöntemlerde de genelde $$\epsilon$$-açgözlü politikalar kullanıldığı için onlarda da ençoklama yapılır. Bu ençoklama işlemi, algoritmalarda en büyütme sorununa yol açar yani algoritmada iyimser bir yaklaşıma, pozitif önyargıya sebep olur. 
+Şimdiye kadar bahsettiğimiz tüm yöntemler algoritmalarında ençoklama (maksimizasyon) işlemine sahiptir. Örneğin, $$Q$$ öğrenmesinde tahmin güncellemesinde $$A_{t+1}$$ olarak en yüksek değere sahip eylemi seçiyoruz. Sarsa ve diğer yöntemlerde de genelde $$\epsilon$$-açgözlü politikalar kullanıldığı için onlarda da ençoklama yapılır. Bu ençoklama işlemi, algoritmalarda en büyütme sorununa yol açar yani algoritmada iyimser bir yaklaşıma, pozitif önyargıya sebep olur. 
 
-Ençoklama işleminin neden sorun olduğunu anlamak için bir örnek verelim. Örneğin bütün olası eylemlerin sıfır değere sahip olduğu bir durumdayız. Ama algoritma bu değerlerden emin olmadığı için ortalaması yaklaşık sıfır olan tahminler yapar yani bazı tahminler pozitiftir. Bu durumda algoritma yanılır ve orada artı değerli bir eylem varmış gibi davranır. 
+Ençoklama işleminin neden sorun olduğunu anlamak için bir örnek verelim. Bütün olası eylemlerin sıfır değere sahip olduğu bir durumdayız. Ama algoritma bu değerlerden emin olmadığı için ortalaması yaklaşık sıfır olan tahminler yapar yani bazı tahminler pozitiftir. Bu durumda algoritma yanılır ve orada artı değerli bir eylem varmış gibi davranır. 
 
 En büyütme sorununun en önemli sebeplerinden biri hem en büyük değeri bulurken hem de onun değerini tahmin ederken aynı ajanın kullanılmasıdır. Bunu çözmek için iki farklı ajanın kullanıldığı
 ikili öğrenme tekniği kullanılır. İkili öğrenme tekniğini yukarıdaki tüm zamansal fark öğrenmesi yöntemlerine uygulayabiliriz. Örneğin $$Q$$ öğrenmesine uyguladığımızda tahmin güncelleme kuralı şu hale gelir:
