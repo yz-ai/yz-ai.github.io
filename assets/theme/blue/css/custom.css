@@ -1,67 +1,73 @@
-.project-links {
-    margin-bottom: 0;
-    padding: 1.25rem 2.5rem 0 2.5rem;
-    border-top: 2px solid rgba(37,57,81,0.2);
-    transition: border .2s;
-}
-.project-links li::before{
-    content:none !important;
-}
-
-.project-links li{
-    display: inline-block;
-    padding: 0;
-}
-
-.project-links li + li {
-    margin-left: 1.25rem;
-    margin-bottom: 1.25rem;
-}
-
-.project-links li a
-{
-    text-decoration: none;
-}
-
-.project-links li a:hover
-{
-    color:#253951;
-}
-
-
-.project-links__item {
-    border-bottom: 0;
-    padding: 0;
-    display: block;
-    color: 
-    #bdbdbd;
-    font-size: 1.875em;
-    line-height: 1;
-    transition: color .2s;
-}
-
-.project-links__item .icon, 
-.project-links__item .example a::after, 
-.example .project-links__item a::after, 
-.project-links__item .sections-list ul li.has-submenu::after, 
-.sections-list ul .project-links__item li.has-submenu::after {
-    display: block;
-}
-
-
-.icon--github-url::before {
-    content: '\f09b';
-}
-
-.icon--paper-url::before {
-    content: '\f15c';
-}
-
-
-.icon--blog-url::before {
-    content: '\f14b';
-}
-
-.icon--demo-url::before {
-    content: '\f108';
-}
+    .project-links {
+        margin-bottom: 0;
+        padding: 1.25rem 2.5rem 0 2.5rem;
+        border-top: 2px solid rgba(37, 57, 81, 0.2);
+        transition: border .2s;
+    }
+    
+    .project-links li::before {
+        content: none !important;
+    }
+    
+    .project-links li {
+        display: inline-block;
+        padding: 0;
+    }
+    
+    .project-links li+li {
+        margin-left: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .project-links li a {
+        text-decoration: none;
+    }
+    
+    .project-links li a:hover {
+        color: #253951;
+    }
+    
+    .project-links__item {
+        border-bottom: 0;
+        padding: 0;
+        display: block;
+        color: #bdbdbd;
+        font-size: 1.875em;
+        line-height: 1;
+        transition: color .2s;
+    }
+    
+    .project-links__item .icon,
+    .project-links__item .example a::after,
+    .example .project-links__item a::after,
+    .project-links__item .sections-list ul li.has-submenu::after,
+    .sections-list ul .project-links__item li.has-submenu::after {
+        display: block;
+    }
+    
+    .icon--github-url::before {
+        content: '\f09b';
+    }
+    
+    .icon--paper-url::before {
+        content: '\f15c';
+    }
+    
+    .icon--blog-url::before {
+        content: '\f14b';
+    }
+    
+    .icon--demo-url::before {
+        content: '\f108';
+    }
+    
+    .nav-grid__title {
+        font-size: 1.30em !important;
+        font-weight: 700 !important;
+    }
+    
+    @media (min-width: 768px) {
+        .site-header+.hero-subheader {
+            padding: 7rem 0 5.063rem 0 !important;
+        }
+    }

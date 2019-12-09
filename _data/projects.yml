@@ -26,7 +26,7 @@
   image: /assets/images/projects/3/Predictive_Maintenance_w_LSTM.png
   links:
     github-url: https://github.com/ayyucekizrak/Predictive_Maintenance_w_LSTM
-    blog-url: https://medium.com/yavuzkomecoglu/teknofest19-yapayzeka-yarismasi-nesne-tespiti-retinanet-2e9ab25e7589
+    blog-url: ""
     paper-url: https://dergipark.org.tr/tr/pub/gazibtd/issue/44915/495730
     demo-url: https://nbviewer.jupyter.org/github/ayyucekizrak/Predictive_Maintenance_w_LSTM/blob/master/Predictive_Maintenance_of_AircraftMotorHealth_with_LSTM_Method.ipynb
   order-no: 30
