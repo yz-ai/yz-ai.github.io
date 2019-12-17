@@ -34,17 +34,27 @@ Bu iki formül arasındaki fark yakınsama (convergence) için $$V(S_t)$$’nin 
 
   $$\displaystyle\sum\limits_{k=t}^{T-1}{\gamma^{k-t} \delta_k}$$
   
+
+  
+![Ornek-61]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-61.png)
+
+ __*Şekil 6.1 :*__ *Eve sürüş örneğinde Monte Carlo yöntemleri (solda) ve TD yöntemleri (sağda) tarafından önerilen değişiklikler.*
+
+  
 ## Tahmin probleminde Zamansal Fark Öğrenmesinin Avantajları
 
-Zamansal fark öğrenmesi, Dinamik Programlama ve Monte Carlo yöntemlerinin bir çeşit kombinasyonudur demiştik bu yüzden avantajlarını yazarken onlarla karşılaştırabiliriz. Zamansal fark öğrenme açıkça görülebileceği gibi ortamın modeline ihtiyaç duymamaktadır. Bu özelliği dinamik programlamaya göre en önemli avantajıdır.
+Zamansal fark öğrenmesi, zamansal fark öğrenme açıkça görülebileceği gibi ortamın modeline ihtiyaç duymamaktadır. Bu özelliği dinamik programlamaya göre en önemli avantajıdır.
 
 Monte Carlo yöntemlerine karşı en önemli avantajı ise bölüm sonunu beklemeden tahminlerini güncelleyebilmesidir. Bazı pekiştirmeli öğrenme problemlerinde bölümler çok uzun olabilir ve tahmin güncellemesini yapmak için bölüm sonunu beklemek algoritmayı verimsiz hale getirir. Örneğin gerçek hayatta, bir işin ne zaman biteceğini tahmin etmeye çalışıyorken, tahmininizin gerçekçi olmadığını farkedip hemen yeni bir  tahmin yapmanız size büyük avantaj sağlar.Bunun dışında, Monte Carlo yöntemlerinde deney amaçlı eylemlerin alındığı bazı bölümler göz ardı edilmek ya da azaltımlı olarak dikkate alınmak zorundadır ve bu da öğrenmeyi yavaşlatır. Zamansal fark öğrenmesi yöntemlerinde her bir eylem öğrenme için kullanıldığı için böyle bir sorun yaşanmaz.
 
 Zamansal fark öğrenmesi yöntemlerinin, herhangi bir sabit politika için yeteri kadar küçük adım boyu kullanılarak en iyi politikaya yakınsadığı ispatlanmıştır.  Ayrıca matematiksel olarak ispatlanmasa da, pratikte zamansal fark öğrenmesi yöntemleri genellikle Monte Carlo yöntemlerinden daha hızlı yakınsar. Örnek 6.2’de basit bir uygulama için bu iki yöntemin yakınsama hızları karşılaştırılmıştır ve zamansal fark öğrenmesi yöntemlerinin istikrarlı bir şekilde daha hızlı yakınsadığı gözlenmiştir.
 
-Örnek 6.2 için yakınsama karşılaştırması sonuçları:
 
-![SEKİL-62]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-62.png)
+![Ornek-62-1]({{ site.url }}/assets/images/RL-sutton-ozet/ornek-62-1.png)
+
+![Ornek-62]({{ site.url }}/assets/images/RL-sutton-ozet/ornek-62.png)
+
+__*Örnek 6.2 : Random Walk :*__ *Bu örnekte,TD(0)'ın tahmin yeteneklerini ampirik(empirically) olarak karşılaştırdık,sabit- $$\alpha$$ yukarıdaki Markov Ödül Sürecine tabi tutultuğunda Monte Carlo.*
 
 ## Zamansal Fark Öğrenmesinin En Uygunluğu (Optimality)
 
@@ -59,7 +69,7 @@ B,1 \ \ \ & \ \ B,1 \\
 B,1 \ \ \ & \ \ B,0 \\
 \end{align}
 
-Bu deneyimleri incelediğimizde, ilk bölümde A’dan başlanıp B’de sona ulaşılmış ve hiç ödül alınmamış. Diğer bölümler daha kısa ve hepsinde B’de başlanıp direkt sona ulaşılmış. Bu örnekte A ve B durumlarının değerlerini tahmin etmemiz gerekiyor. B’nin değerinin $$6/8$$ olduğunu herkes kolayca görebilir sanırım. Peki A durumunun değeri ne olmalı? Burada iki farklı yaklaşım söz konusu. Birincisinde B durumunda yaptığımız gibi gördüğümüz tüm A’lar 0 dönüş sağladığı için A’nın değeri 0 diyebiliriz. Diğerinde ise sistemi bir Markov süreci gibi modelleyerek, A her zaman B’ye gidiyor ve B’nin değeri $$3/4$$ olduğu için A’nın da değeri $$3/4$$ olmalı diyebiliriz. Monte Carlo kullanıldığında birinci sonuç $$(V(A)=0)$$(V(A) = 0) elde edilirken, zamansal fark öğrenmesi yöntemleriyle ikinci sonuç $$(V(A)=3/4)$$ elde edilir. Elimizdeki kısıtlı veri için Monte Carlo metodunun sonucu daha doğruyken, test verisinde zamansal fark öğrenmesinin yaklaşımının daha doğru olması beklenir. 
+Bu deneyimleri incelediğimizde, ilk bölümde A’dan başlanıp B’de sona ulaşılmış ve hiç ödül alınmamış. Diğer bölümler daha kısa ve hepsinde B’de başlanıp direkt sona ulaşılmış. Bu örnekte A ve B durumlarının değerlerini tahmin etmemiz gerekiyor. B’nin değerinin $$6/8$$ olduğunu herkes kolayca görebilir sanırım. Peki A durumunun değeri ne olmalı? Burada iki farklı yaklaşım söz konusu. Birincisinde B durumunda yaptığımız gibi gördüğümüz tüm A’lar 0 dönüş sağladığı için A’nın değeri 0 diyebiliriz. Diğerinde ise sistemi bir Markov süreci gibi modelleyerek, A her zaman B’ye gidiyor ve B’nin değeri $$3/4$$ olduğu için A’nın da değeri $$3/4$$ olmalı diyebiliriz. Monte Carlo kullanıldığında birinci sonuç $$(V(A)=0)$$ elde edilirken, zamansal fark öğrenmesi yöntemleriyle ikinci sonuç $$(V(A)=3/4)$$ elde edilir. Elimizdeki kısıtlı veri için Monte Carlo metodunun sonucu daha doğruyken, test verisinde zamansal fark öğrenmesinin yaklaşımının daha doğru olması beklenir. 
 
 Bu örnekten anlaşılacağı gibi Monte Carlo yöntemleri her zaman eldeki veri için hatayı en aza indirmeye çalışırken, zamansal fark öğrenmesinde ise en olası markov süreci için gerçek değer tahmin edilir. Zamansal fark öğrenmesinde tahmin edilen markov süreci doğruysa tahmin edilen değer kesin olarak doğrudur bu yüzden ona kesinlik denkliği (certainty equivalence) tahmini denir. Bu aynı zamanda, zamansal fark öğrenmesi yönteminin daha hızlı yakınsamasını sağlar. 
 
@@ -76,7 +86,7 @@ Sarsa için tahmin güncelleme kuralı:
 
 Bu güncelleme her bir eylemden sonra yapılır ve eğer $$S_{t+1}$$ bir uç(terminal) durum ise $$Q(S_{t+1},A_{t+1})$$ sıfır alınır. Sarsa tahmin metoduna dayanan kontrol algoritmasında $$q_{\pi}$$ sürekli olarak tahmin edilir ve aynı zamanda politika $$\pi$$ daha açgözlü(greedy) olacak şekilde güncellenir.
 
-## Q-Öğrenmesi: Zamansal Fark Öğrenmesiyle POlitikasız (Off-policy) Kontrol
+## Q-Öğrenmesi: Zamansal Fark Öğrenmesiyle Politikasız (Off-policy) Kontrol
 
 Bu yöntemde Sarsa’dan farklı olarak öğrenilen eylem-değer fonksiyonu bir politikadan bağımsız olarak en iyi eylem-değer fonksiyonuna yakınsar. Politika hala etkindir ama onun tek amacı tüm durum-eylem çiftlerinin güncellenmeye devam ettiğinden olmaktır. 
 Q-Öğrenmesi için tahmin güncelleme kuralı:
@@ -87,9 +97,14 @@ Q-Öğrenmesi için tahmin güncelleme kuralı:
 
 Bu formülde görebileceğiniz gibi Sarsa metodunda politika tarafından seçilen $$A_{t+1}$$, Q-Öğrenmesi metodunda tabloya bakılarak en yüksek değeri veren eylem olarak seçilir. 
 
+
+![SEKİL-66]({{ site.url }}/assets/images/RL-sutton-ozet/ornek-66.png)
+
+__*Örnek 6.6 : Cliff Walking :*__ *Sarsa ve Q-öğrenmesi karşılaştırılması,politika içi (Sarsa) ve politika dışı (Q-learning) yöntemleri arasındaki fark.*
+
 ## Beklentili (Expected) Sarsa
 
-Beklentili Sarsa metodu Q-Öğrenmesine çok benzer ama bu yöntemde $$A_{t+1}$$ olarak en yüksek değeri veren eylemi almak yerine olası eylemlerin beklenen değeri(expected value) kullanılır. Beklenen değer, olası eylemlerin politikaya göre seçilme ihtimali ile onların Q tablosundaki değerlerinin çarpımının toplamı şeklinde hesaplanır. Bu değişikliği yaptığımızda tahmin güncelleme kuralı şu hale gelir:
+Beklentili Sarsa metodu $$Q$$-öğrenmesine çok benzer ama bu yöntemde $$A_{t+1}$$ olarak en yüksek değeri veren eylemi almak yerine olası eylemlerin beklenen değeri(expected value) kullanılır. Beklenen değer, olası eylemlerin politikaya göre seçilme ihtimali ile onların $$Q$$ tablosundaki değerlerinin çarpımının toplamı şeklinde hesaplanır. Bu değişikliği yaptığımızda tahmin güncelleme kuralı şu hale gelir:
 
 \begin{align}
     Q(S_t,A_t) \leftarrow Q(S_t,A_t) + \alpha\big[R_{t+1} + \gamma \mathbb{E}[Q(S_{t+1},A_{t+1})\mid S_{t+1}] - Q(S_t,A_t)\big] 
@@ -101,19 +116,22 @@ veya beklenen değer formülünü açarak şu şekilde gösterilebilir:
     Q(S_t,A_t) \leftarrow Q(S_t,A_t) + \alpha\big[R_{t+1} + \gamma \sum\limits_a{\pi(a\mid S_{t+1})Q(S_{t+1},a)} - Q(S_t,A_t)\big] 
 \end{align}
 
-Bu yöntem aynı zamanda Sarsa’ya da çok benzer çünkü ikisinde de $$A_{t+1}$$ politika tarafından seçiliyor. Sarsa metodunda  güncelleme yapılırken de seçilen $$A_{t+1}$$ kullanılırken, Beklentili Sarsa’da o durumun beklenen değeri kullanıldığı için bu yöntem böyle adlandırılmıştır. Beklentili Sarsa aynı zamanda politikasız olarak da kullanılabilir. Örneğin $$A_{t+1}$$ seçiminde açgözlü bir politikalı kullanılıp hedef politika olarak ($$A_t$$ seçiminde) $$\epsilon$$-açgözlü bir politika kullanırsa Beklentili Sarsa metodu Q-Öğrenmesine dönüşür.
-
-Şekil E
+Bu yöntem aynı zamanda Sarsa’ya da çok benzer çünkü ikisinde de $$A_{t+1}$$ politika tarafından seçiliyor. Sarsa metodunda  güncelleme yapılırken de seçilen $$A_{t+1}$$ kullanılırken, Beklentili Sarsa’da o durumun beklenen değeri kullanıldığı için bu yöntem böyle adlandırılmıştır. Beklentili Sarsa aynı zamanda politikasız olarak da kullanılabilir. Örneğin $$A_{t+1}$$ seçiminde açgözlü bir politikalı kullanılıp hedef politika olarak ($$A_t$$ seçiminde) $$\epsilon$$-açgözlü bir politika kullanırsa Beklentili Sarsa metodu $$Q$$-Öğrenmesine dönüşür.
 
 Beklentili Sarsa metodu Sarsa’ya göre hesaplama açısından daha karmaşıktır ama $$A_{t+1}$$’in rastgele seçilmesinden kaynaklanan değişintiyi ortadan kaldırdığı için genelde daha iyi performans gösterir.
 
-## En Büyütme (Maximization) Sorunu ve İkili Öğrenme (Double Learning)
+![SEKİL-63]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-63.png)
 
-Şimdiye kadar bahsettiğimiz tüm yöntemler algoritmalarında ençoklama (maksimizasyon) işlemine sahiptir. Örneğin, $$Q$$ öğrenmesinde tahmin güncellemesinde $$A_{t+1}$$ olarak en yüksek değere sahip eylemi seçiyoruz. Sarsa ve diğer yöntemlerde de genelde $$\epsilon$$-açgözlü politikalar kullanıldığı için onlarda da ençoklama yapılır. Bu ençoklama işlemi, algoritmalarda en büyütme sorununa yol açar yani algoritmada iyimser bir yaklaşıma, pozitif önyargıya sebep olur. 
+__*Şekil  6.3 :*__ *Interim and asymptotic performance of TD control methods on the cliff-walking task as a function of $$\alpha$$. All algorithms used an "$$\epsilon$$-greedy policy with " $$\epsilon$$ = 0:1. Asymptotic performance is an average over 100,000 episodes whereas interim performance is an average over the first 100 episodes. These data are averages of over 50,000 and 10 runs for the interim and asymptotic cases respectively. The solid circles mark the best interim performance of each method. Adapted from van Seijen et al. (2009).*
 
-Ençoklama işleminin neden sorun olduğunu anlamak için bir örnek verelim. Bütün olası eylemlerin sıfır değere sahip olduğu bir durumdayız. Ama algoritma bu değerlerden emin olmadığı için ortalaması yaklaşık sıfır olan tahminler yapar yani bazı tahminler pozitiftir. Bu durumda algoritma yanılır ve orada artı değerli bir eylem varmış gibi davranır. 
 
-En büyütme sorununun en önemli sebeplerinden biri hem en büyük değeri bulurken hem de onun değerini tahmin ederken aynı ajanın kullanılmasıdır. Bunu çözmek için iki farklı ajanın kullanıldığı
+## Enbüyütme (Maximization) Sorunu ve İkili Öğrenme (Double Learning)
+
+Şimdiye kadar bahsettiğimiz tüm yöntemler algoritmalarında enbüyütme(maximization) işlemine sahiptir. Örneğin, $$Q$$ öğrenmesinde tahmin güncellemesinde $$A_{t+1}$$ olarak en yüksek değere sahip eylemi seçiyoruz. Sarsa ve diğer yöntemlerde de genelde $$\epsilon$$-açgözlü(greedy) politikalar kullanıldığı için onlarda da enbüyütme yapılır. Bu enbüyütme işlemi, algoritmalarda en büyütme sorununa yol açar yani algoritmada iyimser bir yaklaşıma, pozitif önyargıya sebep olur. 
+
+Enbüyütme işleminin neden sorun olduğunu anlamak için bir örnek verelim. Bütün olası eylemlerin sıfır değere sahip olduğu bir durumdayız. Ama algoritma bu değerlerden emin olmadığı için ortalaması yaklaşık sıfır olan tahminler yapar yani bazı tahminler pozitiftir. Bu durumda algoritma yanılır ve orada artı değerli bir eylem varmış gibi davranır. 
+
+Enbüyütme sorununun en önemli sebeplerinden biri hem en büyük değeri bulurken hem de onun değerini tahmin ederken aynı ajanın kullanılmasıdır. Bunu çözmek için iki farklı ajanın kullanıldığı
 ikili öğrenme tekniği kullanılır. İkili öğrenme tekniğini yukarıdaki tüm zamansal fark öğrenmesi yöntemlerine uygulayabiliriz. Örneğin $$Q$$ öğrenmesine uyguladığımızda tahmin güncelleme kuralı şu hale gelir:
 
 \begin{align}
@@ -122,7 +140,7 @@ ikili öğrenme tekniği kullanılır. İkili öğrenme tekniğini yukarıdaki t
 
 Bölümlerin yarısında yukarıdaki $$Q_1$$ güncellenirken diğer yarısında formüldeki $$Q_1$$ ve $$Q_2$$’ler yer değiştirir ve $$Q_2$$ güncellenir.
 
-## Oyunlar, Durum Sonrası(?) (Afterstates) ve Diğer Özel Durumlar
+## Oyunlar, Durum Sonrası (Afterstates) ve Diğer Özel Durumlar
 
 Kitaptaki algoritmaların genel yaklaşımı eylem değer fonksiyonu öğrenmek üzerine olsa da bazı durumlarda istisnalar olabiliyor. Örneğin birinci bölümdeki XOX oyununda durum değer fonksiyonuna daha çok benzeyen bir fonksiyon öğrenilmeye çalışılmıştı. Ama bu oyunda normalden farklı olarak hamle yapıldıktan sonraki pozisyonların değeri tahmin ediliyordu. Bu hamle sonrası pozisyonlara durum sonrası diyebiliriz. 
 
@@ -134,6 +152,6 @@ Tüm özel durumları tek tek anlatmak imkansız ama bu kitapta anlatılan temel
 
 Bu bölümde zamansal fark öğrenmesi yöntemlerini ve onların pekiştirmeli öğrenme problemlerinde nasıl kullanıldığını gördük. Zamansal fark öğrenmesinin Monte Carlo ve dinamik programlama yöntemleriyle ilişkisini ve onlara göre avantajlarını inceledik. 
 
-Daha sonra en temel ve sık kullanılan zamansal fark öğrenmesi yöntemleri olan Sarsa, Q öğrenmesi ve beklentili Sarsa yöntemlerini ve onların farklarını inceledik. Sarsa politikalı bir yöntemdir ve tüm eylemleri bu politika tarafından belirlenir. Q öğrenmesi ise politikasızdır ve güncelleme kuralında politika tarafından seçilen $$A_{t+1}$$ yerine olası eylemlerden en büyük değeri olan kullanılır. Beklentili Sarsa methodu ise politikalı veya politikasız olabilir. Bu yöntemde ise $$A_{t+1}$$’in değeri olarak olası eylemlerin beklenen değeri alınır.
+Daha sonra en temel ve sık kullanılan zamansal fark öğrenmesi yöntemleri olan Sarsa, $$Q$$-öğrenmesi ve beklentili Sarsa yöntemlerini ve onların farklarını inceledik. Sarsa politikalı bir yöntemdir ve tüm eylemleri bu politika tarafından belirlenir. $$Q$$-öğrenmesi ise politikasızdır ve güncelleme kuralında politika tarafından seçilen $$A_{t+1}$$ yerine olası eylemlerden en büyük değeri olan kullanılır. Beklentili Sarsa methodu ise politikalı veya politikasız olabilir. Bu yöntemde ise $$A_{t+1}$$’in değeri olarak olası eylemlerin beklenen değeri alınır.
 
 Bu yöntemlerin dışında zamansal fark öğrenmesinin ileriki bölümlerde göreceğimiz farklı versiyonları da vardır. Bunlar n adımlı zamansal fark öğrenmesi ve aktör-kritik yöntemleridir.
