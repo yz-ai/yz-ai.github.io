@@ -15,15 +15,16 @@ next-page-url: /blog/pekistirmeli-ogrenme/temporal-difference-zamansal-fark-ogre
 ## Monte Carlo Tahminlemesi
 
 Bir durumun değerinin, o durumdan başlayarak gelecekten beklenen indirgenmiş toplam ödül olduğunu hatırlarsak, söz konusu durumun değerini tahmin etmek için o durumdan sonra gözlemlenen ziyaretlerin dönüş değerlerinin ortalaması alınabilir. Daha fazla sayıda gözlem yapıldıkça ortalama değer beklenen değere yaklaşır. Bu görüş Monte Carlo metodunun temelidir.
-Bir $$s$$ durumunu baz alarak, s’nin her bir döngüdeki ziyaret edilme durumuna göre iki Monte Carlo metodu vardır: ilk ziyaret (first-visit) ve her ziyaret (every-visit) . İlk Ziyaret’de $$s$$’nin döngüdeki ilk ziyaretinden sonraki dönüşlerin ortalaması alınır. Her Ziyaret metodunda ise $$s$$’nin her ziyaretlerinden sonraki dönüşlerin ortalaması alınır.
+Bir $$s$$ durumunu baz alarak, $$s$$’nin her bir döngüdeki ziyaret edilme durumuna göre iki Monte Carlo metodu vardır: ilk ziyaret (first-visit) ve her ziyaret (every-visit) . İlk Ziyaret’de $$s$$’nin döngüdeki ilk ziyaretinden sonraki dönüşlerin ortalaması alınır. Her Ziyaret metodunda ise $$s$$’nin her ziyaretlerinden sonraki dönüşlerin ortalaması alınır.
+
 
 Dinamik Programlama(DP) metodu sonraki olayların olasılık dağılımlarına ihtiyacı olduğu için uygulaması kolay değildir. DP için öncelikle tüm ihtimallerin hesaplanması gerekmektedir. DP her bir bölümdeki tüm ihtimalleri hesaplıyorken Monte Carlo’da sadece ilgili durum ve durumlar için sonuç üretebilir. Monte Carlo’da her bir durumdaki tahminler birbirinden bağımsızdır, DP’de olduğu gibi diğer durumları baz almaz. Bu sayede herhangi bir durumun veya seçilen alt durumların tahminlemesi için tüm durumların hesaplanması gerekmez.
 
-*Örnek 5.1* $$ : $$ *Blackjack*
+__*Örnek 5.1 : Blackjack :*__ Blackjack'in popüler casino kart oyununun amacı 21'i geçmeden sayısal değerleri mümkün olduğu kadar büyük olan kartları elde etmektir.Tüm yüz olan kartlar 10, as ise 1 veya 11 olarak sayılabilir. Her oyuncunun dağıtıcıya karşı bağımsız olarak rekabet ettiği sürümü düşünüyoruz.Oyun hem dağıtıcıya hem de oyuncuya verilen iki kartla başlar. Krupiyenin kartlarından biri yukarı dönük, diğeri aşağı dönük.
 
 ![Örnek 5.1: Approximate state-value functions for the blackjack policy that sticks only on 20 or 21, computed by Monte Carlo policy evaluation.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-50.png)
 
-*Approximate state-value functions for the blackjack policy that sticks only on 20 or 21, computed by Monte Carlo policy evaluation.*
+__*Şekil 5.1 :*__ *Approximate state-value functions for the blackjack policy that sticks only on 20 or 21, computed by Monte Carlo policy evaluation.*
 
 
 
@@ -43,13 +44,16 @@ Exploring starts kullanışlı olsa da özellikle öğrenmenin çevreyle direkt 
 
 Bu bölümde en uygun politikaya yaklaşım yapabilmek için Monte Carlo tahminlerinin kullanılabileceğini göreceğiz. Genelleştirilmiş Politika İterasyonu’nda (GPI) hem politika hem de değer fonksiyonu bulunur ve iyileştirilmeye çalışılır. Sonsuz bölüm deneyimleyeceğimizi ve keşif başlangıçlarının olabileceğini varsayarsak, Politika Değerlendirme ve İyileştirme yöntemleri kullanılarak, $$\pi_k$$ için doğru bir $$q_{\pi_k}$$ hesaplanabilecektir.
 
+
 $$\begin{align}
 	\pi(s) \doteq \underset{a}{\operatorname{argmax}} q(s,a).  \qquad (5.1)
 \end{align} $$
 
 $$\qquad \qquad \qquad \qquad$$ ![Şekil 5.1: Evalution - Improvement]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-51.png)
 
-$$\qquad \qquad \qquad \qquad$$*Şekil 5.1* $$ : $$ *Evalution - Improvement*
+$$\qquad \qquad \qquad \qquad$$ __*Şekil 5.1.1 :*__*Evalution - Improvement*
+
+![Denklem 5.1]({{ site.url }}/assets/images/RL-sutton-ozet/denklem-51.png) 
 
 
 
@@ -113,14 +117,14 @@ $$
 Burada $$p$$’nin durum-geçiş olasılığı fonksiyonu (state-transition probability function) olduğunu hatırlayalım . Bu nedenle, yörüngenin hedef ve davranış politikaları altındaki göreceli olasılığı (önem örnekleme oranı),
 
 \begin{align}
-    \rho_{t:T-1}\doteq \frac{\prod_{k=t}^{T-1} \pi (A_k|S_k)p(S_{k+1}|S_k,A_k)}{\prod_{k=t}^{T-1} b (A_k|S_k)p(S_{k+1}|S_k,A_k)} =\prod_{k=t}^{T-1} \frac{\pi (A_k|S_k)}{b(A_k|S_k)}
-    \label{eq:51}
+    \rho_{t:T-1}\doteq \frac{\prod_{k=t}^{T-1} \pi (A_k|S_k)p(S_{k+1}|S_k,A_k)}{\prod_{k=t}^{T-1} b (A_k|S_k)p(S_{k+1}|S_k,A_k)} =\prod_{k=t}^{T-1} \frac{\pi (A_k|S_k)}{b(A_k|S_k)} \qquad (5.3)
+    \label{eq:53}
 \end{align}
 
 Hedef politika kapsamında beklenen dönüşleri (değerleri) tahmin etmek istediğimizi hatırlayın, ancak sahip olduğumuz tek şey davranış politikası nedeniyle $$G_{t}$$ değerini döndürür. Bu dönüşler,  $$\mathbb{E}[G_{t}\mid S_{t}=s]=v_{b}(s)$$ 'nin yanlış beklentisine sahiptir ve bu nedenle, $$v_{\pi}$$’yi elde etmek için ortalaması alınamaz. Bu, örneklemenin önem kazandığı yerdir.  $$\rho_{t:T-1}$$ oranı, dönüşleri, beklenen doğru değere dönüştürür:
 
 \begin{align}
-    \mathbb{E}[p_{t:T-1}G_{t}|S_{t}=s]= v_{\pi}(s)
+    \mathbb{E}[p_{t:T-1}G_{t}|S_{t}=s]= v_{\pi}(s) \qquad (5.4)
 \end{align}
 
 Şimdi, $$v_{\pi}(s)$$ değerini tahmin etmek için politika $$b$$'yi izleyen, gözlemlenen bölümlerden oluşan bir gruptan ortalamaları döndüren bir Monte Carlo algoritması vermeye hazırız. Burada, bölüm sınırlarının ötesine geçen bir şekilde zaman basamaklarını saymak uygun olur. Yani, yığının ilk bölümü 100 zamanında bir uç(terminal) durumunda bitiyorsa, sonraki bölüm t = 101 zamanında başlar. Bu, belirli bölümlerdeki belirli adımlara başvurmak için zaman adımı sayılarını kullanmamızı sağlar. Özellikle, durumların ziyaret edildiği, $$T(s)$$olarak gösterilen tüm zaman adımlarının kümesini tanımlayabiliriz. Bu her ziyaret için bir yöntemdir; $$\tau(s)$$ sadece bölümlerin içinde ilk kez ziyaret edilen zaman adımlarını içerecektir. Ayrıca, $$T_{t}$$'nin t zamanını takip eden ilk bitiş(termination) süresini gösterir ve $$G_{t}$$, $$T_{t}$$' den sonra t geri dönüşü gösterir.  Daha sonra $$\left\{G_{t}\right\}_{t\epsilon \tau(s)}$$  leri duruma ait iadelerdir ve $$\left\{ \rho_{t:T(T)-1}\right\}_{t\epsilon \tau(t)}$$ karşılık gelen önem örnekleme oranlarıdır.
@@ -134,7 +138,7 @@ Hedef politika kapsamında beklenen dönüşleri (değerleri) tahmin etmek isted
 Önemli bir alternatif olarak, ağırlıklı ortalama kullanan ağırlıklı önem örneklemesi ( weighted importance sampling) aşağıdaki gibi tanımlanır,
 
 \begin{align} %%\mathcal'ın aslında \mathfrak olması gerekiyor ama çalışmıyor paketi olmadığından
- V(s) \dot{=} \frac{\sum_{t\in\mathcal{T}(s)}\rho_{t:T(t)-1}G_t}{\sum_{t\in\mathcal{T}(s)}\rho_{t:T(t)-1}}
+ V(s) \dot{=} \frac{\sum_{t\in\mathcal{T}(s)}\rho_{t:T(t)-1}G_t}{\sum_{t\in\mathcal{T}(s)}\rho_{t:T(t)-1}} \qquad (5.6)
 \end{align}
 
 veya payda sıfır ise sıfır olur. Bu iki örneklemenin önemini anlamak için, ilk-ziyaret yöntemlerinin tahminlerini, durumdan tek bir dönüşü gözlemledikten sonra dikkate alın. Ağırlıklı ortalama tahminde, tek getiri için $$\rho_{t:T(T)-1}$$ oranı, pay ve paydada iptal eder, böylece tahmin, orandan bağımsız olarak gözlemlenen dönüşe eşittir (oranın sıfırdan farklı olduğu varsayılarak). Bu geri dönüşün gözlenen tek şey olduğu göz önüne alındığında, bu makul bir tahmindir, ancak beklentisi $$v_{\pi}$$ yerine $$v_{b}(s)$$ dir ve bu istatistiksel anlamda ön yargılıdır. Aksine, sıradan önem-örnekleme tahmincisinin $$(5.5)$$ ilk ziyaret versiyonu, beklenti içinde her zaman $$v_{\pi}(s)$$ olur, fakat bu aşırı olabilir. Oranın on olduğunu göz önünde bulundurun, gözlemlenen yörüngenin davranış politikası kapsamında olduğu gibi, hedef politikaya göre on kat daha fazla olduğunu gösterir. Bu durumda, sıradan önem-örnekleme tahmini, gözlemlenen geri dönüşün on katı olacaktır. Yani, bölümün yörüngesinin hedef politikayı çok iyi temsil ettiği düşünülse de gözlemlenen getiriden oldukça uzak olacaktır.
@@ -153,21 +157,21 @@ Ağırlıklı önem-örneklemesi
 
 Pratikte, ağırlıklı önem örneklemesi büyük ölçüde daha düşük varyansa sahiptir ve kuvvetle tercih edilir. Fakat her iki önem örneklemesine yönelik her ziyaret (the every-visit) metodları her ikisi içinde önyargılıdır,  yine de, örnek sayısı arttıkça önyargı, asimptotik olarak sıfıra düşmektedir. Pratikte, her ziyaret metotları sıklıkla tercih edilir, çünkü hangi durumların ziyaret edildiğini takip etme ihtiyacını ortadan kaldırırlar çünkü yaklaşık değerlere uzanmaları çok daha kolaydır.
 
-Örnek 5.4: Blackjack Durum Değerinin Politika Dışı Tahmini 
+__*Örnek 5.4 :*__*Blackjack Durum Değerinin Politika Dışı Tahmini* 
 (Blackjack, yirmibir oyunu diye geçer. Kart oyunudur.)
 Tek bir blackjack durumunun değerini (Örnek 5.1), politika dışı verilerden tahmin etmek için hem normal hem de ağırlıklı önem örnekleme yöntemlerini uyguladık. Monte Carlo yöntemlerinin avantajlarından biri, tek bir durumu değerlendirmek için kullanılabilmesi. Bu örnekte, dağıtıcının bir zar gösterdiği durumu, oyuncunun kartlarının toplamının 13 olduğunu ve oyuncunun kullanılabilir bir ası olduğunu değerlendirdik (yani, oyuncu bir as ve bir zar yada eşdeğerde üç as tutar ). Veriler bu durumdan başlayarak oluşturulduktan sonra vurmayı seçer veya eşit olasılıkla( davranış politikası) rastegele kartı atar. Hedef politika, Örnek 5.1'de olduğu gibi, sadece 20 veya 21'lik bir tutara dayanmakta. Bu politikanın hedef politikaya göre değeri yaklaşık 0.27726'dır.Her iki politika dışı yöntem de, rastgele politika kullanılarak 1000 politika dışı bölümden sonra bu değere yakın bir şekilde yaklaştı. Şekil 5.3 bize iki yöntemin değerlendirilmesi hakkında bilgi verir.
 
 ![Şekil 5.3: Ağırlıklandırılmış önem örneklemesi, politika dışı bölümlerden alınan tek bir blackjack durumunun daha düşük hata tahminleri üretir.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-53.png)
 
-*Şekil 5.3* $$ : $$ *Ağırlıklandırılmış önem örneklemesi, politika dışı bölümlerden alınan tek bir blackjack durumunun daha düşük hata tahminleri üretir.*
+__*Şekil 5.3 :*__*Ağırlıklandırılmış önem örneklemesi, politika dışı bölümlerden alınan tek bir blackjack durumunun daha düşük hata tahminleri üretir.*
 
-Örnek 5.5: Sonsuz Varyans
+__*Örnek 5.5 :*__*Sonsuz Varyans*
 Sıradan önem-örneklemesine sahip tahminlerin tipik olarak sonsuz varyansa sahip olduğunda bahsetmiştik. Dolayısıyla tatmin edici olmayan yakınsama özelliklerine sahip olacaktır. Ne zaman, yörüngede ölçeklendirilmiş sonsuz varyansa sahip dönüşler bulunduğunda politika dışı öğrenmede kolaylıkla gerçekleşebilir. Şekil 5.4'te basit bir örnek gösterilmiştir.
 
 
 ![Şekil 5.4: (Örnek 5.5) için sıradan önem-örneklemesi, tek durumlu MDP ile gösterilen görsel üzerinde şaşırtıcı derecede kararsız tahminler üretmektedir . Buradaki doğru tahmin 1'dir (γ = 1), ve bu örnek bir dönüşün beklenen değeri (önem örneklemeden sonra) olsa bile, örneklerin varyansı sonsuzdur ve tahminler bu değere yaklaşmaz. Bu sonuçlar politika dışı ilk ziyaret Monte Carlo İçindir.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-54.png)
 
-*Şekil 5.4* $$ : $$ *(Örnek 5.5) için sıradan önem-örneklemesi, tek durumlu MDP ile gösterilen görsel üzerinde şaşırtıcı derecede kararsız tahminler üretmektedir . Buradaki doğru tahmin 1'dir (γ = 1), ve bu örnek bir dönüşün beklenen değeri (önem örneklemeden sonra) olsa bile, örneklerin varyansı sonsuzdur ve tahminler bu değere yaklaşmaz. Bu sonuçlar politika dışı ilk ziyaret Monte Carlo İçindir.*
+__*Şekil 5.4 :*__*(Örnek 5.5) için sıradan önem-örneklemesi, tek durumlu MDP ile gösterilen görsel üzerinde şaşırtıcı derecede kararsız tahminler üretmektedir . Buradaki doğru tahmin 1'dir (γ = 1), ve bu örnek bir dönüşün beklenen değeri (önem örneklemeden sonra) olsa bile, örneklerin varyansı sonsuzdur ve tahminler bu değere yaklaşmaz. Bu sonuçlar politika dışı ilk ziyaret Monte Carlo İçindir.*
 
 
 
@@ -210,7 +214,9 @@ $$V_n \dot{=} \dfrac{\sum\limits_{k=1}^{n-1} W_k G_k}{\sum\limits_{k=1}^{n-1} W_
 
 
 $$\begin{align*}
-V_{n+1} &\dot{=} V_n + \dfrac{W_n}{C_n} \big[G_n - Vn\big], n \ge 1 \\
+V_{n+1} &\dot{=} V_n + \dfrac{W_n}{C_n} \big[G_n - Vn\big], n \ge 1 \qquad (5.8)\\
+\\
+
 C_{n+1} &\dot{=} C_n + W_{n+1} \\
 C_0 &\dot{=} 0
 \end{align*}$$
@@ -248,7 +254,7 @@ Potansiyel bir sorun olarak bu yöntemin yalnızca bölümdeki kalan tüm eyleml
 
 ![Şekil 5.5: Yarış pisti görevi için birkaç sağa dönüş yapılır.]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-55.png)
 
-*Şekil 5.5* $$ : $$ *Yarış pisti görevi için birkaç sağa dönüş yapılır.*
+__*Şekil 5.5 :*__ *Yarış pisti görevi için birkaç sağa dönüş yapılır.*
 
 
-Alıştırma 5.12: Yarış Pisti (programlama) Şekil $$5.5$$'de gösterilenler gibi bir yarış arabasını bir tur etrafında sürmeyi düşünün. Mümkün olduğu kadar çabuk gitmek istiyorsun, ama pistten kaçmak için o kadar hızlı değilsin. Basitleştirilmiş yarış pistimizde, araç, şematik göstergelerdeki ayrı bir dizi konumdan biridir. Hız ayrıca ayrıktır, zaman adımı başına yatay ve dikey olarak hareket eden bir dizi ızgara hücresi. Eylemler hız bileşenlerine artışlardır. Her adımda, her biri dokuz (3 × 3) eylem için +1, - 1 veya 0 ile değiştirilebilir. Her iki hız bileşeni de negatif olmayan ve 5'ten az olan ve başlangıç çizgisi hariç ikisi de sıfır olamaz. Her bölüm, her iki hız bileşeni sıfır ile rastgele seçilen başlangıç durumlarından birinde başlar ve araç bitiş çizgisini geçtiğinde sona erer. Ödüller, araba bitiş çizgisini geçene kadar her adım için 1'dir. Eğer araç palet sınırına ulaşırsa, başlangıç çizgisinde rastgele bir konuma geri taşınırsa, her iki hız bileşeni de sıfıra indirilir ve bölüm devam eder. Aracın konumunu her zaman adımında güncellemeden önce, aracın öngörülen yolunun parkur sınırını kestirip kestiğini kontrol edin. Bitiş çizgisini kesişirse bölüm sonlanır; Başka bir yerde kesişirse, aracın pist sınırına çarptığı ve başlangıç çizgisine geri gönderildiği kabul edilir. Görevi daha zorlu hale getirmek için, her bir zaman adımında olasılıkla (0.1), hız artışları, istenen artışlardan bağımsız olarak sıfırdır. Her başlangıç durumundan optimal politikayı hesaplamak için bu göreve Monte Carlo kontrol yöntemi uygulayın. Optimal politikayı izleyen çeşitli yörüngeleri sergilemek (ancak bu yörüngeler için gürültüyü kapatmak).
+__*Alıştırma 5.12 :*__ *Yarış Pisti (programlama) :* Şekil $$5.5$$'de gösterilenler gibi bir yarış arabasını bir tur etrafında sürmeyi düşünün. Mümkün olduğu kadar çabuk gitmek istiyorsun, ama pistten kaçmak için o kadar hızlı değilsin. Basitleştirilmiş yarış pistimizde, araç, şematik göstergelerdeki ayrı bir dizi konumdan biridir. Hız ayrıca ayrıktır, zaman adımı başına yatay ve dikey olarak hareket eden bir dizi ızgara hücresi. Eylemler hız bileşenlerine artışlardır. Her adımda, her biri dokuz (3 × 3) eylem için +1, - 1 veya 0 ile değiştirilebilir. Her iki hız bileşeni de negatif olmayan ve 5'ten az olan ve başlangıç çizgisi hariç ikisi de sıfır olamaz. Her bölüm, her iki hız bileşeni sıfır ile rastgele seçilen başlangıç durumlarından birinde başlar ve araç bitiş çizgisini geçtiğinde sona erer. Ödüller, araba bitiş çizgisini geçene kadar her adım için 1'dir. Eğer araç palet sınırına ulaşırsa, başlangıç çizgisinde rastgele bir konuma geri taşınırsa, her iki hız bileşeni de sıfıra indirilir ve bölüm devam eder. Aracın konumunu her zaman adımında güncellemeden önce, aracın öngörülen yolunun parkur sınırını kestirip kestiğini kontrol edin. Bitiş çizgisini kesişirse bölüm sonlanır; Başka bir yerde kesişirse, aracın pist sınırına çarptığı ve başlangıç çizgisine geri gönderildiği kabul edilir. Görevi daha zorlu hale getirmek için, her bir zaman adımında olasılıkla (0.1), hız artışları, istenen artışlardan bağımsız olarak sıfırdır. Her başlangıç durumundan optimal politikayı hesaplamak için bu göreve Monte Carlo kontrol yöntemi uygulayın. Optimal politikayı izleyen çeşitli yörüngeleri sergilemek (ancak bu yörüngeler için gürültüyü kapatmak).
