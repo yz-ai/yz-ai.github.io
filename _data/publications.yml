@@ -1,17 +1,15 @@
 - id: 1
   title: Author Identification in Turkish Documents with Ridge Regression Analysis
-  authors: Birol Kuyumcu, Başak Buluz, Yavuz Kömeçoğlu
+  authors: Birol KUYUMCU, Başak BULUZ, Yavuz KÖMEÇOĞLU
   url: https://ieeexplore.ieee.org/abstract/document/8806242
   published_in: 2019 27th Signal Processing and Communications Applications Conference (SIU)
-  publisher: IEEE 
   year: 2019
 
 - id: 2
   title: Türkçe Haber Metinleri için Oylama Temelli Çoklu Sınıflandırma Yaklaşımı
-  authors: Basak Buluz, Yavuz Komecoğlu and Merve Ayyuce Kizrak
+  authors: Basak BULUZ, Yavuz KÖMEÇOĞLU and Merve Ayyüce KIZRAK
   url: http://asyu.inista.org/
   published_in: 2019 Innovations in Intelligent Systems and Applications Conference (ASYU)
-  publisher: IEEE 
   year: 2019
 
 - id: 3
@@ -19,5 +17,11 @@
   authors:  Merve Ayyüce KIZRAK, Bülent BOLAT
   url: https://dergipark.org.tr/tr/pub/gazibtd/issue/44915/495730
   published_in: Bilişim Teknolojileri Dergisi
-  publisher: IEEE 
+  year: 2019
+
+- id: 4
+  title: DNA Microarray Gene Expression Data Classification Using SVM, MLP, and RF with Feature Selection Methods Relief and LASSO
+  authors: Kıvanç GÜÇKIRAN, İsmail CANTÜRK, Lale ÖZYILMAZ
+  url: https://dergipark.org.tr/en/pub/sdufenbed/article/453462
+  published_in: Süleyman Demirel Üniversitesi Fen Bilimleri Enstitüsü Dergisi
   year: 2019
