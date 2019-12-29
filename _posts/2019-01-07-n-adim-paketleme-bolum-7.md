@@ -8,6 +8,7 @@ categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 prev-page-url: /blog/pekistirmeli-ogrenme/temporal-difference-zamansal-fark-ogrenmesi-bolum-6
+next-page-url: /blog/pekistirmeli-ogrenme/tabular-metotlar-bolum-8
 ---
 
 ## n-Adım Paketleme
