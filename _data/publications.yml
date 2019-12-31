@@ -25,3 +25,17 @@
   url: https://dergipark.org.tr/en/pub/sdufenbed/article/453462
   published_in: Süleyman Demirel Üniversitesi Fen Bilimleri Enstitüsü Dergisi
   year: 2019
+
+- id: 5
+  title: Intrusion Detection Using Machine Learning and Deep Learning Techniques 
+  authors: Sinan ÇALIŞIR, Remzi ATAY, Meltem KURT PEHLİVANOĞLU, Nevcihan DURU
+  url: https://ieeexplore.ieee.org/document/8906997
+  published_in: 2019 4th International Conference on Computer Science and Engineering (UBMK)
+  year: 2019
+
+- id: 6
+  title: Model-Free Reinforcement Learning Algorithms (Survey) 
+  authors: Sinan ÇALIŞIR, Meltem KURT PEHLİVANOĞLU
+  url: https://ieeexplore.ieee.org/document/8806389
+  published_in: 2019 27th Signal Processing and Communications Applications Conference (SIU)
+  year: 2019
