@@ -2,7 +2,7 @@
 layout: post
 author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 2: Çok Kollu Haydutlar"
-description: "Pekiştirmeli öğrenmeyi diğer öğrenme modellerinden ayıran en önemli özellik; atılan eylem adımlarını, en uygun eylemlerin talimatları ile değerlendiren eğitim bilgilerini kullanmasıdır."
+description: "Bu çalışma, Richard Sutton ve Andrew Barto tarafından kaleme alınan RL: An introduction (Sutton, R. S., & Barto, A. G. 2018) kitabının çeviri ve özetini barındırmaktadır."
 date:   2019-01-02
 categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]

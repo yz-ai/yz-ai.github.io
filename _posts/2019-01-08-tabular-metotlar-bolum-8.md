@@ -2,7 +2,7 @@
 layout: post
 author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 8: Tabular Metotlar"
-description: "Bu bölümde ortam modeli gerektiren ve model olmadan kullanılabilen pekiştirmeli öğrenme yöntemlerini göreceğiz. Modele dayalı yöntemler, temel bileşen olarak planlama yapmaya dayanırken, model içermeyen yöntemler temel olarak öğrenmeye dayanır. Bu iki yöntem arasında farklılıklar ve benzerlikler vardır. Özellikle, her iki yöntemin temelin de , değer fonksiyonlarının hesaplanması vardır. Bu bölümdeki amacımız, model tabanlı ve modelsiz yöntemlerin birleştirilmesidir (integration)."
+description: "Bu çalışma, Richard Sutton ve Andrew Barto tarafından kaleme alınan RL: An introduction (Sutton, R. S., & Barto, A. G. 2018) kitabının çeviri ve özetini barındırmaktadır."
 date:   2019-01-08
 categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]

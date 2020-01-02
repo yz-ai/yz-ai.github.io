@@ -2,7 +2,7 @@
 layout: post
 author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 5: Monte Carlo Yöntemleri"
-description: "Bir durumun değerinin, o durumdan başlayarak gelecekten beklenen indirgenmiş toplam ödül olduğunu hatırlarsak, söz konusu durumun değerini tahmin etmek için o durumdan sonra gözlemlenen ziyaretlerin dönüş değerlerinin ortalaması alınabilir. Daha fazla sayıda gözlem yapıldıkça ortalama değer beklenen değere yaklaşır. Bu görüş Monte Carlo metodunun temelidir."
+description: "Bu çalışma, Richard Sutton ve Andrew Barto tarafından kaleme alınan RL: An introduction (Sutton, R. S., & Barto, A. G. 2018) kitabının çeviri ve özetini barındırmaktadır."
 date:   2019-01-05
 categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]

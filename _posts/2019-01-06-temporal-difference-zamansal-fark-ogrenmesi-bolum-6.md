@@ -2,7 +2,7 @@
 layout: post
 author: "Pekiştirmeli Öğrenme Takımı"
 title:  "Pekiştirmeli Öğrenme - Bölüm 6: Temporal-Difference (Zamansal Fark) Öğrenmesi"
-description: "Pekiştirmeli öğrenmenin en temel yöntemlerinden biri olan zamansal fark öğrenmesi, daha önceki bölümlerde gördüğümüz dinamik programlama ve Monte Carlo yöntemlerinin bir çeşit kombinasyonudur."
+description: "Bu çalışma, Richard Sutton ve Andrew Barto tarafından kaleme alınan RL: An introduction (Sutton, R. S., & Barto, A. G. 2018) kitabının çeviri ve özetini barındırmaktadır."
 date:   2019-01-06
 categories: pekistirmeli-ogrenme
 tags: ["pekistirmeli-ogrenme"]
