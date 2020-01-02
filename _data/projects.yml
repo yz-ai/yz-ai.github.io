@@ -1,7 +1,7 @@
 - id: 1
   title: Teknofest’19 Yapay Zeka Yarışması — Nesne Tespiti — RetinaNet
   description: TEKNOFEST 2019 kapsamında gerçekleştirilem Yapay Zekâ Yarışması’nda insansız hava aracı ile önceden kaydedilmiş videolar üzerinde nesne tanıma görevi için bir araya gelen HÜMA Takımı finale kalan takımlar arasında 7. sırada tamamlamıştır. Yarışma kapsamında kullanılan derin öğrenme modelinin tüm detayları
-  image: /assets/images/projects/1/teknofest19_retinanet.gif
+  image: /assets/images/projects/1/teknofest19_retinanet.png
   links:
     github-url: https://github.com/huma-teknofest/Keras-RetinaNet-for-Teknofest-2019
     blog-url: https://medium.com/yavuzkomecoglu/teknofest19-yapayzeka-yarismasi-nesne-tespiti-retinanet-2e9ab25e7589
@@ -12,7 +12,7 @@
 - id: 2
   title: Görsel Soru Cevaplama / Visual Question Answering
   description: Görsel Soru Cevaplama sahip olduğumuz bir resim ile ilgili sorulan sorulara, resim içerisindeki bilgilerin analiz edilmesi ile cevaplar üretilmeye çalışılması problemi olarak tanımlanabilir. Bu problemde metinler şeklinde ifade edilen soruların işlenmesi bir Doğal Dil İşleme problemi iken; resimler içerisinden cevapların üretiminde her bir soru ayrı bir Bilgisayarla Görü problemine işaret eder.
-  image: /assets/images/projects/2/VQA.gif
+  image: /assets/images/projects/2/VQA.png
   links:
     github-url: https://github.com/basakbuluz/Visual-Question-Answering
     blog-url: https://medium.com/@basakbuluz/%C3%A7ok-g%C3%B6ren-mi-bilir-%C3%A7ok-soran-m%C4%B1-4bed5efdba41?
