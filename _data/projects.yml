@@ -52,3 +52,14 @@
     paper-url: ""
     demo-url: https://youtu.be/f82EBvPKyDI
   order-no: 50
+
+- id: 6
+title: Görme Engelliler için Para Okuyucu iOS Uygulaması
+description: TL Banknotları için resim kümesi oluşturulmuş ve ResNet50 modeli tekrar eğitilerek para tanıyıcı iOS uygulaması geliştirilmiştir.
+image: /assets/images/projects/6/paraokuyucu.png
+links:
+  github-url: https://github.com/ozgurshn/BanknoteClassifier
+  blog-url: https://medium.com/@ozgurs/g%C3%B6r%C3%BCnt%C3%BC-tan%C4%B1yan-mobil-uygulama-nas%C4%B1l-geli%C5%9Ftirilir-33760f7d827?
+  paper-url: ""
+  demo-url: https://apps.apple.com/tr/app/para-okuyucu/id1334298365?l=tr
+order-no: 51
