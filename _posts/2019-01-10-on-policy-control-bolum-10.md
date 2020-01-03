@@ -9,7 +9,7 @@ tags: ["pekistirmeli-ogrenme"]
 permalink: /blog/:categories/:title
 
 prev-page-url: /blog/pekistirmeli-ogrenme/on-policy-prediction-bolum-9
-next-page-url: /blog/pekistirmeli-ogrenme/off-policy-methods-with-bolum-11
+next-page-url: '' #/blog/pekistirmeli-ogrenme/off-policy-methods-with-bolum-11
 ---
 
 ## On-policy Control With Approximation
