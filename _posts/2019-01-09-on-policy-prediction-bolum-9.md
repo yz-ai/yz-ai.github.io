@@ -34,18 +34,18 @@ $$
 Olacak şekilde, bu dağılım bize her durumdaki hatanın ne kadar “umurumuzda” olduğunu söyleyecektir. Buradaki hata değerimiz, değer fonksiyonu yaklaşıklığı $$\tilde{v}(s,w)$$ ile gerçek hata $$\tilde{v}(s)$$ değeri arasındaki kök ortalama hata (root mean square) farkıdır.  $$\overline{VE}$$ ile gösterilir.
 
 $$
-    \qquad \overline{VE}(w) \dot{=} \displaystyle\sum\limits_{s\epsilon{S}}\mu(s)\bigg[v_{\pi} - \tilde{v}(s,w)\bigg]^2
+    \qquad \overline{VE}(w) \dot{=} \displaystyle\sum\limits_{s\epsilon{S}}\mu(s)\bigg[v_{\pi} - \tilde{v}(s,w)\bigg]^2 . \qquad(9.1)
 $$
 
 Bu eşitlik bize, gerçek değerler ile yaklaşık değerler arasındaki farkı verecektir ve genelde hata gösterimi için bu grafik kullanılır. Şunu da burada anımsamakta fayda var, $$\overline{VE}$$  pekiştirmeli öğrenme için performans ölçütü olmayabilir. Öncelik hedef politika belirlemek olduğu için, en iyi değer fonksiyonu yaklaşıklığı için $$\overline{VE}$$’yi minimize etmenin şart olduğu söylenemez fakat şu an alternatifi bulunmadığı için bunun üzerinden ilerlenecektir.
 
 Yapay Sinir Ağları ve Karar Ağaçları gibi karmaşık değer fonksiyonu yaklaşıklıkları genellikle yerel optimuma yakınsamaktadır. Doğrusal olmayan değer yaklaşıklıklarında lokal optimum genellikle kabul edilebilmektedir. Nitekim bir çok yapay zeka yapısının mutlak en iyi’ye yakınsayacağı kesin bir şekilde söylenememektedir.
 
-Takip eden bölümlerde gradyen prensipleriyle değer fonksiyonu yaklaşıklıkları yöntemleri incelenecektir.
+Takip eden bölümlerde gradyan prensipleriyle değer fonksiyonu yaklaşıklıkları yöntemleri incelenecektir.
 
 ## Rastgele Gradyen ve Yarı Gradyen Yöntemler
 
-Değer Fonksiyonu Yaklaşıklığı yöntemlerinde Rastgele Gradyen Düşümü (SGD) sıklıkla kullanılmaktadır. Bu yöntemde $$w$$ ağırlıkları gerçek değerli bir vektördür. Her bir zaman değeri için bu ağırlıklar güncellenecektir. Öncesinde belirtildiği gibi, bu yaklaşıklık tüm durumlara tam doğru değeri veremeyecektir. Zira tüm durumların değerlerini öğretemeyeceğimiz gibi, rastgele seçilecek durumlarla fonksiyonu eğiterek, genelleştirilmiş bir sonuç bulunmaya çalışılacaktır.
+Değer Fonksiyonu Yaklaşıklığı yöntemlerinde Rastgele Gradyen Düşümü (SGD-*Stochastic Gradient-Descent*) sıklıkla kullanılmaktadır. Bu yöntemde $$w$$ ağırlıkları gerçek değerli bir vektördür. Her bir zaman değeri için bu ağırlıklar güncellenecektir. Öncesinde belirtildiği gibi, bu yaklaşıklık tüm durumlara tam doğru değeri veremeyecektir. Zira tüm durumların değerlerini öğretemeyeceğimiz gibi, rastgele seçilecek durumlarla fonksiyonu eğiterek, genelleştirilmiş bir sonuç bulunmaya çalışılacaktır.
 
 Yaklaşıklık, gözlemlenen rastgele durumların değerleri ile eğitilerek, $$\overline{VE}$$ hatası minimize edilmeye çalışılmaktadır. Bu eğitim makine ve derin öğrenme uygulamalarında sıklıkla kullanılan SGD ile sağlanılabilir.
 
@@ -56,7 +56,7 @@ $$
 Bu formülasyonda $$\alpha$$ değeri adım büyüklüğünü temsil etmekle beraber, $$\triangledown f(w)$$ fonksiyonu ağırlıkların türevini belirtmektedir. Bu türev SGD’nin gradyen düşümünü belirlemektedir. SGD, çok küçük adımlarla ilerlemektedir. İlk başta bu istenmeyen bir durum gibi gözükse dahi, nihayetinde tüm örnekleri kapsayacak bir fonksiyon yaklaşıklığı için bu gereklidir. Bu sayede SGD bir yerel optimuma kesinlikle yakınsayacaktır. Lakin politika her bir adımdaki durumun değeri çevreyle etkileşimden alınan durum değeri ile aynı olmayabilir. Bu sebeple $$v_\pi(S_t)$$ yerine yanlı olmayan yaklaşık $$U_t$$ değeri konulabilir. Bu sayede formül şu şekilde güncellenebilir:
 
 $$
-    \qquad w_{t+1} \dot{=} w_t+\alpha\displaystyle[U_t-\tilde{v}(S_t,w_t)\displaystyle]\triangledown\tilde{v}(S_t,w_t)
+    \qquad w_{t+1} \dot{=} w_t+\alpha\displaystyle[U_t-\tilde{v}(S_t,w_t)\displaystyle]\triangledown\tilde{v}(S_t,w_t) \qquad(9.7)
 $$
 
 Fakat bu şekilde kullanılan formül, politikanın değerine yakınsamayabileceği için tam gradyen düşümü sağlamayacaktır. Buna Yarı Gradyen Düşümü denmektedir. İlk bakışta Yarı Gradyen düşümü, tam yaklaşıklık sağlamıyor gibi görünse de ilerleyen bölümlerde sağladığı iyileştirmeler fark edilecektir. Zira amaç öğrenimin sürekli ve çevrimiçi olmasını sağlamaktadır. 
@@ -68,13 +68,13 @@ Ek olarak, Durum Toplanması (state aggregation) fonksiyon yaklaşıkları için
 Fonksiyon yaklaşıklığının en önemli durumlarından biri $$\tilde{v}({*},w)$$ yaklaşıklığının $$w$$ ağırlıklarına göre doğrusal olmasıdır. Her bir $$s$$ durumu için gerçek değerli bir vektör vardır, $$x(s)\dot{=}(x_1(s), x_2(s), ..., x_d(s))^T$$ bu vektör $$w$$ ağırlık vektörü ile aynı eleman sayısına sahip olacaktır. 
 
 $$
-    \qquad \tilde{v}(s,w) \dot{=} w^Tx(s) \dot{=} \displaystyle\sum\limits_{i=1}^{d}w_i x_i(s)   
+    \qquad \tilde{v}(s,w) \dot{=} w^Tx(s) \dot{=} \displaystyle\sum\limits_{i=1}^{d}w_i x_i(s)  \qquad(9.8)
 $$
 
-$$x_i(s)$$ öznitelik vektörü olarak isimlendirilir. Bu fonksiyonun durumlar için verdiği her bir değer birer öz niteliktir. Yine benzer şekilde doğrusal fonksiyon yaklaşıklığı için SGD kullanılabilir.
+$$x_i(s)$$ öznitelik vektörü olarak isimlendirilir. Bu fonksiyonun durumlar için verdiği her bir değer birer özniteliktir. Yine benzer şekilde doğrusal fonksiyon yaklaşıklığı için SGD kullanılabilir.
 
 $$
-    \qquad w_{t+1} \dot{=} w_t+\alpha\displaystyle[U_t-\tilde{v}(S_t,w_t)\displaystyle]x(S_t)   
+    \qquad w_{t+1} \dot{=} w_t+\alpha\displaystyle[U_t-\tilde{v}(S_t,w_t)\displaystyle]x(S_t).   
 $$
 
 ## Doğrusal Yöntemler için Öznitelik İnşası
@@ -169,7 +169,7 @@ $$
 Bu noktaya yakınsamak için iteratif yöntemden ziyade, bu değerlere tahmini bir değer hesaplayıp, sabit noktayı direkt hesaplayabiliriz. En Küçük Kareler TD (Least Squares TD) yöntemi bunu sağlamaktadır. 
 
 $$
-    \hat{A_t}\dot{=}\displaystyle\sum\limits_{k=0}^{t-1}x_k(x_k-\gamma x_{k+1})^T + \epsilon I, \quad \hat{b_t} \dot{=} \displaystyle\sum\limits_{k=0}^{t-1} R_{t+1}x_k 
+    \hat{A_t}\dot{=}\displaystyle\sum\limits_{k=0}^{t-1}x_k(x_k-\gamma x_{k+1})^T + \epsilon I, \quad \hat{b_t} \dot{=} \displaystyle\sum\limits_{k=0}^{t-1} R_{t+1}x_k \qquad (9.20) 
 $$
 
 Bu hesaplama veri anlamında efektif olsa dahi, işlemsel olarak yükü büyüktür. Bunu göz önüne alarak veri boyutu ile işlemsel yük arasında seçim yapılmalıdır.
@@ -178,7 +178,7 @@ Bu hesaplama veri anlamında efektif olsa dahi, işlemsel olarak yükü büyükt
 
 Bellek tabanlı yaklaşıklıklarda, bir durumun değerine ihtiyaç duyulmadığı müddetçe hesaplama yapılmaz. Eğitim süresince örnekler bellekte tutulur ve ilgili durumun tahmininin hesaplanması gerektiği zaman, bellekten değerler alınarak ilgili hesaplama yapılır. Bu yönteme tembel öğrenme (lazy learning) denir. Bu fonksiyon yaklaşıklığında parametre kullanılmadığı için, parametrik-olmayan (non-parametric) yöntemler arasına girmektedir.
 
-Bir çok bellek tabanlı yaklaşıklık mekanizması bulunmaktadır. Bu bölümde yalnızca yerel yaklaşıklık yöntemi (local approximation) örneklenecektir. Bir durum için değer hesaplanması istenince, ona en yakın olan komşu (nearest neighbor) durumun değeri dönülerek basitçe yerel öğrenme yapılabilmektedir. Benzer şekilde, değer hesaplaması istenen duruma en yakın olan durumların değerlerinin ağırlıklı ortalamaları da alınabilmektedir. 
+Birçok bellek tabanlı yaklaşıklık mekanizması bulunmaktadır. Bu bölümde yalnızca yerel yaklaşıklık yöntemi (local approximation) örneklenecektir. Bir durum için değer hesaplanması istenince, ona en yakın olan komşu (nearest neighbor) durumun değeri dönülerek basitçe yerel öğrenme yapılabilmektedir. Benzer şekilde, değer hesaplaması istenen duruma en yakın olan durumların değerlerinin ağırlıklı ortalamaları da alınabilmektedir. 
 
 Mutlak yaklaşıklıktan (global approximation) kaçınmak, yüksek boyut probleminden kaçınmak için ideal bir yöntem olmaktadır. Zira durum uzay boyutları arttıkça tabular yöntemlerde mutlak yaklaşıklık için bellek ihtiyacı üstel olarak büyümektedir. Lakin, iki yöntem için de işlemsel ihtiyaç örnek ve bellek miktarı yükseldikçe büyümektedir. Veri yapıları ile ilgili çalışmalar işlemsel ihtiyaca yardımcı olmaktadır.
 
@@ -189,7 +189,7 @@ Bellek tabanlı yaklaşıklıklarda, $$s$$ durumu için aranan komşu durumları
 Başka bir bakış açısıyla kernel fonksiyonları, durumlar arası genelleştirmeyi (generalization) ve alakayı (relevant knowledge) belirlemektedir. Kare kodlamada kullanılan filtre de, tam anlamıyla karşılamasa dahi kernel fonksiyonuna bir örnek olarak verilebilir. Kernel bağıntısı (kernel regression), bellekte tutulan her örneğin hedefini ağırlıklı ortalama kullanarak hesaplayan bir yöntemdir. $$\mathcal{D}$$ hafızada tutulan örnekler ve $$g(s')$$, $$s'$$ durumu için hafızadaki hedef olarak belirlenirse kernel bağıntısı aşağıdaki şekilde tanımlanabilir.
 
 $$
-    \hat{v}(s,\mathcal{D}) = \displaystyle\sum\limits_{s'\epsilon\mathcal{D}}k(s,s')g(s') 
+    \hat{v}(s,\mathcal{D}) = \displaystyle\sum\limits_{s'\epsilon\mathcal{D}}k(s,s')g(s') \qquad(9.23)
 $$
 
 En sıklıkla kullanılan kernel, Gaussian Radial Basis Function (RBF) olmaktadır. Ağırlıklar SGD ile öğrenilmekte olup, öğrenme başladıktan sonra kernel’in boyutu ve merkezi değiştirilerek bağıntı hesaplanabilmektedir.
