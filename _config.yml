@@ -35,6 +35,8 @@ footer:
           profile_url: 'https://github.com/yz-ai'
         - network_name: twitter
           profile_url: 'https://twitter.com/yapayzeka_ai'
+        - network_name: linkedin
+          profile_url: 'https://www.linkedin.com/groups/13819364/'
 google_analytics:
     tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
 comments:
