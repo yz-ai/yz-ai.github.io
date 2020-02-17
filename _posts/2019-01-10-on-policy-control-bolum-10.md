@@ -30,11 +30,14 @@ $$\mathbf{w}_{t+1}\doteq \mathbf{w}_{t}+ \alpha [ R_{t+1}-\gamma\hat{q}(S_{t+1},
 
 Bu yönteme tek-adımlı Sarsa epizodik yarı$$-$$gradyan denilmektedir. Kontrol yöntemlerini oluşturmak için, bu tür eylem$$-$$değer tahmin yöntemlerini politika geliştirme ve eylem seçimi teknikleriyle birleştirmek gerekmektedir. 
 
-$$\textbf{Mountain Car Görevi} $$
+
+__*Örnek 10.1 :*__ __*Mountain Car Görevi*__
 
 Aşağıdaki diyagramda gösterildiği gibi güçlü bir dağ yolunda güçlü bir bir arabayı kullanma görevi düşünülürse zorluk, yer çekiminin otomobilin motorundan güçlü olması ve dik yokuşta bile hızlanamamasıdır. 
 
 ![SEKİL-101]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-101.png)
+
+__*Şekil 10.1 :*__ *The Mountain Car Görevi (sol üst panel) tek seferde öğrenilen ilerleme maliyetin fonksiyonu :$$(- max_{a} \hat{q}(s,a,w)) $$*
 
 
 Tek çözüm ilk olarak hedeften uzaklaşmak ve sol taraftaki zıt eğimi ortadan kaldırmaktır. Daha sonra, araç tam gazla yol boyunca yavaşlasa bile yokuş yukarı çıkmak için yeterli durgunluğa (interia) sahip olmaktadır.
