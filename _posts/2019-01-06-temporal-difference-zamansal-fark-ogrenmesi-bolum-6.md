@@ -52,9 +52,12 @@ Zamansal fark öğrenmesi yöntemlerinin, herhangi bir sabit politika için yete
 
 ![Ornek-62-1]({{ site.url }}/assets/images/RL-sutton-ozet/ornek-62-1.png)
 
+__*Örnek 6.2 : Random Walk :*__ *Bu örnekte,TD(0)'ın tahmin yeteneklerini ampirik(empirically) olarak karşılaştırdık,sabit- $$\alpha$$ yukarıdaki Markov Ödül Sürecine tabi tutultuğunda Monte Carlo.*
+
 ![Ornek-62]({{ site.url }}/assets/images/RL-sutton-ozet/ornek-62.png)
 
-__*Örnek 6.2 : Random Walk :*__ *Bu örnekte,TD(0)'ın tahmin yeteneklerini ampirik(empirically) olarak karşılaştırdık,sabit- $$\alpha$$ yukarıdaki Markov Ödül Sürecine tabi tutultuğunda Monte Carlo.*
+__*Örnek 6.2 : Random Walk :*__ *Yukarıdaki sol grafik, tek bir TD (0) çalışmasında çeşitli sayıda bölümden sonra öğrenilen değerleri göstermektedir. 100 bölümden sonraki tahminler, sabit bir adım boyutu parametresiyle (bu örnekte $$\alpha$$ = 0:1) gerçek değerlere geldikleri kadar yakındır, değerler en son bölümlerin sonuçlarına cevaben tamamen nitelendirilir. Sağdaki grafikte ise ikisi için (TD ve MC) öğrenme eğrilerinin farklı $$\alpha$$ değerlerinin sonuçlarını gösterir. Gösterilen performans ölçüsü, durumlara göre ortalaması alınan ve daha sonra yüzden fazla çalışmanın ortalamasının alındığı öğrenilen değer fonksiyonu ve gerçek değer fonksiyonu arasındaki bir karekök hatasıdır. Her durumda, yaklaşık değer fonksiyonu tüm $$s$$ için ara değer $$V(s)$$ = 0:5 olarak başlatıldı. TD yöntemi, bu görevdeki MC yönteminden sürekli olarak daha iyiydi.*
+
 
 ## Zamansal Fark Öğrenmesinin En Uygunluğu (Optimality)
 
