@@ -139,7 +139,8 @@ Yukarıdaki tabloda USSA veri seti eğitilen modelin Replay-Attack ve FASD veri 
  - Konuya artan ilgi ve büyük oyuncular tarafından tanıtılan yüz tanıma teknolojileriyle, **iddialı ekipler için “fırsat pencereleri” ortaya çıktı**, çünkü mimari düzeyde yeni bir çözüme fazlaca ihtiyaç var.
 
 ## Referanslar
-> "Bu çalışma, Fatih Çağatay Akyön tarafından kaleme alınan https://medium.com/codable/face-anti-spoofing-starter-kit-f248ed195a3c Medium makalesinin Türkçe çevirisidir."
+> "Bu çalışma, Fatih Çağatay Akyön tarafından kaleme alınan [Face Anti-Spoofing Starter Kit](https://medium.com/codable/face-anti-spoofing-starter-kit-f248ed195a3c) Medium makalesinin Türkçe çevirisidir."
+
 1.  Souza, L., Oliveira, L., Pamplona, M., & Papa, J. (2018). How far did we get in face spoofing detection?. _Engineering Applications of Artificial Intelligence_, _72_, 368–381.
 2.  Chingovska, I., Anjos, A., & Marcel, S. (2012, September). On the effectiveness of local binary patterns in face anti-spoofing. In _2012 BIOSIG-proceedings of the international conference of biometrics special interest group (BIOSIG)_ (pp. 1–7). IEEE.
 3.  Atoum, Y., Liu, Y., Jourabloo, A., & Liu, X. (2017, October). Face anti-spoofing using patch and depth-based CNNs. In _2017 IEEE International Joint Conference on Biometrics (IJCB)_ (pp. 319–328). IEEE.
