@@ -7,6 +7,7 @@ date:   2019-02-27
 categories: yuz-tanima
 tags: ["yuz-tanima"]
 permalink: /blog/:categories/yuz-sahteciligini-onleme
+---
 
 ## Ne hakkında konuşacağız
 
