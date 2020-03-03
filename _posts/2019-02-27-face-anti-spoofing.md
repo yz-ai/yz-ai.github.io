@@ -27,12 +27,12 @@ Ancak tahmin ettiğiniz üzere biyometrik sistemleri de kandırmaya çalışanla
 ## Yüz tanıma teknolojisinden yüz sahteciliğine
 Günümüzün yüz tanıma sistemleri muazzam bir doğruluk göstermektedir. Büyük veri setlerinin ve karmaşık mimarilerin ortaya çıkmasıyla, **0.000001'e (milyonda bir hata!) kadar yüz tanıma doğruluğu** elde etmek mümkün hale geldi ve artık mobil platformlara aktarma için uygunlar. Bu yüz tanıma sistemlerinin günlük kullanımının yaygınlaşmasına tek engel; onların zayıf taraflarıydı.
 
-Teknik gerçekliğimizde başka bir kişiyi taklit etmek için en sık  kullanılan yöntem maskelerdir. Örneğin, aşağıdaki resimde olduğu gibi siyahi bir maske takarak bir bankayı soyun:
+Teknik gerçekliğimizde başka bir kişiyi taklit etmek için en sık kullanılan yöntem maskelerdir. Örneğin, aşağıdaki resimde olduğu gibi siyahi bir maske takarak bir bankayı soyun:
 
 ![](https://miro.medium.com/max/1170/0*-AA1QJl_qiwtADqu)
 Yüz tanıma sistemlerini kandırmanın en iyi yolu kişinin kendi yüzü yerine başka birinin yüzünü sunmasıdır. Maskeler; yazıcıdan çıktısı alınan başkasına ait yüzün fotoğrafından, ısıtmalı çok karmaşık üç boyutlu maskelere kadar tamamen farklı kalitede olabilir, ayrı bir sayfa veya ekran şeklinde de sunulabilir, kişinin başına da takılabilir.
 
-Samsung'daki **Iris tarayıcısı** ve iPhone X'teki  **Face ID** sistemini aldatma girişimi ile birlikte, yüz sahteciliği konusuna olan ilgi de artmaya başladı. Aşağıdaki şekilde, Vietnam güvenlik şirketi olan Bkav'ın, **Face ID'yi aşmak için kullandığı maske**yi görüyorsunuz. Maske, silikon burun, 3 boyutlu yazıcıdan çıkarılmış parçalar ve 2 boyutlu fotoğraflardan oluşuyor. Detaylı bilgiye [bu videodan da](https://www.youtube.com/watch?v=kSwzTqM3t_0) ulaşabilirsiniz.
+Samsung'daki **Iris tarayıcısı** ve iPhone X'teki  **Face ID** sistemini aldatma girişimi ile birlikte, yüz sahteciliği konusuna olan ilgi de artmaya başladı. Aşağıdaki şekilde, Vietnam güvenlik şirketi olan Bkav'ın, **Face ID'yi aşmak için kullandığı maske**yi görüyorsunuz. Maske, silikon burun, 3 boyutlu yazıcıdan çıkarılmış parçalar ve 2 boyutlu fotoğraflardan oluşuyor. Detaylı bilgiye [bu videodan](https://www.youtube.com/watch?v=kSwzTqM3t_0) ulaşabilirsiniz.
 
 ![](https://miro.medium.com/max/692/0*AdUio17zq30vgfvz)
 
@@ -96,9 +96,9 @@ Kamera önünde videodan tekrar oynatılan veya çıktısı alınmış yüz gör
 Görüntü analizine dayalı yüz sahteciliğini önleme algoritmalarının öncüsü olarak düşünülebilen, LBP tabanlı sahtekarlık önleme algoritmasının (2012) blok şeması:
 
 ![](https://miro.medium.com/max/1336/0*XSyLx6JUcuZUGxC2)
-Verilen algoritmada, görüntüdeki her bir piksel için LBP hesaplanırken, komşularının sekizi sırayla alınır ve değerleri karşılaştırılır. Değer merkezi pikselden daha büyükse bir, küçükse sıfır olarak atanir. Böylece, her piksel için 8 bitlik bir dizi elde edilir. Elde edilen sekanslara dayanarak, **SVM sınıflandırıcısı**nına girdi olarak verilen **piksel histogram ı (a per-pixel histogram)** oluşturulur.
+Verilen algoritmada, görüntüdeki her bir piksel için LBP hesaplanırken, komşularının sekizi sırayla alınır ve değerleri karşılaştırılır. Değer merkezi pikselden daha büyükse bir, küçükse sıfır olarak atanır. Böylece, her piksel için 8 bitlik bir dizi elde edilir. Elde edilen sekanslara dayanarak, **SVM sınıflandırıcısı**nına girdi olarak verilen **piksel histogram ı (a per-pixel histogram)** oluşturulur.
 
-Bu yontemin HTER değeri %15 kadardır ve saldırganların önemli bir kısmının çok çaba sarf etmeden güvenlik sistemini gecebildigi anlamına gelir, ancak tehditlerin %85 oranında elendiğine dikkat edilmelidir. Algoritma, 50 katılımcının 1200 kısa videosundan ve üç tür saldırıdan (basılı saldırı, mobil saldırı, yüksek çözünürlüklü saldırı) oluşan IDIAP Replay-Attack veri kümesinde test edildi.
+Bu yöntemin HTER değeri %15 kadardır ve saldırganların önemli bir kısmının çok çaba sarf etmeden güvenlik sistemini geçebildigi anlamına gelir, ancak tehditlerin %85 oranında elendiğine dikkat edilmelidir. Algoritma, 50 katılımcının 1200 kısa videosundan ve üç tür saldırıdan (basılı saldırı, mobil saldırı, yüksek çözünürlüklü saldırı) oluşan IDIAP Replay-Attack veri kümesinde test edildi.
 
 ## Derin öğrenme temelli sahteciliği önleme teknikleri
 
@@ -127,14 +127,13 @@ Tablolarda görülebileceği gibi, yüz sahtecilik önleme sorunu veri **kümele
 
 Patel’in 2016 makalesinde sunulan sonuçlar, yeterince karmaşık bir sinir ağı yapısı üzerinde, göz kırpma/doku gibi güvenilir öznitelikler kullanılsa bile, bilinmeyen veri kümelerindeki sonuçların **tatmin edici olmayacağını** göstermektedir:
 
-
 ![](https://miro.medium.com/max/1140/0*iWJTe_Hh-bCaWcvv)![](https://miro.medium.com/max/833/0*l0ymLjDPVg79q5wv)
 Yukarıdaki tabloda USSA veri seti eğitilen modelin Replay-Attack ve FASD veri kümeleri üzerindeki test sonuçları görülebilir. Veri kümeleri yeterli çeşitliliğe sahip olmadığından, **bir veri kümesinde eğitilmiş modeller diğer kümeler üzerinde genelleme yeteneğine sahip olamıyor**.
 
 ## Son sözler
 
  - Yüz tanıma için kullanılan hemen hemen tüm teknolojiler yüz sahteciliğine karşı da kullanılabilmektedir. **Yüz tanıma için geliştirilen her şey, şu ya da bu şekilde, saldırı analizi için bir kullanım buldu**.
- - Yüz tanıma ve yüz sahtecilini önleme alanlarinin gelişme dereceleri arasında açık bir dengesizlik vardır. Tanıma teknolojileri koruma sistemlerinden önemli ölçüde öndedir. **Ayrıca, yüz tanıma sistemlerinin pratik kullanımını engelleyen en önemli etken, güvenilir koruma sistemlerinin olmamasıdır**. Literatürde neredeyse tüm ilgi özellikle yüz tanımaya kaydı ve saldırı tespit sistemlerinin literetürü bu sebepten dolayı daha geride kaldı.
+ - Yüz tanıma ve yüz sahtecilini önleme alanlarının gelişme dereceleri arasında açık bir dengesizlik vardır. Tanıma teknolojileri koruma sistemlerinden önemli ölçüde öndedir. **Ayrıca, yüz tanıma sistemlerinin pratik kullanımını engelleyen en önemli etken, güvenilir koruma sistemlerinin olmamasıdır**. Literatürde neredeyse tüm ilgi özellikle yüz tanımaya kaydı ve saldırı tespit sistemlerinin literetürü bu sebepten dolayı daha geride kaldı.
  - **Mevcut veri kümeleri doygunluğa ulaştı.** On temel veri kümesinden beşinde sıfır hataya ulaşıldı. Bu, sahtecilik önleme alanında büyük ilerleme kaydedildiğini ancak genelleme yeteneğinin geliştirilmesine olanak sağlanamadığını gösterir. Yeni verilere ve yeni deneylere ihtiyacımız var.
  - Konuya artan ilgi ve büyük oyuncular tarafından tanıtılan yüz tanıma teknolojileriyle, **iddialı ekipler için “fırsat pencereleri” ortaya çıktı**, çünkü mimari düzeyde yeni bir çözüme fazlaca ihtiyaç var.
 
