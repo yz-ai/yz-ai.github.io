@@ -96,9 +96,9 @@ Kamera önünde videodan tekrar oynatılan veya çıktısı alınmış yüz gör
 Görüntü analizine dayalı yüz sahteciliğini önleme algoritmalarının öncüsü olarak düşünülebilen, LBP tabanlı sahtekarlık önleme algoritmasının (2012) blok şeması:
 
 ![](https://miro.medium.com/max/1336/0*XSyLx6JUcuZUGxC2)
-Verilen algoritmada, görüntüdeki her bir piksel için LBP hesaplanırken, komşularının sekizi sırayla alınır ve değerleri karşılaştırılır. Değer merkezi pikselden daha büyükse bir, küçükse sıfır Böylece, her piksel için 8 bitlik bir dizi elde edilir. Elde edilen sekanslara dayanarak, **SVM sınıflandırıcısı**nına girdi olarak verilen **piksel histogram ı (a per-pixel histogram)** oluşturulur.
+Verilen algoritmada, görüntüdeki her bir piksel için LBP hesaplanırken, komşularının sekizi sırayla alınır ve değerleri karşılaştırılır. Değer merkezi pikselden daha büyükse bir, küçükse sıfır olarak atanir. Böylece, her piksel için 8 bitlik bir dizi elde edilir. Elde edilen sekanslara dayanarak, **SVM sınıflandırıcısı**nına girdi olarak verilen **piksel histogram ı (a per-pixel histogram)** oluşturulur.
 
-HTER değeri %15 kadardır ve saldırganların önemli bir kısmının çok çaba sarf etmeden güvenlik sisteminin üstesinden geldiği anlamına gelir, ancak tehditlerin %85 oranında elendiğine dikkat edilmelidir. Algoritma, 50 katılımcının 1200 kısa videosundan ve üç tür saldırıdan (basılı saldırı, mobil saldırı, yüksek çözünürlüklü saldırı) oluşan IDIAP Replay-Attack veri kümesinde test edildi.
+Bu yontemin HTER değeri %15 kadardır ve saldırganların önemli bir kısmının çok çaba sarf etmeden güvenlik sistemini gecebildigi anlamına gelir, ancak tehditlerin %85 oranında elendiğine dikkat edilmelidir. Algoritma, 50 katılımcının 1200 kısa videosundan ve üç tür saldırıdan (basılı saldırı, mobil saldırı, yüksek çözünürlüklü saldırı) oluşan IDIAP Replay-Attack veri kümesinde test edildi.
 
 ## Derin öğrenme temelli sahteciliği önleme teknikleri
 
@@ -107,7 +107,7 @@ Bir noktadan sonra, derin öğrenmeye geçişin olgunlaştığı belli oldu. Ön
 2017 yılında yapılan bir çalışmada, sahtecilik tespiti için **yama ve derinlik tahminine dayalı bir sinir ağı** önerildi:
 
 ![](https://miro.medium.com/max/1600/0*lH7rb1Nvzn-AMlXw)
-İlk olarak, girdi görüntüsünde yüz algılanır. Bu yüz, sinir ağı tabanlı model içeren 2 dala girdi olarak verilir. İlk dal, tespit edilen yüz bölgesinden yamalar (patches) çıkarır ve her bir yama için bir sahtelik puanı tahmin eder. İkinci dal, **derinliğe dayalı bir CNN modeli** ile onun ucuna bağlanmış bir **öznitelik çıkarıcıdan** oluşur. Burada, yüzün derinlik haritası tahmin edilir ve sonrasında çıkarılan derinlik öznitelikleri, ikili sahte / gerçek tahmini yapan SVM tabanlı bir sınıflandırıcıya girdi olarak verilir. Önerilen tüm modellerin / sınıflandırıcıların ayrı ayrı eğitildiği unutulmamalıdır (ortak bir kayıp fonksiyonu ile uçtan uca eğitim yoktur). Yöntem CASIA-FASD MSU-USSA ve Replay-Attack veri kümelerinde HTER'de sırasıyla 2.27, 0.21 ve 0.72 elde etti.
+İlk olarak, girdi görüntüsünde yüz algılanır. Bu yüz, sinir ağı tabanlı model içeren 2 dala girdi olarak verilir. İlk dal, tespit edilen yüz bölgesinden yamalar (patches) çıkarır ve her bir yama için bir sahtelik puanı tahmin eder. İkinci dal, **derinliğe dayalı bir CNN modeli** ile onun ucuna bağlanmış bir **öznitelik çıkarıcıdan** oluşur. Burada, yüzün derinlik haritası tahmin edilir ve sonrasında çıkarılan derinlik öznitelikleri, ikili sahte / gerçek tahmini yapan SVM tabanlı bir sınıflandırıcıya girdi olarak verilir. Önerilen tüm modellerin / sınıflandırıcıların ayrı ayrı eğitildiği unutulmamalıdır (ortak bir kayıp fonksiyonu ile uçtan uca eğitim yoktur). Yöntem CASIA-FASD MSU-USSA ve Replay-Attack veri kümelerinde sırasıyla 2.27, 0.21 ve 0.72 HTER degerlerini elde etti.
 
 2018'de yapılan bir çalışmada, sahte yüz tespiti için 3 boyutlu CNN tabanlı ağ önerilmiştir:
 
@@ -134,7 +134,7 @@ Yukarıdaki tabloda USSA veri seti eğitilen modelin Replay-Attack ve FASD veri 
 ## Son sözler
 
  - Yüz tanıma için kullanılan hemen hemen tüm teknolojiler yüz sahteciliğine karşı da kullanılabilmektedir. **Yüz tanıma için geliştirilen her şey, şu ya da bu şekilde, saldırı analizi için bir kullanım buldu**.
- - Yüz tanıma ve yüz sahtecilini önleme arasında gelişme derecesi arasında açık bir dengesizlik vardır. Tanıma teknolojileri koruma sistemlerinden önemli ölçüde öndedir. **Ayrıca, yüz tanıma sistemlerinin pratik kullanımını engelleyen en önemli etken, güvenilir koruma sistemlerinin olmamasıdır**. Literatürde neredeyse tüm ilgi özellikle yüz tanımaya kaydı ve saldırı tespit sistemlerinin literetürü bu sebepten dolayı daha geride kaldı.
+ - Yüz tanıma ve yüz sahtecilini önleme alanlarinin gelişme dereceleri arasında açık bir dengesizlik vardır. Tanıma teknolojileri koruma sistemlerinden önemli ölçüde öndedir. **Ayrıca, yüz tanıma sistemlerinin pratik kullanımını engelleyen en önemli etken, güvenilir koruma sistemlerinin olmamasıdır**. Literatürde neredeyse tüm ilgi özellikle yüz tanımaya kaydı ve saldırı tespit sistemlerinin literetürü bu sebepten dolayı daha geride kaldı.
  - **Mevcut veri kümeleri doygunluğa ulaştı.** On temel veri kümesinden beşinde sıfır hataya ulaşıldı. Bu, sahtecilik önleme alanında büyük ilerleme kaydedildiğini ancak genelleme yeteneğinin geliştirilmesine olanak sağlanamadığını gösterir. Yeni verilere ve yeni deneylere ihtiyacımız var.
  - Konuya artan ilgi ve büyük oyuncular tarafından tanıtılan yüz tanıma teknolojileriyle, **iddialı ekipler için “fırsat pencereleri” ortaya çıktı**, çünkü mimari düzeyde yeni bir çözüme fazlaca ihtiyaç var.
 
