@@ -1,3 +1,7 @@
+__*Bu kod dosyası DeepCon18'de yapılan atölye çalışmasına aittir. Konun örneği ile aynı yapıya ve özümsenmiş haline sahip olduğundan bu kod dosyası Pekiştirmeli Öğrenme(RL) için eklenmiştir.*__ 
+__*Ek olarak DeepCon18'de Atölyenin sunumunada erişebilirsiniz.*__
+
+
 # DeepCon - Pekiştirmeli Öğrenmede Çok Kollu Haydutlar Problemi
 
 ## Katılım için gereksinimler
@@ -12,7 +16,3 @@ pip install numpy matplotlib
 Görüşmek üzere!
 
 
-
-
-__*Bu kod dosyası DeepCon18'de yapılan atölye çalışmasına aittir. Konun örneği ile aynı yapıya ve özümsenmiş haline sahip olduğundan bu kod dosyası Pekiştirmeli Öğrenme(RL) için eklenmiştir.*__ 
-__* Ek olarak DeepCon18'de Atölyenin sunumunada erişebilirsiniz.*__
