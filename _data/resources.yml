@@ -40,3 +40,10 @@
   description: Pekiştirmeli öğrenme, amaca yönelik ne yapılması gerektiğini öğrenen bir makine öğrenmesi yaklaşımıdır. Pekiştirmeli Öğrenme için en detaylı Türkçe kaynak.
   url: /blog/pekistirmeli-ogrenme/pekistirmeli-ogrenme-bolum-1
   order-no: 5
+  
+  
+- id: 8
+  title: PyTorch ile Görüntü Sınıflandırma için Uygulamalı Çalışma Dosyası
+  description: PyTorch ekosistemindeki yeniliklerden de faydalanılarak, Evrişimli Sinir Ağları ile basit bir görüntü sınıflandırma uygulamasının Türkçe anlatımlı çalışma dosyası.
+  url: https://colab.research.google.com/github/ayyucekizrak/PyTorch-ile-Goruntu-Siniflandirma/blob/master/PyTorch_ile_Goruntu_Siniflandirma.ipynb
+  order-no: 45
