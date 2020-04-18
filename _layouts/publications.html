@@ -11,7 +11,8 @@ layout: wrapper
         <div class="row">
             <div class="col-md-7">
                 <div class="content">
-                    {% for publication in site.data.publications %} {% capture currentyear %}{{publication.year}}{% endcapture %} {% if currentyear != year %}
+                    {% assign publications = site.data.publications | sort: 'year' | reverse %}
+                    {% for publication in publications %} {% capture currentyear %}{{publication.year}}{% endcapture %} {% if currentyear != year %}
                     <h2 id='{{ currentyear }}'>{{ currentyear }}</h2>
                     {% capture year %}{{currentyear}}{% endcapture %} {% endif %}
                     <ul class="posts-in-year">

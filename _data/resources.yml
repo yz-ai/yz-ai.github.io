@@ -28,20 +28,18 @@
   url: https://github.com/yapay-ogrenme/googlecodelabs/wiki
   order-no: 50
   
-
 - id: 6
   title: 1. Türk Yapay Zeka ve Yapay Sinir Ağları Sempozyumu Bildirileri (1992)
   description: Yapay Zeka konusunda ülkemizin duayen araştırmacılarının yer aldığı ve düzenlediği Türkiye'nin ilk ilgili alandaki sempozyumunun bildiri kitabını çevrimiçi kitabı.
   url: https://yapay-zeka.gitbook.io/ilkturkyapayzekaveyapaysiniraglarisempozyumu/
   order-no: 60
-  
+
 - id: 7
   title: Pekiştirmeli Öğrenme Kitabı
   description: Pekiştirmeli öğrenme, amaca yönelik ne yapılması gerektiğini öğrenen bir makine öğrenmesi yaklaşımıdır. Pekiştirmeli Öğrenme için en detaylı Türkçe kaynak.
   url: /blog/pekistirmeli-ogrenme/pekistirmeli-ogrenme-bolum-1
   order-no: 5
-  
-  
+
 - id: 8
   title: PyTorch ile Görüntü Sınıflandırma için Uygulamalı Çalışma Dosyası
   description: PyTorch ekosistemindeki yeniliklerden de faydalanılarak, Evrişimli Sinir Ağları ile basit bir görüntü sınıflandırma uygulamasının Türkçe anlatımlı çalışma dosyası.
