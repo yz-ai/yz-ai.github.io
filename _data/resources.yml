@@ -45,3 +45,9 @@
   description: PyTorch ekosistemindeki yeniliklerden de faydalanılarak, Evrişimli Sinir Ağları ile basit bir görüntü sınıflandırma uygulamasının Türkçe anlatımlı çalışma dosyası.
   url: https://colab.research.google.com/github/ayyucekizrak/PyTorch-ile-Goruntu-Siniflandirma/blob/master/PyTorch_ile_Goruntu_Siniflandirma.ipynb
   order-no: 45
+
+- id: 9
+  title: (Video) Yapay Sinir Ağları ve Nöral Hesaplama - Tülay Yıldırım
+  description: Yapay sinir ağları hakkında temel bilgiler vermek üzere Prof. Dr. Tülay Yıldırım (YTÜ) tarafından hazırlanmıştır. Biyolojik nöron, yapay nöron modeli, temel ağ yapıları, öğrenme çeşitleri ve yapay sinir ağı tasarımında dikkat edilmesi gereken bazı noktalar özetlenmiştir.
+  url: https://youtu.be/clBCel89_C8
+  order-no: 35
