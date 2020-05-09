@@ -125,7 +125,7 @@ Beklentili Sarsa metodu Sarsa’ya göre hesaplama açısından daha karmaşıkt
 
 ![SEKİL-63]({{ site.url }}/assets/images/RL-sutton-ozet/sekil-63.png)
 
-__*Şekil 6.3 :*__ $$\alpha$$ *'nın bir fonksiyonu olarak cliff-walking görevi üzerinde TD kontrol yöntemlerinin geçici ve asimptotik performansı. Tüm algoritmalar "$$\epsilon$$-açgözlü(greedy)" politikası kullanmakta olup $$\epsilon$$ = 0:1. Asimptotik performans ortalama 100.000 bölümden fazlayken, ara performans ilk 100 bölümün ortalamasıdır.Bu veriler, geçici ve asemptomatik vakalar için sırasıyla 50.000 ve 10 çalışmanın ortalamalarıdır. Kesintisiz daireler her yöntemin en iyi ara performansını gösterir.van Seijen et al. (2009)*
+__*Şekil 6.3 :*__ $$\alpha$$ *'nın bir fonksiyonu olarak cliff-walking görevi üzerinde TD kontrol yöntemlerinin geçici ve asimptotik performansı. Tüm algoritmalar "$$\epsilon$$-açgözlü(greedy)" politikası kullanmakta olup $$\epsilon$$ = 0:1. Asimptotik performans ortalama 100.000 bölümden fazlayken, ara performans ilk 100 bölümün ortalamasıdır.Bu veriler, geçici ve asemptomatik vakalar için sırasıyla 50.000 ve 10 çalışmanın ortalamalarıdır. Kesintisiz daireler her yöntemin en iyi ara performansını gösterir. van Seijen ve arkadaşları tarafından uyarlanmıştır. (2009)*
 
 
 ## Enbüyütme (Maximization) Sorunu ve İkili Öğrenme (Double Learning)
