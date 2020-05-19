@@ -51,3 +51,9 @@
   description: Yapay sinir ağları hakkında temel bilgiler vermek üzere Prof. Dr. Tülay Yıldırım (YTÜ) tarafından hazırlanmıştır. Biyolojik nöron, yapay nöron modeli, temel ağ yapıları, öğrenme çeşitleri ve yapay sinir ağı tasarımında dikkat edilmesi gereken bazı noktalar özetlenmiştir.
   url: https://youtu.be/clBCel89_C8
   order-no: 35
+
+- id: 10
+  title: Makine Düşünebilir mi ve Nasıl Düşünebilir? - Ord. Prof. Dr. CAHİT ARF
+  description: Ord. Prof. Dr. Cahit Arf’in "MAKİNE DÜŞÜNEBİLİR Mİ VE NASIL DÜŞÜNEBİLİR?" çalışmasının aslı Dr. Emir Öngüner‘in arşivinden dijital formata dönüştürülmüştür.
+  url: https://ogrenme-yapay.gitbook.io/makine-duesuenebilir-mi-ve-nasil-duesuenebilir/
+  order-no: 55
