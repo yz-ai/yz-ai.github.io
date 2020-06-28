@@ -57,3 +57,9 @@
   description: Ord. Prof. Dr. Cahit Arf’in "MAKİNE DÜŞÜNEBİLİR Mİ VE NASIL DÜŞÜNEBİLİR?" çalışmasının aslı Dr. Emir Öngüner‘in arşivinden dijital formata dönüştürülmüştür.
   url: https://ogrenme-yapay.gitbook.io/makine-duesuenebilir-mi-ve-nasil-duesuenebilir/
   order-no: 55
+
+- id: 11
+  title: Deep Learning Architectures That You Can Use with a Few Data
+  description: Düşük sayıda veri ve sadece bir kaç iterasyon ile eğitim yapmayı hedefleyen few-shot learning modellerindeki temel mimariler açıklanmıştır.
+  url: https://medium.com/swlh/deep-learning-architectures-that-you-can-use-with-a-very-few-data-8e5b4fa1d5da?source=friends_link&sk=55c2d085309a1cc04d7635833bf6afd0
+  order-no: 36
