@@ -2966,6 +2966,11 @@
     },
   
     {
+      "word"    : "anchor boxes",
+      "translation" : "öneri kutuları"
+    },
+  
+    {
       "word"    : "and",
       "translation" : "ve"
     },
