@@ -53,3 +53,17 @@
   url: https://bau.edu.tr/icerik/14174-ids-conference/
   published_in: The 4-th International Conference on Intelligent Decision Science (IDS) 
   year: 2020
+
+- id: 9
+  title: "Classification of Intra-Pulse Modulation of Radar Signals by Feature Fusion Based Convolutional Neural Networks"
+  authors: Fatih Cagatay Akyon, Yasar Kemal Alp, Gokhan Gok, Orhan Arikan
+  url: https://ieeexplore.ieee.org/document/8553176
+  published_in: 2018 26th European Signal Processing Conference (EUSIPCO)
+  year: 2018
+
+- id: 10
+  title: "Instagram Fake and Automated Account Detection"
+  authors: Fatih Cagatay Akyon, M Esat Kalfaoglu
+  url: https://ieeexplore.ieee.org/document/8946437
+  published_in: 2019 Innovations in Intelligent Systems and Applications Conference (ASYU)
+  year: 2019
