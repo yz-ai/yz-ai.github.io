@@ -54,6 +54,39 @@
   order-no: 50
 
 - id: 6
+  title: YOLOv5 Başlangıç Kiti
+  description: Sıfırdan YOLOv5 kurulumu, eğitim gerçekleştirme, tahmin alma ve örnek kodlar.
+  image: https://miro.medium.com/max/600/1*K7AB3_dXJMzA8uktBxTZ7Q.png
+  links:
+    github-url: https://github.com/fcakyon/yolov5-pip
+    blog-url: https://medium.com/@fcakyon/yolov5-ba%C5%9Flang%C4%B1%C3%A7-kiti-ed9ab657bfd2
+    paper-url: ""
+    demo-url: https://github.com/fcakyon/yolov5-pip#basic-usage
+  order-no: 51
+
+- id: 7
+  title: YOLOv5 ile Object Tracking
+  description: Norfair paketi ile birkaç satır kodda YOLOv5 Object Tracker geliştirme rehberi
+  image: https://github.com/tryolabs/norfair/blob/master/docs/logo.png
+  links:
+    github-url: https://github.com/tryolabs/norfair/tree/master/demos/yolov5
+    blog-url: ""
+    paper-url: ""
+    demo-url: https://github.com/tryolabs/norfair/blob/master/demos/yolov5/yolov5_demo.ipynb
+  order-no: 52
+
+- id: 8
+  title: SAHI - Slicing Aided Hyper Inference
+  description: Küçük nesneler içeren yüksek çözünürlüklü görüntüler üzerinde dilimlenmiş tahmin yapmaya yarayan bir derin öğrenme paketi.
+  image: https://github.com/obss/sahi/blob/main/demo/demo_data/small-vehicles1.jpeg
+  links:
+    github-url: https://github.com/obss/sahi
+    blog-url: https://medium.com/codable/sahi-a-vision-library-for-performing-sliced-inference-on-large-images-small-objects-c8b086af3b80
+    paper-url: ""
+    demo-url: https://github.com/obss/sahi/blob/main/demo/inference_for_yolov5.ipynb
+  order-no: 53
+
+- id: 9
   title: Görme Engelliler için Para Okuyucu iOS Uygulaması
   description: TL Banknotları için resim kümesi oluşturulmuş ve ResNet50 modeli tekrar eğitilerek para tanıyıcı iOS uygulaması geliştirilmiştir.
   image: /assets/images/projects/6/paraokuyucu.png
@@ -62,4 +95,4 @@
     blog-url: https://medium.com/@ozgurs/g%C3%B6r%C3%BCnt%C3%BC-tan%C4%B1yan-mobil-uygulama-nas%C4%B1l-geli%C5%9Ftirilir-33760f7d827?
     paper-url: ""
     demo-url: https://apps.apple.com/tr/app/para-okuyucu/id1334298365?l=tr
-  order-no: 51
+  order-no: 54
