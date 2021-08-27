@@ -58,7 +58,7 @@
   url: https://ogrenme-yapay.gitbook.io/makine-duesuenebilir-mi-ve-nasil-duesuenebilir/
   order-no: 55
 
-- id: 11
+- id: 12
   title: YOLOv5 ile Obje Tespiti ve Takibi Rehberi
   description: Örnek kodlar ile sıfırdan YOLOv5 kurulumu, eğitim gerçekleştirme, tahmin alma, birkaç satır kod ile YOLOv5 obje takibi ve dilimlenmiş tahmin ile küçük obje tespiti demoları.
   url: https://medium.com/@fcakyon/yolov5-ba%C5%9Flang%C4%B1%C3%A7-kiti-ed9ab657bfd2
