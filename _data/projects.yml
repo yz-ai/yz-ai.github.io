@@ -67,7 +67,7 @@
 - id: 7
   title: YOLOv5 ile Object Tracking
   description: Norfair paketi ile birkaç satır kodda YOLOv5 Object Tracker geliştirme rehberi
-  image: https://github.com/tryolabs/norfair/blob/master/docs/logo.png
+  image: https://raw.githubusercontent.com/tryolabs/norfair/master/docs/logo.png
   links:
     github-url: https://github.com/tryolabs/norfair/tree/master/demos/yolov5
     blog-url: ""
@@ -78,7 +78,7 @@
 - id: 8
   title: SAHI - Slicing Aided Hyper Inference
   description: Küçük nesneler içeren yüksek çözünürlüklü görüntüler üzerinde dilimlenmiş tahmin yapmaya yarayan bir derin öğrenme paketi.
-  image: https://github.com/obss/sahi/blob/main/demo/demo_data/small-vehicles1.jpeg
+  image: https://raw.githubusercontent.com/obss/sahi/main/demo/demo_data/small-vehicles1.jpeg
   links:
     github-url: https://github.com/obss/sahi
     blog-url: https://medium.com/codable/sahi-a-vision-library-for-performing-sliced-inference-on-large-images-small-objects-c8b086af3b80
