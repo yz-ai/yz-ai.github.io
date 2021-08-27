@@ -41,16 +41,16 @@
   year: 2019
 
 - id: 7
-  title: "Classification of Recyclable Materials Using Efficient Deep Learning Models and Benchmarking of GPU Performance (Kabul edildi)"
+  title: "Classification of Recyclable Materials Using Efficient Deep Learning Models and Benchmarking of GPU Performance"
   authors: Yavuz KÖMEÇOĞLU, Merve Ayyüce KIZRAK
-  url: https://bau.edu.tr/icerik/14174-ids-conference/
+  url: https://link.springer.com/chapter/10.1007/978-3-030-66501-2_18
   published_in: The 4-th International Conference on Intelligent Decision Science (IDS) 
   year: 2020
 
 - id: 8
-  title: "Real-time News Grouping: Detecting the Same-content News on Turkish News Stream (Kabul edildi)"
+  title: "Real-time News Grouping: Detecting the Same-content News on Turkish News Stream"
   authors: Yavuz KÖMEÇOĞLU, Başak Buluz KÖMEÇOĞLU, Burcu YILMAZ
-  url: https://bau.edu.tr/icerik/14174-ids-conference/
+  url: https://link.springer.com/chapter/10.1007/978-3-030-66501-2_2
   published_in: The 4-th International Conference on Intelligent Decision Science (IDS) 
   year: 2020
 
@@ -67,3 +67,11 @@
   url: https://ieeexplore.ieee.org/document/8946437
   published_in: 2019 Innovations in Intelligent Systems and Applications Conference (ASYU)
   year: 2019
+
+
+- id: 11
+  title: "Crowd Density Estimation by Using Attention Based Capsule Network and Multi-Column CNN"
+  authors: Merve Ayyüce KIZRAK, Bülent BOLAT 
+  url: https://ieeexplore.ieee.org/document/9433545
+  published_in: IEEE ACCESS, vol.9, pp.75435-75445, 2021 (Journal Indexed in SCI) 
+  year: 2021
