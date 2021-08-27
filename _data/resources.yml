@@ -1,72 +1,77 @@
 - id: 1
-  title: CS 229 - Makine Öğrenmesi (TR)
-  description: Stanford CS 229 Makine Öğrenmesi ders notlarından oluşturulmuş gözetimli öğrenme, gözetimsiz öğrenme, derin öğrenme ve makine öğrenmesi ipuçları/püf noktalarını göreceğiniz kapsamlı el kitapçığı 
-  url: https://stanford.edu/~shervine/l/tr/teaching/cs-229/
-  order-no: 10
-  
-- id: 2
-  title: CS 230 - Derin Öğrenme (TR)
-  description: Stanford CS 230 Derin Öğrenme ders notlarından oluşturulmuş evrişimli yapay sinir ağları, tekrarlayan yapay sinir ağları ve derin öğrenme ipuçları/püf noktalarını göreceğiniz kapsamlı el kitapçığı 
-  url: https://stanford.edu/~shervine/l/tr/teaching/cs-230/
-  order-no: 20
-
-- id: 3
-  title: CS 221 - Yapay Zekâ (TR)
-  description: Stanford CS 221 Yapay Zekâ  ders notlarından oluşturulmuş Makine Öğrenmesi ile Refleks-temelli modeller, Arama optimizasyonu ve Markov karar sürecine sahip durum-temelli modeller, CSP ile değişken-temelli modeller ve Bayesçi ağlar ile Önermeli ve birinci dereceden mantık-temelli modelleri göreceğiniz kapsamlı el kitapçığı 
-  url: https://stanford.edu/~shervine/l/tr/teaching/cs-221/
-  order-no: 30
-  
-- id: 4
-  title: Derin Öğrenme Kavramları
-  description: Özellikle derin öğrenme terimleriyle karşılaştığınızda ne anlama geldiğini bilmeniz cümle içinde ne anlatıldığını doğru şekilde anlamanız için kritik önem arz etmektedir. Bu yüzden bu not defteri bir sözlük gibi de kullanabileceğiniz bir kaynak olma niteliğinde
-  url: https://github.com/ayyucekizrak/Kapsamli_Derin_Ogrenme_Rehberi/blob/master/Kapsaml%C4%B1_Derin_%C3%96%C4%9Frenme_Rehberi.ipynb
-  order-no: 40
-  
-- id: 5
-  title: Keras ile TPU Üzerinde Yapay Sinir Ağları Eğitimi
-  description: Yapay Sinir Ağlarını Google Colab üzerinde ücretsiz sunulan TPU'larda en hızlı şekilde nasıl eğitileceği ile ilgili Google Code Labs Türkçe dökümanları
-  url: https://github.com/yapay-ogrenme/googlecodelabs/wiki
-  order-no: 50
-  
-- id: 6
-  title: 1. Türk Yapay Zeka ve Yapay Sinir Ağları Sempozyumu Bildirileri (1992)
-  description: Yapay Zeka konusunda ülkemizin duayen araştırmacılarının yer aldığı ve düzenlediği Türkiye'nin ilk ilgili alandaki sempozyumunun bildiri kitabını çevrimiçi kitabı.
-  url: https://yapay-zeka.gitbook.io/ilkturkyapayzekaveyapaysiniraglarisempozyumu/
-  order-no: 60
-
-- id: 7
   title: Pekiştirmeli Öğrenme Kitabı
   description: Pekiştirmeli öğrenme, amaca yönelik ne yapılması gerektiğini öğrenen bir makine öğrenmesi yaklaşımıdır. Pekiştirmeli Öğrenme için en detaylı Türkçe kaynak.
   url: /blog/pekistirmeli-ogrenme/pekistirmeli-ogrenme-bolum-1
-  order-no: 5
+  order-no: 10
 
+- id: 2
+  title: CS 229 - Makine Öğrenmesi (TR)
+  description: Stanford CS 229 Makine Öğrenmesi ders notlarından oluşturulmuş gözetimli öğrenme, gözetimsiz öğrenme, derin öğrenme ve makine öğrenmesi ipuçları/püf noktalarını göreceğiniz kapsamlı el kitapçığı 
+  url: https://stanford.edu/~shervine/l/tr/teaching/cs-229/
+  order-no: 20
+  
+- id: 3
+  title: CS 230 - Derin Öğrenme (TR)
+  description: Stanford CS 230 Derin Öğrenme ders notlarından oluşturulmuş evrişimli yapay sinir ağları, tekrarlayan yapay sinir ağları ve derin öğrenme ipuçları/püf noktalarını göreceğiniz kapsamlı el kitapçığı 
+  url: https://stanford.edu/~shervine/l/tr/teaching/cs-230/
+  order-no: 30
+
+- id: 4
+  title: CS 221 - Yapay Zekâ (TR)
+  description: Stanford CS 221 Yapay Zekâ  ders notlarından oluşturulmuş Makine Öğrenmesi ile Refleks-temelli modeller, Arama optimizasyonu ve Markov karar sürecine sahip durum-temelli modeller, CSP ile değişken-temelli modeller ve Bayesçi ağlar ile Önermeli ve birinci dereceden mantık-temelli modelleri göreceğiniz kapsamlı el kitapçığı 
+  url: https://stanford.edu/~shervine/l/tr/teaching/cs-221/
+  order-no: 40
+  
+- id: 5
+  title: Derin Öğrenme Kavramları
+  description: Özellikle derin öğrenme terimleriyle karşılaştığınızda ne anlama geldiğini bilmeniz cümle içinde ne anlatıldığını doğru şekilde anlamanız için kritik önem arz etmektedir. Bu yüzden bu not defteri bir sözlük gibi de kullanabileceğiniz bir kaynak olma niteliğinde
+  url: https://github.com/ayyucekizrak/Kapsamli_Derin_Ogrenme_Rehberi/blob/master/Kapsaml%C4%B1_Derin_%C3%96%C4%9Frenme_Rehberi.ipynb
+  order-no: 50
+
+- id: 6
+  title: (Video) Yapay Sinir Ağları ve Nöral Hesaplama - Tülay Yıldırım
+  description: Yapay sinir ağları hakkında temel bilgiler vermek üzere Prof. Dr. Tülay Yıldırım (YTÜ) tarafından hazırlanmıştır. Biyolojik nöron, yapay nöron modeli, temel ağ yapıları, öğrenme çeşitleri ve yapay sinir ağı tasarımında dikkat edilmesi gereken bazı noktalar özetlenmiştir.
+  url: https://youtu.be/clBCel89_C8
+  order-no: 60
+  
+- id: 7
+  title: Keras ile TPU Üzerinde Yapay Sinir Ağları Eğitimi
+  description: Yapay Sinir Ağlarını Google Colab üzerinde ücretsiz sunulan TPU'larda en hızlı şekilde nasıl eğitileceği ile ilgili Google Code Labs Türkçe dökümanları
+  url: https://github.com/yapay-ogrenme/googlecodelabs/wiki
+  order-no: 70
+  
 - id: 8
   title: PyTorch ile Görüntü Sınıflandırma için Uygulamalı Çalışma Dosyası
   description: PyTorch ekosistemindeki yeniliklerden de faydalanılarak, Evrişimli Sinir Ağları ile basit bir görüntü sınıflandırma uygulamasının Türkçe anlatımlı çalışma dosyası.
   url: https://colab.research.google.com/github/ayyucekizrak/PyTorch-ile-Goruntu-Siniflandirma/blob/master/PyTorch_ile_Goruntu_Siniflandirma.ipynb
-  order-no: 45
+  order-no: 80
 
 - id: 9
-  title: (Video) Yapay Sinir Ağları ve Nöral Hesaplama - Tülay Yıldırım
-  description: Yapay sinir ağları hakkında temel bilgiler vermek üzere Prof. Dr. Tülay Yıldırım (YTÜ) tarafından hazırlanmıştır. Biyolojik nöron, yapay nöron modeli, temel ağ yapıları, öğrenme çeşitleri ve yapay sinir ağı tasarımında dikkat edilmesi gereken bazı noktalar özetlenmiştir.
-  url: https://youtu.be/clBCel89_C8
-  order-no: 35
-
-- id: 10
-  title: Makine Düşünebilir mi ve Nasıl Düşünebilir? - Ord. Prof. Dr. CAHİT ARF
-  description: Ord. Prof. Dr. Cahit Arf’in "MAKİNE DÜŞÜNEBİLİR Mİ VE NASIL DÜŞÜNEBİLİR?" çalışmasının aslı Dr. Emir Öngüner‘in arşivinden dijital formata dönüştürülmüştür.
-  url: https://ogrenme-yapay.gitbook.io/makine-duesuenebilir-mi-ve-nasil-duesuenebilir/
-  order-no: 55
-
-- id: 11
   title: YOLOv5 ile Obje Tespiti ve Takibi Rehberi
   description: Örnek kodlar ile sıfırdan YOLOv5 kurulumu, eğitim gerçekleştirme, tahmin alma, birkaç satır kod ile YOLOv5 obje takibi ve dilimlenmiş tahmin ile küçük obje tespiti demoları.
   url: https://medium.com/@fcakyon/yolov5-ba%C5%9Flang%C4%B1%C3%A7-kiti-ed9ab657bfd2
-  order-no: 56
+  order-no: 90
 
-- id: 12
+- id: 10
   title: Deep Learning Architectures That You Can Use with a Few Data
   description: Düşük sayıda veri ve sadece bir kaç iterasyon ile eğitim yapmayı hedefleyen few-shot learning modellerindeki temel mimariler açıklanmıştır.
   url: https://medium.com/swlh/deep-learning-architectures-that-you-can-use-with-a-very-few-data-8e5b4fa1d5da?source=friends_link&sk=55c2d085309a1cc04d7635833bf6afd0
-  order-no: 36
+  order-no: 100
 
+- id: 11
+  title: 1. Türk Yapay Zeka ve Yapay Sinir Ağları Sempozyumu Bildirileri (1992)
+  description: Yapay Zeka konusunda ülkemizin duayen araştırmacılarının yer aldığı ve düzenlediği Türkiye'nin ilk ilgili alandaki sempozyumunun bildiri kitabını çevrimiçi kitabı.
+  url: https://yapay-zeka.gitbook.io/ilkturkyapayzekaveyapaysiniraglarisempozyumu/
+  order-no: 110
+
+- id: 12
+  title: Makine Düşünebilir mi ve Nasıl Düşünebilir? - Ord. Prof. Dr. CAHİT ARF
+  description: Ord. Prof. Dr. Cahit Arf’in "MAKİNE DÜŞÜNEBİLİR Mİ VE NASIL DÜŞÜNEBİLİR?" çalışmasının aslı Dr. Emir Öngüner‘in arşivinden dijital formata dönüştürülmüştür.
+  url: https://ogrenme-yapay.gitbook.io/makine-duesuenebilir-mi-ve-nasil-duesuenebilir/
+  order-no: 120
+
+- id: 13
+  title: Ulusal Yapay Zekâ Stratejisi 2021-2025
+  description: Yapay zekâ alanında ülkemizin ilk ulusal strateji belgesi olma özelliğini taşıyan Ulusal Yapay Zekâ Stratejisi (UYZS) ile Türkiye, yapay zekâ (YZ) stratejisini yayımlayan ülkeler arasında yerini almıştır.
+  url: https://cbddo.gov.tr/uyzs
+  order-no: 130
