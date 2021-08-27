@@ -96,3 +96,15 @@
     paper-url: ""
     demo-url: https://apps.apple.com/tr/app/para-okuyucu/id1334298365?l=tr
   order-no: 54
+
+
+- id: 10
+  title: Ulusal Yapay Zekâ Stratejisi (UYZS)'ne Duygu Analizi Yaklaşımı
+  description: 20 Ağustos - 24 Ağustos 2021 tarihleri arası "Yapay Zeka Stratejisi" anahtar kelimesini içeren tweetler üzerinde Bert-base Turkish Sentiment Model'inin tahmin sonuçlarına göre yapılan duygu analizi çalışması
+  image: https://raw.githubusercontent.com/yapay-ogrenme/uyzs-sentiment-analysis/main/results/Yapay%20Zeka%20Stratejisi_2021-08-20_2021-08-25_positive_wordcloud_v2_freq.png
+  links:
+    github-url: https://github.com/yapay-ogrenme/uyzs-sentiment-analysis
+    blog-url: https://medium.com/yavuzkomecoglu/ulkemizin-ulusal-yapay-zeka-stratejisi-uyzs-twitter-mesajlari-sentiment-analizi-397894562d72
+    paper-url: ""
+    demo-url: ""
+  order-no: 60
