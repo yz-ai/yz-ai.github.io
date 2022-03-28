@@ -1,3 +1,17 @@
+---
+layout: post
+author: "Yapay Zeka Takımı"
+title:  "Pytorch ile Derin Ögrenme - Bölüm 1: Pytorch ile Logistic Regression"
+description: "Bu çalışma, Pytorch ve logistic regression mimarisini ve uygulamasını barındırmaktadır."
+date:   2022-03-28
+categories: derin-ogrenme
+tags: ["derin-ogrenme"]
+permalink: /blog/:categories/:title
+next-page-url: /blog/derin-ogrenme/pytorch-ile-Logistic-Regression
+---
+
+
+
 # Pytroch-ile-Logistic-Regression
 
 # Pytorch Nedir?
