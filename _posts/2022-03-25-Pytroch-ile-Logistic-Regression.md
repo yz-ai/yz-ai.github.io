@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Yapay Zeka Takımı"
+author: "Ensar ERDOĞAN"
 title:  "Pytorch ile Derin Ögrenme - Bölüm 1: Pytorch ile Logistic Regression"
 description: "Bu çalışma, Pytorch ve logistic regression mimarisini ve uygulamasını barındırmaktadır."
 date:   2022-03-28
