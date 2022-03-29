@@ -173,6 +173,71 @@ Model oluşturulur.
         #optimizer
         learning_rate=0.02
         optimizer=torch.optim.SGD(model.parameters(),lr=learning_rate)
+        
+ Test ve Tahmin adımına geçilir.
+ 
+        count=0
+        loss_list=[]
+        iteration_list=[]
+        accuracy_list=[]
+
+        for epoch in range(num_epochs):
+            for i,(images,labels) in enumerate(train_loader):
+        
+               #Variable(input)
+               train=Variable(images.view(-1,28*28))
+               label=Variable(labels)
+        
+               #zero.grad()
+               optimizer.zero_grad()
+        
+               #model(train)
+               outputs=model(train)
+        
+               #loss
+               loss=error(outputs,label)
+        
+               #backward
+               loss.backward()
+        
+               #update parameters
+               optimizer.step()
+        
+               count +=1
+        
+               if count % 50 == 0:
+            
+                  correct=0
+                  total=0
+            
+                 #tahmin dataset
+                 for images,labels in test_loader:
+                
+                    #test variable
+                    test=Variable(images.view(-1,28*28))
+                
+                    #test model
+                    outputs=model(test)
+                
+                    #max tahmin degeri
+                    predicted=torch.max(outputs.data,1)[1]
+                
+                    #toplam label
+                    total +=len(labels)
+                
+                    #toplam dogru tahmin
+                    correct +=(predicted ==labels).sum()
+                
+                 accuracy=100*correct/float(total)
+            
+                 #her bir iterationdaki hata
+                 loss_list.append(loss.data)
+                 iteration_list.append(count)
+                 accuracy_list.append(accuracy)
+        
+                if count % 500 == 0:
+                   print('Iteration: {} Loss: {} Accuracy: {} %'.format(count,loss.data,accuracy))
+ 
     
 
 
