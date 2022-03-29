@@ -74,7 +74,18 @@ Kütüphaneler yüklendikten sonra veri seti pandas yardımı ile okunur.
      test.head()
   
  <img src="src2.png">  
+ 
+ Bu kısımda Normalizasyon için 255(toplam piksel degerleri sayısı) bölünerek gerçekleştirilmiştir.
+ 
+    target_numpy=train.label.values
+    features_numpy=train.iloc[:,train.columns!="label"].values/255
     
+ Veri setini sklearn kütüphanesi kullanarak %80 train,%20 test olarak bölünmüştür.
+    
+    features_train,features_test,target_train,target_test=train_test_split(features_numpy,
+                                                                      target_numpy,
+                                                                      test_size=0.2,
+                                                                      random_state=42)
 
 
 
