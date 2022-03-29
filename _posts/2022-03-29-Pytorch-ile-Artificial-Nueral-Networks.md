@@ -29,7 +29,8 @@ Artificial Neural Networks(Yapay Sinir Ağları) derin ögrenme veya derin sinir
 
 Hidden layer girdilari görmedigi için gizli olarak nitelendirilir.Ayrıca girdi katmanı toplam katman sayısına dahil edilmez. ANN algoritmasını resim üzerinde inceleyelim.
 
-
+ <img src="ann.png">
+ 
 
 
 
