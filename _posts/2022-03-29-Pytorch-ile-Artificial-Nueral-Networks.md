@@ -67,6 +67,13 @@ Kütüphaneler yüklendikten sonra veri seti pandas yardımı ile okunur.
      train=pd.read_csv('data/digit-recognizer/train.csv',dtype=np.float32)
      train.head()
      
+ <img src="src1.png">
+ 
+ 
+     test=pd.read_csv('data/digit-recognizer/test.csv',dtype=np.float32)
+     test.head()
+  
+ <img src="src2.png">  
     
 
 
