@@ -10,7 +10,7 @@ permalink: /blog/:categories/:title
 next-page-url: /blog/derin-ogrenme/pytorch-ile-Artificial-Neural-Network
 ---
 
-# Pytroch-ile-Artificial-Neural-Networks
+# Pytorch-ile-Artificial-Neural-Networks
 
 # Pytorch Nedir?
 
