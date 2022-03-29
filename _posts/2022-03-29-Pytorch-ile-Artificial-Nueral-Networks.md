@@ -53,6 +53,23 @@ içerisinde 10 sınıf barındırıan bir veri setidir. Burada piksel değerleri
 
 Adım adım önce veri ön işleme basamaklarından gerçirilir ve model oluşturularak tahmin değerleri elde edilir.
 
+     import torch
+     import torch.nn as nn
+     from torch.autograd import Variable
+     from torch.utils.data import DataLoader
+     import pandas as pd
+     import numpy as np
+     import matplotlib.pyplot as plt
+     from sklearn.model_selection import train_test_split
+     
+Kütüphaneler yüklendikten sonra veri seti pandas yardımı ile okunur.
+   
+     train=pd.read_csv('data/digit-recognizer/train.csv',dtype=np.float32)
+     train.head()
+     
+    
+
+
 
 
 
