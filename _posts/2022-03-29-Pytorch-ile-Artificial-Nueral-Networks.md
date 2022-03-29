@@ -42,7 +42,16 @@ Hidden layer girdilari görmedigi için gizli olarak nitelendirilir.Ayrıca gird
  
  Kısaca ANN algoritmasının çalışmasından bahsettikten sonra Pytorch ile Örnek bir veri seti üzerinde modelimizi oluşturalım.
  
- 
+ # Dataset
+
+Kullanılan veri seti kaggle'dan elde edilmiştir. Link bilgisi aşağıdaki gibidir.
+
+![https://www.kaggle.com/datasets/zalando-research/fashionmnist]
+
+Veri setinden kısaca bahsedilecek olursa içerisinde 28*28 pikselden oluşan içerisinde 60000 train(eğitim) ve 10000 test verilerinden oluşan
+içerisinde 10 sınıf barındırıan bir veri setidir. Burada piksel değerleri 0 ile 255 arasındadır. Her bir resim 784 pikselden oluşmaktadır.
+
+Adım adım önce veri ön işleme basamaklarından gerçirilir ve model oluşturularak tahmin değerleri elde edilir.
 
 
 
