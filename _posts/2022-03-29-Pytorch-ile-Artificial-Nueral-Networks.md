@@ -121,7 +121,59 @@ Veri ön işleme kısmında son adım olarak tensor dönüştürülen verilerin 
     
  <img src="src3.png">   
  
- 
+Model oluşturulur.
+
+    class AnnModel(nn.Module):
+    def __init__(self,input_dim,hidden_dim,output_dim):
+        super(AnnModel,self).__init__()
+        
+        #input_layer
+        self.fc1=nn.Linear(input_dim,hidden_dim)
+        self.relu1=nn.ReLU()
+        
+        #hidden_layer1
+        self.fc2=nn.Linear(hidden_dim,hidden_dim)
+        self.tanh2=nn.Tanh()
+        
+        #hiddden_layer2
+        self.fc3=nn.Linear(hidden_dim,hidden_dim)
+        self.elu3=nn.ELU()
+        
+        #output_layer
+        self.fc4=nn.Linear(hidden_dim,output_dim)
+        
+    def forward(self,x):
+        
+        #func1
+        out=self.fc1(x)
+        out=self.relu1(out)
+        
+        #func2
+        out=self.fc2(out)
+        out=self.tanh2(out)
+        
+        #func3
+        out=self.fc3(out)
+        out=self.elu3(out)
+        
+        
+        out=self.fc4(out)
+        return out
+
+        input_dim=28*28
+        hidden_dim=150
+        output_dim=10
+
+        #model
+        model=AnnModel(input_dim,hidden_dim,output_dim)
+
+        #loss
+        error=nn.CrossEntropyLoss()
+
+        #optimizer
+        learning_rate=0.02
+        optimizer=torch.optim.SGD(model.parameters(),lr=learning_rate)
+    
 
 
 
