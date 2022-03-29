@@ -22,3 +22,5 @@ Bu bağlamda bakıldığında Pytorch derin ögrenme algoritmarın hızlı çal�
 Pytorch ekran kartlarını kullanabilen ve böylelikle sağladığı hız bakımından oldukça popüler bir kütüphanedir.Pytorch'un başarılı olmasının nedenlerinden
 bir tanesi de sinir ağı modelleri zahmetsizce oluştura bilmesidir. Pytorch aynı anda CPU ve GPU gibi arka planda başka işler için yapıları kullanabilir.
 Pytorch'un Numpy kütüphanesine benzer kendi bir Tensor yapısı mevcuttur.
+
+# Artificial Neural Networks Nedir ve Nasıl Çalışır?
