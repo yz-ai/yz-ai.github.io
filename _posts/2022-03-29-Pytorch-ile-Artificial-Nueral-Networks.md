@@ -25,4 +25,4 @@ Pytorch'un Numpy kütüphanesine benzer kendi bir Tensor yapısı mevcuttur.
 
 # Artificial Neural Networks Nedir ve Nasıl Çalışır?
 
-Artificial Neural Networks(Yapay Sinir Ağları) derin ögrenme veya derin sinir ağı olarak adlandırılır. Temelinde Derin Ögrenme Bölüm-1 de bahsedilen Logistic Regression ![https://yz-ai.github.io/blog/derin-ogrenme/Pytroch-ile-Logistic-Regression]
+Artificial Neural Networks(Yapay Sinir Ağları) derin ögrenme veya derin sinir ağı olarak adlandırılır. Temelinde Derin Ögrenme Bölüm-1 de bahsedilen Logistic Regression ![https://yz-ai.github.io/blog/derin-ogrenme/Pytroch-ile-Logistic-Regression] modelini alıp bu işlemi iki kez veya daha fazla tekrar etmektedir. ANN algoritmasında Logistic Regression algoritmasında olduğu gibi girdi ve çıktı katmanları vardır. Bu katmanlar arasında ekstra da hidden layer(gizli katman) adı verilen bir katman vardır.
