@@ -15,4 +15,14 @@ Bunu bir tweet üzerinden anlatacak olursak;
  
  X ===> Train Logistic Regression ===> Classification (0 veya 1) 
  
- İşlem adımlarını biraz daha detaylandırırsak 
+ İşlem adımlarını biraz daha detaylandırırsak metin halindeki tweet bilgisini kelimelere ayrırmamız gerekmektedir.
+ 
+ <img src="vocabulary.png">
+ 
+ Her bir tweet deki benzersiz kelimeleri alarak kendi kelime dağarcığımızı oluşturmamız gerekmektedir. Kelime dağarcığı(Vocabulary) benzersiz kelimeler olarak anlandırılır. Bunu temsilen de "V" harfi kullanılmaktadır.
+ 
+ Tweet içerisindeki benzersiz kelimeler tespit edildikten sonra olumlu sınıf ve olumsuz sınıf olarak ikiye ayrılmalıdır. Sınıf ayrımı gerçekleştikten sonra her bir tweet içerisinde tekrar eden kelimeler toplanarak kelimenin yanına yazılır ki bu işleme frekans çıkarma denir.
+ 
+ <img src="features.png">
+ 
+ Frekansı belirlenen kelimeler özellik çıkarma işlemine tabi tutulur. Burada x(m) tweet özellik sayısını, "1" değeri bias değeri, freqs(w,1) olumlu kelimeler, freqs(w,0) olumsuz kelimeleri temsil etmektedir.
