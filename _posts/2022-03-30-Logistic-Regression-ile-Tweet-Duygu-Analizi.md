@@ -26,3 +26,17 @@ Bunu bir tweet üzerinden anlatacak olursak;
  <img src="features.png">
  
  Frekansı belirlenen kelimeler özellik çıkarma işlemine tabi tutulur. Burada x(m) tweet özellik sayısını, "1" değeri bias değeri, freqs(w,1) olumlu kelimeler, freqs(w,0) olumsuz kelimeleri temsil etmektedir.
+ 
+ Tüm bunlardan bahsettikten sonra Tweet üzerinde Duygu Analizi yapabilmek için sırasıyla şu adımlardan geçirilmelidir;
+ 
+ 1-) Stop words'ler ve noktalama işaretleri(punctuction) çıkarılır.
+ 
+ 2-) "@" ve url bilgileri çıkarılır.
+ 
+ 3-) Kelimelerin köküne inilir(stemming) ve metin içerisindeki kelimeler küçük harfe dönüştürülür.(lowercasing)
+ 
+ Son olarak bu aşamalardan sonra Trainning ve Testing işlemlerine geçilir. Tüm algoritmalarda olduğu gibi Logistic Regression algoritmalarında temel amaç minimum maliyet fonksiyonu(cost) elde etmektir. Düşük cost ile birlikte yüksek accuracy(doğruluk) oranı elde edilmelidir. Doğruluk hesaplanır iken gerçek değerler ile,tahmin değerleri aynı olduğu sayı toplam değere bölünmesi ile elde edilir. 
+ 
+ <img src="testing.png">
+ 
+ 
