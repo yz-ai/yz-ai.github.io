@@ -7,6 +7,7 @@ date:   2022-03-28
 categories: derin-ogrenme
 tags: ["derin-ogrenme"]
 permalink: /blog/:categories/:title
+next-page-url: /blog/derin-ogrenme/Pytorch-ile-Artificial-Nueral-Networks
 ---
 
 
@@ -47,7 +48,7 @@ Kısaca Logistic Regressiondan bahsettikten sonra artık Pytorch ile nasıl mode
 
 Kullanılan veri seti kaggle'dan elde edilmiştir. Link bilgisi aşağıdaki gibidir.
 
-![https://www.kaggle.com/datasets/zalando-research/fashionmnist]
+[https://www.kaggle.com/datasets/zalando-research/fashionmnist](https://www.kaggle.com/datasets/zalando-research/fashionmnist)
 
 Veri setinden kısaca bahsedilecek olursa içerisinde 28*28 pikselden oluşan içerisinde 60000 train(eğitim) ve 10000 test verilerinden oluşan
 içerisinde 10 sınıf barındırıan bir veri setidir. Burada piksel değerleri 0 ile 255 arasındadır. Her bir resim 784 pikselden oluşmaktadır.
