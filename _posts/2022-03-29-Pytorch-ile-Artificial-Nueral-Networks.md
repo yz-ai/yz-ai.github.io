@@ -34,7 +34,7 @@ Hidden layer girdilari görmedigi için gizli olarak nitelendirilir. Ayrıca gir
  Resimde de görüldüğü üzere girdi ve çıktı katmanların arsında bir tane de hidden layer bulunmaktaır. Bu gizli katmanın 5 adet düğümü olduğu görülmektedir. Burada belirtilen düğüm sayısı aynı zamanda modelin daha iyi sonuçlar verebilmesi için kullanılan hyper parametrelerinden bir tanesidir.
  ANN algoritmasında Logistic Regressionda olduğu gibi girdi katmanları ve çıktı katmanları değişmez.
  
- Girdi katmanından hidden layer giderken tercih edilen activasyon fonksiyonları kullanılır.(tanh,sigmoid.RELu vb.) Activasyon fonsiyonların ayrıntılı bir şekilde ögrenmek istiyorsanız @Merve Ayyüce Kızrak hocamın yazısını okumanızı tavsiye ederim. ! [Derin Öğrenme İçin Aktivasyon Fonksiyonlarının Karşılaştırılması](https://ayyucekizrak.medium.com/derin-%C3%B6%C4%9Frenme-i%C3%A7in-aktivasyon-fonksiyonlar%C4%B1n%C4%B1n-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1r%C4%B1lmas%C4%B1-cee17fd1d9cd Genellikle hidden layer katmanına giderken tanh activasyon fonksiyonu tercih edilir modelin daha iyi ögrenmesine sebebiyet verecektir.
+ Girdi katmanından hidden layer giderken tercih edilen activasyon fonksiyonları kullanılır.(tanh,sigmoid.RELu vb.) Activasyon fonsiyonların ayrıntılı bir şekilde ögrenmek istiyorsanız @Merve Ayyüce Kızrak hocamın yazısını okumanızı tavsiye ederim. ! [Derin Öğrenme İçin Aktivasyon Fonksiyonlarının Karşılaştırılması](https://ayyucekizrak.medium.com/derin-%C3%B6%C4%9Frenme-i%C3%A7in-aktivasyon-fonksiyonlar%C4%B1n%C4%B1n-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1r%C4%B1lmas%C4%B1-cee17fd1d9cd) Genellikle hidden layer katmanına giderken tanh activasyon fonksiyonu tercih edilir modelin daha iyi ögrenmesine sebebiyet verecektir.
  Hidden layerdan sonra gelen kısım aslında Logistic Regressiondaki yapının aynısıdır.
  
  Resimde Görülecegi üzerine bir ileri yayılım(Forward) birde geri yayılım gözükmektedir(backward). İleri yayılım Logistic Regressiondaki yapının aynısı sadece bunu iki kez ve daha fazla yapılmasıdır. Geriye doğru yayılım ise işlemin türevini almak demektir. Geriye yayılımdan elde edilen parametreler ile model tekrar eğitilir bu işleme de update parameters denilir.
@@ -45,7 +45,7 @@ Hidden layer girdilari görmedigi için gizli olarak nitelendirilir. Ayrıca gir
 
 Kullanılan veri seti kaggle'dan elde edilmiştir. Link bilgisi aşağıdaki gibidir.
 
-![https://www.kaggle.com/datasets/zalando-research/fashionmnist]
+[https://www.kaggle.com/datasets/zalando-research/fashionmnist](https://www.kaggle.com/datasets/zalando-research/fashionmnist)
 
 Veri setinden kısaca bahsedilecek olursa içerisinde 28*28 pikselden oluşan içerisinde 60000 train(eğitim) ve 10000 test verilerinden oluşan
 içerisinde 10 sınıf barındırıan bir veri setidir. Burada piksel değerleri 0 ile 255 arasındadır. Her bir resim 784 pikselden oluşmaktadır.
