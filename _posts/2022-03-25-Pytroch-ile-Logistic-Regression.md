@@ -7,7 +7,6 @@ date:   2022-03-28
 categories: derin-ogrenme
 tags: ["derin-ogrenme"]
 permalink: /blog/:categories/:title
-next-page-url: /blog/derin-ogrenme/pytorch-ile-Logistic-Regression
 ---
 
 
@@ -32,9 +31,7 @@ Logistic Regression sınıflandırma modelleri için kullanılabilen 0 ve 1 gibi
 yapay sinir ağları içinde bir temel oluşturmaktadır. Logistic regression ile birlikte sinir ağı kelimesinden bahsedilmeye başlanılmıştır. Derin ögrenme 
 algoritmalarından farkı tek katmanlı olmasıdır. İlerleyen yazılarda katman ve derin kelimerin anlamlarından da bahsedilecektir.
 
-  -Logistic Regression Hesaplama Grafiği
-     
- <img src="logistic_regression_image_2.png">
+![Logistic Regression Hesaplama Grafiği]({{ site.url }}/assets/images/blog/pytroch_ile_logistic_regression_2.png) 
 
 Genel Olarak Logistic Regression girdilerin weight'lerin transpozu ile çarpılarak üzerine de bias eklenerek çalışmaktadır. 
 
@@ -61,15 +58,16 @@ Adım adım önce veri ön işleme basamaklarından gerçirilir ve model oluştu
     
     train.head()
     
- <img src="src1.png">
+
+![fashion-mnist_train dataset]({{ site.url }}/assets/images/blog/pytroch_ile_logistic_regression_src_1.png) 
  
     test=pd.read_csv('/kaggle/input/fashionmnist/fashion-mnist_test.csv',dtype=np.float32)
     
     test.head()
     
- <img src="src2.png">    
+![fashion-mnist_test dataset]({{ site.url }}/assets/images/blog/pytroch_ile_logistic_regression_src_2.png)   
  
- Bu kısımda Normalizasyon için 255(toplam piksel degerleri sayısı) bölünerek gerçekleştirilmiştir.
+Bu kısımda Normalizasyon için 255(toplam piksel degerleri sayısı) bölünerek gerçekleştirilmiştir.
  
     target_numpy=train.label.values
     features_numpy=train.iloc[:,train.columns !="label"].values/255
@@ -110,7 +108,7 @@ Veri ön işleme kısmında son adım olarak tensor dönüştürülen verilerin 
     plt.savefig("graph.png")
     plt.show()
     
- <img src="src3.png">   
+![fashion-mnist example]({{ site.url }}/assets/images/blog/pytroch_ile_logistic_regression_src_3.png)     
  
 Bu aşamada artık model oluşturulmaya başlanır. Logistic regression da linear regression gibi kullanılıp sonrasında bir activation fonksiyonu kullanarak farklılaşmaktadır. Bu da genellikle "softmax" fonksiyonudur. O yüzden model kurulurken linear gibi düşünülebilir. Loss degeri için "CrossEntropyLoss" kullanılır. Bunun sebebi ise çoklu sınıflandırma problemlerinde tercih edilir.
 
