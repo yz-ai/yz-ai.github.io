@@ -41,7 +41,7 @@ Hidden layer girdilari görmedigi için gizli olarak nitelendirilir. Ayrıca gir
  
  Kısaca ANN algoritmasının çalışmasından bahsettikten sonra Pytorch ile Örnek bir veri seti üzerinde modelimizi oluşturalım.
  
- # Dataset
+# Dataset
 
 Kullanılan veri seti kaggle'dan elde edilmiştir. Link bilgisi aşağıdaki gibidir.
 
